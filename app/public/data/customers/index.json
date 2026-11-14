@@ -1,0 +1,1346 @@
+[
+{
+"id": "CUST00001",
+"age": 63,
+"postal_code": "00990",
+"n": 888,
+"mortgage": false
+},
+{
+"id": "CUST00016",
+"age": 36,
+"postal_code": "01360",
+"n": 525,
+"mortgage": false
+},
+{
+"id": "CUST00050",
+"age": 23,
+"postal_code": "02920",
+"n": 654,
+"mortgage": false
+},
+{
+"id": "CUST00062",
+"age": 54,
+"postal_code": "00640",
+"n": 655,
+"mortgage": false
+},
+{
+"id": "CUST00072",
+"age": 70,
+"postal_code": "00700",
+"n": 597,
+"mortgage": false
+},
+{
+"id": "CUST00074",
+"age": 35,
+"postal_code": "02230",
+"n": 595,
+"mortgage": false
+},
+{
+"id": "CUST00087",
+"age": 44,
+"postal_code": "02620",
+"n": 891,
+"mortgage": false
+},
+{
+"id": "CUST00089",
+"age": 50,
+"postal_code": "02210",
+"n": 689,
+"mortgage": true
+},
+{
+"id": "CUST00097",
+"age": 51,
+"postal_code": "00740",
+"n": 927,
+"mortgage": true
+},
+{
+"id": "CUST00118",
+"age": 24,
+"postal_code": "01200",
+"n": 631,
+"mortgage": false
+},
+{
+"id": "CUST00156",
+"age": 53,
+"postal_code": "01600",
+"n": 561,
+"mortgage": false
+},
+{
+"id": "CUST00164",
+"age": 23,
+"postal_code": "00940",
+"n": 628,
+"mortgage": false
+},
+{
+"id": "CUST00171",
+"age": 21,
+"postal_code": "00220",
+"n": 798,
+"mortgage": false
+},
+{
+"id": "CUST00197",
+"age": 18,
+"postal_code": "00430",
+"n": 728,
+"mortgage": false
+},
+{
+"id": "CUST00239",
+"age": 44,
+"postal_code": "02600",
+"n": 609,
+"mortgage": false
+},
+{
+"id": "CUST00285",
+"age": 45,
+"postal_code": "00670",
+"n": 931,
+"mortgage": false
+},
+{
+"id": "CUST00297",
+"age": 56,
+"postal_code": "00300",
+"n": 693,
+"mortgage": false
+},
+{
+"id": "CUST00338",
+"age": 68,
+"postal_code": "02240",
+"n": 583,
+"mortgage": false
+},
+{
+"id": "CUST00349",
+"age": 32,
+"postal_code": "02140",
+"n": 746,
+"mortgage": false
+},
+{
+"id": "CUST00363",
+"age": 28,
+"postal_code": "01620",
+"n": 725,
+"mortgage": false
+},
+{
+"id": "CUST00365",
+"age": 45,
+"postal_code": "00630",
+"n": 905,
+"mortgage": false
+},
+{
+"id": "CUST00372",
+"age": 37,
+"postal_code": "00920",
+"n": 628,
+"mortgage": false
+},
+{
+"id": "CUST00394",
+"age": 45,
+"postal_code": "00300",
+"n": 675,
+"mortgage": true
+},
+{
+"id": "CUST00432",
+"age": 22,
+"postal_code": "01420",
+"n": 561,
+"mortgage": false
+},
+{
+"id": "CUST00473",
+"age": 39,
+"postal_code": "02610",
+"n": 640,
+"mortgage": false
+},
+{
+"id": "CUST00490",
+"age": 24,
+"postal_code": "00980",
+"n": 726,
+"mortgage": false
+},
+{
+"id": "CUST00505",
+"age": 28,
+"postal_code": "02680",
+"n": 539,
+"mortgage": false
+},
+{
+"id": "CUST00588",
+"age": 51,
+"postal_code": "02300",
+"n": 946,
+"mortgage": false
+},
+{
+"id": "CUST00594",
+"age": 26,
+"postal_code": "00550",
+"n": 845,
+"mortgage": false
+},
+{
+"id": "CUST00676",
+"age": 31,
+"postal_code": "00940",
+"n": 595,
+"mortgage": false
+},
+{
+"id": "CUST00681",
+"age": 29,
+"postal_code": "02430",
+"n": 923,
+"mortgage": false
+},
+{
+"id": "CUST00693",
+"age": 50,
+"postal_code": "01260",
+"n": 731,
+"mortgage": false
+},
+{
+"id": "CUST00701",
+"age": 66,
+"postal_code": "01450",
+"n": 664,
+"mortgage": false
+},
+{
+"id": "CUST00709",
+"age": 26,
+"postal_code": "00410",
+"n": 621,
+"mortgage": false
+},
+{
+"id": "CUST00742",
+"age": 36,
+"postal_code": "01200",
+"n": 860,
+"mortgage": false
+},
+{
+"id": "CUST00770",
+"age": 51,
+"postal_code": "00720",
+"n": 621,
+"mortgage": false
+},
+{
+"id": "CUST00774",
+"age": 18,
+"postal_code": "01800",
+"n": 578,
+"mortgage": false
+},
+{
+"id": "CUST00780",
+"age": 18,
+"postal_code": "02340",
+"n": 628,
+"mortgage": false
+},
+{
+"id": "CUST00794",
+"age": 34,
+"postal_code": "02200",
+"n": 837,
+"mortgage": false
+},
+{
+"id": "CUST00814",
+"age": 25,
+"postal_code": "02210",
+"n": 825,
+"mortgage": false
+},
+{
+"id": "CUST00876",
+"age": 52,
+"postal_code": "01600",
+"n": 605,
+"mortgage": false
+},
+{
+"id": "CUST00903",
+"age": 40,
+"postal_code": "01360",
+"n": 565,
+"mortgage": false
+},
+{
+"id": "CUST00923",
+"age": 31,
+"postal_code": "02600",
+"n": 543,
+"mortgage": false
+},
+{
+"id": "CUST00961",
+"age": 41,
+"postal_code": "00160",
+"n": 691,
+"mortgage": true
+},
+{
+"id": "CUST00964",
+"age": 55,
+"postal_code": "00830",
+"n": 664,
+"mortgage": false
+},
+{
+"id": "CUST00978",
+"age": 19,
+"postal_code": "01700",
+"n": 878,
+"mortgage": false
+},
+{
+"id": "CUST00984",
+"age": 23,
+"postal_code": "02200",
+"n": 655,
+"mortgage": false
+},
+{
+"id": "CUST01020",
+"age": 45,
+"postal_code": "00180",
+"n": 867,
+"mortgage": false
+},
+{
+"id": "CUST01135",
+"age": 70,
+"postal_code": "02660",
+"n": 500,
+"mortgage": false
+},
+{
+"id": "CUST01157",
+"age": 65,
+"postal_code": "01230",
+"n": 576,
+"mortgage": false
+},
+{
+"id": "CUST01169",
+"age": 33,
+"postal_code": "00900",
+"n": 762,
+"mortgage": false
+},
+{
+"id": "CUST01174",
+"age": 22,
+"postal_code": "00400",
+"n": 573,
+"mortgage": false
+},
+{
+"id": "CUST01240",
+"age": 50,
+"postal_code": "00120",
+"n": 758,
+"mortgage": false
+},
+{
+"id": "CUST01251",
+"age": 39,
+"postal_code": "02780",
+"n": 733,
+"mortgage": false
+},
+{
+"id": "CUST01278",
+"age": 41,
+"postal_code": "00410",
+"n": 850,
+"mortgage": false
+},
+{
+"id": "CUST01313",
+"age": 34,
+"postal_code": "00390",
+"n": 735,
+"mortgage": false
+},
+{
+"id": "CUST01315",
+"age": 31,
+"postal_code": "00570",
+"n": 747,
+"mortgage": false
+},
+{
+"id": "CUST01319",
+"age": 50,
+"postal_code": "02970",
+"n": 744,
+"mortgage": false
+},
+{
+"id": "CUST01336",
+"age": 37,
+"postal_code": "01700",
+"n": 656,
+"mortgage": false
+},
+{
+"id": "CUST01379",
+"age": 53,
+"postal_code": "00390",
+"n": 650,
+"mortgage": false
+},
+{
+"id": "CUST01384",
+"age": 25,
+"postal_code": "02330",
+"n": 659,
+"mortgage": false
+},
+{
+"id": "CUST01420",
+"age": 38,
+"postal_code": "00100",
+"n": 739,
+"mortgage": false
+},
+{
+"id": "CUST01428",
+"age": 34,
+"postal_code": "02230",
+"n": 556,
+"mortgage": false
+},
+{
+"id": "CUST01431",
+"age": 56,
+"postal_code": "00820",
+"n": 744,
+"mortgage": false
+},
+{
+"id": "CUST01466",
+"age": 35,
+"postal_code": "00980",
+"n": 891,
+"mortgage": false
+},
+{
+"id": "CUST01492",
+"age": 54,
+"postal_code": "00630",
+"n": 635,
+"mortgage": false
+},
+{
+"id": "CUST01494",
+"age": 80,
+"postal_code": "00980",
+"n": 516,
+"mortgage": false
+},
+{
+"id": "CUST01514",
+"age": 29,
+"postal_code": "00180",
+"n": 763,
+"mortgage": false
+},
+{
+"id": "CUST01551",
+"age": 36,
+"postal_code": "02300",
+"n": 745,
+"mortgage": false
+},
+{
+"id": "CUST01555",
+"age": 40,
+"postal_code": "02330",
+"n": 756,
+"mortgage": false
+},
+{
+"id": "CUST01698",
+"age": 53,
+"postal_code": "02260",
+"n": 639,
+"mortgage": false
+},
+{
+"id": "CUST01754",
+"age": 50,
+"postal_code": "02980",
+"n": 665,
+"mortgage": false
+},
+{
+"id": "CUST01757",
+"age": 26,
+"postal_code": "01600",
+"n": 669,
+"mortgage": false
+},
+{
+"id": "CUST01854",
+"age": 38,
+"postal_code": "00580",
+"n": 880,
+"mortgage": false
+},
+{
+"id": "CUST01855",
+"age": 48,
+"postal_code": "02720",
+"n": 536,
+"mortgage": false
+},
+{
+"id": "CUST01871",
+"age": 64,
+"postal_code": "00840",
+"n": 557,
+"mortgage": false
+},
+{
+"id": "CUST01893",
+"age": 18,
+"postal_code": "00940",
+"n": 583,
+"mortgage": false
+},
+{
+"id": "CUST01898",
+"age": 40,
+"postal_code": "02600",
+"n": 700,
+"mortgage": false
+},
+{
+"id": "CUST01995",
+"age": 50,
+"postal_code": "01450",
+"n": 594,
+"mortgage": false
+},
+{
+"id": "CUST02004",
+"age": 64,
+"postal_code": "02700",
+"n": 729,
+"mortgage": true
+},
+{
+"id": "CUST02019",
+"age": 42,
+"postal_code": "02740",
+"n": 679,
+"mortgage": true
+},
+{
+"id": "CUST02130",
+"age": 43,
+"postal_code": "00650",
+"n": 802,
+"mortgage": false
+},
+{
+"id": "CUST02134",
+"age": 44,
+"postal_code": "00980",
+"n": 775,
+"mortgage": false
+},
+{
+"id": "CUST02151",
+"age": 23,
+"postal_code": "01700",
+"n": 598,
+"mortgage": false
+},
+{
+"id": "CUST02249",
+"age": 40,
+"postal_code": "00600",
+"n": 739,
+"mortgage": false
+},
+{
+"id": "CUST02274",
+"age": 44,
+"postal_code": "02230",
+"n": 889,
+"mortgage": false
+},
+{
+"id": "CUST02315",
+"age": 35,
+"postal_code": "02650",
+"n": 670,
+"mortgage": false
+},
+{
+"id": "CUST02316",
+"age": 45,
+"postal_code": "00940",
+"n": 747,
+"mortgage": false
+},
+{
+"id": "CUST02321",
+"age": 37,
+"postal_code": "02750",
+"n": 598,
+"mortgage": false
+},
+{
+"id": "CUST02385",
+"age": 36,
+"postal_code": "01300",
+"n": 665,
+"mortgage": false
+},
+{
+"id": "CUST02409",
+"age": 37,
+"postal_code": "00980",
+"n": 698,
+"mortgage": false
+},
+{
+"id": "CUST02481",
+"age": 36,
+"postal_code": "01600",
+"n": 632,
+"mortgage": false
+},
+{
+"id": "CUST02530",
+"age": 33,
+"postal_code": "00760",
+"n": 773,
+"mortgage": false
+},
+{
+"id": "CUST02562",
+"age": 25,
+"postal_code": "00710",
+"n": 749,
+"mortgage": false
+},
+{
+"id": "CUST02665",
+"age": 42,
+"postal_code": "01360",
+"n": 660,
+"mortgage": false
+},
+{
+"id": "CUST02681",
+"age": 50,
+"postal_code": "00150",
+"n": 772,
+"mortgage": false
+},
+{
+"id": "CUST02698",
+"age": 45,
+"postal_code": "00250",
+"n": 812,
+"mortgage": false
+},
+{
+"id": "CUST02749",
+"age": 48,
+"postal_code": "01280",
+"n": 637,
+"mortgage": true
+},
+{
+"id": "CUST02753",
+"age": 51,
+"postal_code": "00590",
+"n": 924,
+"mortgage": false
+},
+{
+"id": "CUST02772",
+"age": 31,
+"postal_code": "00400",
+"n": 647,
+"mortgage": false
+},
+{
+"id": "CUST02824",
+"age": 52,
+"postal_code": "00750",
+"n": 851,
+"mortgage": false
+},
+{
+"id": "CUST02834",
+"age": 48,
+"postal_code": "02760",
+"n": 669,
+"mortgage": false
+},
+{
+"id": "CUST02844",
+"age": 47,
+"postal_code": "00620",
+"n": 912,
+"mortgage": false
+},
+{
+"id": "CUST02856",
+"age": 28,
+"postal_code": "00240",
+"n": 647,
+"mortgage": false
+},
+{
+"id": "CUST02858",
+"age": 67,
+"postal_code": "02230",
+"n": 691,
+"mortgage": false
+},
+{
+"id": "CUST02863",
+"age": 41,
+"postal_code": "02610",
+"n": 781,
+"mortgage": false
+},
+{
+"id": "CUST02870",
+"age": 26,
+"postal_code": "00790",
+"n": 709,
+"mortgage": false
+},
+{
+"id": "CUST02876",
+"age": 24,
+"postal_code": "01600",
+"n": 881,
+"mortgage": false
+},
+{
+"id": "CUST02908",
+"age": 54,
+"postal_code": "02540",
+"n": 568,
+"mortgage": false
+},
+{
+"id": "CUST02920",
+"age": 32,
+"postal_code": "01390",
+"n": 560,
+"mortgage": false
+},
+{
+"id": "CUST02931",
+"age": 39,
+"postal_code": "00940",
+"n": 709,
+"mortgage": false
+},
+{
+"id": "CUST02934",
+"age": 63,
+"postal_code": "00260",
+"n": 584,
+"mortgage": false
+},
+{
+"id": "CUST02959",
+"age": 39,
+"postal_code": "01600",
+"n": 792,
+"mortgage": false
+},
+{
+"id": "CUST02973",
+"age": 52,
+"postal_code": "02880",
+"n": 637,
+"mortgage": false
+},
+{
+"id": "CUST03010",
+"age": 28,
+"postal_code": "01490",
+"n": 583,
+"mortgage": false
+},
+{
+"id": "CUST03042",
+"age": 35,
+"postal_code": "02760",
+"n": 547,
+"mortgage": false
+},
+{
+"id": "CUST03046",
+"age": 40,
+"postal_code": "00350",
+"n": 723,
+"mortgage": false
+},
+{
+"id": "CUST03054",
+"age": 48,
+"postal_code": "00330",
+"n": 679,
+"mortgage": true
+},
+{
+"id": "CUST03076",
+"age": 38,
+"postal_code": "00550",
+"n": 665,
+"mortgage": false
+},
+{
+"id": "CUST03108",
+"age": 24,
+"postal_code": "02940",
+"n": 615,
+"mortgage": false
+},
+{
+"id": "CUST03132",
+"age": 51,
+"postal_code": "00740",
+"n": 766,
+"mortgage": false
+},
+{
+"id": "CUST03137",
+"age": 48,
+"postal_code": "00780",
+"n": 659,
+"mortgage": false
+},
+{
+"id": "CUST03140",
+"age": 39,
+"postal_code": "01900",
+"n": 560,
+"mortgage": true
+},
+{
+"id": "CUST03170",
+"age": 54,
+"postal_code": "00700",
+"n": 685,
+"mortgage": false
+},
+{
+"id": "CUST03183",
+"age": 27,
+"postal_code": "02600",
+"n": 754,
+"mortgage": false
+},
+{
+"id": "CUST03196",
+"age": 72,
+"postal_code": "02700",
+"n": 565,
+"mortgage": false
+},
+{
+"id": "CUST03205",
+"age": 24,
+"postal_code": "00320",
+"n": 550,
+"mortgage": false
+},
+{
+"id": "CUST03216",
+"age": 19,
+"postal_code": "00400",
+"n": 709,
+"mortgage": false
+},
+{
+"id": "CUST03245",
+"age": 71,
+"postal_code": "01900",
+"n": 502,
+"mortgage": false
+},
+{
+"id": "CUST03302",
+"age": 56,
+"postal_code": "02400",
+"n": 842,
+"mortgage": false
+},
+{
+"id": "CUST03354",
+"age": 20,
+"postal_code": "00700",
+"n": 889,
+"mortgage": false
+},
+{
+"id": "CUST03371",
+"age": 46,
+"postal_code": "02400",
+"n": 769,
+"mortgage": false
+},
+{
+"id": "CUST03387",
+"age": 50,
+"postal_code": "02330",
+"n": 674,
+"mortgage": false
+},
+{
+"id": "CUST03429",
+"age": 18,
+"postal_code": "02230",
+"n": 727,
+"mortgage": false
+},
+{
+"id": "CUST03469",
+"age": 42,
+"postal_code": "02580",
+"n": 570,
+"mortgage": false
+},
+{
+"id": "CUST03478",
+"age": 32,
+"postal_code": "01800",
+"n": 714,
+"mortgage": false
+},
+{
+"id": "CUST03492",
+"age": 39,
+"postal_code": "00140",
+"n": 692,
+"mortgage": false
+},
+{
+"id": "CUST03538",
+"age": 24,
+"postal_code": "02480",
+"n": 878,
+"mortgage": false
+},
+{
+"id": "CUST03574",
+"age": 34,
+"postal_code": "02230",
+"n": 690,
+"mortgage": false
+},
+{
+"id": "CUST03585",
+"age": 43,
+"postal_code": "02710",
+"n": 791,
+"mortgage": false
+},
+{
+"id": "CUST03655",
+"age": 69,
+"postal_code": "00800",
+"n": 468,
+"mortgage": false
+},
+{
+"id": "CUST03683",
+"age": 57,
+"postal_code": "00990",
+"n": 871,
+"mortgage": false
+},
+{
+"id": "CUST03696",
+"age": 18,
+"postal_code": "00210",
+"n": 894,
+"mortgage": false
+},
+{
+"id": "CUST03716",
+"age": 51,
+"postal_code": "00840",
+"n": 670,
+"mortgage": false
+},
+{
+"id": "CUST03741",
+"age": 28,
+"postal_code": "00800",
+"n": 842,
+"mortgage": false
+},
+{
+"id": "CUST03769",
+"age": 38,
+"postal_code": "02920",
+"n": 795,
+"mortgage": false
+},
+{
+"id": "CUST03815",
+"age": 47,
+"postal_code": "00730",
+"n": 540,
+"mortgage": false
+},
+{
+"id": "CUST03833",
+"age": 66,
+"postal_code": "02700",
+"n": 519,
+"mortgage": false
+},
+{
+"id": "CUST03841",
+"age": 60,
+"postal_code": "02880",
+"n": 637,
+"mortgage": false
+},
+{
+"id": "CUST03883",
+"age": 50,
+"postal_code": "02330",
+"n": 710,
+"mortgage": false
+},
+{
+"id": "CUST03949",
+"age": 69,
+"postal_code": "00330",
+"n": 631,
+"mortgage": false
+},
+{
+"id": "CUST04031",
+"age": 50,
+"postal_code": "02650",
+"n": 771,
+"mortgage": false
+},
+{
+"id": "CUST04068",
+"age": 44,
+"postal_code": "00530",
+"n": 682,
+"mortgage": true
+},
+{
+"id": "CUST04069",
+"age": 43,
+"postal_code": "00940",
+"n": 547,
+"mortgage": false
+},
+{
+"id": "CUST04107",
+"age": 77,
+"postal_code": "00260",
+"n": 567,
+"mortgage": false
+},
+{
+"id": "CUST04121",
+"age": 18,
+"postal_code": "02750",
+"n": 506,
+"mortgage": false
+},
+{
+"id": "CUST04131",
+"age": 27,
+"postal_code": "00550",
+"n": 550,
+"mortgage": false
+},
+{
+"id": "CUST04144",
+"age": 50,
+"postal_code": "00640",
+"n": 626,
+"mortgage": false
+},
+{
+"id": "CUST04186",
+"age": 54,
+"postal_code": "00270",
+"n": 563,
+"mortgage": false
+},
+{
+"id": "CUST04195",
+"age": 37,
+"postal_code": "00240",
+"n": 552,
+"mortgage": false
+},
+{
+"id": "CUST04213",
+"age": 51,
+"postal_code": "00700",
+"n": 642,
+"mortgage": false
+},
+{
+"id": "CUST04259",
+"age": 41,
+"postal_code": "00250",
+"n": 632,
+"mortgage": true
+},
+{
+"id": "CUST04280",
+"age": 29,
+"postal_code": "01690",
+"n": 664,
+"mortgage": false
+},
+{
+"id": "CUST04317",
+"age": 54,
+"postal_code": "00330",
+"n": 630,
+"mortgage": false
+},
+{
+"id": "CUST04327",
+"age": 54,
+"postal_code": "00210",
+"n": 644,
+"mortgage": false
+},
+{
+"id": "CUST04341",
+"age": 31,
+"postal_code": "00990",
+"n": 556,
+"mortgage": false
+},
+{
+"id": "CUST04383",
+"age": 68,
+"postal_code": "00870",
+"n": 504,
+"mortgage": false
+},
+{
+"id": "CUST04392",
+"age": 68,
+"postal_code": "02100",
+"n": 717,
+"mortgage": false
+},
+{
+"id": "CUST04460",
+"age": 37,
+"postal_code": "00660",
+"n": 553,
+"mortgage": false
+},
+{
+"id": "CUST04464",
+"age": 48,
+"postal_code": "00800",
+"n": 631,
+"mortgage": true
+},
+{
+"id": "CUST04480",
+"age": 60,
+"postal_code": "00320",
+"n": 637,
+"mortgage": true
+},
+{
+"id": "CUST04492",
+"age": 52,
+"postal_code": "00630",
+"n": 593,
+"mortgage": false
+},
+{
+"id": "CUST04514",
+"age": 42,
+"postal_code": "02210",
+"n": 687,
+"mortgage": true
+},
+{
+"id": "CUST04546",
+"age": 28,
+"postal_code": "01200",
+"n": 778,
+"mortgage": false
+},
+{
+"id": "CUST04575",
+"age": 44,
+"postal_code": "01600",
+"n": 713,
+"mortgage": false
+},
+{
+"id": "CUST04646",
+"age": 50,
+"postal_code": "00330",
+"n": 700,
+"mortgage": false
+},
+{
+"id": "CUST04693",
+"age": 49,
+"postal_code": "01450",
+"n": 948,
+"mortgage": false
+},
+{
+"id": "CUST04697",
+"age": 46,
+"postal_code": "02450",
+"n": 666,
+"mortgage": false
+},
+{
+"id": "CUST04733",
+"age": 37,
+"postal_code": "00790",
+"n": 647,
+"mortgage": false
+},
+{
+"id": "CUST04772",
+"age": 52,
+"postal_code": "00850",
+"n": 745,
+"mortgage": false
+},
+{
+"id": "CUST04857",
+"age": 24,
+"postal_code": "02610",
+"n": 534,
+"mortgage": false
+},
+{
+"id": "CUST04912",
+"age": 37,
+"postal_code": "00930",
+"n": 743,
+"mortgage": false
+},
+{
+"id": "CUST04921",
+"age": 39,
+"postal_code": "00220",
+"n": 618,
+"mortgage": false
+},
+{
+"id": "CUST04954",
+"age": 71,
+"postal_code": "01710",
+"n": 757,
+"mortgage": false
+},
+{
+"id": "CUST04981",
+"age": 33,
+"postal_code": "00700",
+"n": 755,
+"mortgage": false
+},
+{
+"id": "CUST04989",
+"age": 37,
+"postal_code": "02230",
+"n": 599,
+"mortgage": false
+},
+{
+"id": "CUST05003",
+"age": 45,
+"postal_code": "00336",
+"n": 650,
+"mortgage": false
+},
+{
+"id": "CUST05016",
+"age": 90,
+"postal_code": "02589",
+"n": 616,
+"mortgage": false
+},
+{
+"id": "CUST05033",
+"age": 32,
+"postal_code": "02939",
+"n": 706,
+"mortgage": false
+},
+{
+"id": "CUST05038",
+"age": 78,
+"postal_code": "02946",
+"n": 658,
+"mortgage": false
+},
+{
+"id": "CUST05044",
+"age": 21,
+"postal_code": "02407",
+"n": 914,
+"mortgage": false
+},
+{
+"id": "CUST05064",
+"age": 71,
+"postal_code": "02082",
+"n": 534,
+"mortgage": false
+}
+]

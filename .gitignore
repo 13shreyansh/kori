@@ -1,0 +1,9 @@
+node_modules/
+app/node_modules/
+app/dist/
+data/synth_raw/
+data/synth_out/
+data/raw/
+.env
+*.log
+eval/runs/*.jsonl
