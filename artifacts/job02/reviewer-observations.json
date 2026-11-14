@@ -1,0 +1,38 @@
+{
+  "homes": [
+    {
+      "url": "https://kori-wheat.vercel.app/embed?customer=aino",
+      "loaded": true,
+      "account": "Hi Aino. 11 days to payday.\n\nKäyttötili · FI·· 4471\n€212.35",
+      "date": "2026-11-14",
+      "headerHeight": 56,
+      "askHeight": 64,
+      "tabsHeight": 62,
+      "lead": "What did you spend on cafés in October?\n€0\n\nDrag to guess. No peeking.\n\n€0\n€200\nMake a guess",
+      "overflow": false
+    },
+    {
+      "url": "https://kori-wheat.vercel.app/embed?customer=mikko",
+      "loaded": true,
+      "account": "Good evening, Mikko.\n\nKäyttötili · FI·· 2093\n€2,318.60\nASP account\n€6,400.00",
+      "date": "2026-11-14",
+      "headerHeight": 56,
+      "askHeight": 64,
+      "tabsHeight": 62,
+      "lead": "Own home in November 2030.\n\nAt €600 a month, the pace of your last 6 months.\n\nI put aside each month\n€600\nHalve Saturday nights out · +€200\nTwo fewer lunches out a week · +€110\nToday\n2027\n2028\n2029\n2030\n2031\n2032\nJapan trip\nMay 2027 · €3,200\nCar\nJune 2028 · €8,000\nOwn home\nNovember 2030 · €24,000",
+      "overflow": false
+    },
+    {
+      "url": "https://kori-wheat.vercel.app/embed?customer=laura",
+      "loaded": true,
+      "account": "Laura · Saturday 14 November\n\nHousehold account · FI·· 8810\n€1,817.35\nSavings\n€2,300.00",
+      "date": "2026-11-14",
+      "headerHeight": 56,
+      "askHeight": 64,
+      "tabsHeight": 62,
+      "lead": "The next four weeks\nM\nT\nW\nT\nF\nS\nS\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n1 Dec\n2\n3\n4\n5\n6\ngoing out\ncoming in\nOn Thu 26th you'll be €140 short.\n\nCar insurance goes out the day before your salary comes in.\n\nMove €140 from SavingsChoose amount",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

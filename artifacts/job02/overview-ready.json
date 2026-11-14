@@ -1,0 +1,20 @@
+[
+  {
+    "customer": "aino",
+    "fontReady": true,
+    "account": "Hi Aino. 11 days to payday.Käyttötili · FI·· 4471€212.35",
+    "blocks": 5
+  },
+  {
+    "customer": "mikko",
+    "fontReady": true,
+    "account": "Good evening, Mikko.Käyttötili · FI·· 2093€2,318.60ASP account€6,400.00",
+    "blocks": 6
+  },
+  {
+    "customer": "laura",
+    "fontReady": true,
+    "account": "Laura · Saturday 14 NovemberHousehold account · FI·· 8810€1,817.35Savings€2,300.00",
+    "blocks": 6
+  }
+]

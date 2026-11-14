@@ -112,12 +112,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14553,
+                  "duration": 15258,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:17:59.696Z",
+                  "startTime": "2026-11-14T21:36:37.113Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -146,12 +146,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12310,
+                  "duration": 12250,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:14.321Z",
+                  "startTime": "2026-11-14T21:36:52.456Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -180,12 +180,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 887,
+                  "duration": 836,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:26.635Z",
+                  "startTime": "2026-11-14T21:37:04.710Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -195,7 +195,7 @@
           ],
           "id": "35b5b3eae9393e65a363-5c6a343c88e9ce3ecfc7",
           "file": "banking.spec.ts",
-          "line": 260,
+          "line": 262,
           "column": 1
         },
         {
@@ -214,12 +214,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2580,
+                  "duration": 2618,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:27.526Z",
+                  "startTime": "2026-11-14T21:37:05.550Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -229,7 +229,7 @@
           ],
           "id": "35b5b3eae9393e65a363-af46ce7d637b80ecf92f",
           "file": "banking.spec.ts",
-          "line": 288,
+          "line": 318,
           "column": 1
         },
         {
@@ -248,12 +248,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2802,
+                  "duration": 2740,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:30.109Z",
+                  "startTime": "2026-11-14T21:37:08.172Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -263,7 +263,7 @@
           ],
           "id": "35b5b3eae9393e65a363-640a3923ca36ece83af3",
           "file": "banking.spec.ts",
-          "line": 337,
+          "line": 367,
           "column": 1
         },
         {
@@ -282,12 +282,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3913,
+                  "duration": 3813,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:32.914Z",
+                  "startTime": "2026-11-14T21:37:10.916Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -297,7 +297,7 @@
           ],
           "id": "35b5b3eae9393e65a363-f0203a1cea90aca8a171",
           "file": "banking.spec.ts",
-          "line": 371,
+          "line": 401,
           "column": 1
         },
         {
@@ -316,12 +316,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4991,
+                  "duration": 5112,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:36.830Z",
+                  "startTime": "2026-11-14T21:37:14.732Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -331,7 +331,7 @@
           ],
           "id": "35b5b3eae9393e65a363-517c61316e7a019ea428",
           "file": "banking.spec.ts",
-          "line": 411,
+          "line": 441,
           "column": 1
         },
         {
@@ -350,12 +350,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3226,
+                  "duration": 3233,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:41.826Z",
+                  "startTime": "2026-11-14T21:37:19.848Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -365,7 +365,7 @@
           ],
           "id": "35b5b3eae9393e65a363-f886b96b861612653793",
           "file": "banking.spec.ts",
-          "line": 444,
+          "line": 474,
           "column": 1
         },
         {
@@ -384,12 +384,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5812,
+                  "duration": 6327,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:45.056Z",
+                  "startTime": "2026-11-14T21:37:23.086Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -399,7 +399,7 @@
           ],
           "id": "35b5b3eae9393e65a363-4f1d8f2e9708b040b27e",
           "file": "banking.spec.ts",
-          "line": 482,
+          "line": 512,
           "column": 1
         },
         {
@@ -418,12 +418,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7469,
+                  "duration": 7106,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-14T21:18:50.872Z",
+                  "startTime": "2026-11-14T21:37:29.417Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -433,17 +433,263 @@
           ],
           "id": "35b5b3eae9393e65a363-e3448f104d5d23135d53",
           "file": "banking.spec.ts",
-          "line": 548,
+          "line": 578,
           "column": 1
+        }
+      ]
+    },
+    {
+      "title": "job02.spec.ts",
+      "file": "job02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "overview never exposes a text-free customer while a frame font is pending",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 532,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:36.535Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-db807454b9f891daf6dd",
+          "file": "job02.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "cafe result uses the module gap at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2511,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:37.071Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-ba57af27f9ed058e136c",
+          "file": "job02.spec.ts",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "title": "cafe result uses the module gap at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:39.585Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-7f74c07d92df9b3e2f5e",
+          "file": "job02.spec.ts",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "title": "overview explains an account-load failure and can retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 650,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:42.095Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-cd280260d21a9fb42497",
+          "file": "job02.spec.ts",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "an open home follows the real Helsinki day across midnight",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:42.749Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-cbda92cd43439d03df1f",
+          "file": "job02.spec.ts",
+          "line": 122,
+          "column": 1
+        },
+        {
+          "title": "login footer and hidden reset rules at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:43.977Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-cd1093e9448e6e2c2a7e",
+          "file": "job02.spec.ts",
+          "line": 147,
+          "column": 3
+        },
+        {
+          "title": "login footer and hidden reset rules at 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1164,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T21:37:45.136Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "541d5fcd545fd5e640bd-ae85ba0a8fa619613621",
+          "file": "job02.spec.ts",
+          "line": 147,
+          "column": 3
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-14T21:17:59.488Z",
-    "duration": 58880.44699999999,
-    "expected": 10,
+    "startTime": "2026-11-14T21:36:36.856Z",
+    "duration": 69477.165,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

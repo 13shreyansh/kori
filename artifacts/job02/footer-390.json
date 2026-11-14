@@ -1,0 +1,10 @@
+{
+  "lines": [
+    "Test environment",
+    "Demo customers: aino, mikko, laura · PIN 1234"
+  ],
+  "font": "12px",
+  "weight": "500",
+  "color": "rgb(183, 205, 191)",
+  "gap": 28
+}

@@ -1,0 +1,164 @@
+{
+  "appCommit": "34fed58",
+  "liveUrl": "https://kori-wheat.vercel.app",
+  "deployment": "dpl_W8rTA4QbWBr5E1ChgLsd1qxSKYwu",
+  "stats": {
+    "startTime": "2026-11-14T21:36:36.856Z",
+    "duration": 69477.165,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "freshReset": "/reset?customer=all before each full customer flow",
+  "files": [
+    {
+      "path": "artifacts/e2e/1440-01-login.png",
+      "sha256": "aeb80a060097226bc7516bb17555fb40cb827ea3ae9412c9aa7f17b22df25a56"
+    },
+    {
+      "path": "artifacts/e2e/1440-02-login-error.png",
+      "sha256": "a4d9b9930769a29c721f3ad15db6a38fb8d8cf3d021ef4fc1bf41814fb6327bb"
+    },
+    {
+      "path": "artifacts/e2e/1440-03-three.png",
+      "sha256": "b14c83194f0e4c2ae0f260fd8e97f24e19cbb3aa541fad378050aaef6af44e81"
+    },
+    {
+      "path": "artifacts/e2e/1440-04-aino-ask.png",
+      "sha256": "f92f53a8a1e05399d4c168cf41e08f2f0b5af960f620a01bedc761816964bf80"
+    },
+    {
+      "path": "artifacts/e2e/1440-05-aino-landed.png",
+      "sha256": "0d3c0ebf7a303f0f767f542d18f71ecf64f39209a7ef3217d2f89bac51634cf1"
+    },
+    {
+      "path": "artifacts/e2e/1440-06-aino-receipt.png",
+      "sha256": "3a447ab637504cfff9049ec8ca77b77dc6d2658201513014027605c1327fc69f"
+    },
+    {
+      "path": "artifacts/e2e/1440-07-aino-whatif.png",
+      "sha256": "2e09cd3411579c46a129201584e1e875a80ddba518a6a0d9343f9015e775e358"
+    },
+    {
+      "path": "artifacts/e2e/1440-08-mikko-baseline.png",
+      "sha256": "25238966694eddb6538a0320e098de3ddddf936d29a5716709f93d0deb830c00"
+    },
+    {
+      "path": "artifacts/e2e/1440-09-mikko-800.png",
+      "sha256": "c7d96363ed85027cbfd0006a27ddaaf4146cc7f4570172f3dc8e4222d3a1754b"
+    },
+    {
+      "path": "artifacts/e2e/1440-10-mikko-loan.png",
+      "sha256": "82b9797aaf377c29a7e1d490232c747ff6c05b364d66778ac81e206b9e4c5f2c"
+    },
+    {
+      "path": "artifacts/e2e/1440-11-laura-short.png",
+      "sha256": "7e6ce4288deb8d054d48b314cf4b7d2e45caa06eef831af05b982d5917c245c1"
+    },
+    {
+      "path": "artifacts/e2e/1440-12-laura-fixed.png",
+      "sha256": "e9a7f594b9bf3f762e79df3e1afb161e5ba77cf4cd08f7e11cbfb85b0e88207a"
+    },
+    {
+      "path": "artifacts/e2e/1440-12b-laura-balance.png",
+      "sha256": "eee4e14df5269ce2caede6e0d4f0125f23f2b225c1c7cd657b893541086ed724"
+    },
+    {
+      "path": "artifacts/e2e/1440-13-laura-bonus.png",
+      "sha256": "872602cfce79bba3bc64c49ff7d6ead0d9a7507cee9193c0a5f39bdc0455ab95"
+    },
+    {
+      "path": "artifacts/e2e/1440-14-why-mikko.png",
+      "sha256": "9bf9cfd620b5e0f890610687aff9ec5d8010e398365d1bae5f6d800073e0df50"
+    },
+    {
+      "path": "artifacts/e2e/1440-15-why-laura.png",
+      "sha256": "30a862866796442ff0f838d840e50894e3656b54e402b84ec4d198ea0e66da54"
+    },
+    {
+      "path": "artifacts/e2e/1440-16-profile.png",
+      "sha256": "5ad66ab0322d1d759e217889e84430fe324bbea85f815826239eaead3bb1d2ad"
+    },
+    {
+      "path": "artifacts/e2e/1440-17-ask-answer.png",
+      "sha256": "6ec8c215c65039b0aaf69f30ddf92ae91935401e90d52286163495ef1788579e"
+    },
+    {
+      "path": "artifacts/e2e/1440-21-laura-large-text.png",
+      "sha256": "f005dc4999ac00d19f899b36850c88b0632c3d9b4b2054205d7fb96539022f4e"
+    },
+    {
+      "path": "artifacts/e2e/390-01-login.png",
+      "sha256": "2d484614ec75eb21f38465e821774738c1e659b4d8d63f9aebb91414bb439f56"
+    },
+    {
+      "path": "artifacts/e2e/390-02-login-error.png",
+      "sha256": "bc24f94d38528e9b26fd4535fa06a26c54817684481f389873c337b25fc5be74"
+    },
+    {
+      "path": "artifacts/e2e/390-04-aino-ask.png",
+      "sha256": "ccc73e1acb87169e15adfa06eb372343e2793eaf13487a7a26cd5ee5c0dabbf6"
+    },
+    {
+      "path": "artifacts/e2e/390-05-aino-landed.png",
+      "sha256": "6760395c42610fa1fee3876243018d30102d1d8030c211f5ae9cb92907141f5c"
+    },
+    {
+      "path": "artifacts/e2e/390-06-aino-receipt.png",
+      "sha256": "8c7ad33885bccabde57456aacc0e86d43c8de1195d907e55764dc6ed60ea99b1"
+    },
+    {
+      "path": "artifacts/e2e/390-07-aino-whatif.png",
+      "sha256": "5013d19ac78bdc6da3ebdce728e2c2145cc9ee41317c79e30434bdb831c9d92a"
+    },
+    {
+      "path": "artifacts/e2e/390-08-mikko-baseline.png",
+      "sha256": "11f6e4127d28293b0e385ad26146f85c357d7dd3ff0ff6ca28889402159b045d"
+    },
+    {
+      "path": "artifacts/e2e/390-09-mikko-800.png",
+      "sha256": "83e38ea250dfd96b00f95742ab73b3e12c680aae788791eb869617a8efad3461"
+    },
+    {
+      "path": "artifacts/e2e/390-10-mikko-loan.png",
+      "sha256": "b72f9c00e875252efc8d917c4cafc2bccf4c575beaed2c1a0291e64decb8a17f"
+    },
+    {
+      "path": "artifacts/e2e/390-11-laura-short.png",
+      "sha256": "2f72193bd51a9294b2fc3e3468fe03811d92cf838f7d05ea67e36d43bacbdb0e"
+    },
+    {
+      "path": "artifacts/e2e/390-12-laura-fixed.png",
+      "sha256": "f6f9b6ef607f214c1c63b4657d89450bfb5415bc0129a1acad8ba22259e04756"
+    },
+    {
+      "path": "artifacts/e2e/390-12b-laura-balance.png",
+      "sha256": "9c177fbe614d647ecb7458f9b3b0306130dd9ea5d5b9a68debfa02df777cad32"
+    },
+    {
+      "path": "artifacts/e2e/390-13-laura-bonus.png",
+      "sha256": "cd95f295bbe34dc264e1382446cb73192369ae1744fab30c6979301979058c52"
+    },
+    {
+      "path": "artifacts/e2e/390-14-why-mikko.png",
+      "sha256": "52a328f47ef8db4c34d773c4b6eba4bea2fc46482d71e4d3d1932ae538a63b30"
+    },
+    {
+      "path": "artifacts/e2e/390-15-why-laura.png",
+      "sha256": "2d436c772d6984cddf58397124c61937036910e367ee9109411d256646c82a58"
+    },
+    {
+      "path": "artifacts/e2e/390-16-profile.png",
+      "sha256": "584ea09165667a0742fee146407e3ebaec6f1c25916113cfaf34afd0cee7ce82"
+    },
+    {
+      "path": "artifacts/e2e/390-17-ask-answer.png",
+      "sha256": "d500c70e2d84e83cca5f6999bca3cd2efed8713467710a933110f5d244a9f666"
+    },
+    {
+      "path": "artifacts/e2e/390-21-laura-large-text.png",
+      "sha256": "ca232a475d228cabb2b0fe4e2213bf39ba70058362191cd2f0692c738f1b2eca"
+    }
+  ]
+}

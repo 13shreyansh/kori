@@ -1,0 +1,13 @@
+
+> app@0.0.0 test
+> vitest run scripts/banking.test.ts scripts/date-rollover.test.ts
+
+
+ RUN  v5.1.0 /Users/shreyansh/Documents/ChatGPT/Junction/kori/app
+
+
+ Test Files  2 passed (2)
+      Tests  25 passed (25)
+   Start at  23:36:08
+   Duration  192ms (tests 85%, import 11%, transform 3%, worker 1%)
+
