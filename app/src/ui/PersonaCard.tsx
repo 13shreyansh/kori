@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { STAGE_INFO, STYLE_INFO, TRAIT_INFO, type Persona } from '../engine/personas';
+import { STYLE_INFO, TRAIT_INFO, type Persona } from '../engine/personas';
 import { Icon } from './Icon';
 
 /** The home card that changes with the customer's persona (life stage x money style). */
 export function PersonaCardView({ p, ask, customise }: { p: Persona; ask: (q: string) => void; customise?: () => void }) {
   const card = p.cards[0];
   return (
-    <motion.div className={`card seg-card style-${p.style}`} style={{ ['--seg' as string]: p.color }} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+    <motion.div className="card seg-card" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
       <div className="seg-head">
         <span className="seg-ico"><Icon name={STYLE_INFO[p.style].icon} size={17} /></span>
         <span className="seg-kicker">Kori for you · {p.name}</span>
@@ -14,11 +14,6 @@ export function PersonaCardView({ p, ask, customise }: { p: Persona; ask: (q: st
       </div>
       <h4>{card.title}</h4>
       <p>{card.body}</p>
-      <div className="seg-tags">
-        <span className="seg-tag"><Icon name={STAGE_INFO[p.stage].icon} size={13} /> {STAGE_INFO[p.stage].label}</span>
-        <span className="seg-tag"><Icon name={STYLE_INFO[p.style].icon} size={13} /> {STYLE_INFO[p.style].label}</span>
-        {p.traits.map((t) => <span className="seg-tag" key={t}><Icon name={TRAIT_INFO[t].icon} size={13} /> {TRAIT_INFO[t].label}</span>)}
-      </div>
       <div className="seg-nudge"><Icon name="Lightbulb" size={14} /> {p.nudge}</div>
       <button className="seg-ask" onClick={() => ask(card.ask)}>{card.ask} <Icon name="ArrowRight" size={14} /></button>
     </motion.div>
@@ -35,7 +30,7 @@ export function TraitCards({ p, ask }: { p: Persona; ask: (q: string) => void })
       <div className="notes">
         {cards.map((k) => (
           <button key={k.kind} className="note" onClick={() => ask(k.ask)}>
-            <span className="note-tag" style={{ color: p.color }}><Icon name={k.icon} size={14} /> {TRAIT_INFO[k.kind as keyof typeof TRAIT_INFO]?.label}</span>
+            <span className="note-tag" style={{ color: 'var(--acc)' }}><Icon name={k.icon} size={14} /> {TRAIT_INFO[k.kind as keyof typeof TRAIT_INFO]?.label}</span>
             <h4>{k.title}</h4>
             <p>{k.body}</p>
             <span className="ask">{k.ask} <Icon name="ArrowRight" size={14} /></span>

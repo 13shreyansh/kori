@@ -24,8 +24,8 @@ export function linkNumbers(text: string, receipts: Receipt[], open: Open): Reac
 
 export function Coach({ msgs, busy, send, open, provider, starters = STARTERS }: { msgs: Msg[]; busy: boolean; send: (q: string) => void; open: Open; provider: string; starters?: string[] }) {
   const [q, setQ] = useState('');
-  const end = useRef<HTMLDivElement>(null);
-  useEffect(() => { end.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }); }, [msgs, busy]);
+  const list = useRef<HTMLDivElement>(null);
+  useEffect(() => { const el = list.current; if (el) el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' }); }, [msgs, busy]);
   return (
     <div className="chat">
       <div className="chat-head">
@@ -33,7 +33,7 @@ export function Coach({ msgs, busy, send, open, provider, starters = STARTERS }:
         <div className="who">Kori coach<small>Answers from your own transactions</small></div>
         <span className="badge" title="Raw transactions never leave the phone; only computed totals do."><Icon name={provider === 'gemini' ? 'Sparkles' : 'Lock'} size={12} />{provider === 'gemini' ? 'Gemini · totals only' : 'On-device'}</span>
       </div>
-      <div className="msgs">
+      <div className="msgs" ref={list}>
         {msgs.length === 0 && (
           <div className="fade-in" style={{ marginTop: 10 }}>
             <div className="bubble">Hi! I’m your money coach. Ask me anything about your own spending. Every number I give you is tappable, so you can see exactly which payments it comes from.</div>
@@ -56,7 +56,6 @@ export function Coach({ msgs, busy, send, open, provider, starters = STARTERS }:
           </motion.div>
         ))}
         {busy && <div className="typing" aria-label="Coach is thinking"><i /><i /><i /></div>}
-        <div ref={end} />
       </div>
       <div className="composer">
         <form onSubmit={(e) => { e.preventDefault(); if (q.trim()) { send(q.trim()); setQ(''); } }}>

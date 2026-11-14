@@ -6,7 +6,7 @@ Kori lives inside the S-mobiili banking app and helps people understand their mo
 S-Pankki's three baskets: **fixed bills** (mandatory and regular), **surprise costs** (mandatory but
 irregular) and **everyday spending** (the small taps that slip through your fingers).
 
-![Three customers, three coaches](shots/9-compare.png)
+![Three customers, three coaches](shots/compare.png)
 
 ## What it does
 - **Safe to spend this week:** income, minus bills that are coming, a monthly share of surprise costs and savings, spread over the days to payday. Tap it to see the whole calculation.

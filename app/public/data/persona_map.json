@@ -1,0 +1,798 @@
+{
+ "total": 393,
+ "stages": {
+  "starter": 65,
+  "builder": 76,
+  "established": 191,
+  "golden": 61
+ },
+ "styles": {
+  "pass_through": 73,
+  "tightrope": 73,
+  "saver": 82,
+  "steady": 165
+ },
+ "traits": {
+  "taps": 48,
+  "quiet": 38,
+  "bills": 69,
+  "irregular": 32
+ },
+ "noTrait": 245,
+ "moves30": 73,
+ "moves50": 71,
+ "cells": {
+  "starter.pass_through": {
+   "stage": "starter",
+   "style": "pass_through",
+   "name": "The First-Paycheck Mover",
+   "line": "Pay lands here, then moves on",
+   "count": 0,
+   "traits": {
+    "taps": 0,
+    "quiet": 0,
+    "bills": 0,
+    "irregular": 0
+   },
+   "example": null,
+   "byTrait": {
+    "taps": null,
+    "quiet": null,
+    "bills": null,
+    "irregular": null
+   }
+  },
+  "starter.tightrope": {
+   "stage": "starter",
+   "style": "tightrope",
+   "name": "The Month-End Juggler",
+   "line": "Young, and the money runs out first",
+   "count": 19,
+   "traits": {
+    "taps": 3,
+    "quiet": 0,
+    "bills": 5,
+    "irregular": 0
+   },
+   "example": {
+    "id": "CUST00171",
+    "name": "Helmi",
+    "age": 21,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST01756",
+     "name": "Kaisa",
+     "age": 18,
+     "traits": [
+      "taps",
+      "bills"
+     ]
+    },
+    "quiet": null,
+    "bills": {
+     "id": "CUST01756",
+     "name": "Kaisa",
+     "age": 18,
+     "traits": [
+      "taps",
+      "bills"
+     ]
+    },
+    "irregular": null
+   }
+  },
+  "starter.saver": {
+   "stage": "starter",
+   "style": "saver",
+   "name": "The Early Stasher",
+   "line": "Saving before most people start",
+   "count": 13,
+   "traits": {
+    "taps": 2,
+    "quiet": 0,
+    "bills": 7,
+    "irregular": 0
+   },
+   "example": {
+    "id": "CUST00138",
+    "name": "Riikka",
+    "age": 18,
+    "traits": [
+     "bills"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST03201",
+     "name": "Antti",
+     "age": 19,
+     "traits": [
+      "taps",
+      "bills"
+     ]
+    },
+    "quiet": null,
+    "bills": {
+     "id": "CUST00138",
+     "name": "Riikka",
+     "age": 18,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": null
+   }
+  },
+  "starter.steady": {
+   "stage": "starter",
+   "style": "steady",
+   "name": "The Finding-Feet",
+   "line": "Learning the ropes, doing fine",
+   "count": 33,
+   "traits": {
+    "taps": 5,
+    "quiet": 1,
+    "bills": 13,
+    "irregular": 3
+   },
+   "example": {
+    "id": "CUST00306",
+    "name": "Sanna",
+    "age": 22,
+    "traits": [
+     "taps"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST00306",
+     "name": "Sanna",
+     "age": 22,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST03379",
+     "name": "Tuomas",
+     "age": 24,
+     "traits": [
+      "quiet",
+      "bills",
+      "irregular"
+     ]
+    },
+    "bills": {
+     "id": "CUST00440",
+     "name": "Outi",
+     "age": 21,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST03379",
+     "name": "Tuomas",
+     "age": 24,
+     "traits": [
+      "quiet",
+      "bills",
+      "irregular"
+     ]
+    }
+   }
+  },
+  "builder.pass_through": {
+   "stage": "builder",
+   "style": "pass_through",
+   "name": "The Two-Bank Builder",
+   "line": "Building a life across two banks",
+   "count": 9,
+   "traits": {
+    "taps": 4,
+    "quiet": 2,
+    "bills": 0,
+    "irregular": 0
+   },
+   "example": {
+    "id": "CUST02595",
+    "name": "Lauri",
+    "age": 36,
+    "traits": [
+     "taps"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST02595",
+     "name": "Lauri",
+     "age": 36,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST03987",
+     "name": "Marja",
+     "age": 39,
+     "traits": [
+      "quiet"
+     ]
+    },
+    "bills": null,
+    "irregular": null
+   }
+  },
+  "builder.tightrope": {
+   "stage": "builder",
+   "style": "tightrope",
+   "name": "The Stretched Builder",
+   "line": "Big plans, tight months",
+   "count": 16,
+   "traits": {
+    "taps": 0,
+    "quiet": 1,
+    "bills": 4,
+    "irregular": 0
+   },
+   "example": {
+    "id": "CUST01090",
+    "name": "Juho",
+    "age": 30,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": null,
+    "quiet": {
+     "id": "CUST00907",
+     "name": "Pekka",
+     "age": 36,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "bills": {
+     "id": "CUST01631",
+     "name": "Tiina",
+     "age": 30,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": null
+   }
+  },
+  "builder.saver": {
+   "stage": "builder",
+   "style": "saver",
+   "name": "The Goal Builder",
+   "line": "Putting money to work for a goal",
+   "count": 16,
+   "traits": {
+    "taps": 1,
+    "quiet": 2,
+    "bills": 2,
+    "irregular": 1
+   },
+   "example": {
+    "id": "CUST00025",
+    "name": "Leena",
+    "age": 26,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST04767",
+     "name": "Ville",
+     "age": 36,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST00913",
+     "name": "Anneli",
+     "age": 35,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "bills": {
+     "id": "CUST00913",
+     "name": "Anneli",
+     "age": 35,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST03617",
+     "name": "Heikki",
+     "age": 39,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  },
+  "builder.steady": {
+   "stage": "builder",
+   "style": "steady",
+   "name": "The Busy Builder",
+   "line": "Balanced, but busy",
+   "count": 35,
+   "traits": {
+    "taps": 4,
+    "quiet": 3,
+    "bills": 9,
+    "irregular": 3
+   },
+   "example": {
+    "id": "CUST00263",
+    "name": "Ilmari",
+    "age": 39,
+    "traits": [
+     "irregular"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST00982",
+     "name": "Sari",
+     "age": 26,
+     "traits": [
+      "taps",
+      "bills"
+     ]
+    },
+    "quiet": {
+     "id": "CUST01764",
+     "name": "Jari",
+     "age": 39,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "bills": {
+     "id": "CUST00532",
+     "name": "Elina",
+     "age": 28,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST00263",
+     "name": "Ilmari",
+     "age": 39,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  },
+  "established.pass_through": {
+   "stage": "established",
+   "style": "pass_through",
+   "name": "The Split-Bank Household",
+   "line": "Household money lives in two places",
+   "count": 60,
+   "traits": {
+    "taps": 19,
+    "quiet": 12,
+    "bills": 0,
+    "irregular": 2
+   },
+   "example": {
+    "id": "CUST00394",
+    "name": "Eero",
+    "age": 45,
+    "traits": [
+     "taps"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST00394",
+     "name": "Eero",
+     "age": 45,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST02582",
+     "name": "Matti",
+     "age": 44,
+     "traits": [
+      "quiet"
+     ]
+    },
+    "bills": null,
+    "irregular": {
+     "id": "CUST00256",
+     "name": "Noora",
+     "age": 64,
+     "traits": [
+      "quiet",
+      "irregular"
+     ]
+    }
+   }
+  },
+  "established.tightrope": {
+   "stage": "established",
+   "style": "tightrope",
+   "name": "The Household Juggler",
+   "line": "Many bills, little slack",
+   "count": 23,
+   "traits": {
+    "taps": 1,
+    "quiet": 0,
+    "bills": 3,
+    "irregular": 2
+   },
+   "example": {
+    "id": "CUST00374",
+    "name": "Päivi",
+    "age": 54,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST03339",
+     "name": "Kalle",
+     "age": 64,
+     "traits": [
+      "taps",
+      "bills",
+      "irregular"
+     ]
+    },
+    "quiet": null,
+    "bills": {
+     "id": "CUST04371",
+     "name": "Liisa",
+     "age": 51,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST03228",
+     "name": "Timo",
+     "age": 47,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  },
+  "established.saver": {
+   "stage": "established",
+   "style": "saver",
+   "name": "The Cushioned Household",
+   "line": "A buffer that lets you breathe",
+   "count": 43,
+   "traits": {
+    "taps": 3,
+    "quiet": 5,
+    "bills": 6,
+    "irregular": 1
+   },
+   "example": {
+    "id": "CUST02144",
+    "name": "Venla",
+    "age": 49,
+    "traits": [
+     "quiet"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST02884",
+     "name": "Aleksi",
+     "age": 58,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST02144",
+     "name": "Venla",
+     "age": 49,
+     "traits": [
+      "quiet"
+     ]
+    },
+    "bills": {
+     "id": "CUST01734",
+     "name": "Ritva",
+     "age": 41,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST00450",
+     "name": "Olli",
+     "age": 47,
+     "traits": [
+      "quiet",
+      "irregular"
+     ]
+    }
+   }
+  },
+  "established.steady": {
+   "stage": "established",
+   "style": "steady",
+   "name": "The Steady Household",
+   "line": "Running smoothly",
+   "count": 65,
+   "traits": {
+    "taps": 2,
+    "quiet": 1,
+    "bills": 7,
+    "irregular": 5
+   },
+   "example": {
+    "id": "CUST01567",
+    "name": "Aino",
+    "age": 47,
+    "traits": [
+     "bills"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST02868",
+     "name": "Kaisa",
+     "age": 51,
+     "traits": [
+      "taps"
+     ]
+    },
+    "quiet": {
+     "id": "CUST02438",
+     "name": "Antti",
+     "age": 63,
+     "traits": [
+      "quiet"
+     ]
+    },
+    "bills": {
+     "id": "CUST01567",
+     "name": "Aino",
+     "age": 47,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST02650",
+     "name": "Riikka",
+     "age": 51,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  },
+  "golden.pass_through": {
+   "stage": "golden",
+   "style": "pass_through",
+   "name": "The Pension Mover",
+   "line": "Pension in, then on to another account",
+   "count": 4,
+   "traits": {
+    "taps": 0,
+    "quiet": 1,
+    "bills": 1,
+    "irregular": 3
+   },
+   "example": {
+    "id": "CUST02207",
+    "name": "Outi",
+    "age": 75,
+    "traits": [
+     "irregular"
+    ]
+   },
+   "byTrait": {
+    "taps": null,
+    "quiet": {
+     "id": "CUST05029",
+     "name": "Tuomas",
+     "age": 90,
+     "traits": [
+      "quiet",
+      "bills",
+      "irregular"
+     ]
+    },
+    "bills": {
+     "id": "CUST05029",
+     "name": "Tuomas",
+     "age": 90,
+     "traits": [
+      "quiet",
+      "bills",
+      "irregular"
+     ]
+    },
+    "irregular": {
+     "id": "CUST02207",
+     "name": "Outi",
+     "age": 75,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  },
+  "golden.tightrope": {
+   "stage": "golden",
+   "style": "tightrope",
+   "name": "The Careful Pensioner",
+   "line": "Making a fixed income stretch",
+   "count": 15,
+   "traits": {
+    "taps": 1,
+    "quiet": 0,
+    "bills": 3,
+    "irregular": 2
+   },
+   "example": {
+    "id": "CUST00854",
+    "name": "Onni",
+    "age": 71,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST05004",
+     "name": "Lauri",
+     "age": 73,
+     "traits": [
+      "taps",
+      "bills",
+      "irregular"
+     ]
+    },
+    "quiet": null,
+    "bills": {
+     "id": "CUST04721",
+     "name": "Marja",
+     "age": 74,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST05004",
+     "name": "Lauri",
+     "age": 73,
+     "traits": [
+      "taps",
+      "bills",
+      "irregular"
+     ]
+    }
+   }
+  },
+  "golden.saver": {
+   "stage": "golden",
+   "style": "saver",
+   "name": "The Comfortable Retiree",
+   "line": "Calm, with something put aside",
+   "count": 10,
+   "traits": {
+    "taps": 0,
+    "quiet": 3,
+    "bills": 3,
+    "irregular": 1
+   },
+   "example": {
+    "id": "CUST00229",
+    "name": "Mikko",
+    "age": 83,
+    "traits": []
+   },
+   "byTrait": {
+    "taps": null,
+    "quiet": {
+     "id": "CUST02377",
+     "name": "Pekka",
+     "age": 75,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "bills": {
+     "id": "CUST00985",
+     "name": "Tiina",
+     "age": 68,
+     "traits": [
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST05016",
+     "name": "Ville",
+     "age": 90,
+     "traits": [
+      "quiet",
+      "irregular"
+     ]
+    }
+   }
+  },
+  "golden.steady": {
+   "stage": "golden",
+   "style": "steady",
+   "name": "The Easy-Going Retiree",
+   "line": "Steady and unhurried",
+   "count": 32,
+   "traits": {
+    "taps": 3,
+    "quiet": 7,
+    "bills": 6,
+    "irregular": 9
+   },
+   "example": {
+    "id": "CUST00121",
+    "name": "Heikki",
+    "age": 70,
+    "traits": [
+     "quiet",
+     "bills"
+    ]
+   },
+   "byTrait": {
+    "taps": {
+     "id": "CUST02071",
+     "name": "Anneli",
+     "age": 80,
+     "traits": [
+      "taps",
+      "bills"
+     ]
+    },
+    "quiet": {
+     "id": "CUST00121",
+     "name": "Heikki",
+     "age": 70,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "bills": {
+     "id": "CUST00121",
+     "name": "Heikki",
+     "age": 70,
+     "traits": [
+      "quiet",
+      "bills"
+     ]
+    },
+    "irregular": {
+     "id": "CUST01307",
+     "name": "Sari",
+     "age": 65,
+     "traits": [
+      "irregular"
+     ]
+    }
+   }
+  }
+ }
+}
