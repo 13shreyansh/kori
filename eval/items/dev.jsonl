@@ -9,14 +9,14 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST00016", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00016", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 52.67, "count": 2}, "customer": "CUST00087", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 95.24, "count": 6}, "customer": "CUST00087", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 25.51, "count": 1}, "customer": "CUST00087", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on clothes last month?", "expect": {"intent": "spend", "value": 60.13, "count": 1}, "customer": "CUST00087", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 213.35, "count": 7}, "customer": "CUST00087", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 651.05}, "customer": "CUST00087", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 7.31, "count": 2}, "customer": "CUST00087", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 13.23, "count": 6}, "customer": "CUST00087", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 3.54, "count": 1}, "customer": "CUST00087", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on clothes last month?", "expect": {"intent": "spend", "value": 8.34, "count": 1}, "customer": "CUST00087", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 29.58, "count": 7}, "customer": "CUST00087", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 90.33}, "customer": "CUST00087", "split": "dev"}
 {"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1500.53}, "customer": "CUST00087", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 3420.65}, "customer": "CUST00087", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 474.67}, "customer": "CUST00087", "split": "dev"}
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST00087", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00087", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00087", "split": "dev"}
@@ -53,14 +53,14 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 16.98, "count": 2}, "customer": "CUST00197", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00197", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00197", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 40.01, "count": 2}, "customer": "CUST00285", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 103.55, "count": 5}, "customer": "CUST00285", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 4.33, "count": 2}, "customer": "CUST00285", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 11.2, "count": 5}, "customer": "CUST00285", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00285", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 1908.2, "count": 17}, "customer": "CUST00285", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 206.24, "count": 17}, "customer": "CUST00285", "split": "dev"}
 {"kind": "spend_3m", "q": "How much have I spent on fuel in the last three months?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00285", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 20%?", "expect": {"intent": "what_if", "value": 1285.99}, "customer": "CUST00285", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 20%?", "expect": {"intent": "what_if", "value": 139.0}, "customer": "CUST00285", "split": "dev"}
 {"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 2087.61}, "customer": "CUST00285", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 2826.88}, "customer": "CUST00285", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 305.54}, "customer": "CUST00285", "split": "dev"}
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST00285", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00285", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00285", "split": "dev"}
@@ -163,25 +163,25 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST00923", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00923", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00923", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on food delivery last month?", "expect": {"intent": "spend", "value": 25.14, "count": 1}, "customer": "CUST00964", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 164.77, "count": 5}, "customer": "CUST00964", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on food delivery last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00964", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 34.93, "count": 1}, "customer": "CUST00964", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00964", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on clothes last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00964", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 104.44, "count": 4}, "customer": "CUST00964", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 25%?", "expect": {"intent": "what_if", "value": 820.1}, "customer": "CUST00964", "split": "dev"}
-{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1777.08}, "customer": "CUST00964", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 3888.2}, "customer": "CUST00964", "split": "dev"}
-{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST00964", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 64.08, "count": 1}, "customer": "CUST00964", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 25%?", "expect": {"intent": "what_if", "value": 141.89}, "customer": "CUST00964", "split": "dev"}
+{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1697.7}, "customer": "CUST00964", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 1481.08}, "customer": "CUST00964", "split": "dev"}
+{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST00964", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00964", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00964", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 17.68, "count": 1}, "customer": "CUST00978", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on public transport last month?", "expect": {"intent": "spend", "value": 42.5, "count": 2}, "customer": "CUST00978", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 276.19, "count": 18}, "customer": "CUST00978", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on eating out last month?", "expect": {"intent": "spend", "value": 218.64, "count": 31}, "customer": "CUST00978", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 23.43, "count": 2}, "customer": "CUST00978", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 233.22}, "customer": "CUST00978", "split": "dev"}
-{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 641.48}, "customer": "CUST00978", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 257.54}, "customer": "CUST00978", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00978", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on public transport last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00978", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 103.76, "count": 3}, "customer": "CUST00978", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on eating out last month?", "expect": {"intent": "spend", "value": 147.5, "count": 8}, "customer": "CUST00978", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 27.23, "count": 1}, "customer": "CUST00978", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 179.31}, "customer": "CUST00978", "split": "dev"}
+{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 602.47}, "customer": "CUST00978", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 335.63}, "customer": "CUST00978", "split": "dev"}
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 11.99, "count": 1}, "customer": "CUST00978", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00978", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00978", "split": "dev"}
@@ -196,15 +196,15 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 14.98, "count": 2}, "customer": "CUST00984", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00984", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST00984", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 29.36, "count": 1}, "customer": "CUST01020", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 68.47, "count": 2}, "customer": "CUST01020", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 77.91, "count": 4}, "customer": "CUST01020", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 1180.62, "count": 19}, "customer": "CUST01020", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 84.16, "count": 2}, "customer": "CUST01020", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 684.21}, "customer": "CUST01020", "split": "dev"}
-{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1250.17}, "customer": "CUST01020", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 2046.44}, "customer": "CUST01020", "split": "dev"}
-{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 28.97, "count": 3}, "customer": "CUST01020", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01020", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01020", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 38.9, "count": 1}, "customer": "CUST01020", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 271.5, "count": 4}, "customer": "CUST01020", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01020", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 10%?", "expect": {"intent": "what_if", "value": 190.66}, "customer": "CUST01020", "split": "dev"}
+{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1221.41}, "customer": "CUST01020", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 764.12}, "customer": "CUST01020", "split": "dev"}
+{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 13.99, "count": 1}, "customer": "CUST01020", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01020", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01020", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 248.1, "count": 20}, "customer": "CUST01135", "split": "dev"}
@@ -229,15 +229,15 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST01174", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01174", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01174", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 42.51, "count": 2}, "customer": "CUST01278", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on public transport last month?", "expect": {"intent": "spend", "value": 81.8, "count": 2}, "customer": "CUST01278", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on eating out last month?", "expect": {"intent": "spend", "value": 666.39, "count": 27}, "customer": "CUST01278", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01278", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on public transport last month?", "expect": {"intent": "spend", "value": 78.6, "count": 1}, "customer": "CUST01278", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on eating out last month?", "expect": {"intent": "spend", "value": 104.59, "count": 6}, "customer": "CUST01278", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01278", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 157.23, "count": 7}, "customer": "CUST01278", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 3480.15}, "customer": "CUST01278", "split": "dev"}
-{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1360.39}, "customer": "CUST01278", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 720.9}, "customer": "CUST01278", "split": "dev"}
-{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 68.98, "count": 3}, "customer": "CUST01278", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01278", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 435.38}, "customer": "CUST01278", "split": "dev"}
+{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1291.92}, "customer": "CUST01278", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 199.07}, "customer": "CUST01278", "split": "dev"}
+{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST01278", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01278", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01278", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on eating out last month?", "expect": {"intent": "spend", "value": 305.04, "count": 24}, "customer": "CUST01313", "split": "dev"}
@@ -329,14 +329,14 @@
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01855", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01855", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on clothes last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01871", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 83.83, "count": 2}, "customer": "CUST01871", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 1711.42, "count": 16}, "customer": "CUST01871", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01871", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 157.95, "count": 3}, "customer": "CUST01871", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01871", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 230.6, "count": 1}, "customer": "CUST01871", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 20%?", "expect": {"intent": "what_if", "value": 128.15}, "customer": "CUST01871", "split": "dev"}
-{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1909.77}, "customer": "CUST01871", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 3570.91}, "customer": "CUST01871", "split": "dev"}
-{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST01871", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on clothes in the last three months?", "expect": {"intent": "spend", "value": 339.93, "count": 1}, "customer": "CUST01871", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 20%?", "expect": {"intent": "what_if", "value": 28.05}, "customer": "CUST01871", "split": "dev"}
+{"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1830.38}, "customer": "CUST01871", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 2966.48}, "customer": "CUST01871", "split": "dev"}
+{"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST01871", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01871", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01871", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 61.02, "count": 1}, "customer": "CUST01893", "split": "dev"}
@@ -350,14 +350,14 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST01893", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01893", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01893", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 17.75, "count": 1}, "customer": "CUST01995", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 48.62, "count": 1}, "customer": "CUST01995", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on food delivery last month?", "expect": {"intent": "spend", "value": 30.25, "count": 1}, "customer": "CUST01995", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 168.38, "count": 2}, "customer": "CUST01995", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on fuel in the last three months?", "expect": {"intent": "spend", "value": 892.64, "count": 10}, "customer": "CUST01995", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 601.94}, "customer": "CUST01995", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on alcohol last month?", "expect": {"intent": "spend", "value": 1.45, "count": 1}, "customer": "CUST01995", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 3.97, "count": 1}, "customer": "CUST01995", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on food delivery last month?", "expect": {"intent": "spend", "value": 2.47, "count": 1}, "customer": "CUST01995", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 13.74, "count": 2}, "customer": "CUST01995", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on fuel in the last three months?", "expect": {"intent": "spend", "value": 72.84, "count": 10}, "customer": "CUST01995", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 49.15}, "customer": "CUST01995", "split": "dev"}
 {"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 2171.68}, "customer": "CUST01995", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 4217.03}, "customer": "CUST01995", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 344.17}, "customer": "CUST01995", "split": "dev"}
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST01995", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01995", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST01995", "split": "dev"}
@@ -383,14 +383,14 @@
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 14.98, "count": 2}, "customer": "CUST02315", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST02315", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST02315", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 406.41, "count": 5}, "customer": "CUST02316", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on fuel last month?", "expect": {"intent": "spend", "value": 32.27, "count": 5}, "customer": "CUST02316", "split": "dev"}
 {"kind": "spend", "q": "How much did I spend on online shopping last month?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST02316", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 2109.12, "count": 17}, "customer": "CUST02316", "split": "dev"}
-{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 69.45, "count": 1}, "customer": "CUST02316", "split": "dev"}
-{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 103.31, "count": 3}, "customer": "CUST02316", "split": "dev"}
-{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 3002.16}, "customer": "CUST02316", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on groceries last month?", "expect": {"intent": "spend", "value": 167.44, "count": 17}, "customer": "CUST02316", "split": "dev"}
+{"kind": "spend", "q": "How much did I spend on taxis last month?", "expect": {"intent": "spend", "value": 5.51, "count": 1}, "customer": "CUST02316", "split": "dev"}
+{"kind": "spend_3m", "q": "How much have I spent on food delivery in the last three months?", "expect": {"intent": "spend", "value": 8.21, "count": 3}, "customer": "CUST02316", "split": "dev"}
+{"kind": "what_if", "q": "How much could I save if I reduced dining out by 50%?", "expect": {"intent": "what_if", "value": 238.33}, "customer": "CUST02316", "split": "dev"}
 {"kind": "baskets", "q": "Show me my three baskets", "expect": {"intent": "baskets", "value": 1906.84}, "customer": "CUST02316", "split": "dev"}
-{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 3052.74}, "customer": "CUST02316", "split": "dev"}
+{"kind": "surprise", "q": "What were my surprise costs?", "expect": {"intent": "surprise", "value": 242.32}, "customer": "CUST02316", "split": "dev"}
 {"kind": "subscriptions", "q": "Which subscriptions do I have?", "expect": {"intent": "subscriptions", "value": 2.99, "count": 1}, "customer": "CUST02316", "split": "dev"}
 {"kind": "safe", "q": "What is safe for me to spend this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST02316", "split": "dev"}
 {"kind": "profile", "q": "What kind of spender am I?", "expect": {"intent": "spender_type"}, "customer": "CUST02316", "split": "dev"}

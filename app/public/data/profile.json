@@ -1,5 +1,5 @@
 {
- "rows": 206743,
+ "rows": 189843,
  "columns": [
   "customer_id",
   "bank_account_id",
@@ -17,34 +17,29 @@
  "max_date": "2026-10-31",
  "n_customers": 300,
  "n_accounts": 300,
- "n_merchants": 69,
+ "n_merchants": 70,
  "positive_amounts": 7399,
- "negative_amounts": 199344,
+ "negative_amounts": 182444,
  "category": [
   [
    "groceries",
-   64116,
-   -4943173.62
+   57885,
+   -4011405.81
   ],
   [
    "restaurants_cafes",
-   48383,
-   -1038639.83
+   43647,
+   -849159.08
   ],
   [
    "food_delivery",
-   8222,
-   -214291.94
+   7446,
+   -174911.79
   ],
   [
    "taxi",
-   8103,
-   -183865.95
-  ],
-  [
-   "subscriptions",
-   7656,
-   -159614.88
+   7340,
+   -149718.03
   ],
   [
    "telecom",
@@ -52,19 +47,24 @@
    -207297.8
   ],
   [
+   "subscriptions",
+   6947,
+   -143879.92
+  ],
+  [
    "public_transport",
-   5678,
-   -122206.7
+   4952,
+   -107778.7
   ],
   [
    "alcohol_tobacco",
-   5393,
-   -202274.99
+   4888,
+   -164682.82
   ],
   [
    "fuel",
-   5277,
-   -408488.67
+   4885,
+   -346773.72
   ],
   [
    "income_salary",
@@ -72,24 +72,24 @@
    15431176.73
   ],
   [
-   "entertainment",
-   4373,
-   -167635.21
-  ],
-  [
    "utilities",
    4012,
    -246633.99
   ],
   [
+   "entertainment",
+   3955,
+   -134921.27
+  ],
+  [
    "online_shopping",
-   4003,
-   -135906.25
+   3611,
+   -109562.98
   ],
   [
    "clothing",
-   3948,
-   -312151.0
+   3601,
+   -256413.43
   ],
   [
    "housing",
@@ -98,18 +98,18 @@
   ],
   [
    "transfer_savings",
-   3375,
-   -712400.0
+   2943,
+   -616760.0
   ],
   [
    "pharmacy",
-   2860,
-   -81934.1
+   2567,
+   -66008.97
   ],
   [
    "personal_care",
-   2744,
-   -122631.89
+   2512,
+   -101299.22
   ],
   [
    "transfer_p2p",
@@ -123,8 +123,8 @@
   ],
   [
    "healthcare",
-   1471,
-   -239114.78
+   1354,
+   -206259.55
   ],
   [
    "childcare",
@@ -143,33 +143,38 @@
   ],
   [
    "sports",
-   1142,
-   -89346.61
+   1024,
+   -72133.09
   ],
   [
    "travel",
-   838,
-   -243110.83
+   750,
+   -187030.92
+  ],
+  [
+   "salary_sweep",
+   592,
+   -1385250.0
   ],
   [
    "electronics",
-   624,
-   -115076.36
+   567,
+   -95849.24
   ],
   [
    "home_improvement",
-   530,
-   -73881.24
+   488,
+   -61428.26
   ],
   [
    "furniture",
-   528,
-   -118037.62
+   480,
+   -96723.84
   ],
   [
    "vehicle_maintenance",
-   306,
-   -164937.45
+   280,
+   -141713.83
   ],
   [
    "income_pension",
@@ -178,13 +183,13 @@
   ],
   [
    "household_appliances",
-   185,
-   -125141.12
+   162,
+   -96975.88
   ],
   [
    "pets",
-   161,
-   -28696.42
+   140,
+   -24011.53
   ],
   [
    "tax_refund",
@@ -195,9 +200,9 @@
  "transaction_type": [
   [
    "card_payment",
-   176191,
+   159131,
    [
-    176191,
+    159131,
     0
    ]
   ],
@@ -227,9 +232,9 @@
   ],
   [
    "own_transfer",
-   3375,
+   2943,
    [
-    3375,
+    2943,
     0
    ]
   ],
@@ -248,36 +253,44 @@
     1236,
     0
    ]
+  ],
+  [
+   "salary_sweep",
+   592,
+   [
+    592,
+    0
+   ]
   ]
  ],
  "mcc": [
   [
    "5411",
-   64116,
+   57885,
    [
     [
      "groceries",
-     64116
+     57885
     ]
    ]
   ],
   [
    "5814",
-   33655,
+   30397,
    [
     [
      "restaurants_cafes",
-     25433
+     22951
     ],
     [
      "food_delivery",
-     8222
+     7446
     ]
    ]
   ],
   [
    "",
-   11789,
+   11949,
    [
     [
      "income_salary",
@@ -285,7 +298,7 @@
     ],
     [
      "transfer_savings",
-     3375
+     2943
     ],
     [
      "transfer_p2p",
@@ -295,31 +308,31 @@
   ],
   [
    "5499",
-   10508,
+   9469,
    [
     [
      "restaurants_cafes",
-     10508
+     9469
     ]
    ]
   ],
   [
    "5812",
-   8324,
+   7494,
    [
     [
      "restaurants_cafes",
-     8324
+     7494
     ]
    ]
   ],
   [
    "4121",
-   8103,
+   7340,
    [
     [
      "taxi",
-     8103
+     7340
     ]
    ]
   ],
@@ -335,41 +348,31 @@
   ],
   [
    "4111",
-   5678,
+   4952,
    [
     [
      "public_transport",
-     5678
+     4952
     ]
    ]
   ],
   [
    "5921",
-   5393,
+   4888,
    [
     [
      "alcohol_tobacco",
-     5393
+     4888
     ]
    ]
   ],
   [
    "5541",
-   5277,
+   4885,
    [
     [
      "fuel",
-     5277
-    ]
-   ]
-  ],
-  [
-   "5813",
-   4118,
-   [
-    [
-     "restaurants_cafes",
-     4118
+     4885
     ]
    ]
   ],
@@ -384,12 +387,22 @@
    ]
   ],
   [
+   "5813",
+   3733,
+   [
+    [
+     "restaurants_cafes",
+     3733
+    ]
+   ]
+  ],
+  [
    "5999",
-   4003,
+   3611,
    [
     [
      "online_shopping",
-     4003
+     3611
     ]
    ]
   ],
@@ -405,111 +418,71 @@
   ],
   [
    "5912",
-   2860,
+   2567,
    [
     [
      "pharmacy",
-     2860
+     2567
     ]
    ]
   ],
   [
    "5651",
-   2636,
+   2414,
    [
     [
      "clothing",
-     2636
-    ]
-   ]
-  ],
-  [
-   "5818",
-   1968,
-   [
-    [
-     "subscriptions",
-     1968
-    ]
-   ]
-  ],
-  [
-   "7997",
-   1944,
-   [
-    [
-     "subscriptions",
-     1944
+     2414
     ]
    ]
   ],
   [
    "4899",
-   1932,
+   1802,
    [
     [
      "subscriptions",
-     1932
+     1802
+    ]
+   ]
+  ],
+  [
+   "5818",
+   1786,
+   [
+    [
+     "subscriptions",
+     1786
+    ]
+   ]
+  ],
+  [
+   "7997",
+   1739,
+   [
+    [
+     "subscriptions",
+     1739
     ]
    ]
   ],
   [
    "5815",
-   1812,
+   1620,
    [
     [
      "subscriptions",
-     1812
+     1620
     ]
    ]
   ],
   [
    "5816",
-   1510,
+   1372,
    [
     [
      "entertainment",
-     1510
-    ]
-   ]
-  ],
-  [
-   "7922",
-   1445,
-   [
-    [
-     "entertainment",
-     1445
-    ]
-   ]
-  ],
-  [
-   "7832",
-   1418,
-   [
-    [
-     "entertainment",
-     1418
-    ]
-   ]
-  ],
-  [
-   "7230",
-   1374,
-   [
-    [
-     "personal_care",
-     1374
-    ]
-   ]
-  ],
-  [
-   "5977",
-   1370,
-   [
-    [
-     "personal_care",
-     1370
+     1372
     ]
    ]
   ],
@@ -524,12 +497,42 @@
    ]
   ],
   [
-   "5311",
-   1312,
+   "7832",
+   1298,
    [
     [
-     "clothing",
-     1312
+     "entertainment",
+     1298
+    ]
+   ]
+  ],
+  [
+   "7922",
+   1285,
+   [
+    [
+     "entertainment",
+     1285
+    ]
+   ]
+  ],
+  [
+   "7230",
+   1257,
+   [
+    [
+     "personal_care",
+     1257
+    ]
+   ]
+  ],
+  [
+   "5977",
+   1255,
+   [
+    [
+     "personal_care",
+     1255
     ]
    ]
   ],
@@ -554,62 +557,72 @@
    ]
   ],
   [
+   "5311",
+   1187,
+   [
+    [
+     "clothing",
+     1187
+    ]
+   ]
+  ],
+  [
    "5941",
-   1142,
+   1024,
    [
     [
      "sports",
-     1142
+     1024
     ]
    ]
   ],
   [
    "5732",
-   624,
+   567,
    [
     [
      "electronics",
-     624
+     567
     ]
    ]
   ],
   [
    "8011",
-   574,
+   512,
    [
     [
      "healthcare",
-     574
+     512
     ]
    ]
   ],
   [
    "8062",
-   547,
+   492,
    [
     [
      "healthcare",
-     547
+     492
     ]
    ]
   ],
   [
    "5200",
-   530,
+   488,
    [
     [
      "home_improvement",
-     530
+     488
     ]
    ]
   ],
   [
    "5712",
-   528,
+   480,
    [
     [
      "furniture",
-     528
+     480
     ]
    ]
   ],
@@ -625,71 +638,71 @@
   ],
   [
    "7538",
-   306,
+   280,
    [
     [
      "vehicle_maintenance",
-     306
+     280
     ]
    ]
   ],
   [
    "4112",
-   232,
+   204,
    [
     [
      "travel",
-     232
+     204
     ]
    ]
   ],
   [
    "4411",
-   218,
+   194,
    [
     [
      "travel",
-     218
+     194
     ]
    ]
   ],
   [
    "7011",
-   205,
+   186,
    [
     [
      "travel",
-     205
-    ]
-   ]
-  ],
-  [
-   "5722",
-   185,
-   [
-    [
-     "household_appliances",
-     185
+     186
     ]
    ]
   ],
   [
    "3008",
-   183,
+   166,
    [
     [
      "travel",
-     183
+     166
+    ]
+   ]
+  ],
+  [
+   "5722",
+   162,
+   [
+    [
+     "household_appliances",
+     162
     ]
    ]
   ],
   [
    "0742",
-   161,
+   140,
    [
     [
      "pets",
-     161
+     140
     ]
    ]
   ],
@@ -724,7 +737,7 @@
   "05NOV25:19:54:59",
   "06NOV25:17:29:50",
   "07NOV25:15:48:16",
-  "08NOV25:11:26:50",
+  "08NOV25:02:56:00",
   "09NOV25:11:10:18",
   "10NOV25:11:56:34"
  ],
@@ -901,10 +914,22 @@
    "customer_id": "CUST02844",
    "bank_account_id": "ACC0284401",
    "tx_date": "08NOV25",
+   "tx_timestamp": "08NOV25:02:56:00",
+   "category": "taxi",
+   "tx_amount_eur": "-30.42",
+   "balance_after_eur": "-824.19",
+   "transaction_type": "card_payment",
+   "merchant_id": "M_TAXI_HELSINKI",
+   "mcc_code": "4121"
+  },
+  {
+   "customer_id": "CUST02844",
+   "bank_account_id": "ACC0284401",
+   "tx_date": "08NOV25",
    "tx_timestamp": "08NOV25:11:26:50",
    "category": "groceries",
    "tx_amount_eur": "-50.50",
-   "balance_after_eur": "-844.27",
+   "balance_after_eur": "-874.69",
    "transaction_type": "card_payment",
    "merchant_id": "M_ALEPA_HAKANIEMI",
    "mcc_code": "5411"
@@ -916,22 +941,10 @@
    "tx_timestamp": "08NOV25:13:22:31",
    "category": "travel",
    "tx_amount_eur": "-271.08",
-   "balance_after_eur": "-1115.35",
+   "balance_after_eur": "-1145.77",
    "transaction_type": "card_payment",
    "merchant_id": "M_FINNAIR",
    "mcc_code": "3008"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "08NOV25",
-   "tx_timestamp": "08NOV25:2:56:00",
-   "category": "taxi",
-   "tx_amount_eur": "-30.42",
-   "balance_after_eur": "-1145.77",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_TAXI_HELSINKI",
-   "mcc_code": "4121"
   },
   {
    "customer_id": "CUST02844",
@@ -1030,51 +1043,51 @@
    "mcc_code": "7538"
   },
   {
-   "customer_id": "CUST04460",
-   "bank_account_id": "ACC0446001",
-   "tx_date": "10OCT26",
-   "tx_timestamp": "10OCT26:08:59:57",
+   "customer_id": "CUST04772",
+   "bank_account_id": "ACC0477201",
+   "tx_date": "01MAR26",
+   "tx_timestamp": "01MAR26:12:39:50",
    "category": "groceries",
-   "tx_amount_eur": "-17.72",
-   "balance_after_eur": "1229.14",
+   "tx_amount_eur": "-88.61",
+   "balance_after_eur": "4808.54",
    "transaction_type": "card_payment",
-   "merchant_id": "M_ALEPA_HAKANIEMI",
+   "merchant_id": "M_SMARKET_KALLIO",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02943",
-   "bank_account_id": "ACC0294301",
-   "tx_date": "23MAY26",
-   "tx_timestamp": "23MAY26:21:53:59",
-   "category": "fuel",
-   "tx_amount_eur": "-109.59",
-   "balance_after_eur": "1346.69",
+   "customer_id": "CUST02004",
+   "bank_account_id": "ACC0200401",
+   "tx_date": "23OCT26",
+   "tx_timestamp": "23OCT26:21:52:21",
+   "category": "online_shopping",
+   "tx_amount_eur": "-88.11",
+   "balance_after_eur": "6817.93",
    "transaction_type": "card_payment",
-   "merchant_id": "M_ABC_HYVINKAA",
-   "mcc_code": "5541"
+   "merchant_id": "M_AMAZON_DE",
+   "mcc_code": "5999"
   },
   {
-   "customer_id": "CUST02130",
-   "bank_account_id": "ACC0213001",
-   "tx_date": "12MAR26",
-   "tx_timestamp": "12MAR26:20:47:00",
-   "category": "food_delivery",
-   "tx_amount_eur": "-19.88",
-   "balance_after_eur": "1752.43",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_FOODORA",
-   "mcc_code": "5814"
+   "customer_id": "CUST00016",
+   "bank_account_id": "ACC0001601",
+   "tx_date": "20APR26",
+   "tx_timestamp": "20APR26:20:18:36",
+   "category": "insurance",
+   "tx_amount_eur": "-303.00",
+   "balance_after_eur": "6437.30",
+   "transaction_type": "e_invoice",
+   "merchant_id": "M_LAHITAPIOLA",
+   "mcc_code": "6300"
   },
   {
-   "customer_id": "CUST02672",
-   "bank_account_id": "ACC0267201",
-   "tx_date": "15JUN26",
-   "tx_timestamp": "15JUN26:10:09:45",
+   "customer_id": "CUST04464",
+   "bank_account_id": "ACC0446401",
+   "tx_date": "10JAN26",
+   "tx_timestamp": "10JAN26:19:13:27",
    "category": "groceries",
-   "tx_amount_eur": "-5.37",
-   "balance_after_eur": "4732.73",
+   "tx_amount_eur": "-59.98",
+   "balance_after_eur": "3346.96",
    "transaction_type": "card_payment",
-   "merchant_id": "M_KMARKET_TOOLO",
+   "merchant_id": "M_SMARKET_KALLIO",
    "mcc_code": "5411"
   }
  ]

@@ -1,44 +1,74 @@
 [
  {
-  "id": "CUST00814",
+  "id": "CUST00016",
   "name": "Aino",
-  "age": 25,
-  "type": "The Weekend Splurger"
+  "age": 36,
+  "type": "The Quiet Saver",
+  "segment": "saver",
+  "compare": true
  },
  {
-  "id": "CUST05033",
+  "id": "CUST00171",
   "name": "Eero",
-  "age": 32,
-  "type": "The Subscription Collector"
+  "age": 21,
+  "type": "The Pass-Through",
+  "segment": "pass_through",
+  "compare": false
  },
  {
-  "id": "CUST03841",
+  "id": "CUST00197",
   "name": "Sanna",
-  "age": 60,
-  "type": "The Rollercoaster"
+  "age": 18,
+  "type": "The Starter",
+  "segment": "starter",
+  "compare": true
  },
  {
-  "id": "CUST02908",
+  "id": "CUST00072",
   "name": "Mikko",
-  "age": 54,
-  "type": "The Quiet Saver"
+  "age": 70,
+  "type": "Golden Years",
+  "segment": "golden_years",
+  "compare": true
  },
  {
-  "id": "CUST01157",
+  "id": "CUST00681",
   "name": "Leena",
-  "age": 65,
-  "type": "The Steady Planner"
+  "age": 29,
+  "type": "The Tap-and-Go",
+  "segment": "grazer",
+  "compare": false
  },
  {
-  "id": "CUST00978",
+  "id": "CUST00363",
   "name": "Juho",
-  "age": 19,
-  "type": "The Tap-and-Go Grazer"
+  "age": 28,
+  "type": "The Quiet Saver",
+  "segment": "saver",
+  "compare": false
  },
  {
-  "id": "CUST00089",
+  "id": "CUST00097",
   "name": "Helmi",
-  "age": 50,
-  "type": "The Steady Planner"
+  "age": 51,
+  "type": "The Tightrope",
+  "segment": "stretched",
+  "compare": false
+ },
+ {
+  "id": "CUST00349",
+  "name": "Onni",
+  "age": 32,
+  "type": "The Light Touch",
+  "segment": "light_user",
+  "compare": false
+ },
+ {
+  "id": "CUST00062",
+  "name": "Venla",
+  "age": 54,
+  "type": "The Steady Planner",
+  "segment": "steady",
+  "compare": false
  }
 ]

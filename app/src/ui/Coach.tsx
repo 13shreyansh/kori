@@ -22,7 +22,7 @@ export function linkNumbers(text: string, receipts: Receipt[], open: Open): Reac
   });
 }
 
-export function Coach({ msgs, busy, send, open, provider }: { msgs: Msg[]; busy: boolean; send: (q: string) => void; open: Open; provider: string }) {
+export function Coach({ msgs, busy, send, open, provider, starters = STARTERS }: { msgs: Msg[]; busy: boolean; send: (q: string) => void; open: Open; provider: string; starters?: string[] }) {
   const [q, setQ] = useState('');
   const end = useRef<HTMLDivElement>(null);
   useEffect(() => { end.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }); }, [msgs, busy]);
@@ -37,7 +37,7 @@ export function Coach({ msgs, busy, send, open, provider }: { msgs: Msg[]; busy:
         {msgs.length === 0 && (
           <div className="fade-in" style={{ marginTop: 10 }}>
             <div className="bubble">Hi! I’m your money coach. Ask me anything about your own spending. Every number I give you is tappable, so you can see exactly which payments it comes from.</div>
-            <div className="chips" style={{ marginTop: 12 }}>{STARTERS.map((s) => <button className="chip" key={s} onClick={() => send(s)}>{s}</button>)}</div>
+            <div className="chips" style={{ marginTop: 12 }}>{starters.map((s) => <button className="chip" key={s} onClick={() => send(s)}>{s}</button>)}</div>
           </div>
         )}
         {msgs.map((m, i) => m.role === 'user' ? (

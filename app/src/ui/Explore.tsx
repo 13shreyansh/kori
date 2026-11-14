@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
+import { CATEGORIES } from '../engine/taxonomy';
+import { segmentOf } from '../engine/segments';
 import * as A from '../engine/analytics';
 import { eur } from '../engine/analytics';
 import { merchantName, type Customer } from '../engine/model';
@@ -64,29 +66,71 @@ export function Explore({ c, open }: { c: Customer; open: Open }) {
 }
 
 function WhatIfLab({ c }: { c: Customer }) {
-  const cats = useMemo(() => A.breakdown(c, 'category', { period: 'last_3_months', basket: 'everyday' }).filter((r) => r.key !== 'groceries').slice(0, 4), [c]);
-  const [cuts, setCuts] = useState<Record<string, number>>({});
-  const monthly = cats.reduce((a, r) => a + (r.total / 3) * ((cuts[r.key] ?? 0) / 100), 0);
-  const five = monthly * ((Math.pow(1.0025, 60) - 1) / 0.0025);
+  const seg = useMemo(() => segmentOf(c), [c]);
   const s = A.safeToSpend(c);
+  const [vals, setVals] = useState<Record<string, number>>({});
+  const set = (k: string, v: number) => setVals((x) => ({ ...x, [k]: v }));
+  const parts = seg.play.sliders.map((sp, si) => {
+    if (sp.kind === 'cut') {
+      const rows = A.breakdown(c, 'category', { period: 'last_3_months', basket: sp.basket }).filter((r) => !sp.exclude.includes(r.key) && (sp.basket === 'fixed' || !CATEGORIES[r.key]?.essential)).slice(0, sp.top);
+      const monthly = rows.reduce((a, r) => a + (r.total / 3) * ((vals[`${si}:${r.key}`] ?? 0) / 100), 0);
+      return { monthly, ui: rows.length ? (
+        <div key={si}><div className="lab-sub">{sp.title}</div>
+          {rows.map((r) => { const k = `${si}:${r.key}`; return (
+            <div className="slider-row" key={k}>
+              <header>{r.label}<span>{eur(r.total / 3)}/mo · cut {vals[k] ?? 0}%</span></header>
+              <input type="range" min={0} max={100} step={5} value={vals[k] ?? 0} onChange={(e) => set(k, Number(e.target.value))} aria-label={`Cut ${r.label}`} />
+            </div>); })}
+        </div>) : null };
+    }
+    if (sp.kind === 'taps') {
+      const avg = seg.f.ids.slips.length ? seg.f.ids.slips.reduce((a, i) => a - c.tx[i].amount, 0) / seg.f.ids.slips.length : 5;
+      const k = `${si}:taps`; const n = vals[k] ?? 0; const monthly = (n * avg * 52) / 12;
+      return { monthly, ui: (
+        <div key={si}><div className="lab-sub">{sp.title}</div>
+          <div className="slider-row"><header>Skip per week<span>{n} of your ~{Math.round(seg.f.slipsPerWeek)} taps · avg {eur(avg, 2)}</span></header>
+            <input type="range" min={0} max={Math.max(3, Math.ceil(seg.f.slipsPerWeek))} step={1} value={n} onChange={(e) => set(k, Number(e.target.value))} aria-label="Small taps to skip each week" /></div>
+        </div>) };
+    }
+    if (sp.kind === 'save') {
+      const k = `${si}:save`; const v = vals[k] ?? sp.start;
+      const months = v > 0 ? Math.ceil(sp.goal / v) : Infinity;
+      return { monthly: v, goal: { label: sp.goalLabel, months }, ui: (
+        <div key={si}><div className="lab-sub">{sp.title}</div>
+          <div className="slider-row"><header>{sp.label}<span>{eur(v)}/mo · {Number.isFinite(months) ? `${sp.goalLabel} in ${months} months` : 'move the slider'}</span></header>
+            <input type="range" min={0} max={sp.max} step={sp.step} value={v} onChange={(e) => set(k, Number(e.target.value))} aria-label={sp.label} /></div>
+        </div>) };
+    }
+    // keep: how much of each payday stays here vs. fixed bills
+    const k = `${si}:keep`; const inc = seg.f.incomePerMonth; const fixed = seg.f.fixedShare * inc;
+    const now = Math.round((1 - seg.f.sweepShare) * 100); const v = vals[k] ?? now;
+    const kept = (inc * v) / 100; const covered = fixed > 0 ? Math.min(1, kept / fixed) : 1;
+    return { monthly: 0, keep: { kept, covered, fixed }, ui: (
+      <div key={si}><div className="lab-sub">{sp.title}</div>
+        <div className="slider-row"><header>Share of pay kept here<span>{v}% · {eur(kept)}/mo</span></header>
+          <input type="range" min={0} max={100} step={5} value={v} onChange={(e) => set(k, Number(e.target.value))} aria-label="Share of pay kept at S-Bank" /></div>
+        <div className="keep-bar"><i style={{ width: `${covered * 100}%` }} /></div>
+        <div className="muted" style={{ fontSize: 13, fontWeight: 600 }}>{covered >= 1 ? `Covers all ${eur(fixed)} of your monthly fixed bills, so Kori can plan the whole month.` : `Covers ${Math.round(covered * 100)}% of your ${eur(fixed)} fixed bills a month.`}</div>
+      </div>) };
+  });
+  const monthly = parts.reduce((a, p) => a + p.monthly, 0);
+  const five = monthly * ((Math.pow(1.0025, 60) - 1) / 0.0025);
+  const goal = parts.find((p) => 'goal' in p && p.goal)?.goal;
   return (
     <>
-      <div className="section-title">What-if lab</div>
+      <div className="section-title">What-if lab <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>tuned for {seg.play.name}</span></div>
       <div className="card">
-        <p className="muted" style={{ margin: '0 0 4px', fontSize: 13.5, fontWeight: 600 }}>Drag to imagine spending less on your biggest everyday habits.</p>
-        {cats.map((r) => (
-          <div className="slider-row" key={r.key}>
-            <header>{r.label}<span>{eur(r.total / 3)}/mo · cut {cuts[r.key] ?? 0}%</span></header>
-            <input type="range" min={0} max={100} step={5} value={cuts[r.key] ?? 0} onChange={(e) => setCuts({ ...cuts, [r.key]: Number(e.target.value) })} aria-label={`Cut ${r.label}`} />
+        <p className="muted" style={{ margin: '0 0 4px', fontSize: 13.5, fontWeight: 600 }}>Drag to try a change. The sliders are picked for how you use money.</p>
+        {parts.map((p) => p.ui)}
+        {monthly > 0 && (
+          <div className="whatif-result">
+            <div style={{ fontSize: 13, fontWeight: 700, opacity: 0.85 }}>{goal ? 'You’d put aside' : 'You’d free up'}</div>
+            <div className="big">{eur(monthly * 12)}<span style={{ fontSize: 18, opacity: 0.8 }}> a year</span></div>
+            <div style={{ fontSize: 13.5, opacity: 0.92, lineHeight: 1.5 }}>
+              That’s {eur(monthly)} a month. {goal && Number.isFinite(goal.months) ? <>You’d reach {goal.label} in <b>{goal.months} months</b>, and </> : <>Your safe-to-spend would rise to <b>{eur(s.week + (monthly * 7) / 30.44)}</b> this week, or </>}saved at 3% it grows to <b>{eur(five)}</b> in five years.
+            </div>
           </div>
-        ))}
-        <div className="whatif-result">
-          <div style={{ fontSize: 13, fontWeight: 700, opacity: 0.85 }}>You’d free up</div>
-          <div className="big">{eur(monthly * 12)}<span style={{ fontSize: 18, opacity: 0.8 }}> a year</span></div>
-          <div style={{ fontSize: 13.5, opacity: 0.92, lineHeight: 1.5 }}>
-            That’s {eur(monthly)} a month. Your safe-to-spend would rise to <b>{eur(s.week + (monthly * 7) / 30.44)}</b> this week, or saved at 3% it grows to <b>{eur(five)}</b> in five years.
-          </div>
-        </div>
+        )}
       </div>
     </>
   );

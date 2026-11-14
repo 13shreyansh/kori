@@ -92,7 +92,7 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
       const f = { ...filter, period: p ?? 'last_month' };
       calls.push({ name: 'spend_query', args: f });
       const s = A.spend(c, f);
-      const what = filter.slipsOnly ? 'coffee and small café visits' : catLabel(filter.category);
+      const what = filter.slipsOnly ? (filter.category ? 'coffee and small café visits' : 'small taps under €20') : catLabel(filter.category);
       if (!s.count) {
         const y = A.spend(c, { ...f, period: 'last_12_months' });
         return { ...base, text: y.count
@@ -102,7 +102,7 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
       const yearly = A.spend(c, { ...f, period: 'last_12_months' });
       const top = A.breakdown(c, 'merchant', f).slice(0, 3);
       const b = s.txs[0]?.basket;
-      const basketLine = b ? ` This sits in your ${A.basketName[b].toLowerCase()} basket.` : '';
+      const basketLine = b && (filter.category || filter.merchant) ? ` This sits in your ${A.basketName[b].toLowerCase()} basket.` : '';
       return {
         ...base,
         text: `You spent ${eur(s.total)} on ${what} ${s.period.inLabel}, across ${s.count} payment${s.count > 1 ? 's' : ''} (about ${eur(s.average)} each).${basketLine} Over the last 12 months that’s ${eur(yearly.total)}.`,
@@ -227,6 +227,25 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
         lesson: LESSONS.benchmark,
         followups: ['Where does my money go?', 'What kind of spender am I?'],
       };
+    }
+    case 'sweep': {
+      const per = p ?? 'last_3_months';
+      calls.push({ name: 'income_and_savings', args: { period: per } });
+      const i = A.income(c, per);
+      const out = c.tx.filter((t) => t.amount < 0 && t.cat.key === 'salary_sweep' && t.date >= i.period.from && t.date <= i.period.to);
+      const tot = -out.reduce((x, t) => x + t.amount, 0);
+      const share = i.total ? tot / i.total : 0;
+      const rOut = A.receipt('Moved to another bank', tot, 'EUR', `${out.length} transfers out, ${i.period.label}`, out.map((t) => t.i));
+      const rShare = A.receipt('Share of income moved out', share, '%', `${eur(tot)} ÷ ${eur(i.total)} income`, out.map((t) => t.i));
+      if (!out.length) return { ...base, text: `None of your income moved on to another bank ${i.period.inLabel}. Your bills and spending all run from here, so Kori sees the whole picture.`, receipts: [rOut], followups: ['What is safe to spend this week?'] };
+      return { ...base, text: `Over ${i.period.label}, ${eur(tot)} of your ${eur(i.total)} income moved to another bank, ${Math.round(share * 100)}% of it, usually within a day of payday. That's fine, but Kori can only plan with what stays here: keeping enough for your fixed bills here lets it warn you before one bounces.`, receipts: [rOut, rShare, A.receipt('Income', i.total, 'EUR', `${i.txs.length} incoming payments`, i.txs.map((t) => t.i))], lesson: LESSONS.budget, followups: ['What bills are coming up?', 'What is safe to spend this week?'] };
+    }
+    case 'cut_back': {
+      const rows = A.breakdown(c, 'category', { period: 'last_3_months', basket: 'everyday' }).filter((r) => !CATEGORIES[r.key]?.essential).slice(0, 3);
+      calls.push({ name: 'breakdown', args: { by: 'category', basket: 'everyday', period: 'last_3_months' } });
+      if (!rows.length) return { ...base, text: 'Your everyday spending is almost all essentials, so there is no obvious habit to trim. The bigger lever is your fixed bills: phone, insurance and subscriptions are worth a yearly check.', followups: ['What bills are coming up?'] };
+      const recs = rows.map((r) => A.receipt(`${r.label}, 20% less for a year`, (r.total / 3) * 0.2 * 12, 'EUR', `${eur(r.total)} over 3 months ÷ 3 × 20% × 12`, r.ids));
+      return { ...base, text: `Your easiest wins are the wants in your everyday basket: ${rows.map((r, k) => `${r.label.toLowerCase()} (${eur(r.total / 3)} a month, 20% less is ${eur(recs[k].value)} a year)`).join(', ')}. Pick the one you'd miss least.`, receipts: recs, visual: { kind: 'bars', title: 'Everyday wants, last 3 months', rows: rows.map((r) => ({ label: r.label, value: r.total, ids: r.ids })) }, lesson: LESSONS.slips, followups: [`How much could I save if I cut ${rows[0].label.toLowerCase()} by 20%?`] };
     }
     case 'income': {
       calls.push({ name: 'income', args: { period: p ?? 'last_3_months' } });

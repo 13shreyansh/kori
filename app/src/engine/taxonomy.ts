@@ -54,6 +54,7 @@ export const CATEGORIES: Record<string, CatInfo> = Object.fromEntries([
   C('income_pension', 'Pension', 'Briefcase', 'everyday', false, false, 'income'),
   C('tax_refund', 'Tax refund', 'Receipt', 'everyday', false, false, 'income'),
   C('income_other', 'Other income', 'HandCoins', 'everyday', false, false, 'income'),
+  C('salary_sweep', 'Sent to another bank', 'ArrowUpRight', 'everyday', false, false, 'transfer'),
   C('invest_deposit', 'Investing', 'TrendingUp', 'everyday', false, false, 'savings'),
   C('invest_withdraw', 'From investments', 'ArrowLeftRight', 'everyday', false, false, 'transfer'),
   C('transfer_savings', 'To savings', 'PiggyBank', 'everyday', false, false, 'savings'),
@@ -88,7 +89,7 @@ const REAL: Record<string, { key: string; refine: boolean }> = {
   'Salary': { key: 'income_salary', refine: false },
   'Other Income': { key: 'income_other', refine: false },
   'Invest Deposit': { key: 'invest_deposit', refine: false },
-  'Salary Sweep': { key: 'transfer_savings', refine: false },
+  'Salary Sweep': { key: 'salary_sweep', refine: false },
   'Invest Withdraw': { key: 'invest_withdraw', refine: false },
 };
 // which refined keys are allowed under each broad category (guards against odd MCCs pulling a row into income etc.)

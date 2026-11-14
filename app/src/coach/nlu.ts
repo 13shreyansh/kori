@@ -19,6 +19,7 @@ export const CATEGORY_WORDS: [RegExp, string[], string][] = [
   [/\b(electricity|power bill|s[aä]hk[oö]\w*|water bill|utilities)\b/i, ['utilities'], 'electricity and water'],
   [/\b(phone|mobile plan|internet|broadband|puhelin\w*|liittym\w*)\b/i, ['telecom'], 'phone and internet'],
   [/\b(insurance|vakuutu\w*)\b/i, ['insurance'], 'insurance'],
+  [/\b(health|terveyteen|terveys)\b(?! ?care)/i, ['healthcare', 'pharmacy'], 'health'],
   [/\b(pharmacy|medicine|apteek\w*|l[aä][aä]k\w*)\b/i, ['pharmacy'], 'pharmacy'],
   [/\b(doctor|dentist|health ?care|hammasl\w*|terveys\w*|clinic)\b/i, ['healthcare'], 'doctors and dentists'],
   [/\b(car repairs?|car service|mechanic|autohuolto|korjaamo)\b/i, ['vehicle_maintenance'], 'car repairs'],
@@ -79,7 +80,7 @@ export function parsePercent(q: string): number | undefined {
 }
 
 export type Intent =
-  | 'safe_to_spend' | 'what_if' | 'spender_type' | 'spend' | 'breakdown' | 'top_merchants' | 'baskets'
+  | 'sweep' | 'cut_back' | 'safe_to_spend' | 'what_if' | 'spender_type' | 'spend' | 'breakdown' | 'top_merchants' | 'baskets'
   | 'surprise' | 'subscriptions' | 'upcoming' | 'benchmark' | 'income' | 'savings' | 'explain' | 'advice' | 'help' | 'unknown';
 
 export const CONCEPTS: Record<string, { re: RegExp; title: string }> = {
@@ -105,15 +106,19 @@ export function classify(q: string): { intent: Intent; filter: Filter; pct?: num
   if (/\b(what is|what's|what are|what does|explain|mik[aä] on|selit\w*|how does|teach me|tell me about|why should)\b/.test(s)) {
     for (const [k, v] of Object.entries(CONCEPTS)) if (v.re.test(s)) return { intent: 'explain', filter, concept: k };
   }
+  if (/small (taps?|payments?|purchases?|buys)|little purchases|pienet? (ostokset|maksut|ostot)|pikkuostok\w*/.test(s)) filter.slipsOnly = true;
+  if (/how (big|much|large) .*(buffer|emergency fund|rainy)|buffer (size|target)|kuinka iso puskuri/.test(s)) return { intent: 'explain', filter, concept: 'emergency' };
+  if (/another bank|other bank|other account|move (it )?out|moves? out|sweep|forward(ed|ing)? my (salary|pay)|transfer(red)? out|send (it )?(away|on)|toiseen pankkiin|siirr\w* pois/.test(s)) return { intent: 'sweep', filter };
+  if (/where (can|could|should) i (cut|save|spend less)|cut back|spend less|easiest (cut|saving)|mist[aä] (voisin|voin) s[aä][aä]st[aä][aä]/.test(s)) return { intent: 'cut_back', filter };
   if (/safe (for me )?to spend|safe-to-spend|(money|much) (do i have )?left to spend|what can i afford|budget for (the|this) week|(is it )?ok(ay)? to spend|spend until payday|can i (afford|spend)|how much (can|could) i spend|voinko|paljonko voin|left to spend|budget left/.test(s)) return { intent: 'safe_to_spend', filter };
   if (/what if|could i save|would i save|would .* save|save me|if i (cut|reduce|stop|stopped|spent less)|half as much|reduc\w+ .* by|cut .* by|säästä\w*|jos v[aä]hent\w*/.test(s) || (pct !== undefined && /save|cut|reduce|less|v[aä]hen/.test(s))) return { intent: 'what_if', filter, pct: pct ?? 20, phrase: cat?.phrase };
   if (/what kind of (spender|person)|spender type|(money|spending) personality|millainen kuluttaja|spending style|spending habits|big spender|say about me|who am i/.test(s)) return { intent: 'spender_type', filter };
-  if (/surprise|unexpected|unplanned|emergenc(y|ies) cost|irregular|one-?off|yll[aä]tt\w*/.test(s) && !/emergency fund/.test(s)) return { intent: 'surprise', filter: { ...filter, basket: 'surprise' } };
+  if (/surprise|unexpected|unplanned|emergenc(y|ies) cost|irregular|one-?off|yll[aä]tt\w*/.test(s) && !/emergency fund/.test(s) && !/split|fixed|everyday|baskets?/.test(s)) return { intent: 'surprise', filter: { ...filter, basket: 'surprise' } };
   if (/subscri|recurring|renews?|streaming services|tilau\w*|toistuv\w*/.test(s) && !/how much .* (on|for) /.test(s) && !/(save|cut|stop)/.test(s)) return { intent: 'subscriptions', filter };
   if (/upcoming|bills? (due|coming)|next bills?|what bills|tulevat lasku\w*/.test(s)) return { intent: 'upcoming', filter };
   if (/compar|average (finn|person|household)|normal|other people|others my age|muihin|keskiver\w*|benchmark/.test(s)) return { intent: 'benchmark', filter };
   if (/\b(earn|income|salary|paid|palkka\w*|tulot)\b/.test(s)) return { intent: 'income', filter };
-  if (/\b(saving|savings|saved|s[aä][aä]st\w*)\b/.test(s) && !cat) return { intent: 'savings', filter };
+  if (/\b(save|saving|savings|saved|s[aä][aä]st\w*)\b/.test(s) && !cat) return { intent: 'savings', filter };
   if (/top merchants|where do i (shop|spend) most|which (shops|stores|places)|most often/.test(s)) return { intent: 'top_merchants', filter };
   if (/where (does|did|do) (my|the) money go|biggest (expense|cost|spend)|spen[dt] the most|what do i spend (the )?most|mihin rahat/.test(s)) return { intent: 'breakdown', filter };
   if (/basket|kori|fixed (cost|bill)|everyday|slip|needs and wants|bills vs|regular bills|by type|split my spending|break ?down my spending/.test(s)) return { intent: 'baskets', filter };

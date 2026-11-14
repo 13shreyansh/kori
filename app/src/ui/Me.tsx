@@ -2,19 +2,39 @@ import { useMemo } from 'react';
 import * as A from '../engine/analytics';
 import type { Customer } from '../engine/model';
 import { Icon } from './Icon';
+import { segmentOf, T } from '../engine/segments';
+import { eur } from '../engine/analytics';
 import type { Open } from './types';
-export interface Persona { id: string; name: string; age: number; type: string }
+export interface Persona { id: string; name: string; age: number; type: string; segment?: string; compare?: boolean }
 export function Me({ c, personas, current, pick, open, ask }: { c: Customer; personas: Persona[]; current: string; pick: (id: string) => void; open: Open; ask: (q: string) => void }) {
   const p = useMemo(() => A.spenderProfile(c), [c]);
+  const seg = useMemo(() => segmentOf(c), [c]);
+  const f = seg.f;
+  const why: [string, string, boolean][] = [
+    ['Salary moved to another bank', Math.round(f.sweepShare * 100) + '%', f.sweepShare >= T.sweepShare],
+    ['Everyday payments a month', String(Math.round(f.everydayPerMonth)), f.everydayPerMonth < T.lightEverydayPerMonth],
+    ['Income a month', eur(f.incomePerMonth), f.incomePerMonth < T.starterIncome],
+    ['Spent of what came in', Number.isFinite(f.spendRatio) ? Math.round(f.spendRatio * 100) + '%' : '–', f.spendRatio >= T.stretchedSpendRatio],
+    ['Small taps a week', f.slipsPerWeek.toFixed(1), f.slipsPerWeek >= T.grazerSlipsPerWeek],
+    ['Saved of income', Math.round(f.savingsRate * 100) + '%', f.savingsRate >= T.saverRate],
+  ];
   return (
     <div className="screen fade-in">
       <div className="topbar"><div className="hello">Patterns from your last 3 months<b>Your money type</b></div><Icon name="UserRound" /></div>
-      <div className="card type-card">
+      <div className={`card seg-card seg-${seg.id}`}>
+        <div className="seg-head"><span className="seg-ico"><Icon name={seg.play.icon} size={17} /></span><span className="seg-kicker">How Kori adapts to you</span></div>
+        <h4>{seg.play.name}</h4>
+        <p>Your home card, coach tone and what-if sliders are picked from how you use money over the last 6 months, not from your age alone.</p>
+        {why.map(([k, v, hit]) => <div className="trait" key={k} style={{ padding: '7px 0' }}><span><b style={{ fontWeight: hit ? 800 : 600 }}>{k}</b></span><span className="tv" style={{ color: hit ? 'var(--seg)' : undefined }}>{v}</span></div>)}
+      </div>
+{p.type.name !== seg.play.name && (
+            <div className="card type-card">
         <div className="type-emoji">{p.type.emoji}</div>
         <div className="type-name">{p.type.name}</div>
         <p style={{ margin: '0 0 14px', color: 'var(--ink-2)', lineHeight: 1.5 }}>{p.type.line}</p>
         <button className="btn brand" onClick={() => ask('What kind of spender am I?')}><Icon name="MessageCircle" size={16} /> Talk it through</button>
-      </div>
+      </div>)}
+      <div className="section-title">Spending style <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>last 3 months</span></div>
       <div className="card" style={{ padding: '4px 16px' }}>
         {p.traits.map((t) => (
           <button className="trait" key={t.key} onClick={() => t.ids.length && open({ kind: 'txs', ids: t.ids, label: t.label })}>

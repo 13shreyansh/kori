@@ -25,7 +25,7 @@ export const TOOL_DECLS = [
   { name: 'surprise_costs', description: 'Irregular must-pay costs over the last 12 months and the monthly buffer they imply.', parameters: { type: 'object', properties: {} } },
   { name: 'recurring_bills', description: 'Regular bills and subscriptions, with next due dates.', parameters: { type: 'object', properties: {} } },
   { name: 'benchmark', description: 'Compare monthly spending to Statistics Finland averages.', parameters: { type: 'object', properties: {} } },
-  { name: 'income_and_savings', description: 'Income per month and money moved to savings.', parameters: { type: 'object', properties: {} } },
+  { name: 'income_and_savings', description: 'Income per month, money moved to savings, and salary moved on to another bank.', parameters: { type: 'object', properties: {} } },
 ];
 
 type Args = Record<string, unknown>;
@@ -82,7 +82,9 @@ export function runTool(c: Customer, name: string, args: Args): { result: unknow
     }
     case 'income_and_savings': {
       const i = A.income(c, 'last_3_months'); const s = A.savings(c, 'last_12_months');
-      return { result: { income_per_month_eur: i.perMonth, saved_last_12_months_eur: s.total, saved_per_month_eur: s.perMonth }, receipts: [A.receipt('Income per month', i.perMonth, 'EUR', 'last 3 full months', i.txs.map((t) => t.i)), A.receipt('Saved in 12 months', s.total, 'EUR', `${s.txs.length} transfers`, s.txs.map((t) => t.i))] };
+      const out = c.tx.filter((t) => t.amount < 0 && t.cat.key === 'salary_sweep' && t.date >= i.period.from && t.date <= i.period.to);
+      const moved = -out.reduce((x, t) => x + t.amount, 0);
+      return { result: { income_per_month_eur: i.perMonth, saved_last_12_months_eur: s.total, saved_per_month_eur: s.perMonth, moved_to_other_bank_last_3_months_eur: Math.round(moved * 100) / 100, moved_to_other_bank_share_of_income: i.total ? Math.round((moved / i.total) * 100) / 100 : 0 }, receipts: [A.receipt('Income per month', i.perMonth, 'EUR', 'last 3 full months', i.txs.map((t) => t.i)), A.receipt('Saved in 12 months', s.total, 'EUR', `${s.txs.length} transfers`, s.txs.map((t) => t.i)), A.receipt('Moved to another bank, last 3 months', moved, 'EUR', `${out.length} transfers out`, out.map((t) => t.i))] };
     }
   }
   return { result: { error: 'unknown tool ' + name }, receipts: [] };

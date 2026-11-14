@@ -59,6 +59,8 @@ def persona(age, rnd):
     if age < 66: return rnd.choice(['couple', 'family'])
     return 'retiree'
 
+TRUTH = {}  # planted behaviour per customer, written to truth.csv for the segment eval
+
 def gen_customer(cid, age, rnd):
     p = persona(age, rnd)
     leak = rnd.choice([0.5, 1.0, 1.0, 1.5, 2.2])  # how leaky everyday spending is
@@ -147,14 +149,27 @@ def gen_customer(cid, age, rnd):
         if rnd.random() < 0.004:
             add(d, rnd.uniform(20, 140), 'M_VEROHALLINTO', 'tax_refund', '9311', 'credit_transfer', '06:00:00') if d.month in (8, 9) else None
         d += dt.timedelta(days=1)
+    # Behaviours S-Pankki asked about at the booth. A separate RNG keeps every other customer's rows unchanged.
+    rs = random.Random(cid + ':behaviour')
+    forwarder = p in ('young_worker', 'couple', 'family') and rs.random() < 0.16
+    light = rs.random() < 0.12
+    if forwarder:  # salary arrives, and within a day most of it moves to an account at another bank
+        share = rs.uniform(0.45, 0.8)
+        for r in [r for r in rows if r[4] == 'income_salary']:
+            when = r[0] + dt.timedelta(days=rs.choice([0, 0, 1]))
+            rows.append([when, f"{rs.randint(6,9):02d}:{rs.randint(10,59)}:00", -round(r[2] * share, -1), 'M_OMA_TILI_TOINEN_PANKKI', 'salary_sweep', '', 'salary_sweep'])
+        rows = [r for r in rows if not (r[4] == 'transfer_savings')]
+    TRUTH[cid] = (p, int(forwarder), int(light))
+    if light:  # uses another bank's card for most daily shopping: few card payments here
+        rows = [r for r in rows if r[6] != 'card_payment' or rs.random() < 0.2]
     # keep the household solvent: scale variable spending so outgoings land at 88-101% of income
     rows.sort(key=lambda r: (r[0], r[1]))
     inc = sum(r[2] for r in rows if r[2] > 0)
-    fixed_cats = {'housing', 'loan_repayment', 'utilities', 'telecom', 'insurance', 'childcare', 'subscriptions', 'public_transport', 'transfer_savings', 'transfer_p2p'}
+    fixed_cats = {'salary_sweep', 'housing', 'loan_repayment', 'utilities', 'telecom', 'insurance', 'childcare', 'subscriptions', 'public_transport', 'transfer_savings', 'transfer_p2p'}
     fixed_out = -sum(r[2] for r in rows if r[2] < 0 and r[4] in fixed_cats)
     var_out = -sum(r[2] for r in rows if r[2] < 0 and r[4] not in fixed_cats)
     target = inc * rnd.uniform(0.88, 1.01) - fixed_out
-    k = max(0.35, min(2.5, target / var_out)) if var_out else 1
+    k = max(0.12 if forwarder else 0.35, min(2.5, target / var_out)) if var_out else 1
     rows = [[d, t, round(a * k, 2) if a < 0 and cat not in fixed_cats else a, mer, cat, mcc, ty] for d, t, a, mer, cat, mcc, ty in rows]
     bal = rnd.uniform(300, 4000) if p != 'retiree' else rnd.uniform(2000, 15000)
     outrows = []
@@ -176,4 +191,7 @@ with open(os.path.join(out, 'tx_junction_transactions.csv'), 'w', encoding='utf-
 import shutil
 for fn in ('tx_customers_junction.csv', 'mtg_tx_customer_link_and_final_mtg_infio.csv'):
     shutil.copy(os.path.join(src, fn), out)
+with open(os.path.join(out, 'truth.csv'), 'w', newline='') as f:
+    w = csv.writer(f); w.writerow(['customer_id', 'persona', 'forwarder', 'light'])
+    for cid, (p, fw, li) in sorted(TRUTH.items()): w.writerow([cid, p, fw, li])
 print('wrote', N, 'customers')

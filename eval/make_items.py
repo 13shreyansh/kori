@@ -16,7 +16,7 @@ src, out = sys.argv[1], sys.argv[2]
 PER = int(sys.argv[sys.argv.index('--per-split') + 1]) if '--per-split' in sys.argv else 40
 os.makedirs(out, exist_ok=True)
 
-SPEND_KINDS_EXCLUDED = {'income_salary', 'income_benefits', 'income_pension', 'tax_refund', 'transfer_savings', 'transfer_p2p'}
+SPEND_KINDS_EXCLUDED = {'income_salary', 'income_benefits', 'income_pension', 'tax_refund', 'transfer_savings', 'transfer_p2p', 'salary_sweep', 'income_other', 'invest_deposit', 'invest_withdraw'}
 CAT_PHRASES = {  # category -> (dataset keys, phrase A, phrase B)
     'taxi': (['taxi'], 'taxis', 'cabs'),
     'groceries': (['groceries'], 'groceries', 'food shopping'),

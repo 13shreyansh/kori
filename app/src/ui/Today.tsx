@@ -5,6 +5,8 @@ import { eur } from '../engine/analytics';
 import type { Customer } from '../engine/model';
 import type { Basket } from '../engine/taxonomy';
 import { Icon } from './Icon';
+import { SegmentCard } from './SegmentCard';
+import { segmentOf } from '../engine/segments';
 import type { Open } from './types';
 
 const TONE: Record<Basket, string> = { fixed: 'fixed', surprise: 'surprise', everyday: 'everyday' };
@@ -13,6 +15,7 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
   const s = useMemo(() => A.safeToSpend(c), [c]);
   const b = useMemo(() => A.baskets(c, 'last_3_months'), [c]);
   const notes = useMemo(() => A.insights(c), [c]);
+  const seg = useMemo(() => segmentOf(c), [c]);
   const bills = useMemo(() => A.upcomingBills(c, addDays(c.today, 14)).slice(0, 4), [c]);
   const hour = 9;
   const greeting = hour < 12 ? 'Good morning' : 'Hello';
@@ -40,6 +43,8 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
         </div>
         <div className="hero-cta">See how it’s worked out <Icon name="ChevronRight" size={15} /></div>
       </motion.button>
+
+      <SegmentCard seg={seg} ask={ask} />
 
       <div className="section-title">Your three baskets <button onClick={() => ask('Explain my three baskets')}>Why three?</button></div>
       <div className="baskets">
