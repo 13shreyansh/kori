@@ -1157,9 +1157,20 @@ export default function App() {
       </div>
     );
   const params = new URLSearchParams(location.search);
+  const insideThree = (() => {
+    try {
+      return (
+        window.parent !== window &&
+        window.parent.location.origin === location.origin &&
+        window.parent.location.pathname === "/three"
+      );
+    } catch {
+      return false;
+    }
+  })();
   const embed =
     location.pathname === "/embed" &&
-    window.parent !== window &&
+    insideThree &&
     ids.includes(params.get("customer") ?? "")
       ? params.get("customer")!
       : undefined;

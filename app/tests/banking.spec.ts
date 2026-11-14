@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 const root = "../screenshots/kori";
 mkdirSync(root, { recursive: true });
 mkdirSync("../artifacts/e2e", { recursive: true });
@@ -8,6 +8,36 @@ async function login(page: Page, id: string) {
   await page.getByLabel("PIN", { exact: true }).fill("1234");
   await page.getByRole("button", { name: "Log in", exact: true }).click();
   await expect(page.locator('[data-block="account-line"]')).toBeVisible();
+  const width = page.viewportSize()?.width;
+  if (width === 1440 || width === 390) {
+    const measures = await page.evaluate(() => {
+      const dimension = (s: string) =>
+        (document.querySelector(s) as HTMLElement).clientHeight;
+      const root = document.querySelector(".phone-screen") as HTMLElement;
+      return {
+        screenWidth: root.clientWidth,
+        screenHeight: root.clientHeight,
+        header: dimension(".app-header"),
+        ask: dimension(".ask-bar"),
+        tabs: dimension(".tab-bar"),
+        accountRow: dimension(".account-row"),
+        font: getComputedStyle(root).fontFamily,
+        numerals: getComputedStyle(root).fontVariantNumeric,
+        loaded: document.fonts.check('16px "Figtree Variable"'),
+        overflow: root.scrollWidth > root.clientWidth,
+      };
+    });
+    expect(measures.header).toBe(55);
+    expect(measures.ask).toBe(63);
+    expect(measures.tabs).toBe(61);
+    expect(measures.screenWidth).toBe(390);
+    expect(measures.overflow).toBe(false);
+    expect(measures.loaded).toBe(true);
+    writeFileSync(
+      `../artifacts/e2e/shell-${width}-${id}.json`,
+      JSON.stringify(measures, null, 2),
+    );
+  }
 }
 async function logout(page: Page) {
   await page
@@ -27,9 +57,15 @@ async function range(page: Page, label: string, value: number) {
   await expect(slider).toHaveValue(String(value));
 }
 async function shot(page: Page, name: string, width: number) {
-  await page.screenshot({ path: `../artifacts/e2e/${width}-${name}.png` });
+  await page.screenshot({
+    animations: "disabled",
+    path: `../artifacts/e2e/${width}-${name}.png`,
+  });
   if (width === 1440)
-    await page.screenshot({ path: `${root}/${name}-desktop.png` });
+    await page.screenshot({
+      animations: "disabled",
+      path: `${root}/${name}-desktop.png`,
+    });
   if (width === 390) {
     const alias: Record<string, string> = {
       "04-aino-ask": "18-aino-phone",
@@ -37,7 +73,10 @@ async function shot(page: Page, name: string, width: number) {
       "21-laura-large-text": "21-laura-large-text-phone",
     };
     if (alias[name])
-      await page.screenshot({ path: `${root}/${alias[name]}.png` });
+      await page.screenshot({
+        animations: "disabled",
+        path: `${root}/${alias[name]}.png`,
+      });
   }
 }
 for (const width of [1440, 390])
@@ -80,11 +119,12 @@ for (const width of [1440, 390])
     await shot(page, "05-aino-landed", width);
     await page.locator('[data-block="guess"] h1 .proof').click();
     await expect(page.getByTestId("receipt-total")).toHaveText("€87.40");
-    const rounding = await page.locator(".receipt-total small").boundingBox();
-    const correction = await page
-      .getByRole("button", { name: "Wrong label? Fix it" })
-      .boundingBox();
-    expect(rounding!.y + rounding!.height).toBeLessThanOrEqual(correction!.y);
+    const layout = await page.locator(".receipt-total").evaluate((el) => {
+      const rounding = el.querySelector("small")!.getBoundingClientRect();
+      const correction = el.querySelector("button")!.getBoundingClientRect();
+      return { roundingBottom: rounding.bottom, correctionTop: correction.top };
+    });
+    expect(layout.roundingBottom).toBeLessThanOrEqual(layout.correctionTop);
     await shot(page, "06-aino-receipt", width);
     await page.getByRole("button", { name: "Close sheet" }).click();
     await range(page, "Fewer orders a week", 2);
@@ -168,7 +208,10 @@ for (const width of [1440, 390])
     await logout(page);
     await login(page, "laura");
     if (width === 390)
-      await page.screenshot({ path: root + "/20-laura-phone.png" });
+      await page.screenshot({
+        animations: "disabled",
+        path: root + "/20-laura-phone.png",
+      });
     await page.getByTestId("shortfall-band").scrollIntoViewIfNeeded();
     await shot(page, "11-laura-short", width);
     await page
@@ -226,6 +269,21 @@ test("three live independent homes and embed guard", async ({ page }) => {
   await shot(page, "03-three", 1440);
   await page.goto("/embed?customer=mikko");
   await expect(page.getByLabel("User ID")).toBeVisible();
+  await page.goto("/");
+  await page.evaluate(() => {
+    const frame = document.createElement("iframe");
+    frame.title = "Outside three";
+    frame.src = "/embed?customer=mikko";
+    document.body.append(frame);
+  });
+  await expect(
+    page.frameLocator('iframe[title="Outside three"]').getByLabel("User ID"),
+  ).toBeVisible();
+  await expect(
+    page
+      .frameLocator('iframe[title="Outside three"]')
+      .locator('[data-block="account-line"]'),
+  ).toHaveCount(0);
 });
 test("receipt relabelling, restored sessions, reduced motion and tabs", async ({
   page,
@@ -416,6 +474,7 @@ test("recording day uses real Saturday nights, Monday calendar and dated grocery
     "2 Nov–15 Nov",
   );
   await page.screenshot({
+    animations: "disabled",
     path: "../artifacts/e2e/recording-day-rollover.png",
   });
 });
