@@ -1,0 +1,202 @@
+{
+ "s01": {
+  "pick": "B",
+  "confident": false,
+  "why": "retiree with large leftover; 1% saving is minor"
+ },
+ "s02": {
+  "pick": "A",
+  "confident": false,
+  "why": "age 66 steady, likely retiree"
+ },
+ "s03": {
+  "pick": "B",
+  "confident": true,
+  "why": "no money moved, so Pension Mover is wrong"
+ },
+ "s04": {
+  "pick": "B",
+  "confident": true,
+  "why": "young adult, balanced"
+ },
+ "s05": {
+  "pick": "B",
+  "confident": true,
+  "why": "84 overspending"
+ },
+ "s06": {
+  "pick": "A",
+  "confident": true,
+  "why": "56 household, not retiree"
+ },
+ "s07": {
+  "pick": "A",
+  "confident": true,
+  "why": "90% spend with high bills"
+ },
+ "s08": {
+  "pick": "A",
+  "confident": false,
+  "why": "buffer-saver at 5%"
+ },
+ "s09": {
+  "pick": "B",
+  "confident": true,
+  "why": "overspending"
+ },
+ "s10": {
+  "pick": "B",
+  "confident": true,
+  "why": "47 overspending, not pensioner"
+ },
+ "s11": {
+  "pick": "A",
+  "confident": true,
+  "why": "27 overspending"
+ },
+ "s12": {
+  "pick": "B",
+  "confident": false,
+  "why": "62 near-balanced household"
+ },
+ "s13": {
+  "pick": "B",
+  "confident": true,
+  "why": "no money moved, retiree"
+ },
+ "s14": {
+  "pick": "A",
+  "confident": true,
+  "why": "79 steady retiree"
+ },
+ "s15": {
+  "pick": "B",
+  "confident": true,
+  "why": "moves 76% to another bank"
+ },
+ "s16": {
+  "pick": "A",
+  "confident": true,
+  "why": "moves 92%, age 56 household"
+ },
+ "s17": {
+  "pick": "B",
+  "confident": true,
+  "why": "saves 7% and moves nothing"
+ },
+ "s18": {
+  "pick": "A",
+  "confident": false,
+  "why": "age 42 with lots left over"
+ },
+ "s19": {
+  "pick": "A",
+  "confident": true,
+  "why": "27 overspending"
+ },
+ "s20": {
+  "pick": "A",
+  "confident": true,
+  "why": "moves 93% at age 45"
+ },
+ "s21": {
+  "pick": "A",
+  "confident": true,
+  "why": "moves 85% at age 32"
+ },
+ "s22": {
+  "pick": "B",
+  "confident": true,
+  "why": "age 45 moves 89%, not a pensioner"
+ },
+ "s23": {
+  "pick": "A",
+  "confident": true,
+  "why": "moves 86%"
+ },
+ "s24": {
+  "pick": "A",
+  "confident": true,
+  "why": "21 and running out"
+ },
+ "s25": {
+  "pick": "B",
+  "confident": true,
+  "why": "moves 90%"
+ },
+ "s26": {
+  "pick": "B",
+  "confident": true,
+  "why": "age 70 overspending"
+ },
+ "s27": {
+  "pick": "B",
+  "confident": true,
+  "why": "saves 11%"
+ },
+ "s28": {
+  "pick": "A",
+  "confident": false,
+  "why": "moves 90% age 40"
+ },
+ "s29": {
+  "pick": "B",
+  "confident": true,
+  "why": "saves 11% with goal"
+ },
+ "s30": {
+  "pick": "B",
+  "confident": true,
+  "why": "age 18 starter"
+ },
+ "s31": {
+  "pick": "B",
+  "confident": false,
+  "why": "age 65 moving income away, spending skewed"
+ },
+ "s32": {
+  "pick": "B",
+  "confident": false,
+  "why": "moves 88% age 36"
+ },
+ "s33": {
+  "pick": "B",
+  "confident": true,
+  "why": "moves nothing"
+ },
+ "s34": {
+  "pick": "A",
+  "confident": false,
+  "why": "saves 6% age 39"
+ },
+ "s35": {
+  "pick": "A",
+  "confident": true,
+  "why": "18 with room to spare"
+ },
+ "s36": {
+  "pick": "A",
+  "confident": true,
+  "why": "18 overspending"
+ },
+ "s37": {
+  "pick": "A",
+  "confident": true,
+  "why": "75 moves 80%"
+ },
+ "s38": {
+  "pick": "B",
+  "confident": true,
+  "why": "age 53 not retiree"
+ },
+ "s39": {
+  "pick": "A",
+  "confident": true,
+  "why": "saves 18%"
+ },
+ "s40": {
+  "pick": "B",
+  "confident": true,
+  "why": "age 74 overspending"
+ }
+}

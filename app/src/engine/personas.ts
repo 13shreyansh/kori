@@ -188,10 +188,11 @@ export interface Persona {
   cards: PersonaCard[]; nudge: string;
 }
 
-export function personaOf(c: Customer, e: (x: number) => string = (x) => '€' + Math.round(x).toLocaleString('en-GB')): Persona {
+/** `force` renders a decoy persona for the same customer (used only by the swap-test eval). */
+export function personaOf(c: Customer, e: (x: number) => string = (x) => '€' + Math.round(x).toLocaleString('en-GB'), force?: { stage?: Stage; style?: Style }): Persona {
   const f = segmentFeatures(c);
   const cv = incomeCv(c);
-  const stage = stageOf(f), style = styleOf(f), traits = traitsOf(f, cv);
+  const stage = force?.stage ?? stageOf(f), style = force?.style ?? styleOf(f), traits = traitsOf(f, cv);
   const sp = STYLE_PLAY[style], st = STAGE_INFO[stage];
   const main = CARDS[stage][style](f, e);
   const cards: PersonaCard[] = [{ kind: 'style', ...main, icon: STYLE_INFO[style].icon }];

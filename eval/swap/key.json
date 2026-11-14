@@ -1,0 +1,242 @@
+{
+ "s01": {
+  "own": "B",
+  "decoy": "golden.saver",
+  "swap": "style",
+  "own_id": "golden.steady"
+ },
+ "s02": {
+  "own": "A",
+  "decoy": "established.steady",
+  "swap": "stage",
+  "own_id": "golden.steady"
+ },
+ "s03": {
+  "own": "B",
+  "decoy": "golden.pass_through",
+  "swap": "style",
+  "own_id": "golden.steady"
+ },
+ "s04": {
+  "own": "B",
+  "decoy": "established.steady",
+  "swap": "stage",
+  "own_id": "builder.steady"
+ },
+ "s05": {
+  "own": "B",
+  "decoy": "golden.pass_through",
+  "swap": "style",
+  "own_id": "golden.tightrope"
+ },
+ "s06": {
+  "own": "A",
+  "decoy": "golden.steady",
+  "swap": "stage",
+  "own_id": "established.steady"
+ },
+ "s07": {
+  "own": "B",
+  "decoy": "established.tightrope",
+  "swap": "style",
+  "own_id": "established.steady"
+ },
+ "s08": {
+  "own": "A",
+  "decoy": "builder.saver",
+  "swap": "stage",
+  "own_id": "established.saver"
+ },
+ "s09": {
+  "own": "B",
+  "decoy": "established.saver",
+  "swap": "style",
+  "own_id": "established.tightrope"
+ },
+ "s10": {
+  "own": "B",
+  "decoy": "golden.tightrope",
+  "swap": "stage",
+  "own_id": "established.tightrope"
+ },
+ "s11": {
+  "own": "A",
+  "decoy": "builder.steady",
+  "swap": "style",
+  "own_id": "builder.tightrope"
+ },
+ "s12": {
+  "own": "B",
+  "decoy": "builder.steady",
+  "swap": "stage",
+  "own_id": "established.steady"
+ },
+ "s13": {
+  "own": "B",
+  "decoy": "golden.pass_through",
+  "swap": "style",
+  "own_id": "golden.steady"
+ },
+ "s14": {
+  "own": "A",
+  "decoy": "established.steady",
+  "swap": "stage",
+  "own_id": "golden.steady"
+ },
+ "s15": {
+  "own": "B",
+  "decoy": "established.saver",
+  "swap": "style",
+  "own_id": "established.pass_through"
+ },
+ "s16": {
+  "own": "A",
+  "decoy": "builder.pass_through",
+  "swap": "stage",
+  "own_id": "established.pass_through"
+ },
+ "s17": {
+  "own": "B",
+  "decoy": "established.pass_through",
+  "swap": "style",
+  "own_id": "established.saver"
+ },
+ "s18": {
+  "own": "B",
+  "decoy": "builder.steady",
+  "swap": "stage",
+  "own_id": "established.steady"
+ },
+ "s19": {
+  "own": "A",
+  "decoy": "builder.saver",
+  "swap": "style",
+  "own_id": "builder.tightrope"
+ },
+ "s20": {
+  "own": "A",
+  "decoy": "golden.pass_through",
+  "swap": "stage",
+  "own_id": "established.pass_through"
+ },
+ "s21": {
+  "own": "A",
+  "decoy": "builder.steady",
+  "swap": "style",
+  "own_id": "builder.pass_through"
+ },
+ "s22": {
+  "own": "B",
+  "decoy": "golden.pass_through",
+  "swap": "stage",
+  "own_id": "established.pass_through"
+ },
+ "s23": {
+  "own": "A",
+  "decoy": "established.saver",
+  "swap": "style",
+  "own_id": "established.pass_through"
+ },
+ "s24": {
+  "own": "A",
+  "decoy": "builder.tightrope",
+  "swap": "stage",
+  "own_id": "starter.tightrope"
+ },
+ "s25": {
+  "own": "B",
+  "decoy": "builder.steady",
+  "swap": "style",
+  "own_id": "builder.pass_through"
+ },
+ "s26": {
+  "own": "B",
+  "decoy": "established.tightrope",
+  "swap": "stage",
+  "own_id": "golden.tightrope"
+ },
+ "s27": {
+  "own": "B",
+  "decoy": "established.steady",
+  "swap": "style",
+  "own_id": "established.saver"
+ },
+ "s28": {
+  "own": "A",
+  "decoy": "builder.pass_through",
+  "swap": "stage",
+  "own_id": "established.pass_through"
+ },
+ "s29": {
+  "own": "B",
+  "decoy": "builder.steady",
+  "swap": "style",
+  "own_id": "builder.saver"
+ },
+ "s30": {
+  "own": "B",
+  "decoy": "builder.steady",
+  "swap": "stage",
+  "own_id": "starter.steady"
+ },
+ "s31": {
+  "own": "B",
+  "decoy": "golden.tightrope",
+  "swap": "style",
+  "own_id": "golden.pass_through"
+ },
+ "s32": {
+  "own": "B",
+  "decoy": "established.pass_through",
+  "swap": "stage",
+  "own_id": "builder.pass_through"
+ },
+ "s33": {
+  "own": "B",
+  "decoy": "builder.pass_through",
+  "swap": "style",
+  "own_id": "builder.steady"
+ },
+ "s34": {
+  "own": "A",
+  "decoy": "established.saver",
+  "swap": "stage",
+  "own_id": "builder.saver"
+ },
+ "s35": {
+  "own": "A",
+  "decoy": "starter.saver",
+  "swap": "style",
+  "own_id": "starter.steady"
+ },
+ "s36": {
+  "own": "A",
+  "decoy": "builder.tightrope",
+  "swap": "stage",
+  "own_id": "starter.tightrope"
+ },
+ "s37": {
+  "own": "A",
+  "decoy": "golden.steady",
+  "swap": "style",
+  "own_id": "golden.pass_through"
+ },
+ "s38": {
+  "own": "B",
+  "decoy": "golden.steady",
+  "swap": "stage",
+  "own_id": "established.steady"
+ },
+ "s39": {
+  "own": "A",
+  "decoy": "established.steady",
+  "swap": "style",
+  "own_id": "established.saver"
+ },
+ "s40": {
+  "own": "B",
+  "decoy": "established.tightrope",
+  "swap": "stage",
+  "own_id": "golden.tightrope"
+ }
+}
