@@ -12,13 +12,13 @@ type Part = { text?: string; functionCall?: { name: string; args: Record<string,
 type Content = { role: 'user' | 'model'; parts: Part[] };
 
 /** Gemini writes the words; the on-device engine supplies every number via tools. */
-export async function askGemini(c: Customer, q: string, history: { role: string; text: string }[], call: (body: unknown) => Promise<any>): Promise<CoachAnswer> {
+export async function askGemini(c: Customer, q: string, history: { role: string; text: string }[], call: (body: unknown) => Promise<any>, systemPrompt = SYSTEM_PROMPT, temperature = 0.3): Promise<CoachAnswer> {
   const contents: Content[] = [...history.map((h) => ({ role: (h.role === 'user' ? 'user' : 'model') as 'user' | 'model', parts: [{ text: h.text }] })), { role: 'user', parts: [{ text: q }] }];
   const results: unknown[] = []; const receipts: Receipt[] = []; const calls: CoachAnswer['toolCalls'] = [];
   for (let step = 0; step < 5; step++) {
     const res = await call({
-      systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace('{TODAY}', c.today).replace('{AGE}', String(c.age)) }] },
-      contents, tools: [{ functionDeclarations: TOOL_DECLS }], generationConfig: { temperature: 0.3, maxOutputTokens: 400 },
+      systemInstruction: { parts: [{ text: systemPrompt.replace('{TODAY}', c.today).replace('{AGE}', String(c.age)) }] },
+      contents, tools: [{ functionDeclarations: TOOL_DECLS }], generationConfig: { temperature, maxOutputTokens: 400 },
     });
     const parts: Part[] = res?.candidates?.[0]?.content?.parts ?? [];
     const fcs = parts.filter((p) => p.functionCall);

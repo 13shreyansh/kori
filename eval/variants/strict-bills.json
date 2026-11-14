@@ -1,0 +1,1 @@
+{ "name": "stricter bill detection", "config": { "recurringMaxCv": 0.15, "recurringMinCount": 4 } }

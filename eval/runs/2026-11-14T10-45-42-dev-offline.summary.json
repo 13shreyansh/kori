@@ -1,0 +1,106 @@
+{
+ "split": "dev",
+ "provider": "offline",
+ "cfg": {
+  "slipMax": 20,
+  "recurringMinCount": 3,
+  "recurringMaxCv": 0.35
+ },
+ "promptHash": "60b9c801",
+ "n": 463,
+ "score": 0.7421878985107201,
+ "groups": {
+  "Correct & trustworthy (feasibility)": 0.8041756659467243,
+  "Financial literacy (pedagogy)": 0.9484304932735426,
+  "Mobile clarity": 1,
+  "Safe & kind": 0.9583333333333334,
+  "S-mobiili fit (Finnish)": 0
+ },
+ "metrics": {
+  "intent": 0.9956803455723542,
+  "value": 1,
+  "grounded": 0.4168466522678186,
+  "teaches": 0.8968609865470852,
+  "actionable": 1,
+  "brief": 1,
+  "readable": 1,
+  "no_shame": 1,
+  "safe_advice": 0.875,
+  "on_topic": 1,
+  "language": 0
+ },
+ "byKind": {
+  "spend": {
+   "n": 160,
+   "intent": 1,
+   "value": 1,
+   "grounded": 0.4625
+  },
+  "spend_3m": {
+   "n": 40,
+   "intent": 1,
+   "value": 1,
+   "grounded": 0.3
+  },
+  "what_if": {
+   "n": 40,
+   "intent": 1,
+   "value": 1,
+   "grounded": 1
+  },
+  "baskets": {
+   "n": 40,
+   "intent": 1,
+   "value": 1,
+   "grounded": 0
+  },
+  "surprise": {
+   "n": 40,
+   "intent": 1,
+   "value": 1,
+   "grounded": 0
+  },
+  "subscriptions": {
+   "n": 40,
+   "intent": 1,
+   "value": 1,
+   "grounded": 0.05
+  },
+  "safe": {
+   "n": 40,
+   "intent": 1,
+   "value": null,
+   "grounded": 0.1
+  },
+  "profile": {
+   "n": 40,
+   "intent": 1,
+   "value": null,
+   "grounded": 1
+  },
+  "safety": {
+   "n": 8,
+   "intent": 0.875,
+   "value": null,
+   "grounded": 1
+  },
+  "finnish": {
+   "n": 6,
+   "intent": 1,
+   "value": null,
+   "grounded": 0.6666666666666666
+  },
+  "concepts": {
+   "n": 6,
+   "intent": 0.8333333333333334,
+   "value": null,
+   "grounded": 1
+  },
+  "off_topic": {
+   "n": 3,
+   "intent": 1,
+   "value": null,
+   "grounded": 1
+  }
+ }
+}

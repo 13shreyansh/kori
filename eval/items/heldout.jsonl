@@ -1,0 +1,440 @@
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 172.61, "count": 2}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 90.95, "count": 3}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 1773.46, "count": 23}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 277.34, "count": 6}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1613.69}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1797.17}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3173.46}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 67.99, "count": 2}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00001", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 295.58, "count": 17}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 13.2, "count": 1}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 38.34, "count": 1}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 15.82, "count": 2}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 152.46, "count": 7}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 204.73}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 503.31}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 395.25}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 68.98, "count": 3}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00050", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 1223.44, "count": 18}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 88.78, "count": 2}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 80.7, "count": 6}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 9.04, "count": 1}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 118.48, "count": 4}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1487.4}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1222.34}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1384.64}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 70.98, "count": 3}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00062", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 93.37, "count": 11}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 23.4, "count": 4}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 25.7, "count": 3}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 164.01}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 854.23}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 883.33}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 11.99, "count": 1}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00072", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 124.92, "count": 5}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 28.73, "count": 2}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 13.1, "count": 1}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 58.06, "count": 1}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 230.98}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1827.93}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3371.43}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 68.98, "count": 3}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00074", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 109.12, "count": 3}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 105.31, "count": 3}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 614.68, "count": 31}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 150.48, "count": 2}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 2226.23, "count": 98}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1767.82}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1227.79}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1349.1}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 28.97, "count": 3}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00097", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 48.9, "count": 4}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 27.91, "count": 2}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 96.65, "count": 15}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 17.6, "count": 2}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 50.25, "count": 6}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 564.64}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 568.35}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 571.64}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00118", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 29.67, "count": 4}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 45.7, "count": 3}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 295.12, "count": 49}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 292.94}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 475.7}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 319.58}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 70.98, "count": 3}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00164", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 71.1, "count": 3}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 57.66, "count": 3}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 103.22, "count": 3}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 321.8, "count": 10}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 961.88}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1372.46}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2267.65}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00171", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 20.71, "count": 1}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 121.02, "count": 3}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 80.7, "count": 6}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 166.76, "count": 4}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 178.59}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1767.54}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2209.33}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 70.98, "count": 3}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00239", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 235.17, "count": 17}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 96.59, "count": 12}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 26.94, "count": 1}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 9.26, "count": 1}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "spend_3m", "q": "cabs over the past 3 months, how much?", "expect": {"intent": "spend", "value": 21.7, "count": 4}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 173.0}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 879.68}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 327.19}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 65.99, "count": 2}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00338", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 81.8, "count": 2}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 11.05, "count": 1}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 793.37, "count": 16}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 307.96, "count": 18}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "spend_3m", "q": "Alko over the past 3 months, how much?", "expect": {"intent": "spend", "value": 70.59, "count": 3}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 880.08}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1084.22}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1708.98}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": null, "count": 0}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00349", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 43.61, "count": 1}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1399.03, "count": 20}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "spend", "q": "What did Amazon and Temu cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 1050.74, "count": 24}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 2110.12}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1166.56}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2315.68}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 11.99, "count": 1}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00363", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 39.34, "count": 1}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 100.89, "count": 3}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 53.4, "count": 1}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 86.67, "count": 3}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1815.54}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 2340.92}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2004.33}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00365", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 676.11, "count": 19}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 250.17, "count": 3}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 428.33, "count": 16}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 26.53, "count": 1}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 950.72, "count": 45}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 943.69}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1007.23}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2362.07}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 11.99, "count": 1}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00372", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 60.6, "count": 2}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "spend", "q": "What did Amazon and Temu cost me in September?", "expect": {"intent": "spend", "value": 38.86, "count": 1}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 350.75, "count": 12}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1060.09, "count": 16}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "spend_3m", "q": "petrol over the past 3 months, how much?", "expect": {"intent": "spend", "value": 457.78, "count": 9}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 393.4}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1778.02}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3049.57}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 25.98, "count": 2}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00394", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 448.74, "count": 5}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 60.22, "count": 1}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1175.07, "count": 20}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 108.13, "count": 2}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 506.41}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1278.02}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3629.44}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 68.98, "count": 3}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00432", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 15.11, "count": 1}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 36.08, "count": 1}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 277.03, "count": 5}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 480.87}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1752.75}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1407.09}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 25.98, "count": 2}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00473", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 92.25, "count": 21}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 36.44, "count": 5}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 349.86, "count": 65}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 694.55}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 604.05}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 425.62}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 56.99, "count": 2}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00490", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 88.2, "count": 4}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 36.13, "count": 1}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 218.12, "count": 7}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 35.85, "count": 1}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1060.72}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1727.12}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3272.61}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 25.98, "count": 2}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00505", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 3.4, "count": 1}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 67.9, "count": 2}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 278.66, "count": 10}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 621.94, "count": 31}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 2008.68, "count": 106}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 3987.67}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1206.26}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2880.56}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 67.99, "count": 2}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00588", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 423.62, "count": 15}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 146.9, "count": 2}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 22.97, "count": 1}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 8.53, "count": 1}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 274.48, "count": 4}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 2057.93}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1795.31}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2035.88}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 56.99, "count": 2}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00693", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1657.7, "count": 20}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 26.92, "count": 2}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 124.89, "count": 1}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "spend_3m", "q": "petrol over the past 3 months, how much?", "expect": {"intent": "spend", "value": 874.63, "count": 10}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 829.69}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1268.0}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1293.18}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 16.98, "count": 2}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00709", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 11.42, "count": 2}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 16.89, "count": 1}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 8.67, "count": 1}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 106.18, "count": 12}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 235.03}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 613.27}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 254.63}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 56.99, "count": 2}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00774", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 45.7, "count": 3}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 14.57, "count": 2}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 7.88, "count": 1}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 49.69, "count": 6}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 451.28}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 452.5}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 518.38}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 2.99, "count": 1}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00780", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 145.17, "count": 7}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 81.8, "count": 2}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 90.62, "count": 3}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 30.27, "count": 1}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 204.32, "count": 3}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 754.53}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1187.7}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 845.69}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 14.98, "count": 2}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00794", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 64.7, "count": 1}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 727.23, "count": 22}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 49.44, "count": 1}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "spend_3m", "q": "petrol over the past 3 months, how much?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 50 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 5251.16}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1531.55}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1654.33}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 67.99, "count": 2}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00814", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 789.44, "count": 7}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 613.5}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 2198.83}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 5500.74}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 56.99, "count": 2}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00903", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 49.33, "count": 1}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 93.82, "count": 2}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 85.22, "count": 2}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 33.91, "count": 1}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 456.26}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1297.18}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1512.0}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 54.0, "count": 1}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST00961", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 26.73, "count": 1}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "spend", "q": "What did Alko cost me in September?", "expect": {"intent": "spend", "value": 74.09, "count": 3}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 129.27, "count": 2}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 140.83, "count": 1}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "spend_3m", "q": "Wolt and Foodora deliveries over the past 3 months, how much?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 459.71}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1291.09}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 5094.23}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 70.98, "count": 3}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01157", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 401.25, "count": 17}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 155.4, "count": 3}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 67.9, "count": 2}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "spend_3m", "q": "Amazon and Temu over the past 3 months, how much?", "expect": {"intent": "spend", "value": 199.71, "count": 4}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 664.64}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1249.69}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2363.4}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 65.99, "count": 2}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01169", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 2614.33, "count": 20}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 176.2, "count": 2}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 129.28, "count": 4}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "spend_3m", "q": "petrol over the past 3 months, how much?", "expect": {"intent": "spend", "value": 435.65, "count": 5}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 642.03}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 2018.16}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2523.09}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01240", "split": "heldout"}
+{"kind": "spend", "q": "total clothing spending last month", "expect": {"intent": "spend", "value": 361.98, "count": 5}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 186.02, "count": 17}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 23.97, "count": 1}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "spend_3m", "q": "restaurants and takeaway over the past 3 months, how much?", "expect": {"intent": "spend", "value": 1052.79, "count": 55}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 836.01}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1777.77}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 5722.92}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 28.97, "count": 3}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01251", "split": "heldout"}
+{"kind": "spend", "q": "What did Amazon and Temu cost me in September?", "expect": {"intent": "spend", "value": 178.31, "count": 4}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 97.91, "count": 3}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1069.82, "count": 20}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 212.67, "count": 3}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 20 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1081.52}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1233.53}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 724.7}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 70.98, "count": 3}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01315", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 106.61, "count": 1}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 45.31, "count": 1}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "spend", "q": "What did food shopping cost me in September?", "expect": {"intent": "spend", "value": 1674.24, "count": 16}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 24.13, "count": 1}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "spend_3m", "q": "Alko over the past 3 months, how much?", "expect": {"intent": "spend", "value": 320.87, "count": 7}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 510.74}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1873.1}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 3054.17}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 14.98, "count": 2}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01319", "split": "heldout"}
+{"kind": "spend", "q": "What did Amazon and Temu cost me in September?", "expect": {"intent": "spend", "value": 74.33, "count": 2}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "spend", "q": "total petrol spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "spend", "q": "total cabs spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 119.17, "count": 4}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 268.67, "count": 4}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 323.39}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1025.8}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 531.12}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 68.98, "count": 3}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01379", "split": "heldout"}
+{"kind": "spend", "q": "total Alko spending last month", "expect": {"intent": "spend", "value": 29.37, "count": 1}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 1231.06, "count": 18}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "spend", "q": "What did restaurants and takeaway cost me in September?", "expect": {"intent": "spend", "value": 385.45, "count": 15}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "spend_3m", "q": "Alko over the past 3 months, how much?", "expect": {"intent": "spend", "value": 152.4, "count": 3}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1255.24}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1442.08}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 392.82}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01384", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 212.51, "count": 19}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "spend", "q": "total food shopping spending last month", "expect": {"intent": "spend", "value": 1509.76, "count": 16}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "spend", "q": "total HSL spending last month", "expect": {"intent": "spend", "value": 94.6, "count": 6}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "spend", "q": "total Wolt and Foodora deliveries spending last month", "expect": {"intent": "spend", "value": 98.58, "count": 4}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 185.49, "count": 4}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1250.84}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1486.43}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 2294.1}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 28.97, "count": 3}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01420", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "spend", "q": "What did petrol cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "spend", "q": "total restaurants and takeaway spending last month", "expect": {"intent": "spend", "value": 189.91, "count": 5}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "spend", "q": "total Amazon and Temu spending last month", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "spend_3m", "q": "clothing over the past 3 months, how much?", "expect": {"intent": "spend", "value": 475.78, "count": 7}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 10 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 157.73}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1437.14}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1005.68}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 79.98, "count": 3}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01428", "split": "heldout"}
+{"kind": "spend", "q": "What did HSL cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "spend", "q": "What did clothing cost me in September?", "expect": {"intent": "spend", "value": 0, "count": 0}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "spend", "q": "What did cabs cost me in September?", "expect": {"intent": "spend", "value": 123.79, "count": 5}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "spend", "q": "What did Wolt and Foodora deliveries cost me in September?", "expect": {"intent": "spend", "value": 26.84, "count": 1}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "spend_3m", "q": "petrol over the past 3 months, how much?", "expect": {"intent": "spend", "value": 411.57, "count": 5}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "what_if", "q": "If I cut restaurants and takeaway by 25 percent, what would I save in a year?", "expect": {"intent": "what_if", "value": 1373.78}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "baskets", "q": "How is my spending split between fixed bills, surprises and everyday stuff?", "expect": {"intent": "baskets", "value": 1884.21}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "surprise", "q": "How much did unexpected must-pay costs cost me this year?", "expect": {"intent": "surprise", "value": 1378.94}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "subscriptions", "q": "what am I subscribed to?", "expect": {"intent": "subscriptions", "value": 82.97, "count": 4}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "safe", "q": "How much can I spend this week without getting into trouble?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST01431", "split": "heldout"}
+{"kind": "profile", "q": "Describe my spending style", "expect": {"intent": "spender_type"}, "customer": "CUST01431", "split": "heldout"}
