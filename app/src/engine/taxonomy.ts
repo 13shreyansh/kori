@@ -53,6 +53,9 @@ export const CATEGORIES: Record<string, CatInfo> = Object.fromEntries([
   C('income_benefits', 'Benefits', 'HandCoins', 'everyday', false, false, 'income'),
   C('income_pension', 'Pension', 'Briefcase', 'everyday', false, false, 'income'),
   C('tax_refund', 'Tax refund', 'Receipt', 'everyday', false, false, 'income'),
+  C('income_other', 'Other income', 'HandCoins', 'everyday', false, false, 'income'),
+  C('invest_deposit', 'Investing', 'TrendingUp', 'everyday', false, false, 'savings'),
+  C('invest_withdraw', 'From investments', 'ArrowLeftRight', 'everyday', false, false, 'transfer'),
   C('transfer_savings', 'To savings', 'PiggyBank', 'everyday', false, false, 'savings'),
   C('transfer_p2p', 'MobilePay & transfers', 'ArrowLeftRight', 'everyday', false, false, 'transfer'),
 ].map((c) => [c.key, c]));
@@ -68,12 +71,50 @@ const MCC_RANGES: [number, number, string][] = [
   [8351, 8351, 'childcare'], [9311, 9311, 'taxes'], [742, 742, 'pets'], [5999, 5999, 'online_shopping'], [5311, 5311, 'clothing'],
 ];
 
+// The real S-Pankki file uses broad, capitalised categories. Each maps to a default sub-category;
+// broad ones (Transportation, Health, Home & Tech, Lifestyle ...) are refined by MCC when the MCC is known,
+// so a taxi and a bus ticket, or a dentist and a pharmacy, land in the right basket.
+const REAL: Record<string, { key: string; refine: boolean }> = {
+  'Groceries': { key: 'groceries', refine: false },
+  'Restaurants': { key: 'restaurants_cafes', refine: true },
+  'Transportation': { key: 'public_transport', refine: true },
+  'Utilities': { key: 'utilities', refine: true },
+  'Entertainment': { key: 'entertainment', refine: true },
+  'Health': { key: 'healthcare', refine: true },
+  'Home & Tech': { key: 'electronics', refine: true },
+  'Housing': { key: 'housing', refine: false },
+  'Lifestyle': { key: 'clothing', refine: true },
+  'Travel': { key: 'travel', refine: true },
+  'Salary': { key: 'income_salary', refine: false },
+  'Other Income': { key: 'income_other', refine: false },
+  'Invest Deposit': { key: 'invest_deposit', refine: false },
+  'Salary Sweep': { key: 'transfer_savings', refine: false },
+  'Invest Withdraw': { key: 'invest_withdraw', refine: false },
+};
+// which refined keys are allowed under each broad category (guards against odd MCCs pulling a row into income etc.)
+const ALLOWED_REFINE = new Set(Object.values(CATEGORIES).filter((c) => c.kind === 'spend').map((c) => c.key));
+
+const byMcc = (mcc: string): CatInfo | null => {
+  const m = parseInt(mcc, 10);
+  if (Number.isNaN(m)) return null;
+  for (const [a, b, k] of MCC_RANGES) if (m >= a && m <= b) return CATEGORIES[k];
+  return null;
+};
+
 const unknown = new Map<string, CatInfo>();
 export function categoryInfo(category: string, mcc: string, amount: number): CatInfo {
   const hit = CATEGORIES[category];
   if (hit) return hit;
-  const m = parseInt(mcc, 10);
-  if (!Number.isNaN(m)) for (const [a, b, k] of MCC_RANGES) if (m >= a && m <= b) return CATEGORIES[k];
+  const real = REAL[category];
+  if (real) {
+    if (real.refine) {
+      const r = byMcc(mcc);
+      if (r && ALLOWED_REFINE.has(r.key)) return r;
+    }
+    return CATEGORIES[real.key];
+  }
+  const r = byMcc(mcc);
+  if (r) return r;
   const key = category || 'other';
   if (!unknown.has(key)) {
     const pretty = key.replace(/_/g, ' ').replace(/^\w/, (s) => s.toUpperCase()) || 'Other';

@@ -52,7 +52,19 @@ export interface Customer {
 
 export const SLIP_MAX_EUR = 20; // a "slip" is a discretionary purchase under this amount
 
+// Real data: merchants are opaque ids like MRC-GRO-0035, and bill payments carry no merchant.
+const MRC_NOUN: Record<string, string> = {
+  GRO: 'Grocery store', RES: 'Restaurant', REST: 'Restaurant', TRA: 'Transport', TRN: 'Transport', UTI: 'Utility', ENT: 'Entertainment',
+  HEA: 'Health', HLT: 'Health', HOM: 'Home & tech shop', HOU: 'Housing', LIF: 'Lifestyle shop', TRV: 'Travel', CAF: 'Café',
+};
 export function merchantName(id: string): string {
+  if (!id) return 'Unknown';
+  if (id.startsWith('CAT:')) {
+    const [label, amt] = id.slice(4).split('~');
+    return amt ? `${label} (~€${amt})` : label;
+  }
+  const m = /^MRC-([A-Z]+)-0*(\d+)$/.exec(id);
+  if (m) return `${MRC_NOUN[m[1]] ?? m[1][0] + m[1].slice(1).toLowerCase()} #${m[2]}`;
   return id
     .replace(/^M_/, '')
     .split('_')
@@ -94,7 +106,7 @@ export function buildCustomer(raw: RawCustomer, cfg: ModelConfig = DEFAULT_CONFI
       balance: r[col.balance] == null ? null : Number(r[col.balance]),
       category,
       type: String(r[col.type] ?? ''),
-      merchant: String(r[col.merchant] ?? ''),
+      merchant: String(r[col.merchant] ?? '') || 'CAT:' + cat.label,
       mcc,
       account: String(r[col.account] ?? ''),
       cat,
@@ -121,6 +133,28 @@ export function detectRecurring(tx: Tx[], today: string, cfg: ModelConfig): Seri
     if (!(t.amount < 0 && t.cat.kind === 'spend')) continue;
     const k = t.merchant || t.category;
     (groups.get(k) ?? groups.set(k, []).get(k)!).push(t);
+  }
+  // Bill payments in the real file have no merchant, so all of one category (e.g. several utility bills)
+  // share a key. When such a group shows up more than once a month, split it into amount clusters
+  // (bills of a similar size), so each bill is judged on its own.
+  for (const [k, ts] of [...groups]) {
+    if (!k.startsWith('CAT:')) continue;
+    const months = new Set(ts.map((t) => t.date.slice(0, 7))).size;
+    if (ts.length <= months * 1.3) continue;
+    groups.delete(k);
+    const sorted = [...ts].sort((a, b) => a.amount - b.amount);
+    let cluster: Tx[] = [];
+    const flush = () => {
+      if (!cluster.length) return;
+      const mid = -cluster[Math.floor(cluster.length / 2)].amount;
+      groups.set(`${k}~${Math.round(mid)}`, cluster.sort((a, b) => a.date.localeCompare(b.date)));
+      cluster = [];
+    };
+    for (const t of sorted) {
+      if (cluster.length && cluster[cluster.length - 1].amount / t.amount > 1.25) flush();
+      cluster.push(t);
+    }
+    flush();
   }
   const out: Series[] = [];
   for (const [merchant, ts] of groups) {
