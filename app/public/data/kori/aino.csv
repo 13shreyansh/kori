@@ -1,0 +1,1375 @@
+customer_id,bank_account_id,tx_date,tx_timestamp,category,tx_amount_eur,balance_after_eur,transaction_type,merchant_id,mcc_code
+aino,aino-current,2024-12-01,2024-12-01T12:00:00,Groceries,-3.8,-718.09,purchase,Alepa,5411
+aino,aino-current,2024-12-02,2024-12-02T12:00:00,Housing,-480,-1198.09,housing_payment,HOAS,
+aino,aino-current,2024-12-02,2024-12-02T12:00:00,Groceries,-4.5,-1202.59,purchase,S-market,5411
+aino,aino-current,2024-12-03,2024-12-03T12:00:00,Groceries,-5.2,-1207.79,purchase,Alepa,5411
+aino,aino-current,2024-12-03,2024-12-03T12:00:00,Restaurants,-5.6,-1213.39,purchase,Espresso House,5814
+aino,aino-current,2024-12-04,2024-12-04T12:00:00,Other Income,279.38,-934.01,other_income,Kela,
+aino,aino-current,2024-12-04,2024-12-04T12:00:00,Groceries,-5.9,-939.91,purchase,S-market,5411
+aino,aino-current,2024-12-04,2024-12-04T12:00:00,Transportation,-3.2,-943.11,purchase,HSL,4111
+aino,aino-current,2024-12-05,2024-12-05T12:00:00,Groceries,-6.6,-949.71,purchase,Alepa,5411
+aino,aino-current,2024-12-05,2024-12-05T12:00:00,Restaurants,-16.8,-966.51,purchase,Wolt,5812
+aino,aino-current,2024-12-06,2024-12-06T12:00:00,Groceries,-3.1,-969.61,purchase,S-market,5411
+aino,aino-current,2024-12-07,2024-12-07T12:00:00,Groceries,-3.8,-973.41,purchase,Alepa,5411
+aino,aino-current,2024-12-07,2024-12-07T12:00:00,Restaurants,-5.6,-979.01,purchase,Espresso House,5814
+aino,aino-current,2024-12-08,2024-12-08T12:00:00,Groceries,-4.5,-983.51,purchase,S-market,5411
+aino,aino-current,2024-12-08,2024-12-08T12:00:00,Transportation,-3.2,-986.71,purchase,HSL,4111
+aino,aino-current,2024-12-09,2024-12-09T12:00:00,Groceries,-5.2,-991.91,purchase,Alepa,5411
+aino,aino-current,2024-12-10,2024-12-10T12:00:00,Groceries,-5.9,-997.81,purchase,S-market,5411
+aino,aino-current,2024-12-10,2024-12-10T12:00:00,Restaurants,-5.6,-1003.41,purchase,Espresso House,5814
+aino,aino-current,2024-12-11,2024-12-11T12:00:00,Groceries,-6.6,-1010.01,purchase,Alepa,5411
+aino,aino-current,2024-12-12,2024-12-12T12:00:00,Groceries,-3.1,-1013.11,purchase,S-market,5411
+aino,aino-current,2024-12-12,2024-12-12T12:00:00,Transportation,-3.2,-1016.31,purchase,HSL,4111
+aino,aino-current,2024-12-12,2024-12-12T12:00:00,Restaurants,-16.8,-1033.11,purchase,Wolt,5812
+aino,aino-current,2024-12-13,2024-12-13T12:00:00,Groceries,-3.8,-1036.91,purchase,Alepa,5411
+aino,aino-current,2024-12-14,2024-12-14T12:00:00,Groceries,-4.5,-1041.41,purchase,S-market,5411
+aino,aino-current,2024-12-15,2024-12-15T12:00:00,Groceries,-5.2,-1046.61,purchase,Alepa,5411
+aino,aino-current,2024-12-16,2024-12-16T12:00:00,Groceries,-5.9,-1052.51,purchase,S-market,5411
+aino,aino-current,2024-12-16,2024-12-16T12:00:00,Transportation,-3.2,-1055.71,purchase,HSL,4111
+aino,aino-current,2024-12-16,2024-12-16T12:00:00,Restaurants,-5.6,-1061.31,purchase,Espresso House,5814
+aino,aino-current,2024-12-17,2024-12-17T12:00:00,Groceries,-6.6,-1067.91,purchase,Alepa,5411
+aino,aino-current,2024-12-18,2024-12-18T12:00:00,Entertainment,-6.49,-1074.4,utilities_payment,Spotify,
+aino,aino-current,2024-12-18,2024-12-18T12:00:00,Groceries,-3.1,-1077.5,purchase,S-market,5411
+aino,aino-current,2024-12-19,2024-12-19T12:00:00,Groceries,-3.8,-1081.3,purchase,Alepa,5411
+aino,aino-current,2024-12-19,2024-12-19T12:00:00,Restaurants,-16.8,-1098.1,purchase,Wolt,5812
+aino,aino-current,2024-12-20,2024-12-20T12:00:00,Utilities,-14.9,-1113.0,utilities_payment,Elisa,
+aino,aino-current,2024-12-20,2024-12-20T12:00:00,Groceries,-4.5,-1117.5,purchase,S-market,5411
+aino,aino-current,2024-12-20,2024-12-20T12:00:00,Transportation,-3.2,-1120.7,purchase,HSL,4111
+aino,aino-current,2024-12-21,2024-12-21T12:00:00,Groceries,-5.2,-1125.9,purchase,Alepa,5411
+aino,aino-current,2024-12-22,2024-12-22T12:00:00,Groceries,-5.9,-1131.8,purchase,S-market,5411
+aino,aino-current,2024-12-23,2024-12-23T12:00:00,Groceries,-6.6,-1138.4,purchase,Alepa,5411
+aino,aino-current,2024-12-24,2024-12-24T12:00:00,Groceries,-3.1,-1141.5,purchase,S-market,5411
+aino,aino-current,2024-12-24,2024-12-24T12:00:00,Transportation,-3.2,-1144.7,purchase,HSL,4111
+aino,aino-current,2024-12-24,2024-12-24T12:00:00,Restaurants,-5.6,-1150.3,purchase,Espresso House,5814
+aino,aino-current,2024-12-25,2024-12-25T12:00:00,Salary,520,-630.3,salary,Kahvila Sävy Oy,
+aino,aino-current,2024-12-25,2024-12-25T12:00:00,Groceries,-3.8,-634.1,purchase,Alepa,5411
+aino,aino-current,2024-12-26,2024-12-26T12:00:00,Invest Deposit,-18,-652.1,investment_deposit,Interrail,
+aino,aino-current,2024-12-26,2024-12-26T12:00:00,Groceries,-4.5,-656.6,purchase,S-market,5411
+aino,aino-current,2024-12-26,2024-12-26T12:00:00,Restaurants,-16.8,-673.4,purchase,Wolt,5812
+aino,aino-savings,2024-12-26,2024-12-26T12:00:00,Invest Withdraw,18,-336,investment_withdrawal,Käyttötili,
+aino,aino-current,2024-12-27,2024-12-27T12:00:00,Groceries,-5.2,-678.6,purchase,Alepa,5411
+aino,aino-current,2024-12-28,2024-12-28T12:00:00,Entertainment,-9.99,-688.59,utilities_payment,Netflix,
+aino,aino-current,2024-12-28,2024-12-28T12:00:00,Entertainment,-0.99,-689.58,utilities_payment,iCloud,
+aino,aino-current,2024-12-28,2024-12-28T12:00:00,Entertainment,-5.99,-695.57,utilities_payment,HBO Max,
+aino,aino-current,2025-01-01,2025-01-01T12:00:00,Groceries,-3.8,-699.37,purchase,Alepa,5411
+aino,aino-current,2025-01-02,2025-01-02T12:00:00,Housing,-480,-1179.37,housing_payment,HOAS,
+aino,aino-current,2025-01-02,2025-01-02T12:00:00,Groceries,-4.5,-1183.87,purchase,S-market,5411
+aino,aino-current,2025-01-03,2025-01-03T12:00:00,Groceries,-5.2,-1189.07,purchase,Alepa,5411
+aino,aino-current,2025-01-03,2025-01-03T12:00:00,Restaurants,-5.6,-1194.67,purchase,Espresso House,5814
+aino,aino-current,2025-01-04,2025-01-04T12:00:00,Other Income,279.38,-915.29,other_income,Kela,
+aino,aino-current,2025-01-04,2025-01-04T12:00:00,Groceries,-5.9,-921.19,purchase,S-market,5411
+aino,aino-current,2025-01-04,2025-01-04T12:00:00,Transportation,-3.2,-924.39,purchase,HSL,4111
+aino,aino-current,2025-01-05,2025-01-05T12:00:00,Groceries,-6.6,-930.99,purchase,Alepa,5411
+aino,aino-current,2025-01-05,2025-01-05T12:00:00,Restaurants,-16.8,-947.79,purchase,Wolt,5812
+aino,aino-current,2025-01-06,2025-01-06T12:00:00,Groceries,-3.1,-950.89,purchase,S-market,5411
+aino,aino-current,2025-01-07,2025-01-07T12:00:00,Groceries,-3.8,-954.69,purchase,Alepa,5411
+aino,aino-current,2025-01-07,2025-01-07T12:00:00,Restaurants,-5.6,-960.29,purchase,Espresso House,5814
+aino,aino-current,2025-01-08,2025-01-08T12:00:00,Groceries,-4.5,-964.79,purchase,S-market,5411
+aino,aino-current,2025-01-08,2025-01-08T12:00:00,Transportation,-3.2,-967.99,purchase,HSL,4111
+aino,aino-current,2025-01-09,2025-01-09T12:00:00,Groceries,-5.2,-973.19,purchase,Alepa,5411
+aino,aino-current,2025-01-10,2025-01-10T12:00:00,Groceries,-5.9,-979.09,purchase,S-market,5411
+aino,aino-current,2025-01-10,2025-01-10T12:00:00,Restaurants,-5.6,-984.69,purchase,Espresso House,5814
+aino,aino-current,2025-01-11,2025-01-11T12:00:00,Groceries,-6.6,-991.29,purchase,Alepa,5411
+aino,aino-current,2025-01-12,2025-01-12T12:00:00,Groceries,-3.1,-994.39,purchase,S-market,5411
+aino,aino-current,2025-01-12,2025-01-12T12:00:00,Transportation,-3.2,-997.59,purchase,HSL,4111
+aino,aino-current,2025-01-12,2025-01-12T12:00:00,Restaurants,-16.8,-1014.39,purchase,Wolt,5812
+aino,aino-current,2025-01-13,2025-01-13T12:00:00,Groceries,-3.8,-1018.19,purchase,Alepa,5411
+aino,aino-current,2025-01-14,2025-01-14T12:00:00,Groceries,-4.5,-1022.69,purchase,S-market,5411
+aino,aino-current,2025-01-15,2025-01-15T12:00:00,Groceries,-5.2,-1027.89,purchase,Alepa,5411
+aino,aino-current,2025-01-16,2025-01-16T12:00:00,Groceries,-5.9,-1033.79,purchase,S-market,5411
+aino,aino-current,2025-01-16,2025-01-16T12:00:00,Transportation,-3.2,-1036.99,purchase,HSL,4111
+aino,aino-current,2025-01-16,2025-01-16T12:00:00,Restaurants,-5.6,-1042.59,purchase,Espresso House,5814
+aino,aino-current,2025-01-17,2025-01-17T12:00:00,Groceries,-6.6,-1049.19,purchase,Alepa,5411
+aino,aino-current,2025-01-18,2025-01-18T12:00:00,Entertainment,-6.49,-1055.68,utilities_payment,Spotify,
+aino,aino-current,2025-01-18,2025-01-18T12:00:00,Groceries,-3.1,-1058.78,purchase,S-market,5411
+aino,aino-current,2025-01-19,2025-01-19T12:00:00,Groceries,-3.8,-1062.58,purchase,Alepa,5411
+aino,aino-current,2025-01-19,2025-01-19T12:00:00,Restaurants,-16.8,-1079.38,purchase,Wolt,5812
+aino,aino-current,2025-01-20,2025-01-20T12:00:00,Utilities,-14.9,-1094.28,utilities_payment,Elisa,
+aino,aino-current,2025-01-20,2025-01-20T12:00:00,Groceries,-4.5,-1098.78,purchase,S-market,5411
+aino,aino-current,2025-01-20,2025-01-20T12:00:00,Transportation,-3.2,-1101.98,purchase,HSL,4111
+aino,aino-current,2025-01-21,2025-01-21T12:00:00,Groceries,-5.2,-1107.18,purchase,Alepa,5411
+aino,aino-current,2025-01-22,2025-01-22T12:00:00,Groceries,-5.9,-1113.08,purchase,S-market,5411
+aino,aino-current,2025-01-23,2025-01-23T12:00:00,Groceries,-6.6,-1119.68,purchase,Alepa,5411
+aino,aino-current,2025-01-24,2025-01-24T12:00:00,Groceries,-3.1,-1122.78,purchase,S-market,5411
+aino,aino-current,2025-01-24,2025-01-24T12:00:00,Transportation,-3.2,-1125.98,purchase,HSL,4111
+aino,aino-current,2025-01-24,2025-01-24T12:00:00,Restaurants,-5.6,-1131.58,purchase,Espresso House,5814
+aino,aino-current,2025-01-25,2025-01-25T12:00:00,Salary,620,-511.58,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-01-25,2025-01-25T12:00:00,Groceries,-3.8,-515.38,purchase,Alepa,5411
+aino,aino-current,2025-01-26,2025-01-26T12:00:00,Invest Deposit,-18,-533.38,investment_deposit,Interrail,
+aino,aino-current,2025-01-26,2025-01-26T12:00:00,Groceries,-4.5,-537.88,purchase,S-market,5411
+aino,aino-current,2025-01-26,2025-01-26T12:00:00,Restaurants,-16.8,-554.68,purchase,Wolt,5812
+aino,aino-savings,2025-01-26,2025-01-26T12:00:00,Invest Withdraw,18,-318,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-01-27,2025-01-27T12:00:00,Groceries,-5.2,-559.88,purchase,Alepa,5411
+aino,aino-current,2025-01-28,2025-01-28T12:00:00,Entertainment,-9.99,-569.87,utilities_payment,Netflix,
+aino,aino-current,2025-01-28,2025-01-28T12:00:00,Entertainment,-0.99,-570.86,utilities_payment,iCloud,
+aino,aino-current,2025-01-28,2025-01-28T12:00:00,Entertainment,-5.99,-576.85,utilities_payment,HBO Max,
+aino,aino-current,2025-02-01,2025-02-01T12:00:00,Groceries,-3.8,-580.65,purchase,Alepa,5411
+aino,aino-current,2025-02-02,2025-02-02T12:00:00,Housing,-480,-1060.65,housing_payment,HOAS,
+aino,aino-current,2025-02-02,2025-02-02T12:00:00,Groceries,-4.5,-1065.15,purchase,S-market,5411
+aino,aino-current,2025-02-03,2025-02-03T12:00:00,Groceries,-5.2,-1070.35,purchase,Alepa,5411
+aino,aino-current,2025-02-03,2025-02-03T12:00:00,Restaurants,-5.6,-1075.95,purchase,Espresso House,5814
+aino,aino-current,2025-02-04,2025-02-04T12:00:00,Other Income,279.38,-796.57,other_income,Kela,
+aino,aino-current,2025-02-04,2025-02-04T12:00:00,Groceries,-5.9,-802.47,purchase,S-market,5411
+aino,aino-current,2025-02-04,2025-02-04T12:00:00,Transportation,-3.2,-805.67,purchase,HSL,4111
+aino,aino-current,2025-02-05,2025-02-05T12:00:00,Groceries,-6.6,-812.27,purchase,Alepa,5411
+aino,aino-current,2025-02-05,2025-02-05T12:00:00,Restaurants,-16.8,-829.07,purchase,Wolt,5812
+aino,aino-current,2025-02-06,2025-02-06T12:00:00,Groceries,-3.1,-832.17,purchase,S-market,5411
+aino,aino-current,2025-02-07,2025-02-07T12:00:00,Groceries,-3.8,-835.97,purchase,Alepa,5411
+aino,aino-current,2025-02-07,2025-02-07T12:00:00,Restaurants,-5.6,-841.57,purchase,Espresso House,5814
+aino,aino-current,2025-02-08,2025-02-08T12:00:00,Groceries,-4.5,-846.07,purchase,S-market,5411
+aino,aino-current,2025-02-08,2025-02-08T12:00:00,Transportation,-3.2,-849.27,purchase,HSL,4111
+aino,aino-current,2025-02-09,2025-02-09T12:00:00,Groceries,-5.2,-854.47,purchase,Alepa,5411
+aino,aino-current,2025-02-10,2025-02-10T12:00:00,Groceries,-5.9,-860.37,purchase,S-market,5411
+aino,aino-current,2025-02-10,2025-02-10T12:00:00,Restaurants,-5.6,-865.97,purchase,Espresso House,5814
+aino,aino-current,2025-02-11,2025-02-11T12:00:00,Groceries,-6.6,-872.57,purchase,Alepa,5411
+aino,aino-current,2025-02-12,2025-02-12T12:00:00,Groceries,-3.1,-875.67,purchase,S-market,5411
+aino,aino-current,2025-02-12,2025-02-12T12:00:00,Transportation,-3.2,-878.87,purchase,HSL,4111
+aino,aino-current,2025-02-12,2025-02-12T12:00:00,Restaurants,-16.8,-895.67,purchase,Wolt,5812
+aino,aino-current,2025-02-13,2025-02-13T12:00:00,Groceries,-3.8,-899.47,purchase,Alepa,5411
+aino,aino-current,2025-02-14,2025-02-14T12:00:00,Groceries,-4.5,-903.97,purchase,S-market,5411
+aino,aino-current,2025-02-15,2025-02-15T12:00:00,Groceries,-5.2,-909.17,purchase,Alepa,5411
+aino,aino-current,2025-02-16,2025-02-16T12:00:00,Groceries,-5.9,-915.07,purchase,S-market,5411
+aino,aino-current,2025-02-16,2025-02-16T12:00:00,Transportation,-3.2,-918.27,purchase,HSL,4111
+aino,aino-current,2025-02-16,2025-02-16T12:00:00,Restaurants,-5.6,-923.87,purchase,Espresso House,5814
+aino,aino-current,2025-02-17,2025-02-17T12:00:00,Groceries,-6.6,-930.47,purchase,Alepa,5411
+aino,aino-current,2025-02-18,2025-02-18T12:00:00,Entertainment,-6.49,-936.96,utilities_payment,Spotify,
+aino,aino-current,2025-02-18,2025-02-18T12:00:00,Groceries,-3.1,-940.06,purchase,S-market,5411
+aino,aino-current,2025-02-19,2025-02-19T12:00:00,Groceries,-3.8,-943.86,purchase,Alepa,5411
+aino,aino-current,2025-02-19,2025-02-19T12:00:00,Restaurants,-16.8,-960.66,purchase,Wolt,5812
+aino,aino-current,2025-02-20,2025-02-20T12:00:00,Utilities,-14.9,-975.56,utilities_payment,Elisa,
+aino,aino-current,2025-02-20,2025-02-20T12:00:00,Groceries,-4.5,-980.06,purchase,S-market,5411
+aino,aino-current,2025-02-20,2025-02-20T12:00:00,Transportation,-3.2,-983.26,purchase,HSL,4111
+aino,aino-current,2025-02-21,2025-02-21T12:00:00,Groceries,-5.2,-988.46,purchase,Alepa,5411
+aino,aino-current,2025-02-22,2025-02-22T12:00:00,Groceries,-5.9,-994.36,purchase,S-market,5411
+aino,aino-current,2025-02-23,2025-02-23T12:00:00,Groceries,-6.6,-1000.96,purchase,Alepa,5411
+aino,aino-current,2025-02-24,2025-02-24T12:00:00,Groceries,-3.1,-1004.06,purchase,S-market,5411
+aino,aino-current,2025-02-24,2025-02-24T12:00:00,Transportation,-3.2,-1007.26,purchase,HSL,4111
+aino,aino-current,2025-02-24,2025-02-24T12:00:00,Restaurants,-5.6,-1012.86,purchase,Espresso House,5814
+aino,aino-current,2025-02-25,2025-02-25T12:00:00,Salary,755,-257.86,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-02-25,2025-02-25T12:00:00,Groceries,-3.8,-261.66,purchase,Alepa,5411
+aino,aino-current,2025-02-26,2025-02-26T12:00:00,Invest Deposit,-18,-279.66,investment_deposit,Interrail,
+aino,aino-current,2025-02-26,2025-02-26T12:00:00,Groceries,-4.5,-284.16,purchase,S-market,5411
+aino,aino-current,2025-02-26,2025-02-26T12:00:00,Restaurants,-16.8,-300.96,purchase,Wolt,5812
+aino,aino-savings,2025-02-26,2025-02-26T12:00:00,Invest Withdraw,18,-300,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-02-27,2025-02-27T12:00:00,Groceries,-5.2,-306.16,purchase,Alepa,5411
+aino,aino-current,2025-02-28,2025-02-28T12:00:00,Entertainment,-9.99,-316.15,utilities_payment,Netflix,
+aino,aino-current,2025-02-28,2025-02-28T12:00:00,Entertainment,-0.99,-317.14,utilities_payment,iCloud,
+aino,aino-current,2025-02-28,2025-02-28T12:00:00,Entertainment,-5.99,-323.13,utilities_payment,HBO Max,
+aino,aino-current,2025-03-01,2025-03-01T12:00:00,Groceries,-3.8,-326.93,purchase,Alepa,5411
+aino,aino-current,2025-03-02,2025-03-02T12:00:00,Housing,-480,-806.93,housing_payment,HOAS,
+aino,aino-current,2025-03-02,2025-03-02T12:00:00,Groceries,-4.5,-811.43,purchase,S-market,5411
+aino,aino-current,2025-03-03,2025-03-03T12:00:00,Groceries,-5.2,-816.63,purchase,Alepa,5411
+aino,aino-current,2025-03-03,2025-03-03T12:00:00,Restaurants,-5.6,-822.23,purchase,Espresso House,5814
+aino,aino-current,2025-03-04,2025-03-04T12:00:00,Other Income,279.38,-542.85,other_income,Kela,
+aino,aino-current,2025-03-04,2025-03-04T12:00:00,Groceries,-5.9,-548.75,purchase,S-market,5411
+aino,aino-current,2025-03-04,2025-03-04T12:00:00,Transportation,-3.2,-551.95,purchase,HSL,4111
+aino,aino-current,2025-03-05,2025-03-05T12:00:00,Groceries,-6.6,-558.55,purchase,Alepa,5411
+aino,aino-current,2025-03-05,2025-03-05T12:00:00,Restaurants,-16.8,-575.35,purchase,Wolt,5812
+aino,aino-current,2025-03-06,2025-03-06T12:00:00,Groceries,-3.1,-578.45,purchase,S-market,5411
+aino,aino-current,2025-03-07,2025-03-07T12:00:00,Groceries,-3.8,-582.25,purchase,Alepa,5411
+aino,aino-current,2025-03-07,2025-03-07T12:00:00,Restaurants,-5.6,-587.85,purchase,Espresso House,5814
+aino,aino-current,2025-03-08,2025-03-08T12:00:00,Groceries,-4.5,-592.35,purchase,S-market,5411
+aino,aino-current,2025-03-08,2025-03-08T12:00:00,Transportation,-3.2,-595.55,purchase,HSL,4111
+aino,aino-current,2025-03-09,2025-03-09T12:00:00,Groceries,-5.2,-600.75,purchase,Alepa,5411
+aino,aino-current,2025-03-10,2025-03-10T12:00:00,Groceries,-5.9,-606.65,purchase,S-market,5411
+aino,aino-current,2025-03-10,2025-03-10T12:00:00,Restaurants,-5.6,-612.25,purchase,Espresso House,5814
+aino,aino-current,2025-03-11,2025-03-11T12:00:00,Groceries,-6.6,-618.85,purchase,Alepa,5411
+aino,aino-current,2025-03-12,2025-03-12T12:00:00,Groceries,-3.1,-621.95,purchase,S-market,5411
+aino,aino-current,2025-03-12,2025-03-12T12:00:00,Transportation,-3.2,-625.15,purchase,HSL,4111
+aino,aino-current,2025-03-12,2025-03-12T12:00:00,Restaurants,-16.8,-641.95,purchase,Wolt,5812
+aino,aino-current,2025-03-13,2025-03-13T12:00:00,Groceries,-3.8,-645.75,purchase,Alepa,5411
+aino,aino-current,2025-03-14,2025-03-14T12:00:00,Groceries,-4.5,-650.25,purchase,S-market,5411
+aino,aino-current,2025-03-15,2025-03-15T12:00:00,Groceries,-5.2,-655.45,purchase,Alepa,5411
+aino,aino-current,2025-03-16,2025-03-16T12:00:00,Groceries,-5.9,-661.35,purchase,S-market,5411
+aino,aino-current,2025-03-16,2025-03-16T12:00:00,Transportation,-3.2,-664.55,purchase,HSL,4111
+aino,aino-current,2025-03-16,2025-03-16T12:00:00,Restaurants,-5.6,-670.15,purchase,Espresso House,5814
+aino,aino-current,2025-03-17,2025-03-17T12:00:00,Groceries,-6.6,-676.75,purchase,Alepa,5411
+aino,aino-current,2025-03-18,2025-03-18T12:00:00,Entertainment,-6.49,-683.24,utilities_payment,Spotify,
+aino,aino-current,2025-03-18,2025-03-18T12:00:00,Groceries,-3.1,-686.34,purchase,S-market,5411
+aino,aino-current,2025-03-19,2025-03-19T12:00:00,Groceries,-3.8,-690.14,purchase,Alepa,5411
+aino,aino-current,2025-03-19,2025-03-19T12:00:00,Restaurants,-16.8,-706.94,purchase,Wolt,5812
+aino,aino-current,2025-03-20,2025-03-20T12:00:00,Utilities,-14.9,-721.84,utilities_payment,Elisa,
+aino,aino-current,2025-03-20,2025-03-20T12:00:00,Groceries,-4.5,-726.34,purchase,S-market,5411
+aino,aino-current,2025-03-20,2025-03-20T12:00:00,Transportation,-3.2,-729.54,purchase,HSL,4111
+aino,aino-current,2025-03-21,2025-03-21T12:00:00,Groceries,-5.2,-734.74,purchase,Alepa,5411
+aino,aino-current,2025-03-22,2025-03-22T12:00:00,Groceries,-5.9,-740.64,purchase,S-market,5411
+aino,aino-current,2025-03-23,2025-03-23T12:00:00,Groceries,-6.6,-747.24,purchase,Alepa,5411
+aino,aino-current,2025-03-24,2025-03-24T12:00:00,Groceries,-3.1,-750.34,purchase,S-market,5411
+aino,aino-current,2025-03-24,2025-03-24T12:00:00,Transportation,-3.2,-753.54,purchase,HSL,4111
+aino,aino-current,2025-03-24,2025-03-24T12:00:00,Restaurants,-5.6,-759.14,purchase,Espresso House,5814
+aino,aino-current,2025-03-25,2025-03-25T12:00:00,Salary,610,-149.14,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-03-25,2025-03-25T12:00:00,Groceries,-3.8,-152.94,purchase,Alepa,5411
+aino,aino-current,2025-03-26,2025-03-26T12:00:00,Invest Deposit,-18,-170.94,investment_deposit,Interrail,
+aino,aino-current,2025-03-26,2025-03-26T12:00:00,Groceries,-4.5,-175.44,purchase,S-market,5411
+aino,aino-current,2025-03-26,2025-03-26T12:00:00,Restaurants,-16.8,-192.24,purchase,Wolt,5812
+aino,aino-savings,2025-03-26,2025-03-26T12:00:00,Invest Withdraw,18,-282,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-03-27,2025-03-27T12:00:00,Groceries,-5.2,-197.44,purchase,Alepa,5411
+aino,aino-current,2025-03-28,2025-03-28T12:00:00,Entertainment,-9.99,-207.43,utilities_payment,Netflix,
+aino,aino-current,2025-03-28,2025-03-28T12:00:00,Entertainment,-0.99,-208.42,utilities_payment,iCloud,
+aino,aino-current,2025-03-28,2025-03-28T12:00:00,Entertainment,-5.99,-214.41,utilities_payment,HBO Max,
+aino,aino-current,2025-04-01,2025-04-01T12:00:00,Groceries,-3.8,-218.21,purchase,Alepa,5411
+aino,aino-current,2025-04-02,2025-04-02T12:00:00,Housing,-480,-698.21,housing_payment,HOAS,
+aino,aino-current,2025-04-02,2025-04-02T12:00:00,Groceries,-4.5,-702.71,purchase,S-market,5411
+aino,aino-current,2025-04-03,2025-04-03T12:00:00,Groceries,-5.2,-707.91,purchase,Alepa,5411
+aino,aino-current,2025-04-03,2025-04-03T12:00:00,Restaurants,-5.6,-713.51,purchase,Espresso House,5814
+aino,aino-current,2025-04-04,2025-04-04T12:00:00,Other Income,279.38,-434.13,other_income,Kela,
+aino,aino-current,2025-04-04,2025-04-04T12:00:00,Groceries,-5.9,-440.03,purchase,S-market,5411
+aino,aino-current,2025-04-04,2025-04-04T12:00:00,Transportation,-3.2,-443.23,purchase,HSL,4111
+aino,aino-current,2025-04-05,2025-04-05T12:00:00,Groceries,-6.6,-449.83,purchase,Alepa,5411
+aino,aino-current,2025-04-05,2025-04-05T12:00:00,Restaurants,-16.8,-466.63,purchase,Wolt,5812
+aino,aino-current,2025-04-06,2025-04-06T12:00:00,Groceries,-3.1,-469.73,purchase,S-market,5411
+aino,aino-current,2025-04-07,2025-04-07T12:00:00,Groceries,-3.8,-473.53,purchase,Alepa,5411
+aino,aino-current,2025-04-07,2025-04-07T12:00:00,Restaurants,-5.6,-479.13,purchase,Espresso House,5814
+aino,aino-current,2025-04-08,2025-04-08T12:00:00,Groceries,-4.5,-483.63,purchase,S-market,5411
+aino,aino-current,2025-04-08,2025-04-08T12:00:00,Transportation,-3.2,-486.83,purchase,HSL,4111
+aino,aino-current,2025-04-09,2025-04-09T12:00:00,Groceries,-5.2,-492.03,purchase,Alepa,5411
+aino,aino-current,2025-04-10,2025-04-10T12:00:00,Groceries,-5.9,-497.93,purchase,S-market,5411
+aino,aino-current,2025-04-10,2025-04-10T12:00:00,Restaurants,-5.6,-503.53,purchase,Espresso House,5814
+aino,aino-current,2025-04-11,2025-04-11T12:00:00,Groceries,-6.6,-510.13,purchase,Alepa,5411
+aino,aino-current,2025-04-12,2025-04-12T12:00:00,Groceries,-3.1,-513.23,purchase,S-market,5411
+aino,aino-current,2025-04-12,2025-04-12T12:00:00,Transportation,-3.2,-516.43,purchase,HSL,4111
+aino,aino-current,2025-04-12,2025-04-12T12:00:00,Restaurants,-16.8,-533.23,purchase,Wolt,5812
+aino,aino-current,2025-04-13,2025-04-13T12:00:00,Groceries,-3.8,-537.03,purchase,Alepa,5411
+aino,aino-current,2025-04-14,2025-04-14T12:00:00,Groceries,-4.5,-541.53,purchase,S-market,5411
+aino,aino-current,2025-04-15,2025-04-15T12:00:00,Groceries,-5.2,-546.73,purchase,Alepa,5411
+aino,aino-current,2025-04-16,2025-04-16T12:00:00,Groceries,-5.9,-552.63,purchase,S-market,5411
+aino,aino-current,2025-04-16,2025-04-16T12:00:00,Transportation,-3.2,-555.83,purchase,HSL,4111
+aino,aino-current,2025-04-16,2025-04-16T12:00:00,Restaurants,-5.6,-561.43,purchase,Espresso House,5814
+aino,aino-current,2025-04-17,2025-04-17T12:00:00,Groceries,-6.6,-568.03,purchase,Alepa,5411
+aino,aino-current,2025-04-18,2025-04-18T12:00:00,Entertainment,-6.49,-574.52,utilities_payment,Spotify,
+aino,aino-current,2025-04-18,2025-04-18T12:00:00,Groceries,-3.1,-577.62,purchase,S-market,5411
+aino,aino-current,2025-04-19,2025-04-19T12:00:00,Groceries,-3.8,-581.42,purchase,Alepa,5411
+aino,aino-current,2025-04-19,2025-04-19T12:00:00,Restaurants,-16.8,-598.22,purchase,Wolt,5812
+aino,aino-current,2025-04-20,2025-04-20T12:00:00,Utilities,-14.9,-613.12,utilities_payment,Elisa,
+aino,aino-current,2025-04-20,2025-04-20T12:00:00,Groceries,-4.5,-617.62,purchase,S-market,5411
+aino,aino-current,2025-04-20,2025-04-20T12:00:00,Transportation,-3.2,-620.82,purchase,HSL,4111
+aino,aino-current,2025-04-21,2025-04-21T12:00:00,Groceries,-5.2,-626.02,purchase,Alepa,5411
+aino,aino-current,2025-04-22,2025-04-22T12:00:00,Groceries,-5.9,-631.92,purchase,S-market,5411
+aino,aino-current,2025-04-23,2025-04-23T12:00:00,Groceries,-6.6,-638.52,purchase,Alepa,5411
+aino,aino-current,2025-04-24,2025-04-24T12:00:00,Groceries,-3.1,-641.62,purchase,S-market,5411
+aino,aino-current,2025-04-24,2025-04-24T12:00:00,Transportation,-3.2,-644.82,purchase,HSL,4111
+aino,aino-current,2025-04-24,2025-04-24T12:00:00,Restaurants,-5.6,-650.42,purchase,Espresso House,5814
+aino,aino-current,2025-04-25,2025-04-25T12:00:00,Salary,590,-60.42,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-04-25,2025-04-25T12:00:00,Groceries,-3.8,-64.22,purchase,Alepa,5411
+aino,aino-current,2025-04-26,2025-04-26T12:00:00,Invest Deposit,-18,-82.22,investment_deposit,Interrail,
+aino,aino-current,2025-04-26,2025-04-26T12:00:00,Groceries,-4.5,-86.72,purchase,S-market,5411
+aino,aino-current,2025-04-26,2025-04-26T12:00:00,Restaurants,-16.8,-103.52,purchase,Wolt,5812
+aino,aino-savings,2025-04-26,2025-04-26T12:00:00,Invest Withdraw,18,-264,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-04-27,2025-04-27T12:00:00,Groceries,-5.2,-108.72,purchase,Alepa,5411
+aino,aino-current,2025-04-28,2025-04-28T12:00:00,Entertainment,-9.99,-118.71,utilities_payment,Netflix,
+aino,aino-current,2025-04-28,2025-04-28T12:00:00,Entertainment,-0.99,-119.7,utilities_payment,iCloud,
+aino,aino-current,2025-04-28,2025-04-28T12:00:00,Entertainment,-5.99,-125.69,utilities_payment,HBO Max,
+aino,aino-current,2025-05-01,2025-05-01T12:00:00,Groceries,-3.8,-129.49,purchase,Alepa,5411
+aino,aino-current,2025-05-02,2025-05-02T12:00:00,Housing,-480,-609.49,housing_payment,HOAS,
+aino,aino-current,2025-05-02,2025-05-02T12:00:00,Groceries,-4.5,-613.99,purchase,S-market,5411
+aino,aino-current,2025-05-03,2025-05-03T12:00:00,Groceries,-5.2,-619.19,purchase,Alepa,5411
+aino,aino-current,2025-05-03,2025-05-03T12:00:00,Restaurants,-5.6,-624.79,purchase,Espresso House,5814
+aino,aino-current,2025-05-04,2025-05-04T12:00:00,Other Income,279.38,-345.41,other_income,Kela,
+aino,aino-current,2025-05-04,2025-05-04T12:00:00,Groceries,-5.9,-351.31,purchase,S-market,5411
+aino,aino-current,2025-05-04,2025-05-04T12:00:00,Transportation,-3.2,-354.51,purchase,HSL,4111
+aino,aino-current,2025-05-05,2025-05-05T12:00:00,Groceries,-6.6,-361.11,purchase,Alepa,5411
+aino,aino-current,2025-05-05,2025-05-05T12:00:00,Restaurants,-16.8,-377.91,purchase,Wolt,5812
+aino,aino-current,2025-05-06,2025-05-06T12:00:00,Groceries,-3.1,-381.01,purchase,S-market,5411
+aino,aino-current,2025-05-07,2025-05-07T12:00:00,Groceries,-3.8,-384.81,purchase,Alepa,5411
+aino,aino-current,2025-05-07,2025-05-07T12:00:00,Restaurants,-5.6,-390.41,purchase,Espresso House,5814
+aino,aino-current,2025-05-08,2025-05-08T12:00:00,Groceries,-4.5,-394.91,purchase,S-market,5411
+aino,aino-current,2025-05-08,2025-05-08T12:00:00,Transportation,-3.2,-398.11,purchase,HSL,4111
+aino,aino-current,2025-05-09,2025-05-09T12:00:00,Groceries,-5.2,-403.31,purchase,Alepa,5411
+aino,aino-current,2025-05-10,2025-05-10T12:00:00,Groceries,-5.9,-409.21,purchase,S-market,5411
+aino,aino-current,2025-05-10,2025-05-10T12:00:00,Restaurants,-5.6,-414.81,purchase,Espresso House,5814
+aino,aino-current,2025-05-11,2025-05-11T12:00:00,Groceries,-6.6,-421.41,purchase,Alepa,5411
+aino,aino-current,2025-05-12,2025-05-12T12:00:00,Groceries,-3.1,-424.51,purchase,S-market,5411
+aino,aino-current,2025-05-12,2025-05-12T12:00:00,Transportation,-3.2,-427.71,purchase,HSL,4111
+aino,aino-current,2025-05-12,2025-05-12T12:00:00,Restaurants,-16.8,-444.51,purchase,Wolt,5812
+aino,aino-current,2025-05-13,2025-05-13T12:00:00,Groceries,-3.8,-448.31,purchase,Alepa,5411
+aino,aino-current,2025-05-14,2025-05-14T12:00:00,Groceries,-4.5,-452.81,purchase,S-market,5411
+aino,aino-current,2025-05-15,2025-05-15T12:00:00,Groceries,-5.2,-458.01,purchase,Alepa,5411
+aino,aino-current,2025-05-16,2025-05-16T12:00:00,Groceries,-5.9,-463.91,purchase,S-market,5411
+aino,aino-current,2025-05-16,2025-05-16T12:00:00,Transportation,-3.2,-467.11,purchase,HSL,4111
+aino,aino-current,2025-05-16,2025-05-16T12:00:00,Restaurants,-5.6,-472.71,purchase,Espresso House,5814
+aino,aino-current,2025-05-17,2025-05-17T12:00:00,Groceries,-6.6,-479.31,purchase,Alepa,5411
+aino,aino-current,2025-05-18,2025-05-18T12:00:00,Entertainment,-6.49,-485.8,utilities_payment,Spotify,
+aino,aino-current,2025-05-18,2025-05-18T12:00:00,Groceries,-3.1,-488.9,purchase,S-market,5411
+aino,aino-current,2025-05-19,2025-05-19T12:00:00,Groceries,-3.8,-492.7,purchase,Alepa,5411
+aino,aino-current,2025-05-19,2025-05-19T12:00:00,Restaurants,-16.8,-509.5,purchase,Wolt,5812
+aino,aino-current,2025-05-20,2025-05-20T12:00:00,Utilities,-14.9,-524.4,utilities_payment,Elisa,
+aino,aino-current,2025-05-20,2025-05-20T12:00:00,Groceries,-4.5,-528.9,purchase,S-market,5411
+aino,aino-current,2025-05-20,2025-05-20T12:00:00,Transportation,-3.2,-532.1,purchase,HSL,4111
+aino,aino-current,2025-05-21,2025-05-21T12:00:00,Groceries,-5.2,-537.3,purchase,Alepa,5411
+aino,aino-current,2025-05-22,2025-05-22T12:00:00,Groceries,-5.9,-543.2,purchase,S-market,5411
+aino,aino-current,2025-05-23,2025-05-23T12:00:00,Groceries,-6.6,-549.8,purchase,Alepa,5411
+aino,aino-current,2025-05-24,2025-05-24T12:00:00,Groceries,-3.1,-552.9,purchase,S-market,5411
+aino,aino-current,2025-05-24,2025-05-24T12:00:00,Transportation,-3.2,-556.1,purchase,HSL,4111
+aino,aino-current,2025-05-24,2025-05-24T12:00:00,Restaurants,-5.6,-561.7,purchase,Espresso House,5814
+aino,aino-current,2025-05-25,2025-05-25T12:00:00,Salary,680,118.3,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-05-25,2025-05-25T12:00:00,Groceries,-3.8,114.5,purchase,Alepa,5411
+aino,aino-current,2025-05-26,2025-05-26T12:00:00,Invest Deposit,-18,96.5,investment_deposit,Interrail,
+aino,aino-current,2025-05-26,2025-05-26T12:00:00,Groceries,-4.5,92.0,purchase,S-market,5411
+aino,aino-current,2025-05-26,2025-05-26T12:00:00,Restaurants,-16.8,75.2,purchase,Wolt,5812
+aino,aino-savings,2025-05-26,2025-05-26T12:00:00,Invest Withdraw,18,-246,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-05-27,2025-05-27T12:00:00,Groceries,-5.2,70.0,purchase,Alepa,5411
+aino,aino-current,2025-05-28,2025-05-28T12:00:00,Entertainment,-9.99,60.01,utilities_payment,Netflix,
+aino,aino-current,2025-05-28,2025-05-28T12:00:00,Entertainment,-0.99,59.02,utilities_payment,iCloud,
+aino,aino-current,2025-05-28,2025-05-28T12:00:00,Entertainment,-5.99,53.03,utilities_payment,HBO Max,
+aino,aino-current,2025-06-01,2025-06-01T12:00:00,Groceries,-3.8,49.23,purchase,Alepa,5411
+aino,aino-current,2025-06-02,2025-06-02T12:00:00,Housing,-480,-430.77,housing_payment,HOAS,
+aino,aino-current,2025-06-02,2025-06-02T12:00:00,Groceries,-4.5,-435.27,purchase,S-market,5411
+aino,aino-current,2025-06-03,2025-06-03T12:00:00,Groceries,-5.2,-440.47,purchase,Alepa,5411
+aino,aino-current,2025-06-03,2025-06-03T12:00:00,Restaurants,-5.6,-446.07,purchase,Espresso House,5814
+aino,aino-current,2025-06-04,2025-06-04T12:00:00,Other Income,279.38,-166.69,other_income,Kela,
+aino,aino-current,2025-06-04,2025-06-04T12:00:00,Groceries,-5.9,-172.59,purchase,S-market,5411
+aino,aino-current,2025-06-04,2025-06-04T12:00:00,Transportation,-3.2,-175.79,purchase,HSL,4111
+aino,aino-current,2025-06-05,2025-06-05T12:00:00,Groceries,-6.6,-182.39,purchase,Alepa,5411
+aino,aino-current,2025-06-05,2025-06-05T12:00:00,Restaurants,-16.8,-199.19,purchase,Wolt,5812
+aino,aino-current,2025-06-06,2025-06-06T12:00:00,Groceries,-3.1,-202.29,purchase,S-market,5411
+aino,aino-current,2025-06-07,2025-06-07T12:00:00,Groceries,-3.8,-206.09,purchase,Alepa,5411
+aino,aino-current,2025-06-07,2025-06-07T12:00:00,Restaurants,-5.6,-211.69,purchase,Espresso House,5814
+aino,aino-current,2025-06-08,2025-06-08T12:00:00,Groceries,-4.5,-216.19,purchase,S-market,5411
+aino,aino-current,2025-06-08,2025-06-08T12:00:00,Transportation,-3.2,-219.39,purchase,HSL,4111
+aino,aino-current,2025-06-09,2025-06-09T12:00:00,Groceries,-5.2,-224.59,purchase,Alepa,5411
+aino,aino-current,2025-06-10,2025-06-10T12:00:00,Groceries,-5.9,-230.49,purchase,S-market,5411
+aino,aino-current,2025-06-10,2025-06-10T12:00:00,Restaurants,-5.6,-236.09,purchase,Espresso House,5814
+aino,aino-current,2025-06-11,2025-06-11T12:00:00,Groceries,-6.6,-242.69,purchase,Alepa,5411
+aino,aino-current,2025-06-12,2025-06-12T12:00:00,Groceries,-3.1,-245.79,purchase,S-market,5411
+aino,aino-current,2025-06-12,2025-06-12T12:00:00,Transportation,-3.2,-248.99,purchase,HSL,4111
+aino,aino-current,2025-06-12,2025-06-12T12:00:00,Restaurants,-16.8,-265.79,purchase,Wolt,5812
+aino,aino-current,2025-06-13,2025-06-13T12:00:00,Groceries,-3.8,-269.59,purchase,Alepa,5411
+aino,aino-current,2025-06-14,2025-06-14T12:00:00,Groceries,-4.5,-274.09,purchase,S-market,5411
+aino,aino-current,2025-06-15,2025-06-15T12:00:00,Groceries,-5.2,-279.29,purchase,Alepa,5411
+aino,aino-current,2025-06-16,2025-06-16T12:00:00,Groceries,-5.9,-285.19,purchase,S-market,5411
+aino,aino-current,2025-06-16,2025-06-16T12:00:00,Transportation,-3.2,-288.39,purchase,HSL,4111
+aino,aino-current,2025-06-16,2025-06-16T12:00:00,Restaurants,-5.6,-293.99,purchase,Espresso House,5814
+aino,aino-current,2025-06-17,2025-06-17T12:00:00,Groceries,-6.6,-300.59,purchase,Alepa,5411
+aino,aino-current,2025-06-18,2025-06-18T12:00:00,Entertainment,-6.49,-307.08,utilities_payment,Spotify,
+aino,aino-current,2025-06-18,2025-06-18T12:00:00,Groceries,-3.1,-310.18,purchase,S-market,5411
+aino,aino-current,2025-06-19,2025-06-19T12:00:00,Groceries,-3.8,-313.98,purchase,Alepa,5411
+aino,aino-current,2025-06-19,2025-06-19T12:00:00,Restaurants,-16.8,-330.78,purchase,Wolt,5812
+aino,aino-current,2025-06-20,2025-06-20T12:00:00,Utilities,-14.9,-345.68,utilities_payment,Elisa,
+aino,aino-current,2025-06-20,2025-06-20T12:00:00,Groceries,-4.5,-350.18,purchase,S-market,5411
+aino,aino-current,2025-06-20,2025-06-20T12:00:00,Transportation,-3.2,-353.38,purchase,HSL,4111
+aino,aino-current,2025-06-21,2025-06-21T12:00:00,Groceries,-5.2,-358.58,purchase,Alepa,5411
+aino,aino-current,2025-06-22,2025-06-22T12:00:00,Groceries,-5.9,-364.48,purchase,S-market,5411
+aino,aino-current,2025-06-23,2025-06-23T12:00:00,Groceries,-6.6,-371.08,purchase,Alepa,5411
+aino,aino-current,2025-06-24,2025-06-24T12:00:00,Groceries,-3.1,-374.18,purchase,S-market,5411
+aino,aino-current,2025-06-24,2025-06-24T12:00:00,Transportation,-3.2,-377.38,purchase,HSL,4111
+aino,aino-current,2025-06-24,2025-06-24T12:00:00,Restaurants,-5.6,-382.98,purchase,Espresso House,5814
+aino,aino-current,2025-06-25,2025-06-25T12:00:00,Salary,520,137.02,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-06-25,2025-06-25T12:00:00,Groceries,-3.8,133.22,purchase,Alepa,5411
+aino,aino-current,2025-06-26,2025-06-26T12:00:00,Invest Deposit,-18,115.22,investment_deposit,Interrail,
+aino,aino-current,2025-06-26,2025-06-26T12:00:00,Groceries,-4.5,110.72,purchase,S-market,5411
+aino,aino-current,2025-06-26,2025-06-26T12:00:00,Restaurants,-16.8,93.92,purchase,Wolt,5812
+aino,aino-savings,2025-06-26,2025-06-26T12:00:00,Invest Withdraw,18,-228,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-06-27,2025-06-27T12:00:00,Groceries,-5.2,88.72,purchase,Alepa,5411
+aino,aino-current,2025-06-28,2025-06-28T12:00:00,Entertainment,-9.99,78.73,utilities_payment,Netflix,
+aino,aino-current,2025-06-28,2025-06-28T12:00:00,Entertainment,-0.99,77.74,utilities_payment,iCloud,
+aino,aino-current,2025-06-28,2025-06-28T12:00:00,Entertainment,-5.99,71.75,utilities_payment,HBO Max,
+aino,aino-current,2025-07-01,2025-07-01T12:00:00,Groceries,-3.8,67.95,purchase,Alepa,5411
+aino,aino-current,2025-07-02,2025-07-02T12:00:00,Housing,-480,-412.05,housing_payment,HOAS,
+aino,aino-current,2025-07-02,2025-07-02T12:00:00,Groceries,-4.5,-416.55,purchase,S-market,5411
+aino,aino-current,2025-07-03,2025-07-03T12:00:00,Groceries,-5.2,-421.75,purchase,Alepa,5411
+aino,aino-current,2025-07-03,2025-07-03T12:00:00,Restaurants,-5.6,-427.35,purchase,Espresso House,5814
+aino,aino-current,2025-07-04,2025-07-04T12:00:00,Other Income,279.38,-147.97,other_income,Kela,
+aino,aino-current,2025-07-04,2025-07-04T12:00:00,Groceries,-5.9,-153.87,purchase,S-market,5411
+aino,aino-current,2025-07-04,2025-07-04T12:00:00,Transportation,-3.2,-157.07,purchase,HSL,4111
+aino,aino-current,2025-07-05,2025-07-05T12:00:00,Groceries,-6.6,-163.67,purchase,Alepa,5411
+aino,aino-current,2025-07-05,2025-07-05T12:00:00,Restaurants,-16.8,-180.47,purchase,Wolt,5812
+aino,aino-current,2025-07-06,2025-07-06T12:00:00,Groceries,-3.1,-183.57,purchase,S-market,5411
+aino,aino-current,2025-07-07,2025-07-07T12:00:00,Groceries,-3.8,-187.37,purchase,Alepa,5411
+aino,aino-current,2025-07-07,2025-07-07T12:00:00,Restaurants,-5.6,-192.97,purchase,Espresso House,5814
+aino,aino-current,2025-07-08,2025-07-08T12:00:00,Groceries,-4.5,-197.47,purchase,S-market,5411
+aino,aino-current,2025-07-08,2025-07-08T12:00:00,Transportation,-3.2,-200.67,purchase,HSL,4111
+aino,aino-current,2025-07-09,2025-07-09T12:00:00,Groceries,-5.2,-205.87,purchase,Alepa,5411
+aino,aino-current,2025-07-10,2025-07-10T12:00:00,Groceries,-5.9,-211.77,purchase,S-market,5411
+aino,aino-current,2025-07-10,2025-07-10T12:00:00,Restaurants,-5.6,-217.37,purchase,Espresso House,5814
+aino,aino-current,2025-07-11,2025-07-11T12:00:00,Groceries,-6.6,-223.97,purchase,Alepa,5411
+aino,aino-current,2025-07-12,2025-07-12T12:00:00,Groceries,-3.1,-227.07,purchase,S-market,5411
+aino,aino-current,2025-07-12,2025-07-12T12:00:00,Transportation,-3.2,-230.27,purchase,HSL,4111
+aino,aino-current,2025-07-12,2025-07-12T12:00:00,Restaurants,-16.8,-247.07,purchase,Wolt,5812
+aino,aino-current,2025-07-13,2025-07-13T12:00:00,Groceries,-3.8,-250.87,purchase,Alepa,5411
+aino,aino-current,2025-07-14,2025-07-14T12:00:00,Groceries,-4.5,-255.37,purchase,S-market,5411
+aino,aino-current,2025-07-15,2025-07-15T12:00:00,Groceries,-5.2,-260.57,purchase,Alepa,5411
+aino,aino-current,2025-07-16,2025-07-16T12:00:00,Groceries,-5.9,-266.47,purchase,S-market,5411
+aino,aino-current,2025-07-16,2025-07-16T12:00:00,Transportation,-3.2,-269.67,purchase,HSL,4111
+aino,aino-current,2025-07-16,2025-07-16T12:00:00,Restaurants,-5.6,-275.27,purchase,Espresso House,5814
+aino,aino-current,2025-07-17,2025-07-17T12:00:00,Groceries,-6.6,-281.87,purchase,Alepa,5411
+aino,aino-current,2025-07-18,2025-07-18T12:00:00,Entertainment,-6.49,-288.36,utilities_payment,Spotify,
+aino,aino-current,2025-07-18,2025-07-18T12:00:00,Groceries,-3.1,-291.46,purchase,S-market,5411
+aino,aino-current,2025-07-19,2025-07-19T12:00:00,Groceries,-3.8,-295.26,purchase,Alepa,5411
+aino,aino-current,2025-07-19,2025-07-19T12:00:00,Restaurants,-16.8,-312.06,purchase,Wolt,5812
+aino,aino-current,2025-07-20,2025-07-20T12:00:00,Utilities,-14.9,-326.96,utilities_payment,Elisa,
+aino,aino-current,2025-07-20,2025-07-20T12:00:00,Groceries,-4.5,-331.46,purchase,S-market,5411
+aino,aino-current,2025-07-20,2025-07-20T12:00:00,Transportation,-3.2,-334.66,purchase,HSL,4111
+aino,aino-current,2025-07-21,2025-07-21T12:00:00,Groceries,-5.2,-339.86,purchase,Alepa,5411
+aino,aino-current,2025-07-22,2025-07-22T12:00:00,Groceries,-5.9,-345.76,purchase,S-market,5411
+aino,aino-current,2025-07-23,2025-07-23T12:00:00,Groceries,-6.6,-352.36,purchase,Alepa,5411
+aino,aino-current,2025-07-24,2025-07-24T12:00:00,Groceries,-3.1,-355.46,purchase,S-market,5411
+aino,aino-current,2025-07-24,2025-07-24T12:00:00,Transportation,-3.2,-358.66,purchase,HSL,4111
+aino,aino-current,2025-07-24,2025-07-24T12:00:00,Restaurants,-5.6,-364.26,purchase,Espresso House,5814
+aino,aino-current,2025-07-25,2025-07-25T12:00:00,Salary,620,255.74,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-07-25,2025-07-25T12:00:00,Groceries,-3.8,251.94,purchase,Alepa,5411
+aino,aino-current,2025-07-26,2025-07-26T12:00:00,Invest Deposit,-18,233.94,investment_deposit,Interrail,
+aino,aino-current,2025-07-26,2025-07-26T12:00:00,Groceries,-4.5,229.44,purchase,S-market,5411
+aino,aino-current,2025-07-26,2025-07-26T12:00:00,Restaurants,-16.8,212.64,purchase,Wolt,5812
+aino,aino-savings,2025-07-26,2025-07-26T12:00:00,Invest Withdraw,18,-210,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-07-27,2025-07-27T12:00:00,Groceries,-5.2,207.44,purchase,Alepa,5411
+aino,aino-current,2025-07-28,2025-07-28T12:00:00,Entertainment,-9.99,197.45,utilities_payment,Netflix,
+aino,aino-current,2025-07-28,2025-07-28T12:00:00,Entertainment,-0.99,196.46,utilities_payment,iCloud,
+aino,aino-current,2025-07-28,2025-07-28T12:00:00,Entertainment,-5.99,190.47,utilities_payment,HBO Max,
+aino,aino-current,2025-08-01,2025-08-01T12:00:00,Groceries,-3.8,186.67,purchase,Alepa,5411
+aino,aino-current,2025-08-02,2025-08-02T12:00:00,Housing,-480,-293.33,housing_payment,HOAS,
+aino,aino-current,2025-08-02,2025-08-02T12:00:00,Groceries,-4.5,-297.83,purchase,S-market,5411
+aino,aino-current,2025-08-03,2025-08-03T12:00:00,Groceries,-5.2,-303.03,purchase,Alepa,5411
+aino,aino-current,2025-08-03,2025-08-03T12:00:00,Restaurants,-5.6,-308.63,purchase,Espresso House,5814
+aino,aino-current,2025-08-04,2025-08-04T12:00:00,Other Income,279.38,-29.25,other_income,Kela,
+aino,aino-current,2025-08-04,2025-08-04T12:00:00,Groceries,-5.9,-35.15,purchase,S-market,5411
+aino,aino-current,2025-08-04,2025-08-04T12:00:00,Transportation,-3.2,-38.35,purchase,HSL,4111
+aino,aino-current,2025-08-05,2025-08-05T12:00:00,Groceries,-6.6,-44.95,purchase,Alepa,5411
+aino,aino-current,2025-08-05,2025-08-05T12:00:00,Restaurants,-16.8,-61.75,purchase,Wolt,5812
+aino,aino-current,2025-08-06,2025-08-06T12:00:00,Groceries,-3.1,-64.85,purchase,S-market,5411
+aino,aino-current,2025-08-07,2025-08-07T12:00:00,Groceries,-3.8,-68.65,purchase,Alepa,5411
+aino,aino-current,2025-08-07,2025-08-07T12:00:00,Restaurants,-5.6,-74.25,purchase,Espresso House,5814
+aino,aino-current,2025-08-08,2025-08-08T12:00:00,Groceries,-4.5,-78.75,purchase,S-market,5411
+aino,aino-current,2025-08-08,2025-08-08T12:00:00,Transportation,-3.2,-81.95,purchase,HSL,4111
+aino,aino-current,2025-08-09,2025-08-09T12:00:00,Groceries,-5.2,-87.15,purchase,Alepa,5411
+aino,aino-current,2025-08-10,2025-08-10T12:00:00,Groceries,-5.9,-93.05,purchase,S-market,5411
+aino,aino-current,2025-08-10,2025-08-10T12:00:00,Restaurants,-5.6,-98.65,purchase,Espresso House,5814
+aino,aino-current,2025-08-11,2025-08-11T12:00:00,Groceries,-6.6,-105.25,purchase,Alepa,5411
+aino,aino-current,2025-08-12,2025-08-12T12:00:00,Groceries,-3.1,-108.35,purchase,S-market,5411
+aino,aino-current,2025-08-12,2025-08-12T12:00:00,Transportation,-3.2,-111.55,purchase,HSL,4111
+aino,aino-current,2025-08-12,2025-08-12T12:00:00,Restaurants,-16.8,-128.35,purchase,Wolt,5812
+aino,aino-current,2025-08-13,2025-08-13T12:00:00,Groceries,-3.8,-132.15,purchase,Alepa,5411
+aino,aino-current,2025-08-14,2025-08-14T12:00:00,Groceries,-4.5,-136.65,purchase,S-market,5411
+aino,aino-current,2025-08-15,2025-08-15T12:00:00,Groceries,-5.2,-141.85,purchase,Alepa,5411
+aino,aino-current,2025-08-16,2025-08-16T12:00:00,Groceries,-5.9,-147.75,purchase,S-market,5411
+aino,aino-current,2025-08-16,2025-08-16T12:00:00,Transportation,-3.2,-150.95,purchase,HSL,4111
+aino,aino-current,2025-08-16,2025-08-16T12:00:00,Restaurants,-5.6,-156.55,purchase,Espresso House,5814
+aino,aino-current,2025-08-17,2025-08-17T12:00:00,Groceries,-6.6,-163.15,purchase,Alepa,5411
+aino,aino-current,2025-08-18,2025-08-18T12:00:00,Entertainment,-6.49,-169.64,utilities_payment,Spotify,
+aino,aino-current,2025-08-18,2025-08-18T12:00:00,Groceries,-3.1,-172.74,purchase,S-market,5411
+aino,aino-current,2025-08-19,2025-08-19T12:00:00,Groceries,-3.8,-176.54,purchase,Alepa,5411
+aino,aino-current,2025-08-19,2025-08-19T12:00:00,Restaurants,-16.8,-193.34,purchase,Wolt,5812
+aino,aino-current,2025-08-20,2025-08-20T12:00:00,Utilities,-14.9,-208.24,utilities_payment,Elisa,
+aino,aino-current,2025-08-20,2025-08-20T12:00:00,Groceries,-4.5,-212.74,purchase,S-market,5411
+aino,aino-current,2025-08-20,2025-08-20T12:00:00,Transportation,-3.2,-215.94,purchase,HSL,4111
+aino,aino-current,2025-08-21,2025-08-21T12:00:00,Groceries,-5.2,-221.14,purchase,Alepa,5411
+aino,aino-current,2025-08-22,2025-08-22T12:00:00,Groceries,-5.9,-227.04,purchase,S-market,5411
+aino,aino-current,2025-08-23,2025-08-23T12:00:00,Groceries,-6.6,-233.64,purchase,Alepa,5411
+aino,aino-current,2025-08-24,2025-08-24T12:00:00,Groceries,-3.1,-236.74,purchase,S-market,5411
+aino,aino-current,2025-08-24,2025-08-24T12:00:00,Transportation,-3.2,-239.94,purchase,HSL,4111
+aino,aino-current,2025-08-24,2025-08-24T12:00:00,Restaurants,-5.6,-245.54,purchase,Espresso House,5814
+aino,aino-current,2025-08-25,2025-08-25T12:00:00,Salary,755,509.46,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-08-25,2025-08-25T12:00:00,Groceries,-3.8,505.66,purchase,Alepa,5411
+aino,aino-current,2025-08-26,2025-08-26T12:00:00,Invest Deposit,-18,487.66,investment_deposit,Interrail,
+aino,aino-current,2025-08-26,2025-08-26T12:00:00,Groceries,-4.5,483.16,purchase,S-market,5411
+aino,aino-current,2025-08-26,2025-08-26T12:00:00,Restaurants,-16.8,466.36,purchase,Wolt,5812
+aino,aino-savings,2025-08-26,2025-08-26T12:00:00,Invest Withdraw,18,-192,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-08-27,2025-08-27T12:00:00,Groceries,-5.2,461.16,purchase,Alepa,5411
+aino,aino-current,2025-08-28,2025-08-28T12:00:00,Entertainment,-9.99,451.17,utilities_payment,Netflix,
+aino,aino-current,2025-08-28,2025-08-28T12:00:00,Entertainment,-0.99,450.18,utilities_payment,iCloud,
+aino,aino-current,2025-08-28,2025-08-28T12:00:00,Entertainment,-5.99,444.19,utilities_payment,HBO Max,
+aino,aino-current,2025-09-01,2025-09-01T12:00:00,Groceries,-3.8,440.39,purchase,Alepa,5411
+aino,aino-current,2025-09-02,2025-09-02T12:00:00,Housing,-480,-39.61,housing_payment,HOAS,
+aino,aino-current,2025-09-02,2025-09-02T12:00:00,Groceries,-4.5,-44.11,purchase,S-market,5411
+aino,aino-current,2025-09-03,2025-09-03T12:00:00,Groceries,-5.2,-49.31,purchase,Alepa,5411
+aino,aino-current,2025-09-03,2025-09-03T12:00:00,Restaurants,-5.6,-54.91,purchase,Espresso House,5814
+aino,aino-current,2025-09-04,2025-09-04T12:00:00,Other Income,279.38,224.47,other_income,Kela,
+aino,aino-current,2025-09-04,2025-09-04T12:00:00,Groceries,-5.9,218.57,purchase,S-market,5411
+aino,aino-current,2025-09-04,2025-09-04T12:00:00,Transportation,-3.2,215.37,purchase,HSL,4111
+aino,aino-current,2025-09-05,2025-09-05T12:00:00,Groceries,-6.6,208.77,purchase,Alepa,5411
+aino,aino-current,2025-09-05,2025-09-05T12:00:00,Restaurants,-16.8,191.97,purchase,Wolt,5812
+aino,aino-current,2025-09-06,2025-09-06T12:00:00,Groceries,-3.1,188.87,purchase,S-market,5411
+aino,aino-current,2025-09-07,2025-09-07T12:00:00,Groceries,-3.8,185.07,purchase,Alepa,5411
+aino,aino-current,2025-09-07,2025-09-07T12:00:00,Restaurants,-5.6,179.47,purchase,Espresso House,5814
+aino,aino-current,2025-09-08,2025-09-08T12:00:00,Groceries,-4.5,174.97,purchase,S-market,5411
+aino,aino-current,2025-09-08,2025-09-08T12:00:00,Transportation,-3.2,171.77,purchase,HSL,4111
+aino,aino-current,2025-09-09,2025-09-09T12:00:00,Groceries,-5.2,166.57,purchase,Alepa,5411
+aino,aino-current,2025-09-10,2025-09-10T12:00:00,Groceries,-5.9,160.67,purchase,S-market,5411
+aino,aino-current,2025-09-10,2025-09-10T12:00:00,Restaurants,-5.6,155.07,purchase,Espresso House,5814
+aino,aino-current,2025-09-11,2025-09-11T12:00:00,Groceries,-6.6,148.47,purchase,Alepa,5411
+aino,aino-current,2025-09-12,2025-09-12T12:00:00,Groceries,-3.1,145.37,purchase,S-market,5411
+aino,aino-current,2025-09-12,2025-09-12T12:00:00,Transportation,-3.2,142.17,purchase,HSL,4111
+aino,aino-current,2025-09-12,2025-09-12T12:00:00,Restaurants,-16.8,125.37,purchase,Wolt,5812
+aino,aino-current,2025-09-13,2025-09-13T12:00:00,Groceries,-3.8,121.57,purchase,Alepa,5411
+aino,aino-current,2025-09-14,2025-09-14T12:00:00,Groceries,-4.5,117.07,purchase,S-market,5411
+aino,aino-current,2025-09-15,2025-09-15T12:00:00,Groceries,-5.2,111.87,purchase,Alepa,5411
+aino,aino-current,2025-09-16,2025-09-16T12:00:00,Groceries,-5.9,105.97,purchase,S-market,5411
+aino,aino-current,2025-09-16,2025-09-16T12:00:00,Transportation,-3.2,102.77,purchase,HSL,4111
+aino,aino-current,2025-09-16,2025-09-16T12:00:00,Restaurants,-5.6,97.17,purchase,Espresso House,5814
+aino,aino-current,2025-09-17,2025-09-17T12:00:00,Groceries,-6.6,90.57,purchase,Alepa,5411
+aino,aino-current,2025-09-18,2025-09-18T12:00:00,Entertainment,-6.49,84.08,utilities_payment,Spotify,
+aino,aino-current,2025-09-18,2025-09-18T12:00:00,Groceries,-3.1,80.98,purchase,S-market,5411
+aino,aino-current,2025-09-19,2025-09-19T12:00:00,Groceries,-3.8,77.18,purchase,Alepa,5411
+aino,aino-current,2025-09-19,2025-09-19T12:00:00,Restaurants,-16.8,60.38,purchase,Wolt,5812
+aino,aino-current,2025-09-20,2025-09-20T12:00:00,Utilities,-14.9,45.48,utilities_payment,Elisa,
+aino,aino-current,2025-09-20,2025-09-20T12:00:00,Groceries,-4.5,40.98,purchase,S-market,5411
+aino,aino-current,2025-09-20,2025-09-20T12:00:00,Transportation,-3.2,37.78,purchase,HSL,4111
+aino,aino-current,2025-09-21,2025-09-21T12:00:00,Groceries,-5.2,32.58,purchase,Alepa,5411
+aino,aino-current,2025-09-22,2025-09-22T12:00:00,Groceries,-5.9,26.68,purchase,S-market,5411
+aino,aino-current,2025-09-23,2025-09-23T12:00:00,Groceries,-6.6,20.08,purchase,Alepa,5411
+aino,aino-current,2025-09-24,2025-09-24T12:00:00,Groceries,-3.1,16.98,purchase,S-market,5411
+aino,aino-current,2025-09-24,2025-09-24T12:00:00,Transportation,-3.2,13.78,purchase,HSL,4111
+aino,aino-current,2025-09-24,2025-09-24T12:00:00,Restaurants,-5.6,8.18,purchase,Espresso House,5814
+aino,aino-current,2025-09-25,2025-09-25T12:00:00,Salary,610,618.18,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-09-25,2025-09-25T12:00:00,Groceries,-3.8,614.38,purchase,Alepa,5411
+aino,aino-current,2025-09-26,2025-09-26T12:00:00,Invest Deposit,-18,596.38,investment_deposit,Interrail,
+aino,aino-current,2025-09-26,2025-09-26T12:00:00,Groceries,-4.5,591.88,purchase,S-market,5411
+aino,aino-current,2025-09-26,2025-09-26T12:00:00,Restaurants,-16.8,575.08,purchase,Wolt,5812
+aino,aino-savings,2025-09-26,2025-09-26T12:00:00,Invest Withdraw,18,-174,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-09-27,2025-09-27T12:00:00,Groceries,-5.2,569.88,purchase,Alepa,5411
+aino,aino-current,2025-09-28,2025-09-28T12:00:00,Entertainment,-9.99,559.89,utilities_payment,Netflix,
+aino,aino-current,2025-09-28,2025-09-28T12:00:00,Entertainment,-0.99,558.9,utilities_payment,iCloud,
+aino,aino-current,2025-09-28,2025-09-28T12:00:00,Entertainment,-5.99,552.91,utilities_payment,HBO Max,
+aino,aino-current,2025-10-01,2025-10-01T12:00:00,Groceries,-3.8,549.11,purchase,Alepa,5411
+aino,aino-current,2025-10-02,2025-10-02T12:00:00,Housing,-480,69.11,housing_payment,HOAS,
+aino,aino-current,2025-10-02,2025-10-02T12:00:00,Groceries,-4.5,64.61,purchase,S-market,5411
+aino,aino-current,2025-10-03,2025-10-03T12:00:00,Groceries,-5.2,59.41,purchase,Alepa,5411
+aino,aino-current,2025-10-03,2025-10-03T12:00:00,Restaurants,-5.6,53.81,purchase,Espresso House,5814
+aino,aino-current,2025-10-04,2025-10-04T12:00:00,Other Income,279.38,333.19,other_income,Kela,
+aino,aino-current,2025-10-04,2025-10-04T12:00:00,Groceries,-5.9,327.29,purchase,S-market,5411
+aino,aino-current,2025-10-04,2025-10-04T12:00:00,Transportation,-3.2,324.09,purchase,HSL,4111
+aino,aino-current,2025-10-05,2025-10-05T12:00:00,Groceries,-6.6,317.49,purchase,Alepa,5411
+aino,aino-current,2025-10-05,2025-10-05T12:00:00,Restaurants,-16.8,300.69,purchase,Wolt,5812
+aino,aino-current,2025-10-06,2025-10-06T12:00:00,Groceries,-3.1,297.59,purchase,S-market,5411
+aino,aino-current,2025-10-07,2025-10-07T12:00:00,Groceries,-3.8,293.79,purchase,Alepa,5411
+aino,aino-current,2025-10-07,2025-10-07T12:00:00,Restaurants,-5.6,288.19,purchase,Espresso House,5814
+aino,aino-current,2025-10-08,2025-10-08T12:00:00,Groceries,-4.5,283.69,purchase,S-market,5411
+aino,aino-current,2025-10-08,2025-10-08T12:00:00,Transportation,-3.2,280.49,purchase,HSL,4111
+aino,aino-current,2025-10-09,2025-10-09T12:00:00,Groceries,-5.2,275.29,purchase,Alepa,5411
+aino,aino-current,2025-10-10,2025-10-10T12:00:00,Groceries,-5.9,269.39,purchase,S-market,5411
+aino,aino-current,2025-10-10,2025-10-10T12:00:00,Restaurants,-5.6,263.79,purchase,Espresso House,5814
+aino,aino-current,2025-10-11,2025-10-11T12:00:00,Groceries,-6.6,257.19,purchase,Alepa,5411
+aino,aino-current,2025-10-12,2025-10-12T12:00:00,Groceries,-3.1,254.09,purchase,S-market,5411
+aino,aino-current,2025-10-12,2025-10-12T12:00:00,Transportation,-3.2,250.89,purchase,HSL,4111
+aino,aino-current,2025-10-12,2025-10-12T12:00:00,Restaurants,-16.8,234.09,purchase,Wolt,5812
+aino,aino-current,2025-10-13,2025-10-13T12:00:00,Groceries,-3.8,230.29,purchase,Alepa,5411
+aino,aino-current,2025-10-14,2025-10-14T12:00:00,Groceries,-4.5,225.79,purchase,S-market,5411
+aino,aino-current,2025-10-15,2025-10-15T12:00:00,Groceries,-5.2,220.59,purchase,Alepa,5411
+aino,aino-current,2025-10-16,2025-10-16T12:00:00,Groceries,-5.9,214.69,purchase,S-market,5411
+aino,aino-current,2025-10-16,2025-10-16T12:00:00,Transportation,-3.2,211.49,purchase,HSL,4111
+aino,aino-current,2025-10-16,2025-10-16T12:00:00,Restaurants,-5.6,205.89,purchase,Espresso House,5814
+aino,aino-current,2025-10-17,2025-10-17T12:00:00,Groceries,-6.6,199.29,purchase,Alepa,5411
+aino,aino-current,2025-10-18,2025-10-18T12:00:00,Entertainment,-6.49,192.8,utilities_payment,Spotify,
+aino,aino-current,2025-10-18,2025-10-18T12:00:00,Groceries,-3.1,189.7,purchase,S-market,5411
+aino,aino-current,2025-10-19,2025-10-19T12:00:00,Groceries,-3.8,185.9,purchase,Alepa,5411
+aino,aino-current,2025-10-19,2025-10-19T12:00:00,Restaurants,-16.8,169.1,purchase,Wolt,5812
+aino,aino-current,2025-10-20,2025-10-20T12:00:00,Utilities,-14.9,154.2,utilities_payment,Elisa,
+aino,aino-current,2025-10-20,2025-10-20T12:00:00,Groceries,-4.5,149.7,purchase,S-market,5411
+aino,aino-current,2025-10-20,2025-10-20T12:00:00,Transportation,-3.2,146.5,purchase,HSL,4111
+aino,aino-current,2025-10-21,2025-10-21T12:00:00,Groceries,-5.2,141.3,purchase,Alepa,5411
+aino,aino-current,2025-10-22,2025-10-22T12:00:00,Groceries,-5.9,135.4,purchase,S-market,5411
+aino,aino-current,2025-10-23,2025-10-23T12:00:00,Groceries,-6.6,128.8,purchase,Alepa,5411
+aino,aino-current,2025-10-24,2025-10-24T12:00:00,Groceries,-3.1,125.7,purchase,S-market,5411
+aino,aino-current,2025-10-24,2025-10-24T12:00:00,Transportation,-3.2,122.5,purchase,HSL,4111
+aino,aino-current,2025-10-24,2025-10-24T12:00:00,Restaurants,-5.6,116.9,purchase,Espresso House,5814
+aino,aino-current,2025-10-25,2025-10-25T12:00:00,Salary,590,706.9,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-10-25,2025-10-25T12:00:00,Groceries,-3.8,703.1,purchase,Alepa,5411
+aino,aino-current,2025-10-26,2025-10-26T12:00:00,Invest Deposit,-18,685.1,investment_deposit,Interrail,
+aino,aino-current,2025-10-26,2025-10-26T12:00:00,Groceries,-4.5,680.6,purchase,S-market,5411
+aino,aino-current,2025-10-26,2025-10-26T12:00:00,Restaurants,-16.8,663.8,purchase,Wolt,5812
+aino,aino-savings,2025-10-26,2025-10-26T12:00:00,Invest Withdraw,18,-156,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-10-27,2025-10-27T12:00:00,Groceries,-5.2,658.6,purchase,Alepa,5411
+aino,aino-current,2025-10-28,2025-10-28T12:00:00,Entertainment,-9.99,648.61,utilities_payment,Netflix,
+aino,aino-current,2025-10-28,2025-10-28T12:00:00,Entertainment,-0.99,647.62,utilities_payment,iCloud,
+aino,aino-current,2025-10-28,2025-10-28T12:00:00,Entertainment,-5.99,641.63,utilities_payment,HBO Max,
+aino,aino-current,2025-11-01,2025-11-01T12:00:00,Groceries,-3.8,637.83,purchase,Alepa,5411
+aino,aino-current,2025-11-02,2025-11-02T12:00:00,Housing,-480,157.83,housing_payment,HOAS,
+aino,aino-current,2025-11-02,2025-11-02T12:00:00,Groceries,-4.5,153.33,purchase,S-market,5411
+aino,aino-current,2025-11-03,2025-11-03T12:00:00,Groceries,-5.2,148.13,purchase,Alepa,5411
+aino,aino-current,2025-11-03,2025-11-03T12:00:00,Restaurants,-5.6,142.53,purchase,Espresso House,5814
+aino,aino-current,2025-11-04,2025-11-04T12:00:00,Other Income,279.38,421.91,other_income,Kela,
+aino,aino-current,2025-11-04,2025-11-04T12:00:00,Groceries,-5.9,416.01,purchase,S-market,5411
+aino,aino-current,2025-11-04,2025-11-04T12:00:00,Transportation,-3.2,412.81,purchase,HSL,4111
+aino,aino-current,2025-11-05,2025-11-05T12:00:00,Groceries,-6.6,406.21,purchase,Alepa,5411
+aino,aino-current,2025-11-05,2025-11-05T12:00:00,Restaurants,-16.8,389.41,purchase,Wolt,5812
+aino,aino-current,2025-11-06,2025-11-06T12:00:00,Groceries,-3.1,386.31,purchase,S-market,5411
+aino,aino-current,2025-11-07,2025-11-07T12:00:00,Groceries,-3.8,382.51,purchase,Alepa,5411
+aino,aino-current,2025-11-07,2025-11-07T12:00:00,Restaurants,-5.6,376.91,purchase,Espresso House,5814
+aino,aino-current,2025-11-08,2025-11-08T12:00:00,Groceries,-4.5,372.41,purchase,S-market,5411
+aino,aino-current,2025-11-08,2025-11-08T12:00:00,Transportation,-3.2,369.21,purchase,HSL,4111
+aino,aino-current,2025-11-09,2025-11-09T12:00:00,Groceries,-5.2,364.01,purchase,Alepa,5411
+aino,aino-current,2025-11-10,2025-11-10T12:00:00,Groceries,-5.9,358.11,purchase,S-market,5411
+aino,aino-current,2025-11-10,2025-11-10T12:00:00,Restaurants,-5.6,352.51,purchase,Espresso House,5814
+aino,aino-current,2025-11-11,2025-11-11T12:00:00,Groceries,-6.6,345.91,purchase,Alepa,5411
+aino,aino-current,2025-11-12,2025-11-12T12:00:00,Groceries,-3.1,342.81,purchase,S-market,5411
+aino,aino-current,2025-11-12,2025-11-12T12:00:00,Transportation,-3.2,339.61,purchase,HSL,4111
+aino,aino-current,2025-11-12,2025-11-12T12:00:00,Restaurants,-16.8,322.81,purchase,Wolt,5812
+aino,aino-current,2025-11-13,2025-11-13T12:00:00,Groceries,-3.8,319.01,purchase,Alepa,5411
+aino,aino-current,2025-11-14,2025-11-14T12:00:00,Groceries,-4.5,314.51,purchase,S-market,5411
+aino,aino-current,2025-11-15,2025-11-15T12:00:00,Groceries,-5.2,309.31,purchase,Alepa,5411
+aino,aino-current,2025-11-16,2025-11-16T12:00:00,Groceries,-5.9,303.41,purchase,S-market,5411
+aino,aino-current,2025-11-16,2025-11-16T12:00:00,Transportation,-3.2,300.21,purchase,HSL,4111
+aino,aino-current,2025-11-16,2025-11-16T12:00:00,Restaurants,-5.6,294.61,purchase,Espresso House,5814
+aino,aino-current,2025-11-17,2025-11-17T12:00:00,Groceries,-6.6,288.01,purchase,Alepa,5411
+aino,aino-current,2025-11-18,2025-11-18T12:00:00,Entertainment,-6.49,281.52,utilities_payment,Spotify,
+aino,aino-current,2025-11-18,2025-11-18T12:00:00,Groceries,-3.1,278.42,purchase,S-market,5411
+aino,aino-current,2025-11-19,2025-11-19T12:00:00,Groceries,-3.8,274.62,purchase,Alepa,5411
+aino,aino-current,2025-11-19,2025-11-19T12:00:00,Restaurants,-16.8,257.82,purchase,Wolt,5812
+aino,aino-current,2025-11-20,2025-11-20T12:00:00,Utilities,-14.9,242.92,utilities_payment,Elisa,
+aino,aino-current,2025-11-20,2025-11-20T12:00:00,Groceries,-4.5,238.42,purchase,S-market,5411
+aino,aino-current,2025-11-20,2025-11-20T12:00:00,Transportation,-3.2,235.22,purchase,HSL,4111
+aino,aino-current,2025-11-21,2025-11-21T12:00:00,Groceries,-5.2,230.02,purchase,Alepa,5411
+aino,aino-current,2025-11-22,2025-11-22T12:00:00,Groceries,-5.9,224.12,purchase,S-market,5411
+aino,aino-current,2025-11-23,2025-11-23T12:00:00,Groceries,-6.6,217.52,purchase,Alepa,5411
+aino,aino-current,2025-11-24,2025-11-24T12:00:00,Groceries,-3.1,214.42,purchase,S-market,5411
+aino,aino-current,2025-11-24,2025-11-24T12:00:00,Transportation,-3.2,211.22,purchase,HSL,4111
+aino,aino-current,2025-11-24,2025-11-24T12:00:00,Restaurants,-5.6,205.62,purchase,Espresso House,5814
+aino,aino-current,2025-11-25,2025-11-25T12:00:00,Salary,680,885.62,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-11-25,2025-11-25T12:00:00,Groceries,-3.8,881.82,purchase,Alepa,5411
+aino,aino-current,2025-11-26,2025-11-26T12:00:00,Invest Deposit,-18,863.82,investment_deposit,Interrail,
+aino,aino-current,2025-11-26,2025-11-26T12:00:00,Groceries,-4.5,859.32,purchase,S-market,5411
+aino,aino-current,2025-11-26,2025-11-26T12:00:00,Restaurants,-16.8,842.52,purchase,Wolt,5812
+aino,aino-savings,2025-11-26,2025-11-26T12:00:00,Invest Withdraw,18,-138,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-11-27,2025-11-27T12:00:00,Groceries,-5.2,837.32,purchase,Alepa,5411
+aino,aino-current,2025-11-28,2025-11-28T12:00:00,Entertainment,-9.99,827.33,utilities_payment,Netflix,
+aino,aino-current,2025-11-28,2025-11-28T12:00:00,Entertainment,-0.99,826.34,utilities_payment,iCloud,
+aino,aino-current,2025-11-28,2025-11-28T12:00:00,Entertainment,-5.99,820.35,utilities_payment,HBO Max,
+aino,aino-current,2025-12-01,2025-12-01T12:00:00,Groceries,-3.8,816.55,purchase,Alepa,5411
+aino,aino-current,2025-12-02,2025-12-02T12:00:00,Housing,-480,336.55,housing_payment,HOAS,
+aino,aino-current,2025-12-02,2025-12-02T12:00:00,Groceries,-4.5,332.05,purchase,S-market,5411
+aino,aino-current,2025-12-03,2025-12-03T12:00:00,Groceries,-5.2,326.85,purchase,Alepa,5411
+aino,aino-current,2025-12-03,2025-12-03T12:00:00,Restaurants,-5.6,321.25,purchase,Espresso House,5814
+aino,aino-current,2025-12-04,2025-12-04T12:00:00,Other Income,279.38,600.63,other_income,Kela,
+aino,aino-current,2025-12-04,2025-12-04T12:00:00,Groceries,-5.9,594.73,purchase,S-market,5411
+aino,aino-current,2025-12-04,2025-12-04T12:00:00,Transportation,-3.2,591.53,purchase,HSL,4111
+aino,aino-current,2025-12-05,2025-12-05T12:00:00,Groceries,-6.6,584.93,purchase,Alepa,5411
+aino,aino-current,2025-12-05,2025-12-05T12:00:00,Restaurants,-16.8,568.13,purchase,Wolt,5812
+aino,aino-current,2025-12-06,2025-12-06T12:00:00,Groceries,-3.1,565.03,purchase,S-market,5411
+aino,aino-current,2025-12-07,2025-12-07T12:00:00,Groceries,-3.8,561.23,purchase,Alepa,5411
+aino,aino-current,2025-12-07,2025-12-07T12:00:00,Restaurants,-5.6,555.63,purchase,Espresso House,5814
+aino,aino-current,2025-12-08,2025-12-08T12:00:00,Groceries,-4.5,551.13,purchase,S-market,5411
+aino,aino-current,2025-12-08,2025-12-08T12:00:00,Transportation,-3.2,547.93,purchase,HSL,4111
+aino,aino-current,2025-12-09,2025-12-09T12:00:00,Groceries,-5.2,542.73,purchase,Alepa,5411
+aino,aino-current,2025-12-10,2025-12-10T12:00:00,Groceries,-5.9,536.83,purchase,S-market,5411
+aino,aino-current,2025-12-10,2025-12-10T12:00:00,Restaurants,-5.6,531.23,purchase,Espresso House,5814
+aino,aino-current,2025-12-11,2025-12-11T12:00:00,Groceries,-6.6,524.63,purchase,Alepa,5411
+aino,aino-current,2025-12-12,2025-12-12T12:00:00,Groceries,-3.1,521.53,purchase,S-market,5411
+aino,aino-current,2025-12-12,2025-12-12T12:00:00,Transportation,-3.2,518.33,purchase,HSL,4111
+aino,aino-current,2025-12-12,2025-12-12T12:00:00,Restaurants,-16.8,501.53,purchase,Wolt,5812
+aino,aino-current,2025-12-13,2025-12-13T12:00:00,Groceries,-3.8,497.73,purchase,Alepa,5411
+aino,aino-current,2025-12-14,2025-12-14T12:00:00,Groceries,-4.5,493.23,purchase,S-market,5411
+aino,aino-current,2025-12-15,2025-12-15T12:00:00,Groceries,-5.2,488.03,purchase,Alepa,5411
+aino,aino-current,2025-12-16,2025-12-16T12:00:00,Groceries,-5.9,482.13,purchase,S-market,5411
+aino,aino-current,2025-12-16,2025-12-16T12:00:00,Transportation,-3.2,478.93,purchase,HSL,4111
+aino,aino-current,2025-12-16,2025-12-16T12:00:00,Restaurants,-5.6,473.33,purchase,Espresso House,5814
+aino,aino-current,2025-12-17,2025-12-17T12:00:00,Groceries,-6.6,466.73,purchase,Alepa,5411
+aino,aino-current,2025-12-18,2025-12-18T12:00:00,Entertainment,-6.49,460.24,utilities_payment,Spotify,
+aino,aino-current,2025-12-18,2025-12-18T12:00:00,Groceries,-3.1,457.14,purchase,S-market,5411
+aino,aino-current,2025-12-19,2025-12-19T12:00:00,Groceries,-3.8,453.34,purchase,Alepa,5411
+aino,aino-current,2025-12-19,2025-12-19T12:00:00,Restaurants,-16.8,436.54,purchase,Wolt,5812
+aino,aino-current,2025-12-20,2025-12-20T12:00:00,Utilities,-14.9,421.64,utilities_payment,Elisa,
+aino,aino-current,2025-12-20,2025-12-20T12:00:00,Groceries,-4.5,417.14,purchase,S-market,5411
+aino,aino-current,2025-12-20,2025-12-20T12:00:00,Transportation,-3.2,413.94,purchase,HSL,4111
+aino,aino-current,2025-12-21,2025-12-21T12:00:00,Groceries,-5.2,408.74,purchase,Alepa,5411
+aino,aino-current,2025-12-22,2025-12-22T12:00:00,Groceries,-5.9,402.84,purchase,S-market,5411
+aino,aino-current,2025-12-23,2025-12-23T12:00:00,Groceries,-6.6,396.24,purchase,Alepa,5411
+aino,aino-current,2025-12-24,2025-12-24T12:00:00,Groceries,-3.1,393.14,purchase,S-market,5411
+aino,aino-current,2025-12-24,2025-12-24T12:00:00,Transportation,-3.2,389.94,purchase,HSL,4111
+aino,aino-current,2025-12-24,2025-12-24T12:00:00,Restaurants,-5.6,384.34,purchase,Espresso House,5814
+aino,aino-current,2025-12-25,2025-12-25T12:00:00,Salary,520,904.34,salary,Kahvila Sävy Oy,
+aino,aino-current,2025-12-25,2025-12-25T12:00:00,Groceries,-3.8,900.54,purchase,Alepa,5411
+aino,aino-current,2025-12-26,2025-12-26T12:00:00,Invest Deposit,-18,882.54,investment_deposit,Interrail,
+aino,aino-current,2025-12-26,2025-12-26T12:00:00,Groceries,-4.5,878.04,purchase,S-market,5411
+aino,aino-current,2025-12-26,2025-12-26T12:00:00,Restaurants,-16.8,861.24,purchase,Wolt,5812
+aino,aino-savings,2025-12-26,2025-12-26T12:00:00,Invest Withdraw,18,-120,investment_withdrawal,Käyttötili,
+aino,aino-current,2025-12-27,2025-12-27T12:00:00,Groceries,-5.2,856.04,purchase,Alepa,5411
+aino,aino-current,2025-12-28,2025-12-28T12:00:00,Entertainment,-9.99,846.05,utilities_payment,Netflix,
+aino,aino-current,2025-12-28,2025-12-28T12:00:00,Entertainment,-0.99,845.06,utilities_payment,iCloud,
+aino,aino-current,2025-12-28,2025-12-28T12:00:00,Entertainment,-5.99,839.07,utilities_payment,HBO Max,
+aino,aino-current,2026-01-01,2026-01-01T12:00:00,Groceries,-3.8,835.27,purchase,Alepa,5411
+aino,aino-current,2026-01-02,2026-01-02T12:00:00,Housing,-480,355.27,housing_payment,HOAS,
+aino,aino-current,2026-01-02,2026-01-02T12:00:00,Groceries,-4.5,350.77,purchase,S-market,5411
+aino,aino-current,2026-01-03,2026-01-03T12:00:00,Groceries,-5.2,345.57,purchase,Alepa,5411
+aino,aino-current,2026-01-03,2026-01-03T12:00:00,Restaurants,-5.6,339.97,purchase,Espresso House,5814
+aino,aino-current,2026-01-04,2026-01-04T12:00:00,Other Income,279.38,619.35,other_income,Kela,
+aino,aino-current,2026-01-04,2026-01-04T12:00:00,Groceries,-5.9,613.45,purchase,S-market,5411
+aino,aino-current,2026-01-04,2026-01-04T12:00:00,Transportation,-3.2,610.25,purchase,HSL,4111
+aino,aino-current,2026-01-05,2026-01-05T12:00:00,Groceries,-6.6,603.65,purchase,Alepa,5411
+aino,aino-current,2026-01-05,2026-01-05T12:00:00,Restaurants,-16.8,586.85,purchase,Wolt,5812
+aino,aino-current,2026-01-06,2026-01-06T12:00:00,Groceries,-3.1,583.75,purchase,S-market,5411
+aino,aino-current,2026-01-07,2026-01-07T12:00:00,Groceries,-3.8,579.95,purchase,Alepa,5411
+aino,aino-current,2026-01-07,2026-01-07T12:00:00,Restaurants,-5.6,574.35,purchase,Espresso House,5814
+aino,aino-current,2026-01-08,2026-01-08T12:00:00,Groceries,-4.5,569.85,purchase,S-market,5411
+aino,aino-current,2026-01-08,2026-01-08T12:00:00,Transportation,-3.2,566.65,purchase,HSL,4111
+aino,aino-current,2026-01-09,2026-01-09T12:00:00,Groceries,-5.2,561.45,purchase,Alepa,5411
+aino,aino-current,2026-01-10,2026-01-10T12:00:00,Groceries,-5.9,555.55,purchase,S-market,5411
+aino,aino-current,2026-01-10,2026-01-10T12:00:00,Restaurants,-5.6,549.95,purchase,Espresso House,5814
+aino,aino-current,2026-01-11,2026-01-11T12:00:00,Groceries,-6.6,543.35,purchase,Alepa,5411
+aino,aino-current,2026-01-12,2026-01-12T12:00:00,Groceries,-3.1,540.25,purchase,S-market,5411
+aino,aino-current,2026-01-12,2026-01-12T12:00:00,Transportation,-3.2,537.05,purchase,HSL,4111
+aino,aino-current,2026-01-12,2026-01-12T12:00:00,Restaurants,-16.8,520.25,purchase,Wolt,5812
+aino,aino-current,2026-01-13,2026-01-13T12:00:00,Groceries,-3.8,516.45,purchase,Alepa,5411
+aino,aino-current,2026-01-14,2026-01-14T12:00:00,Groceries,-4.5,511.95,purchase,S-market,5411
+aino,aino-current,2026-01-15,2026-01-15T12:00:00,Groceries,-5.2,506.75,purchase,Alepa,5411
+aino,aino-current,2026-01-16,2026-01-16T12:00:00,Groceries,-5.9,500.85,purchase,S-market,5411
+aino,aino-current,2026-01-16,2026-01-16T12:00:00,Transportation,-3.2,497.65,purchase,HSL,4111
+aino,aino-current,2026-01-16,2026-01-16T12:00:00,Restaurants,-5.6,492.05,purchase,Espresso House,5814
+aino,aino-current,2026-01-17,2026-01-17T12:00:00,Groceries,-6.6,485.45,purchase,Alepa,5411
+aino,aino-current,2026-01-18,2026-01-18T12:00:00,Entertainment,-6.49,478.96,utilities_payment,Spotify,
+aino,aino-current,2026-01-18,2026-01-18T12:00:00,Groceries,-3.1,475.86,purchase,S-market,5411
+aino,aino-current,2026-01-19,2026-01-19T12:00:00,Groceries,-3.8,472.06,purchase,Alepa,5411
+aino,aino-current,2026-01-19,2026-01-19T12:00:00,Restaurants,-16.8,455.26,purchase,Wolt,5812
+aino,aino-current,2026-01-20,2026-01-20T12:00:00,Utilities,-14.9,440.36,utilities_payment,Elisa,
+aino,aino-current,2026-01-20,2026-01-20T12:00:00,Groceries,-4.5,435.86,purchase,S-market,5411
+aino,aino-current,2026-01-20,2026-01-20T12:00:00,Transportation,-3.2,432.66,purchase,HSL,4111
+aino,aino-current,2026-01-21,2026-01-21T12:00:00,Groceries,-5.2,427.46,purchase,Alepa,5411
+aino,aino-current,2026-01-22,2026-01-22T12:00:00,Groceries,-5.9,421.56,purchase,S-market,5411
+aino,aino-current,2026-01-23,2026-01-23T12:00:00,Groceries,-6.6,414.96,purchase,Alepa,5411
+aino,aino-current,2026-01-24,2026-01-24T12:00:00,Groceries,-3.1,411.86,purchase,S-market,5411
+aino,aino-current,2026-01-24,2026-01-24T12:00:00,Transportation,-3.2,408.66,purchase,HSL,4111
+aino,aino-current,2026-01-24,2026-01-24T12:00:00,Restaurants,-5.6,403.06,purchase,Espresso House,5814
+aino,aino-current,2026-01-25,2026-01-25T12:00:00,Salary,620,1023.06,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-01-25,2026-01-25T12:00:00,Groceries,-3.8,1019.26,purchase,Alepa,5411
+aino,aino-current,2026-01-26,2026-01-26T12:00:00,Invest Deposit,-18,1001.26,investment_deposit,Interrail,
+aino,aino-current,2026-01-26,2026-01-26T12:00:00,Groceries,-4.5,996.76,purchase,S-market,5411
+aino,aino-current,2026-01-26,2026-01-26T12:00:00,Restaurants,-16.8,979.96,purchase,Wolt,5812
+aino,aino-savings,2026-01-26,2026-01-26T12:00:00,Invest Withdraw,18,-102,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-01-27,2026-01-27T12:00:00,Groceries,-5.2,974.76,purchase,Alepa,5411
+aino,aino-current,2026-01-28,2026-01-28T12:00:00,Entertainment,-9.99,964.77,utilities_payment,Netflix,
+aino,aino-current,2026-01-28,2026-01-28T12:00:00,Entertainment,-0.99,963.78,utilities_payment,iCloud,
+aino,aino-current,2026-01-28,2026-01-28T12:00:00,Entertainment,-5.99,957.79,utilities_payment,HBO Max,
+aino,aino-current,2026-02-01,2026-02-01T12:00:00,Groceries,-3.8,953.99,purchase,Alepa,5411
+aino,aino-current,2026-02-02,2026-02-02T12:00:00,Housing,-480,473.99,housing_payment,HOAS,
+aino,aino-current,2026-02-02,2026-02-02T12:00:00,Groceries,-4.5,469.49,purchase,S-market,5411
+aino,aino-current,2026-02-03,2026-02-03T12:00:00,Groceries,-5.2,464.29,purchase,Alepa,5411
+aino,aino-current,2026-02-03,2026-02-03T12:00:00,Restaurants,-5.6,458.69,purchase,Espresso House,5814
+aino,aino-current,2026-02-04,2026-02-04T12:00:00,Other Income,279.38,738.07,other_income,Kela,
+aino,aino-current,2026-02-04,2026-02-04T12:00:00,Groceries,-5.9,732.17,purchase,S-market,5411
+aino,aino-current,2026-02-04,2026-02-04T12:00:00,Transportation,-3.2,728.97,purchase,HSL,4111
+aino,aino-current,2026-02-05,2026-02-05T12:00:00,Groceries,-6.6,722.37,purchase,Alepa,5411
+aino,aino-current,2026-02-05,2026-02-05T12:00:00,Restaurants,-16.8,705.57,purchase,Wolt,5812
+aino,aino-current,2026-02-06,2026-02-06T12:00:00,Groceries,-3.1,702.47,purchase,S-market,5411
+aino,aino-current,2026-02-07,2026-02-07T12:00:00,Groceries,-3.8,698.67,purchase,Alepa,5411
+aino,aino-current,2026-02-07,2026-02-07T12:00:00,Restaurants,-5.6,693.07,purchase,Espresso House,5814
+aino,aino-current,2026-02-08,2026-02-08T12:00:00,Groceries,-4.5,688.57,purchase,S-market,5411
+aino,aino-current,2026-02-08,2026-02-08T12:00:00,Transportation,-3.2,685.37,purchase,HSL,4111
+aino,aino-current,2026-02-09,2026-02-09T12:00:00,Groceries,-5.2,680.17,purchase,Alepa,5411
+aino,aino-current,2026-02-10,2026-02-10T12:00:00,Groceries,-5.9,674.27,purchase,S-market,5411
+aino,aino-current,2026-02-10,2026-02-10T12:00:00,Restaurants,-5.6,668.67,purchase,Espresso House,5814
+aino,aino-current,2026-02-11,2026-02-11T12:00:00,Groceries,-6.6,662.07,purchase,Alepa,5411
+aino,aino-current,2026-02-12,2026-02-12T12:00:00,Groceries,-3.1,658.97,purchase,S-market,5411
+aino,aino-current,2026-02-12,2026-02-12T12:00:00,Transportation,-3.2,655.77,purchase,HSL,4111
+aino,aino-current,2026-02-12,2026-02-12T12:00:00,Restaurants,-16.8,638.97,purchase,Wolt,5812
+aino,aino-current,2026-02-13,2026-02-13T12:00:00,Groceries,-3.8,635.17,purchase,Alepa,5411
+aino,aino-current,2026-02-14,2026-02-14T12:00:00,Groceries,-4.5,630.67,purchase,S-market,5411
+aino,aino-current,2026-02-15,2026-02-15T12:00:00,Groceries,-5.2,625.47,purchase,Alepa,5411
+aino,aino-current,2026-02-16,2026-02-16T12:00:00,Groceries,-5.9,619.57,purchase,S-market,5411
+aino,aino-current,2026-02-16,2026-02-16T12:00:00,Transportation,-3.2,616.37,purchase,HSL,4111
+aino,aino-current,2026-02-16,2026-02-16T12:00:00,Restaurants,-5.6,610.77,purchase,Espresso House,5814
+aino,aino-current,2026-02-17,2026-02-17T12:00:00,Groceries,-6.6,604.17,purchase,Alepa,5411
+aino,aino-current,2026-02-18,2026-02-18T12:00:00,Entertainment,-6.49,597.68,utilities_payment,Spotify,
+aino,aino-current,2026-02-18,2026-02-18T12:00:00,Groceries,-3.1,594.58,purchase,S-market,5411
+aino,aino-current,2026-02-19,2026-02-19T12:00:00,Groceries,-3.8,590.78,purchase,Alepa,5411
+aino,aino-current,2026-02-19,2026-02-19T12:00:00,Restaurants,-16.8,573.98,purchase,Wolt,5812
+aino,aino-current,2026-02-20,2026-02-20T12:00:00,Utilities,-14.9,559.08,utilities_payment,Elisa,
+aino,aino-current,2026-02-20,2026-02-20T12:00:00,Groceries,-4.5,554.58,purchase,S-market,5411
+aino,aino-current,2026-02-20,2026-02-20T12:00:00,Transportation,-3.2,551.38,purchase,HSL,4111
+aino,aino-current,2026-02-21,2026-02-21T12:00:00,Groceries,-5.2,546.18,purchase,Alepa,5411
+aino,aino-current,2026-02-22,2026-02-22T12:00:00,Groceries,-5.9,540.28,purchase,S-market,5411
+aino,aino-current,2026-02-23,2026-02-23T12:00:00,Groceries,-6.6,533.68,purchase,Alepa,5411
+aino,aino-current,2026-02-24,2026-02-24T12:00:00,Groceries,-3.1,530.58,purchase,S-market,5411
+aino,aino-current,2026-02-24,2026-02-24T12:00:00,Transportation,-3.2,527.38,purchase,HSL,4111
+aino,aino-current,2026-02-24,2026-02-24T12:00:00,Restaurants,-5.6,521.78,purchase,Espresso House,5814
+aino,aino-current,2026-02-25,2026-02-25T12:00:00,Salary,755,1276.78,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-02-25,2026-02-25T12:00:00,Groceries,-3.8,1272.98,purchase,Alepa,5411
+aino,aino-current,2026-02-26,2026-02-26T12:00:00,Invest Deposit,-18,1254.98,investment_deposit,Interrail,
+aino,aino-current,2026-02-26,2026-02-26T12:00:00,Groceries,-4.5,1250.48,purchase,S-market,5411
+aino,aino-current,2026-02-26,2026-02-26T12:00:00,Restaurants,-16.8,1233.68,purchase,Wolt,5812
+aino,aino-savings,2026-02-26,2026-02-26T12:00:00,Invest Withdraw,18,-84,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-02-27,2026-02-27T12:00:00,Groceries,-5.2,1228.48,purchase,Alepa,5411
+aino,aino-current,2026-02-28,2026-02-28T12:00:00,Entertainment,-9.99,1218.49,utilities_payment,Netflix,
+aino,aino-current,2026-02-28,2026-02-28T12:00:00,Entertainment,-0.99,1217.5,utilities_payment,iCloud,
+aino,aino-current,2026-02-28,2026-02-28T12:00:00,Entertainment,-5.99,1211.51,utilities_payment,HBO Max,
+aino,aino-current,2026-03-01,2026-03-01T12:00:00,Groceries,-3.8,1207.71,purchase,Alepa,5411
+aino,aino-current,2026-03-02,2026-03-02T12:00:00,Housing,-480,727.71,housing_payment,HOAS,
+aino,aino-current,2026-03-02,2026-03-02T12:00:00,Groceries,-4.5,723.21,purchase,S-market,5411
+aino,aino-current,2026-03-03,2026-03-03T12:00:00,Groceries,-5.2,718.01,purchase,Alepa,5411
+aino,aino-current,2026-03-03,2026-03-03T12:00:00,Restaurants,-5.6,712.41,purchase,Espresso House,5814
+aino,aino-current,2026-03-04,2026-03-04T12:00:00,Other Income,279.38,991.79,other_income,Kela,
+aino,aino-current,2026-03-04,2026-03-04T12:00:00,Groceries,-5.9,985.89,purchase,S-market,5411
+aino,aino-current,2026-03-04,2026-03-04T12:00:00,Transportation,-3.2,982.69,purchase,HSL,4111
+aino,aino-current,2026-03-05,2026-03-05T12:00:00,Groceries,-6.6,976.09,purchase,Alepa,5411
+aino,aino-current,2026-03-05,2026-03-05T12:00:00,Restaurants,-16.8,959.29,purchase,Wolt,5812
+aino,aino-current,2026-03-06,2026-03-06T12:00:00,Groceries,-3.1,956.19,purchase,S-market,5411
+aino,aino-current,2026-03-07,2026-03-07T12:00:00,Groceries,-3.8,952.39,purchase,Alepa,5411
+aino,aino-current,2026-03-07,2026-03-07T12:00:00,Restaurants,-5.6,946.79,purchase,Espresso House,5814
+aino,aino-current,2026-03-08,2026-03-08T12:00:00,Groceries,-4.5,942.29,purchase,S-market,5411
+aino,aino-current,2026-03-08,2026-03-08T12:00:00,Transportation,-3.2,939.09,purchase,HSL,4111
+aino,aino-current,2026-03-09,2026-03-09T12:00:00,Groceries,-5.2,933.89,purchase,Alepa,5411
+aino,aino-current,2026-03-10,2026-03-10T12:00:00,Groceries,-5.9,927.99,purchase,S-market,5411
+aino,aino-current,2026-03-10,2026-03-10T12:00:00,Restaurants,-5.6,922.39,purchase,Espresso House,5814
+aino,aino-current,2026-03-10,2026-03-10T12:00:00,Groceries,-10.2,912.19,purchase,Alepa,5411
+aino,aino-current,2026-03-11,2026-03-11T12:00:00,Groceries,-6.6,905.59,purchase,Alepa,5411
+aino,aino-current,2026-03-12,2026-03-12T12:00:00,Groceries,-3.1,902.49,purchase,S-market,5411
+aino,aino-current,2026-03-12,2026-03-12T12:00:00,Transportation,-3.2,899.29,purchase,HSL,4111
+aino,aino-current,2026-03-12,2026-03-12T12:00:00,Restaurants,-16.8,882.49,purchase,Wolt,5812
+aino,aino-current,2026-03-12,2026-03-12T12:00:00,Groceries,-10.2,872.29,purchase,S-market,5411
+aino,aino-current,2026-03-13,2026-03-13T12:00:00,Groceries,-3.8,868.49,purchase,Alepa,5411
+aino,aino-current,2026-03-14,2026-03-14T12:00:00,Groceries,-4.5,863.99,purchase,S-market,5411
+aino,aino-current,2026-03-14,2026-03-14T12:00:00,Groceries,-10.2,853.79,purchase,Alepa,5411
+aino,aino-current,2026-03-15,2026-03-15T12:00:00,Groceries,-5.2,848.59,purchase,Alepa,5411
+aino,aino-current,2026-03-16,2026-03-16T12:00:00,Groceries,-5.9,842.69,purchase,S-market,5411
+aino,aino-current,2026-03-16,2026-03-16T12:00:00,Transportation,-3.2,839.49,purchase,HSL,4111
+aino,aino-current,2026-03-16,2026-03-16T12:00:00,Restaurants,-5.6,833.89,purchase,Espresso House,5814
+aino,aino-current,2026-03-16,2026-03-16T12:00:00,Groceries,-10.2,823.69,purchase,S-market,5411
+aino,aino-current,2026-03-17,2026-03-17T12:00:00,Groceries,-6.6,817.09,purchase,Alepa,5411
+aino,aino-current,2026-03-18,2026-03-18T12:00:00,Entertainment,-6.49,810.6,utilities_payment,Spotify,
+aino,aino-current,2026-03-18,2026-03-18T12:00:00,Groceries,-3.1,807.5,purchase,S-market,5411
+aino,aino-current,2026-03-18,2026-03-18T12:00:00,Groceries,-10.2,797.3,purchase,Alepa,5411
+aino,aino-current,2026-03-19,2026-03-19T12:00:00,Groceries,-3.8,793.5,purchase,Alepa,5411
+aino,aino-current,2026-03-19,2026-03-19T12:00:00,Restaurants,-16.8,776.7,purchase,Wolt,5812
+aino,aino-current,2026-03-20,2026-03-20T12:00:00,Utilities,-14.9,761.8,utilities_payment,Elisa,
+aino,aino-current,2026-03-20,2026-03-20T12:00:00,Groceries,-4.5,757.3,purchase,S-market,5411
+aino,aino-current,2026-03-20,2026-03-20T12:00:00,Transportation,-3.2,754.1,purchase,HSL,4111
+aino,aino-current,2026-03-20,2026-03-20T12:00:00,Groceries,-10.2,743.9,purchase,S-market,5411
+aino,aino-current,2026-03-21,2026-03-21T12:00:00,Groceries,-5.2,738.7,purchase,Alepa,5411
+aino,aino-current,2026-03-22,2026-03-22T12:00:00,Groceries,-5.9,732.8,purchase,S-market,5411
+aino,aino-current,2026-03-22,2026-03-22T12:00:00,Groceries,-10.2,722.6,purchase,Alepa,5411
+aino,aino-current,2026-03-23,2026-03-23T12:00:00,Groceries,-6.6,716.0,purchase,Alepa,5411
+aino,aino-current,2026-03-24,2026-03-24T12:00:00,Groceries,-3.1,712.9,purchase,S-market,5411
+aino,aino-current,2026-03-24,2026-03-24T12:00:00,Transportation,-3.2,709.7,purchase,HSL,4111
+aino,aino-current,2026-03-24,2026-03-24T12:00:00,Restaurants,-5.6,704.1,purchase,Espresso House,5814
+aino,aino-current,2026-03-24,2026-03-24T12:00:00,Groceries,-10.2,693.9,purchase,S-market,5411
+aino,aino-current,2026-03-25,2026-03-25T12:00:00,Salary,610,1303.9,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-03-25,2026-03-25T12:00:00,Groceries,-3.8,1300.1,purchase,Alepa,5411
+aino,aino-current,2026-03-26,2026-03-26T12:00:00,Invest Deposit,-18,1282.1,investment_deposit,Interrail,
+aino,aino-current,2026-03-26,2026-03-26T12:00:00,Groceries,-4.5,1277.6,purchase,S-market,5411
+aino,aino-current,2026-03-26,2026-03-26T12:00:00,Restaurants,-16.8,1260.8,purchase,Wolt,5812
+aino,aino-current,2026-03-26,2026-03-26T12:00:00,Groceries,-10.2,1250.6,purchase,Alepa,5411
+aino,aino-savings,2026-03-26,2026-03-26T12:00:00,Invest Withdraw,18,-66,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-03-27,2026-03-27T12:00:00,Groceries,-5.2,1245.4,purchase,Alepa,5411
+aino,aino-current,2026-03-28,2026-03-28T12:00:00,Entertainment,-9.99,1235.41,utilities_payment,Netflix,
+aino,aino-current,2026-03-28,2026-03-28T12:00:00,Entertainment,-0.99,1234.42,utilities_payment,iCloud,
+aino,aino-current,2026-03-28,2026-03-28T12:00:00,Entertainment,-5.99,1228.43,utilities_payment,HBO Max,
+aino,aino-current,2026-03-28,2026-03-28T12:00:00,Groceries,-10.2,1218.23,purchase,S-market,5411
+aino,aino-current,2026-03-30,2026-03-30T12:00:00,Groceries,-10.2,1208.03,purchase,Alepa,5411
+aino,aino-current,2026-04-01,2026-04-01T12:00:00,Groceries,-3.8,1204.23,purchase,Alepa,5411
+aino,aino-current,2026-04-01,2026-04-01T12:00:00,Groceries,-10.2,1194.03,purchase,S-market,5411
+aino,aino-current,2026-04-02,2026-04-02T12:00:00,Housing,-480,714.03,housing_payment,HOAS,
+aino,aino-current,2026-04-02,2026-04-02T12:00:00,Groceries,-4.5,709.53,purchase,S-market,5411
+aino,aino-current,2026-04-03,2026-04-03T12:00:00,Groceries,-5.2,704.33,purchase,Alepa,5411
+aino,aino-current,2026-04-03,2026-04-03T12:00:00,Restaurants,-5.6,698.73,purchase,Espresso House,5814
+aino,aino-current,2026-04-03,2026-04-03T12:00:00,Groceries,-10.2,688.53,purchase,Alepa,5411
+aino,aino-current,2026-04-04,2026-04-04T12:00:00,Other Income,279.38,967.91,other_income,Kela,
+aino,aino-current,2026-04-04,2026-04-04T12:00:00,Groceries,-5.9,962.01,purchase,S-market,5411
+aino,aino-current,2026-04-04,2026-04-04T12:00:00,Transportation,-3.2,958.81,purchase,HSL,4111
+aino,aino-current,2026-04-05,2026-04-05T12:00:00,Groceries,-6.6,952.21,purchase,Alepa,5411
+aino,aino-current,2026-04-05,2026-04-05T12:00:00,Restaurants,-16.8,935.41,purchase,Wolt,5812
+aino,aino-current,2026-04-05,2026-04-05T12:00:00,Groceries,-10.2,925.21,purchase,S-market,5411
+aino,aino-current,2026-04-06,2026-04-06T12:00:00,Groceries,-3.1,922.11,purchase,S-market,5411
+aino,aino-current,2026-04-07,2026-04-07T12:00:00,Groceries,-3.8,918.31,purchase,Alepa,5411
+aino,aino-current,2026-04-07,2026-04-07T12:00:00,Restaurants,-5.6,912.71,purchase,Espresso House,5814
+aino,aino-current,2026-04-07,2026-04-07T12:00:00,Groceries,-10.2,902.51,purchase,Alepa,5411
+aino,aino-current,2026-04-08,2026-04-08T12:00:00,Groceries,-4.5,898.01,purchase,S-market,5411
+aino,aino-current,2026-04-08,2026-04-08T12:00:00,Transportation,-3.2,894.81,purchase,HSL,4111
+aino,aino-current,2026-04-09,2026-04-09T12:00:00,Groceries,-5.2,889.61,purchase,Alepa,5411
+aino,aino-current,2026-04-09,2026-04-09T12:00:00,Groceries,-10.2,879.41,purchase,S-market,5411
+aino,aino-current,2026-04-10,2026-04-10T12:00:00,Groceries,-5.9,873.51,purchase,S-market,5411
+aino,aino-current,2026-04-10,2026-04-10T12:00:00,Restaurants,-5.6,867.91,purchase,Espresso House,5814
+aino,aino-current,2026-04-11,2026-04-11T12:00:00,Groceries,-6.6,861.31,purchase,Alepa,5411
+aino,aino-current,2026-04-11,2026-04-11T12:00:00,Groceries,-10.2,851.11,purchase,Alepa,5411
+aino,aino-current,2026-04-12,2026-04-12T12:00:00,Groceries,-3.1,848.01,purchase,S-market,5411
+aino,aino-current,2026-04-12,2026-04-12T12:00:00,Transportation,-3.2,844.81,purchase,HSL,4111
+aino,aino-current,2026-04-12,2026-04-12T12:00:00,Restaurants,-16.8,828.01,purchase,Wolt,5812
+aino,aino-current,2026-04-13,2026-04-13T12:00:00,Groceries,-3.8,824.21,purchase,Alepa,5411
+aino,aino-current,2026-04-13,2026-04-13T12:00:00,Groceries,-10.2,814.01,purchase,S-market,5411
+aino,aino-current,2026-04-14,2026-04-14T12:00:00,Groceries,-4.5,809.51,purchase,S-market,5411
+aino,aino-current,2026-04-15,2026-04-15T12:00:00,Groceries,-5.2,804.31,purchase,Alepa,5411
+aino,aino-current,2026-04-15,2026-04-15T12:00:00,Groceries,-10.2,794.11,purchase,Alepa,5411
+aino,aino-current,2026-04-16,2026-04-16T12:00:00,Groceries,-5.9,788.21,purchase,S-market,5411
+aino,aino-current,2026-04-16,2026-04-16T12:00:00,Transportation,-3.2,785.01,purchase,HSL,4111
+aino,aino-current,2026-04-16,2026-04-16T12:00:00,Restaurants,-5.6,779.41,purchase,Espresso House,5814
+aino,aino-current,2026-04-17,2026-04-17T12:00:00,Groceries,-6.6,772.81,purchase,Alepa,5411
+aino,aino-current,2026-04-17,2026-04-17T12:00:00,Groceries,-10.2,762.61,purchase,S-market,5411
+aino,aino-current,2026-04-18,2026-04-18T12:00:00,Entertainment,-6.49,756.12,utilities_payment,Spotify,
+aino,aino-current,2026-04-18,2026-04-18T12:00:00,Groceries,-3.1,753.02,purchase,S-market,5411
+aino,aino-current,2026-04-19,2026-04-19T12:00:00,Groceries,-3.8,749.22,purchase,Alepa,5411
+aino,aino-current,2026-04-19,2026-04-19T12:00:00,Restaurants,-16.8,732.42,purchase,Wolt,5812
+aino,aino-current,2026-04-19,2026-04-19T12:00:00,Groceries,-10.2,722.22,purchase,Alepa,5411
+aino,aino-current,2026-04-20,2026-04-20T12:00:00,Utilities,-14.9,707.32,utilities_payment,Elisa,
+aino,aino-current,2026-04-20,2026-04-20T12:00:00,Groceries,-4.5,702.82,purchase,S-market,5411
+aino,aino-current,2026-04-20,2026-04-20T12:00:00,Transportation,-3.2,699.62,purchase,HSL,4111
+aino,aino-current,2026-04-21,2026-04-21T12:00:00,Groceries,-5.2,694.42,purchase,Alepa,5411
+aino,aino-current,2026-04-21,2026-04-21T12:00:00,Groceries,-10.2,684.22,purchase,S-market,5411
+aino,aino-current,2026-04-22,2026-04-22T12:00:00,Groceries,-5.9,678.32,purchase,S-market,5411
+aino,aino-current,2026-04-23,2026-04-23T12:00:00,Groceries,-6.6,671.72,purchase,Alepa,5411
+aino,aino-current,2026-04-23,2026-04-23T12:00:00,Groceries,-10.2,661.52,purchase,Alepa,5411
+aino,aino-current,2026-04-24,2026-04-24T12:00:00,Groceries,-3.1,658.42,purchase,S-market,5411
+aino,aino-current,2026-04-24,2026-04-24T12:00:00,Transportation,-3.2,655.22,purchase,HSL,4111
+aino,aino-current,2026-04-24,2026-04-24T12:00:00,Restaurants,-5.6,649.62,purchase,Espresso House,5814
+aino,aino-current,2026-04-25,2026-04-25T12:00:00,Salary,590,1239.62,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-04-25,2026-04-25T12:00:00,Groceries,-3.8,1235.82,purchase,Alepa,5411
+aino,aino-current,2026-04-25,2026-04-25T12:00:00,Groceries,-10.2,1225.62,purchase,S-market,5411
+aino,aino-current,2026-04-26,2026-04-26T12:00:00,Invest Deposit,-18,1207.62,investment_deposit,Interrail,
+aino,aino-current,2026-04-26,2026-04-26T12:00:00,Groceries,-4.5,1203.12,purchase,S-market,5411
+aino,aino-current,2026-04-26,2026-04-26T12:00:00,Restaurants,-16.8,1186.32,purchase,Wolt,5812
+aino,aino-savings,2026-04-26,2026-04-26T12:00:00,Invest Withdraw,18,-48,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-04-27,2026-04-27T12:00:00,Groceries,-5.2,1181.12,purchase,Alepa,5411
+aino,aino-current,2026-04-27,2026-04-27T12:00:00,Groceries,-10.2,1170.92,purchase,Alepa,5411
+aino,aino-current,2026-04-28,2026-04-28T12:00:00,Entertainment,-9.99,1160.93,utilities_payment,Netflix,
+aino,aino-current,2026-04-28,2026-04-28T12:00:00,Entertainment,-0.99,1159.94,utilities_payment,iCloud,
+aino,aino-current,2026-04-28,2026-04-28T12:00:00,Entertainment,-5.99,1153.95,utilities_payment,HBO Max,
+aino,aino-current,2026-04-29,2026-04-29T12:00:00,Groceries,-10.2,1143.75,purchase,S-market,5411
+aino,aino-current,2026-05-01,2026-05-01T12:00:00,Groceries,-3.8,1139.95,purchase,Alepa,5411
+aino,aino-current,2026-05-01,2026-05-01T12:00:00,Groceries,-10.2,1129.75,purchase,Alepa,5411
+aino,aino-current,2026-05-02,2026-05-02T12:00:00,Housing,-480,649.75,housing_payment,HOAS,
+aino,aino-current,2026-05-02,2026-05-02T12:00:00,Groceries,-4.5,645.25,purchase,S-market,5411
+aino,aino-current,2026-05-03,2026-05-03T12:00:00,Groceries,-5.2,640.05,purchase,Alepa,5411
+aino,aino-current,2026-05-03,2026-05-03T12:00:00,Restaurants,-5.6,634.45,purchase,Espresso House,5814
+aino,aino-current,2026-05-03,2026-05-03T12:00:00,Groceries,-10.2,624.25,purchase,S-market,5411
+aino,aino-current,2026-05-04,2026-05-04T12:00:00,Other Income,279.38,903.63,other_income,Kela,
+aino,aino-current,2026-05-04,2026-05-04T12:00:00,Groceries,-5.9,897.73,purchase,S-market,5411
+aino,aino-current,2026-05-04,2026-05-04T12:00:00,Transportation,-3.2,894.53,purchase,HSL,4111
+aino,aino-current,2026-05-05,2026-05-05T12:00:00,Groceries,-6.6,887.93,purchase,Alepa,5411
+aino,aino-current,2026-05-05,2026-05-05T12:00:00,Restaurants,-16.8,871.13,purchase,Wolt,5812
+aino,aino-current,2026-05-05,2026-05-05T12:00:00,Groceries,-10.2,860.93,purchase,Alepa,5411
+aino,aino-current,2026-05-06,2026-05-06T12:00:00,Groceries,-3.1,857.83,purchase,S-market,5411
+aino,aino-current,2026-05-07,2026-05-07T12:00:00,Groceries,-3.8,854.03,purchase,Alepa,5411
+aino,aino-current,2026-05-07,2026-05-07T12:00:00,Restaurants,-5.6,848.43,purchase,Espresso House,5814
+aino,aino-current,2026-05-07,2026-05-07T12:00:00,Groceries,-10.2,838.23,purchase,S-market,5411
+aino,aino-current,2026-05-08,2026-05-08T12:00:00,Groceries,-4.5,833.73,purchase,S-market,5411
+aino,aino-current,2026-05-08,2026-05-08T12:00:00,Transportation,-3.2,830.53,purchase,HSL,4111
+aino,aino-current,2026-05-09,2026-05-09T12:00:00,Groceries,-5.2,825.33,purchase,Alepa,5411
+aino,aino-current,2026-05-09,2026-05-09T12:00:00,Groceries,-10.2,815.13,purchase,Alepa,5411
+aino,aino-current,2026-05-10,2026-05-10T12:00:00,Groceries,-5.9,809.23,purchase,S-market,5411
+aino,aino-current,2026-05-10,2026-05-10T12:00:00,Restaurants,-5.6,803.63,purchase,Espresso House,5814
+aino,aino-current,2026-05-11,2026-05-11T12:00:00,Groceries,-6.6,797.03,purchase,Alepa,5411
+aino,aino-current,2026-05-11,2026-05-11T12:00:00,Groceries,-10.2,786.83,purchase,S-market,5411
+aino,aino-current,2026-05-12,2026-05-12T12:00:00,Groceries,-3.1,783.73,purchase,S-market,5411
+aino,aino-current,2026-05-12,2026-05-12T12:00:00,Transportation,-3.2,780.53,purchase,HSL,4111
+aino,aino-current,2026-05-12,2026-05-12T12:00:00,Restaurants,-16.8,763.73,purchase,Wolt,5812
+aino,aino-current,2026-05-13,2026-05-13T12:00:00,Groceries,-3.8,759.93,purchase,Alepa,5411
+aino,aino-current,2026-05-13,2026-05-13T12:00:00,Groceries,-10.2,749.73,purchase,Alepa,5411
+aino,aino-current,2026-05-14,2026-05-14T12:00:00,Groceries,-4.5,745.23,purchase,S-market,5411
+aino,aino-current,2026-05-15,2026-05-15T12:00:00,Groceries,-5.2,740.03,purchase,Alepa,5411
+aino,aino-current,2026-05-15,2026-05-15T12:00:00,Groceries,-10.2,729.83,purchase,S-market,5411
+aino,aino-current,2026-05-16,2026-05-16T12:00:00,Groceries,-5.9,723.93,purchase,S-market,5411
+aino,aino-current,2026-05-16,2026-05-16T12:00:00,Transportation,-3.2,720.73,purchase,HSL,4111
+aino,aino-current,2026-05-16,2026-05-16T12:00:00,Restaurants,-5.6,715.13,purchase,Espresso House,5814
+aino,aino-current,2026-05-17,2026-05-17T12:00:00,Groceries,-6.6,708.53,purchase,Alepa,5411
+aino,aino-current,2026-05-17,2026-05-17T12:00:00,Groceries,-10.2,698.33,purchase,Alepa,5411
+aino,aino-current,2026-05-18,2026-05-18T12:00:00,Entertainment,-6.49,691.84,utilities_payment,Spotify,
+aino,aino-current,2026-05-18,2026-05-18T12:00:00,Groceries,-3.1,688.74,purchase,S-market,5411
+aino,aino-current,2026-05-19,2026-05-19T12:00:00,Groceries,-3.8,684.94,purchase,Alepa,5411
+aino,aino-current,2026-05-19,2026-05-19T12:00:00,Restaurants,-16.8,668.14,purchase,Wolt,5812
+aino,aino-current,2026-05-19,2026-05-19T12:00:00,Groceries,-10.2,657.94,purchase,S-market,5411
+aino,aino-current,2026-05-20,2026-05-20T12:00:00,Utilities,-14.9,643.04,utilities_payment,Elisa,
+aino,aino-current,2026-05-20,2026-05-20T12:00:00,Groceries,-4.5,638.54,purchase,S-market,5411
+aino,aino-current,2026-05-20,2026-05-20T12:00:00,Transportation,-3.2,635.34,purchase,HSL,4111
+aino,aino-current,2026-05-21,2026-05-21T12:00:00,Groceries,-5.2,630.14,purchase,Alepa,5411
+aino,aino-current,2026-05-21,2026-05-21T12:00:00,Groceries,-10.2,619.94,purchase,Alepa,5411
+aino,aino-current,2026-05-22,2026-05-22T12:00:00,Groceries,-5.9,614.04,purchase,S-market,5411
+aino,aino-current,2026-05-23,2026-05-23T12:00:00,Groceries,-6.6,607.44,purchase,Alepa,5411
+aino,aino-current,2026-05-23,2026-05-23T12:00:00,Groceries,-10.2,597.24,purchase,S-market,5411
+aino,aino-current,2026-05-24,2026-05-24T12:00:00,Groceries,-3.1,594.14,purchase,S-market,5411
+aino,aino-current,2026-05-24,2026-05-24T12:00:00,Transportation,-3.2,590.94,purchase,HSL,4111
+aino,aino-current,2026-05-24,2026-05-24T12:00:00,Restaurants,-5.6,585.34,purchase,Espresso House,5814
+aino,aino-current,2026-05-25,2026-05-25T12:00:00,Salary,680,1265.34,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-05-25,2026-05-25T12:00:00,Groceries,-3.8,1261.54,purchase,Alepa,5411
+aino,aino-current,2026-05-25,2026-05-25T12:00:00,Groceries,-10.2,1251.34,purchase,Alepa,5411
+aino,aino-current,2026-05-26,2026-05-26T12:00:00,Invest Deposit,-18,1233.34,investment_deposit,Interrail,
+aino,aino-current,2026-05-26,2026-05-26T12:00:00,Groceries,-4.5,1228.84,purchase,S-market,5411
+aino,aino-current,2026-05-26,2026-05-26T12:00:00,Restaurants,-16.8,1212.04,purchase,Wolt,5812
+aino,aino-savings,2026-05-26,2026-05-26T12:00:00,Invest Withdraw,18,-30,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-05-27,2026-05-27T12:00:00,Groceries,-5.2,1206.84,purchase,Alepa,5411
+aino,aino-current,2026-05-27,2026-05-27T12:00:00,Groceries,-10.2,1196.64,purchase,S-market,5411
+aino,aino-current,2026-05-28,2026-05-28T12:00:00,Entertainment,-9.99,1186.65,utilities_payment,Netflix,
+aino,aino-current,2026-05-28,2026-05-28T12:00:00,Entertainment,-0.99,1185.66,utilities_payment,iCloud,
+aino,aino-current,2026-05-28,2026-05-28T12:00:00,Entertainment,-5.99,1179.67,utilities_payment,HBO Max,
+aino,aino-current,2026-05-29,2026-05-29T12:00:00,Groceries,-10.2,1169.47,purchase,Alepa,5411
+aino,aino-current,2026-05-31,2026-05-31T12:00:00,Groceries,-10.2,1159.27,purchase,S-market,5411
+aino,aino-current,2026-06-01,2026-06-01T12:00:00,Groceries,-3.8,1155.47,purchase,Alepa,5411
+aino,aino-current,2026-06-02,2026-06-02T12:00:00,Housing,-480,675.47,housing_payment,HOAS,
+aino,aino-current,2026-06-02,2026-06-02T12:00:00,Groceries,-4.5,670.97,purchase,S-market,5411
+aino,aino-current,2026-06-02,2026-06-02T12:00:00,Groceries,-10.2,660.77,purchase,Alepa,5411
+aino,aino-current,2026-06-03,2026-06-03T12:00:00,Groceries,-5.2,655.57,purchase,Alepa,5411
+aino,aino-current,2026-06-03,2026-06-03T12:00:00,Restaurants,-5.6,649.97,purchase,Espresso House,5814
+aino,aino-current,2026-06-04,2026-06-04T12:00:00,Other Income,279.38,929.35,other_income,Kela,
+aino,aino-current,2026-06-04,2026-06-04T12:00:00,Groceries,-5.9,923.45,purchase,S-market,5411
+aino,aino-current,2026-06-04,2026-06-04T12:00:00,Transportation,-3.2,920.25,purchase,HSL,4111
+aino,aino-current,2026-06-04,2026-06-04T12:00:00,Groceries,-10.2,910.05,purchase,S-market,5411
+aino,aino-current,2026-06-05,2026-06-05T12:00:00,Groceries,-6.6,903.45,purchase,Alepa,5411
+aino,aino-current,2026-06-05,2026-06-05T12:00:00,Restaurants,-16.8,886.65,purchase,Wolt,5812
+aino,aino-current,2026-06-06,2026-06-06T12:00:00,Groceries,-3.1,883.55,purchase,S-market,5411
+aino,aino-current,2026-06-06,2026-06-06T12:00:00,Groceries,-10.2,873.35,purchase,Alepa,5411
+aino,aino-current,2026-06-07,2026-06-07T12:00:00,Groceries,-3.8,869.55,purchase,Alepa,5411
+aino,aino-current,2026-06-07,2026-06-07T12:00:00,Restaurants,-5.6,863.95,purchase,Espresso House,5814
+aino,aino-current,2026-06-08,2026-06-08T12:00:00,Groceries,-4.5,859.45,purchase,S-market,5411
+aino,aino-current,2026-06-08,2026-06-08T12:00:00,Transportation,-3.2,856.25,purchase,HSL,4111
+aino,aino-current,2026-06-08,2026-06-08T12:00:00,Groceries,-10.2,846.05,purchase,S-market,5411
+aino,aino-current,2026-06-09,2026-06-09T12:00:00,Groceries,-5.2,840.85,purchase,Alepa,5411
+aino,aino-current,2026-06-10,2026-06-10T12:00:00,Groceries,-5.9,834.95,purchase,S-market,5411
+aino,aino-current,2026-06-10,2026-06-10T12:00:00,Restaurants,-5.6,829.35,purchase,Espresso House,5814
+aino,aino-current,2026-06-10,2026-06-10T12:00:00,Groceries,-10.2,819.15,purchase,Alepa,5411
+aino,aino-current,2026-06-11,2026-06-11T12:00:00,Groceries,-6.6,812.55,purchase,Alepa,5411
+aino,aino-current,2026-06-12,2026-06-12T12:00:00,Groceries,-3.1,809.45,purchase,S-market,5411
+aino,aino-current,2026-06-12,2026-06-12T12:00:00,Transportation,-3.2,806.25,purchase,HSL,4111
+aino,aino-current,2026-06-12,2026-06-12T12:00:00,Restaurants,-16.8,789.45,purchase,Wolt,5812
+aino,aino-current,2026-06-12,2026-06-12T12:00:00,Groceries,-10.2,779.25,purchase,S-market,5411
+aino,aino-current,2026-06-13,2026-06-13T12:00:00,Groceries,-3.8,775.45,purchase,Alepa,5411
+aino,aino-current,2026-06-14,2026-06-14T12:00:00,Groceries,-4.5,770.95,purchase,S-market,5411
+aino,aino-current,2026-06-14,2026-06-14T12:00:00,Groceries,-10.2,760.75,purchase,Alepa,5411
+aino,aino-current,2026-06-15,2026-06-15T12:00:00,Groceries,-5.2,755.55,purchase,Alepa,5411
+aino,aino-current,2026-06-16,2026-06-16T12:00:00,Groceries,-5.9,749.65,purchase,S-market,5411
+aino,aino-current,2026-06-16,2026-06-16T12:00:00,Transportation,-3.2,746.45,purchase,HSL,4111
+aino,aino-current,2026-06-16,2026-06-16T12:00:00,Restaurants,-5.6,740.85,purchase,Espresso House,5814
+aino,aino-current,2026-06-16,2026-06-16T12:00:00,Groceries,-10.2,730.65,purchase,S-market,5411
+aino,aino-current,2026-06-17,2026-06-17T12:00:00,Groceries,-6.6,724.05,purchase,Alepa,5411
+aino,aino-current,2026-06-18,2026-06-18T12:00:00,Entertainment,-6.49,717.56,utilities_payment,Spotify,
+aino,aino-current,2026-06-18,2026-06-18T12:00:00,Groceries,-3.1,714.46,purchase,S-market,5411
+aino,aino-current,2026-06-18,2026-06-18T12:00:00,Groceries,-10.2,704.26,purchase,Alepa,5411
+aino,aino-current,2026-06-19,2026-06-19T12:00:00,Groceries,-3.8,700.46,purchase,Alepa,5411
+aino,aino-current,2026-06-19,2026-06-19T12:00:00,Restaurants,-16.8,683.66,purchase,Wolt,5812
+aino,aino-current,2026-06-20,2026-06-20T12:00:00,Utilities,-14.9,668.76,utilities_payment,Elisa,
+aino,aino-current,2026-06-20,2026-06-20T12:00:00,Groceries,-4.5,664.26,purchase,S-market,5411
+aino,aino-current,2026-06-20,2026-06-20T12:00:00,Transportation,-3.2,661.06,purchase,HSL,4111
+aino,aino-current,2026-06-20,2026-06-20T12:00:00,Groceries,-10.2,650.86,purchase,S-market,5411
+aino,aino-current,2026-06-21,2026-06-21T12:00:00,Groceries,-5.2,645.66,purchase,Alepa,5411
+aino,aino-current,2026-06-22,2026-06-22T12:00:00,Groceries,-5.9,639.76,purchase,S-market,5411
+aino,aino-current,2026-06-22,2026-06-22T12:00:00,Groceries,-10.2,629.56,purchase,Alepa,5411
+aino,aino-current,2026-06-23,2026-06-23T12:00:00,Groceries,-6.6,622.96,purchase,Alepa,5411
+aino,aino-current,2026-06-24,2026-06-24T12:00:00,Groceries,-3.1,619.86,purchase,S-market,5411
+aino,aino-current,2026-06-24,2026-06-24T12:00:00,Transportation,-3.2,616.66,purchase,HSL,4111
+aino,aino-current,2026-06-24,2026-06-24T12:00:00,Restaurants,-5.6,611.06,purchase,Espresso House,5814
+aino,aino-current,2026-06-24,2026-06-24T12:00:00,Groceries,-10.2,600.86,purchase,S-market,5411
+aino,aino-current,2026-06-25,2026-06-25T12:00:00,Salary,520,1120.86,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-06-25,2026-06-25T12:00:00,Groceries,-3.8,1117.06,purchase,Alepa,5411
+aino,aino-current,2026-06-26,2026-06-26T12:00:00,Invest Deposit,-18,1099.06,investment_deposit,Interrail,
+aino,aino-current,2026-06-26,2026-06-26T12:00:00,Groceries,-4.5,1094.56,purchase,S-market,5411
+aino,aino-current,2026-06-26,2026-06-26T12:00:00,Restaurants,-16.8,1077.76,purchase,Wolt,5812
+aino,aino-current,2026-06-26,2026-06-26T12:00:00,Groceries,-10.2,1067.56,purchase,Alepa,5411
+aino,aino-savings,2026-06-26,2026-06-26T12:00:00,Invest Withdraw,18,-12,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-06-27,2026-06-27T12:00:00,Groceries,-5.2,1062.36,purchase,Alepa,5411
+aino,aino-current,2026-06-28,2026-06-28T12:00:00,Entertainment,-9.99,1052.37,utilities_payment,Netflix,
+aino,aino-current,2026-06-28,2026-06-28T12:00:00,Entertainment,-0.99,1051.38,utilities_payment,iCloud,
+aino,aino-current,2026-06-28,2026-06-28T12:00:00,Entertainment,-5.99,1045.39,utilities_payment,HBO Max,
+aino,aino-current,2026-06-28,2026-06-28T12:00:00,Groceries,-10.2,1035.19,purchase,S-market,5411
+aino,aino-current,2026-06-30,2026-06-30T12:00:00,Groceries,-10.2,1024.99,purchase,Alepa,5411
+aino,aino-current,2026-07-01,2026-07-01T12:00:00,Groceries,-3.8,1021.19,purchase,Alepa,5411
+aino,aino-current,2026-07-02,2026-07-02T12:00:00,Housing,-480,541.19,housing_payment,HOAS,
+aino,aino-current,2026-07-02,2026-07-02T12:00:00,Groceries,-4.5,536.69,purchase,S-market,5411
+aino,aino-current,2026-07-02,2026-07-02T12:00:00,Groceries,-10.2,526.49,purchase,S-market,5411
+aino,aino-current,2026-07-03,2026-07-03T12:00:00,Groceries,-5.2,521.29,purchase,Alepa,5411
+aino,aino-current,2026-07-03,2026-07-03T12:00:00,Restaurants,-5.6,515.69,purchase,Espresso House,5814
+aino,aino-current,2026-07-04,2026-07-04T12:00:00,Other Income,279.38,795.07,other_income,Kela,
+aino,aino-current,2026-07-04,2026-07-04T12:00:00,Groceries,-5.9,789.17,purchase,S-market,5411
+aino,aino-current,2026-07-04,2026-07-04T12:00:00,Transportation,-3.2,785.97,purchase,HSL,4111
+aino,aino-current,2026-07-04,2026-07-04T12:00:00,Groceries,-10.2,775.77,purchase,Alepa,5411
+aino,aino-current,2026-07-05,2026-07-05T12:00:00,Groceries,-6.6,769.17,purchase,Alepa,5411
+aino,aino-current,2026-07-05,2026-07-05T12:00:00,Restaurants,-16.8,752.37,purchase,Wolt,5812
+aino,aino-current,2026-07-06,2026-07-06T12:00:00,Groceries,-3.1,749.27,purchase,S-market,5411
+aino,aino-current,2026-07-06,2026-07-06T12:00:00,Groceries,-10.2,739.07,purchase,S-market,5411
+aino,aino-current,2026-07-07,2026-07-07T12:00:00,Groceries,-3.8,735.27,purchase,Alepa,5411
+aino,aino-current,2026-07-07,2026-07-07T12:00:00,Restaurants,-5.6,729.67,purchase,Espresso House,5814
+aino,aino-current,2026-07-08,2026-07-08T12:00:00,Groceries,-4.5,725.17,purchase,S-market,5411
+aino,aino-current,2026-07-08,2026-07-08T12:00:00,Transportation,-3.2,721.97,purchase,HSL,4111
+aino,aino-current,2026-07-08,2026-07-08T12:00:00,Groceries,-10.2,711.77,purchase,Alepa,5411
+aino,aino-current,2026-07-09,2026-07-09T12:00:00,Groceries,-5.2,706.57,purchase,Alepa,5411
+aino,aino-current,2026-07-10,2026-07-10T12:00:00,Groceries,-5.9,700.67,purchase,S-market,5411
+aino,aino-current,2026-07-10,2026-07-10T12:00:00,Restaurants,-5.6,695.07,purchase,Espresso House,5814
+aino,aino-current,2026-07-10,2026-07-10T12:00:00,Groceries,-10.2,684.87,purchase,S-market,5411
+aino,aino-current,2026-07-11,2026-07-11T12:00:00,Groceries,-6.6,678.27,purchase,Alepa,5411
+aino,aino-current,2026-07-12,2026-07-12T12:00:00,Groceries,-3.1,675.17,purchase,S-market,5411
+aino,aino-current,2026-07-12,2026-07-12T12:00:00,Transportation,-3.2,671.97,purchase,HSL,4111
+aino,aino-current,2026-07-12,2026-07-12T12:00:00,Restaurants,-16.8,655.17,purchase,Wolt,5812
+aino,aino-current,2026-07-12,2026-07-12T12:00:00,Groceries,-10.2,644.97,purchase,Alepa,5411
+aino,aino-current,2026-07-13,2026-07-13T12:00:00,Groceries,-3.8,641.17,purchase,Alepa,5411
+aino,aino-current,2026-07-14,2026-07-14T12:00:00,Groceries,-4.5,636.67,purchase,S-market,5411
+aino,aino-current,2026-07-14,2026-07-14T12:00:00,Groceries,-10.2,626.47,purchase,S-market,5411
+aino,aino-current,2026-07-15,2026-07-15T12:00:00,Groceries,-5.2,621.27,purchase,Alepa,5411
+aino,aino-current,2026-07-16,2026-07-16T12:00:00,Groceries,-5.9,615.37,purchase,S-market,5411
+aino,aino-current,2026-07-16,2026-07-16T12:00:00,Transportation,-3.2,612.17,purchase,HSL,4111
+aino,aino-current,2026-07-16,2026-07-16T12:00:00,Restaurants,-5.6,606.57,purchase,Espresso House,5814
+aino,aino-current,2026-07-16,2026-07-16T12:00:00,Groceries,-10.2,596.37,purchase,Alepa,5411
+aino,aino-current,2026-07-17,2026-07-17T12:00:00,Groceries,-6.6,589.77,purchase,Alepa,5411
+aino,aino-current,2026-07-18,2026-07-18T12:00:00,Entertainment,-6.49,583.28,utilities_payment,Spotify,
+aino,aino-current,2026-07-18,2026-07-18T12:00:00,Groceries,-3.1,580.18,purchase,S-market,5411
+aino,aino-current,2026-07-18,2026-07-18T12:00:00,Groceries,-10.2,569.98,purchase,S-market,5411
+aino,aino-current,2026-07-19,2026-07-19T12:00:00,Groceries,-3.8,566.18,purchase,Alepa,5411
+aino,aino-current,2026-07-19,2026-07-19T12:00:00,Restaurants,-16.8,549.38,purchase,Wolt,5812
+aino,aino-current,2026-07-20,2026-07-20T12:00:00,Utilities,-14.9,534.48,utilities_payment,Elisa,
+aino,aino-current,2026-07-20,2026-07-20T12:00:00,Groceries,-4.5,529.98,purchase,S-market,5411
+aino,aino-current,2026-07-20,2026-07-20T12:00:00,Transportation,-3.2,526.78,purchase,HSL,4111
+aino,aino-current,2026-07-20,2026-07-20T12:00:00,Groceries,-10.2,516.58,purchase,Alepa,5411
+aino,aino-current,2026-07-21,2026-07-21T12:00:00,Groceries,-5.2,511.38,purchase,Alepa,5411
+aino,aino-current,2026-07-22,2026-07-22T12:00:00,Groceries,-5.9,505.48,purchase,S-market,5411
+aino,aino-current,2026-07-22,2026-07-22T12:00:00,Groceries,-10.2,495.28,purchase,S-market,5411
+aino,aino-current,2026-07-23,2026-07-23T12:00:00,Groceries,-6.6,488.68,purchase,Alepa,5411
+aino,aino-current,2026-07-24,2026-07-24T12:00:00,Groceries,-3.1,485.58,purchase,S-market,5411
+aino,aino-current,2026-07-24,2026-07-24T12:00:00,Transportation,-3.2,482.38,purchase,HSL,4111
+aino,aino-current,2026-07-24,2026-07-24T12:00:00,Restaurants,-5.6,476.78,purchase,Espresso House,5814
+aino,aino-current,2026-07-24,2026-07-24T12:00:00,Groceries,-10.2,466.58,purchase,Alepa,5411
+aino,aino-current,2026-07-25,2026-07-25T12:00:00,Salary,620,1086.58,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-07-25,2026-07-25T12:00:00,Groceries,-3.8,1082.78,purchase,Alepa,5411
+aino,aino-current,2026-07-26,2026-07-26T12:00:00,Invest Deposit,-18,1064.78,investment_deposit,Interrail,
+aino,aino-current,2026-07-26,2026-07-26T12:00:00,Groceries,-4.5,1060.28,purchase,S-market,5411
+aino,aino-current,2026-07-26,2026-07-26T12:00:00,Restaurants,-16.8,1043.48,purchase,Wolt,5812
+aino,aino-current,2026-07-26,2026-07-26T12:00:00,Groceries,-10.2,1033.28,purchase,S-market,5411
+aino,aino-savings,2026-07-26,2026-07-26T12:00:00,Invest Withdraw,18,6,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-07-27,2026-07-27T12:00:00,Groceries,-5.2,1028.08,purchase,Alepa,5411
+aino,aino-current,2026-07-28,2026-07-28T12:00:00,Entertainment,-9.99,1018.09,utilities_payment,Netflix,
+aino,aino-current,2026-07-28,2026-07-28T12:00:00,Entertainment,-0.99,1017.1,utilities_payment,iCloud,
+aino,aino-current,2026-07-28,2026-07-28T12:00:00,Entertainment,-5.99,1011.11,utilities_payment,HBO Max,
+aino,aino-current,2026-07-28,2026-07-28T12:00:00,Groceries,-10.2,1000.91,purchase,Alepa,5411
+aino,aino-current,2026-07-30,2026-07-30T12:00:00,Groceries,-10.2,990.71,purchase,S-market,5411
+aino,aino-current,2026-08-01,2026-08-01T12:00:00,Groceries,-3.8,986.91,purchase,Alepa,5411
+aino,aino-current,2026-08-01,2026-08-01T12:00:00,Groceries,-10.2,976.71,purchase,Alepa,5411
+aino,aino-current,2026-08-02,2026-08-02T12:00:00,Housing,-480,496.71,housing_payment,HOAS,
+aino,aino-current,2026-08-02,2026-08-02T12:00:00,Groceries,-4.5,492.21,purchase,S-market,5411
+aino,aino-current,2026-08-03,2026-08-03T12:00:00,Groceries,-5.2,487.01,purchase,Alepa,5411
+aino,aino-current,2026-08-03,2026-08-03T12:00:00,Restaurants,-5.6,481.41,purchase,Espresso House,5814
+aino,aino-current,2026-08-03,2026-08-03T12:00:00,Groceries,-10.2,471.21,purchase,S-market,5411
+aino,aino-current,2026-08-04,2026-08-04T12:00:00,Other Income,279.38,750.59,other_income,Kela,
+aino,aino-current,2026-08-04,2026-08-04T12:00:00,Groceries,-5.9,744.69,purchase,S-market,5411
+aino,aino-current,2026-08-04,2026-08-04T12:00:00,Transportation,-3.2,741.49,purchase,HSL,4111
+aino,aino-current,2026-08-05,2026-08-05T12:00:00,Groceries,-6.6,734.89,purchase,Alepa,5411
+aino,aino-current,2026-08-05,2026-08-05T12:00:00,Restaurants,-16.8,718.09,purchase,Wolt,5812
+aino,aino-current,2026-08-05,2026-08-05T12:00:00,Groceries,-10.2,707.89,purchase,Alepa,5411
+aino,aino-current,2026-08-06,2026-08-06T12:00:00,Groceries,-3.1,704.79,purchase,S-market,5411
+aino,aino-current,2026-08-07,2026-08-07T12:00:00,Groceries,-3.8,700.99,purchase,Alepa,5411
+aino,aino-current,2026-08-07,2026-08-07T12:00:00,Restaurants,-5.6,695.39,purchase,Espresso House,5814
+aino,aino-current,2026-08-07,2026-08-07T12:00:00,Groceries,-10.2,685.19,purchase,S-market,5411
+aino,aino-current,2026-08-08,2026-08-08T12:00:00,Groceries,-4.5,680.69,purchase,S-market,5411
+aino,aino-current,2026-08-08,2026-08-08T12:00:00,Transportation,-3.2,677.49,purchase,HSL,4111
+aino,aino-current,2026-08-09,2026-08-09T12:00:00,Groceries,-5.2,672.29,purchase,Alepa,5411
+aino,aino-current,2026-08-09,2026-08-09T12:00:00,Groceries,-10.2,662.09,purchase,Alepa,5411
+aino,aino-current,2026-08-10,2026-08-10T12:00:00,Groceries,-5.9,656.19,purchase,S-market,5411
+aino,aino-current,2026-08-10,2026-08-10T12:00:00,Restaurants,-5.6,650.59,purchase,Espresso House,5814
+aino,aino-current,2026-08-11,2026-08-11T12:00:00,Groceries,-6.6,643.99,purchase,Alepa,5411
+aino,aino-current,2026-08-11,2026-08-11T12:00:00,Groceries,-10.2,633.79,purchase,S-market,5411
+aino,aino-current,2026-08-12,2026-08-12T12:00:00,Groceries,-3.1,630.69,purchase,S-market,5411
+aino,aino-current,2026-08-12,2026-08-12T12:00:00,Transportation,-3.2,627.49,purchase,HSL,4111
+aino,aino-current,2026-08-12,2026-08-12T12:00:00,Restaurants,-16.8,610.69,purchase,Wolt,5812
+aino,aino-current,2026-08-13,2026-08-13T12:00:00,Groceries,-3.8,606.89,purchase,Alepa,5411
+aino,aino-current,2026-08-13,2026-08-13T12:00:00,Groceries,-10.2,596.69,purchase,Alepa,5411
+aino,aino-current,2026-08-14,2026-08-14T12:00:00,Groceries,-4.5,592.19,purchase,S-market,5411
+aino,aino-current,2026-08-15,2026-08-15T12:00:00,Groceries,-5.2,586.99,purchase,Alepa,5411
+aino,aino-current,2026-08-15,2026-08-15T12:00:00,Groceries,-10.2,576.79,purchase,S-market,5411
+aino,aino-current,2026-08-16,2026-08-16T12:00:00,Groceries,-5.9,570.89,purchase,S-market,5411
+aino,aino-current,2026-08-16,2026-08-16T12:00:00,Transportation,-3.2,567.69,purchase,HSL,4111
+aino,aino-current,2026-08-16,2026-08-16T12:00:00,Restaurants,-5.6,562.09,purchase,Espresso House,5814
+aino,aino-current,2026-08-17,2026-08-17T12:00:00,Groceries,-6.6,555.49,purchase,Alepa,5411
+aino,aino-current,2026-08-17,2026-08-17T12:00:00,Groceries,-10.2,545.29,purchase,Alepa,5411
+aino,aino-current,2026-08-18,2026-08-18T12:00:00,Entertainment,-6.49,538.8,utilities_payment,Spotify,
+aino,aino-current,2026-08-18,2026-08-18T12:00:00,Groceries,-3.1,535.7,purchase,S-market,5411
+aino,aino-current,2026-08-19,2026-08-19T12:00:00,Groceries,-3.8,531.9,purchase,Alepa,5411
+aino,aino-current,2026-08-19,2026-08-19T12:00:00,Restaurants,-16.8,515.1,purchase,Wolt,5812
+aino,aino-current,2026-08-19,2026-08-19T12:00:00,Groceries,-10.2,504.9,purchase,S-market,5411
+aino,aino-current,2026-08-20,2026-08-20T12:00:00,Utilities,-14.9,490.0,utilities_payment,Elisa,
+aino,aino-current,2026-08-20,2026-08-20T12:00:00,Groceries,-4.5,485.5,purchase,S-market,5411
+aino,aino-current,2026-08-20,2026-08-20T12:00:00,Transportation,-3.2,482.3,purchase,HSL,4111
+aino,aino-current,2026-08-21,2026-08-21T12:00:00,Groceries,-5.2,477.1,purchase,Alepa,5411
+aino,aino-current,2026-08-21,2026-08-21T12:00:00,Groceries,-10.2,466.9,purchase,Alepa,5411
+aino,aino-current,2026-08-22,2026-08-22T12:00:00,Groceries,-5.9,461.0,purchase,S-market,5411
+aino,aino-current,2026-08-23,2026-08-23T12:00:00,Groceries,-6.6,454.4,purchase,Alepa,5411
+aino,aino-current,2026-08-23,2026-08-23T12:00:00,Groceries,-10.2,444.2,purchase,S-market,5411
+aino,aino-current,2026-08-24,2026-08-24T12:00:00,Groceries,-3.1,441.1,purchase,S-market,5411
+aino,aino-current,2026-08-24,2026-08-24T12:00:00,Transportation,-3.2,437.9,purchase,HSL,4111
+aino,aino-current,2026-08-24,2026-08-24T12:00:00,Restaurants,-5.6,432.3,purchase,Espresso House,5814
+aino,aino-current,2026-08-25,2026-08-25T12:00:00,Salary,755,1187.3,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-08-25,2026-08-25T12:00:00,Groceries,-3.8,1183.5,purchase,Alepa,5411
+aino,aino-current,2026-08-25,2026-08-25T12:00:00,Groceries,-10.2,1173.3,purchase,Alepa,5411
+aino,aino-current,2026-08-26,2026-08-26T12:00:00,Invest Deposit,-18,1155.3,investment_deposit,Interrail,
+aino,aino-current,2026-08-26,2026-08-26T12:00:00,Groceries,-4.5,1150.8,purchase,S-market,5411
+aino,aino-current,2026-08-26,2026-08-26T12:00:00,Restaurants,-16.8,1134.0,purchase,Wolt,5812
+aino,aino-savings,2026-08-26,2026-08-26T12:00:00,Invest Withdraw,18,24,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-08-27,2026-08-27T12:00:00,Groceries,-5.2,1128.8,purchase,Alepa,5411
+aino,aino-current,2026-08-27,2026-08-27T12:00:00,Groceries,-10.2,1118.6,purchase,S-market,5411
+aino,aino-current,2026-08-28,2026-08-28T12:00:00,Entertainment,-9.99,1108.61,utilities_payment,Netflix,
+aino,aino-current,2026-08-28,2026-08-28T12:00:00,Entertainment,-0.99,1107.62,utilities_payment,iCloud,
+aino,aino-current,2026-08-28,2026-08-28T12:00:00,Entertainment,-5.99,1101.63,utilities_payment,HBO Max,
+aino,aino-current,2026-08-29,2026-08-29T12:00:00,Groceries,-10.2,1091.43,purchase,Alepa,5411
+aino,aino-current,2026-08-31,2026-08-31T12:00:00,Groceries,-10.2,1081.23,purchase,S-market,5411
+aino,aino-current,2026-09-01,2026-09-01T12:00:00,Groceries,-3.8,1077.43,purchase,Alepa,5411
+aino,aino-current,2026-09-02,2026-09-02T12:00:00,Housing,-480,597.43,housing_payment,HOAS,
+aino,aino-current,2026-09-02,2026-09-02T12:00:00,Groceries,-4.5,592.93,purchase,S-market,5411
+aino,aino-current,2026-09-02,2026-09-02T12:00:00,Groceries,-10.2,582.73,purchase,Alepa,5411
+aino,aino-current,2026-09-03,2026-09-03T12:00:00,Groceries,-5.2,577.53,purchase,Alepa,5411
+aino,aino-current,2026-09-03,2026-09-03T12:00:00,Restaurants,-5.6,571.93,purchase,Espresso House,5814
+aino,aino-current,2026-09-04,2026-09-04T12:00:00,Other Income,279.38,851.31,other_income,Kela,
+aino,aino-current,2026-09-04,2026-09-04T12:00:00,Groceries,-5.9,845.41,purchase,S-market,5411
+aino,aino-current,2026-09-04,2026-09-04T12:00:00,Transportation,-3.2,842.21,purchase,HSL,4111
+aino,aino-current,2026-09-04,2026-09-04T12:00:00,Groceries,-10.2,832.01,purchase,S-market,5411
+aino,aino-current,2026-09-05,2026-09-05T12:00:00,Groceries,-6.6,825.41,purchase,Alepa,5411
+aino,aino-current,2026-09-06,2026-09-06T12:00:00,Groceries,-3.1,822.31,purchase,S-market,5411
+aino,aino-current,2026-09-06,2026-09-06T12:00:00,Groceries,-10.2,812.11,purchase,Alepa,5411
+aino,aino-current,2026-09-07,2026-09-07T12:00:00,Groceries,-3.8,808.31,purchase,Alepa,5411
+aino,aino-current,2026-09-07,2026-09-07T12:00:00,Restaurants,-5.6,802.71,purchase,Espresso House,5814
+aino,aino-current,2026-09-08,2026-09-08T12:00:00,Groceries,-4.5,798.21,purchase,S-market,5411
+aino,aino-current,2026-09-08,2026-09-08T12:00:00,Transportation,-3.2,795.01,purchase,HSL,4111
+aino,aino-current,2026-09-08,2026-09-08T12:00:00,Groceries,-10.2,784.81,purchase,S-market,5411
+aino,aino-current,2026-09-09,2026-09-09T12:00:00,Groceries,-5.2,779.61,purchase,Alepa,5411
+aino,aino-current,2026-09-10,2026-09-10T12:00:00,Groceries,-5.9,773.71,purchase,S-market,5411
+aino,aino-current,2026-09-10,2026-09-10T12:00:00,Restaurants,-5.6,768.11,purchase,Espresso House,5814
+aino,aino-current,2026-09-10,2026-09-10T12:00:00,Groceries,-10.2,757.91,purchase,Alepa,5411
+aino,aino-current,2026-09-11,2026-09-11T12:00:00,Groceries,-6.6,751.31,purchase,Alepa,5411
+aino,aino-current,2026-09-12,2026-09-12T12:00:00,Groceries,-3.1,748.21,purchase,S-market,5411
+aino,aino-current,2026-09-12,2026-09-12T12:00:00,Transportation,-3.2,745.01,purchase,HSL,4111
+aino,aino-current,2026-09-12,2026-09-12T12:00:00,Groceries,-10.2,734.81,purchase,S-market,5411
+aino,aino-current,2026-09-13,2026-09-13T12:00:00,Groceries,-3.8,731.01,purchase,Alepa,5411
+aino,aino-current,2026-09-14,2026-09-14T12:00:00,Groceries,-4.5,726.51,purchase,S-market,5411
+aino,aino-current,2026-09-14,2026-09-14T12:00:00,Groceries,-10.2,716.31,purchase,Alepa,5411
+aino,aino-current,2026-09-15,2026-09-15T12:00:00,Groceries,-5.2,711.11,purchase,Alepa,5411
+aino,aino-current,2026-09-16,2026-09-16T12:00:00,Groceries,-5.9,705.21,purchase,S-market,5411
+aino,aino-current,2026-09-16,2026-09-16T12:00:00,Transportation,-3.2,702.01,purchase,HSL,4111
+aino,aino-current,2026-09-16,2026-09-16T12:00:00,Restaurants,-5.6,696.41,purchase,Espresso House,5814
+aino,aino-current,2026-09-16,2026-09-16T12:00:00,Groceries,-10.2,686.21,purchase,S-market,5411
+aino,aino-current,2026-09-17,2026-09-17T12:00:00,Groceries,-6.6,679.61,purchase,Alepa,5411
+aino,aino-current,2026-09-18,2026-09-18T12:00:00,Entertainment,-6.49,673.12,utilities_payment,Spotify,
+aino,aino-current,2026-09-18,2026-09-18T12:00:00,Groceries,-3.1,670.02,purchase,S-market,5411
+aino,aino-current,2026-09-18,2026-09-18T12:00:00,Groceries,-10.2,659.82,purchase,Alepa,5411
+aino,aino-current,2026-09-19,2026-09-19T12:00:00,Groceries,-3.8,656.02,purchase,Alepa,5411
+aino,aino-current,2026-09-19,2026-09-19T12:00:00,Restaurants,-16.8,639.22,purchase,Wolt,5812
+aino,aino-current,2026-09-20,2026-09-20T12:00:00,Utilities,-14.9,624.32,utilities_payment,Elisa,
+aino,aino-current,2026-09-20,2026-09-20T12:00:00,Groceries,-4.5,619.82,purchase,S-market,5411
+aino,aino-current,2026-09-20,2026-09-20T12:00:00,Transportation,-3.2,616.62,purchase,HSL,4111
+aino,aino-current,2026-09-20,2026-09-20T12:00:00,Groceries,-10.2,606.42,purchase,S-market,5411
+aino,aino-current,2026-09-21,2026-09-21T12:00:00,Groceries,-5.2,601.22,purchase,Alepa,5411
+aino,aino-current,2026-09-21,2026-09-21T12:00:00,Restaurants,-16.8,584.42,purchase,Wolt,5812
+aino,aino-current,2026-09-22,2026-09-22T12:00:00,Groceries,-5.9,578.52,purchase,S-market,5411
+aino,aino-current,2026-09-22,2026-09-22T12:00:00,Groceries,-10.2,568.32,purchase,Alepa,5411
+aino,aino-current,2026-09-23,2026-09-23T12:00:00,Groceries,-6.6,561.72,purchase,Alepa,5411
+aino,aino-current,2026-09-23,2026-09-23T12:00:00,Restaurants,-16.8,544.92,purchase,Wolt,5812
+aino,aino-current,2026-09-24,2026-09-24T12:00:00,Groceries,-3.1,541.82,purchase,S-market,5411
+aino,aino-current,2026-09-24,2026-09-24T12:00:00,Transportation,-3.2,538.62,purchase,HSL,4111
+aino,aino-current,2026-09-24,2026-09-24T12:00:00,Restaurants,-5.6,533.02,purchase,Espresso House,5814
+aino,aino-current,2026-09-24,2026-09-24T12:00:00,Groceries,-10.2,522.82,purchase,S-market,5411
+aino,aino-current,2026-09-25,2026-09-25T12:00:00,Salary,610,1132.82,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-09-25,2026-09-25T12:00:00,Groceries,-3.8,1129.02,purchase,Alepa,5411
+aino,aino-current,2026-09-25,2026-09-25T12:00:00,Restaurants,-16.8,1112.22,purchase,Wolt,5812
+aino,aino-current,2026-09-26,2026-09-26T12:00:00,Invest Deposit,-18,1094.22,investment_deposit,Interrail,
+aino,aino-current,2026-09-26,2026-09-26T12:00:00,Groceries,-4.5,1089.72,purchase,S-market,5411
+aino,aino-current,2026-09-26,2026-09-26T12:00:00,Groceries,-10.2,1079.52,purchase,Alepa,5411
+aino,aino-savings,2026-09-26,2026-09-26T12:00:00,Invest Withdraw,18,42,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-09-27,2026-09-27T12:00:00,Groceries,-5.2,1074.32,purchase,Alepa,5411
+aino,aino-current,2026-09-27,2026-09-27T12:00:00,Restaurants,-16.8,1057.52,purchase,Wolt,5812
+aino,aino-current,2026-09-28,2026-09-28T12:00:00,Entertainment,-9.99,1047.53,utilities_payment,Netflix,
+aino,aino-current,2026-09-28,2026-09-28T12:00:00,Entertainment,-0.99,1046.54,utilities_payment,iCloud,
+aino,aino-current,2026-09-28,2026-09-28T12:00:00,Entertainment,-5.99,1040.55,utilities_payment,HBO Max,
+aino,aino-current,2026-09-28,2026-09-28T12:00:00,Groceries,-10.2,1030.35,purchase,S-market,5411
+aino,aino-current,2026-09-29,2026-09-29T12:00:00,Restaurants,-16.8,1013.55,purchase,Wolt,5812
+aino,aino-current,2026-09-30,2026-09-30T12:00:00,Groceries,-10.2,1003.35,purchase,Alepa,5411
+aino,aino-current,2026-10-01,2026-10-01T12:00:00,Groceries,-3.8,999.55,purchase,Alepa,5411
+aino,aino-current,2026-10-01,2026-10-01T12:00:00,Restaurants,-5.6,993.95,purchase,Espresso House,5814
+aino,aino-current,2026-10-01,2026-10-01T12:00:00,Restaurants,-16.8,977.15,purchase,Wolt,5812
+aino,aino-current,2026-10-02,2026-10-02T12:00:00,Housing,-480,497.15,housing_payment,HOAS,
+aino,aino-current,2026-10-02,2026-10-02T12:00:00,Groceries,-4.5,492.65,purchase,S-market,5411
+aino,aino-current,2026-10-02,2026-10-02T12:00:00,Groceries,-10.2,482.45,purchase,S-market,5411
+aino,aino-current,2026-10-03,2026-10-03T12:00:00,Groceries,-5.2,477.25,purchase,Alepa,5411
+aino,aino-current,2026-10-03,2026-10-03T12:00:00,Restaurants,-5.6,471.65,purchase,Espresso House,5814
+aino,aino-current,2026-10-03,2026-10-03T12:00:00,Restaurants,-16.8,454.85,purchase,Wolt,5812
+aino,aino-current,2026-10-04,2026-10-04T12:00:00,Other Income,279.38,734.23,other_income,Kela,
+aino,aino-current,2026-10-04,2026-10-04T12:00:00,Groceries,-5.9,728.33,purchase,S-market,5411
+aino,aino-current,2026-10-04,2026-10-04T12:00:00,Transportation,-3.2,725.13,purchase,HSL,4111
+aino,aino-current,2026-10-04,2026-10-04T12:00:00,Groceries,-10.2,714.93,purchase,Alepa,5411
+aino,aino-current,2026-10-05,2026-10-05T12:00:00,Groceries,-6.6,708.33,purchase,Alepa,5411
+aino,aino-current,2026-10-05,2026-10-05T12:00:00,Restaurants,-6.9,701.43,purchase,Espresso House,5814
+aino,aino-current,2026-10-05,2026-10-05T12:00:00,Restaurants,-16.8,684.63,purchase,Wolt,5812
+aino,aino-current,2026-10-06,2026-10-06T12:00:00,Groceries,-3.1,681.53,purchase,S-market,5411
+aino,aino-current,2026-10-06,2026-10-06T12:00:00,Groceries,-10.2,671.33,purchase,S-market,5411
+aino,aino-current,2026-10-07,2026-10-07T12:00:00,Groceries,-3.8,667.53,purchase,Alepa,5411
+aino,aino-current,2026-10-07,2026-10-07T12:00:00,Restaurants,-5.6,661.93,purchase,Espresso House,5814
+aino,aino-current,2026-10-07,2026-10-07T12:00:00,Restaurants,-16.8,645.13,purchase,Wolt,5812
+aino,aino-current,2026-10-08,2026-10-08T12:00:00,Groceries,-4.5,640.63,purchase,S-market,5411
+aino,aino-current,2026-10-08,2026-10-08T12:00:00,Transportation,-3.2,637.43,purchase,HSL,4111
+aino,aino-current,2026-10-08,2026-10-08T12:00:00,Groceries,-10.2,627.23,purchase,Alepa,5411
+aino,aino-current,2026-10-09,2026-10-09T12:00:00,Groceries,-5.2,622.03,purchase,Alepa,5411
+aino,aino-current,2026-10-09,2026-10-09T12:00:00,Restaurants,-4.9,617.13,purchase,Espresso House,5814
+aino,aino-current,2026-10-09,2026-10-09T12:00:00,Restaurants,-16.8,600.33,purchase,Wolt,5812
+aino,aino-current,2026-10-10,2026-10-10T12:00:00,Groceries,-5.9,594.43,purchase,S-market,5411
+aino,aino-current,2026-10-10,2026-10-10T12:00:00,Groceries,-10.2,584.23,purchase,S-market,5411
+aino,aino-current,2026-10-11,2026-10-11T12:00:00,Groceries,-6.6,577.63,purchase,Alepa,5411
+aino,aino-current,2026-10-11,2026-10-11T12:00:00,Restaurants,-6.9,570.73,purchase,Espresso House,5814
+aino,aino-current,2026-10-11,2026-10-11T12:00:00,Restaurants,-16.8,553.93,purchase,Wolt,5812
+aino,aino-current,2026-10-12,2026-10-12T12:00:00,Groceries,-3.1,550.83,purchase,S-market,5411
+aino,aino-current,2026-10-12,2026-10-12T12:00:00,Transportation,-3.2,547.63,purchase,HSL,4111
+aino,aino-current,2026-10-12,2026-10-12T12:00:00,Groceries,-10.2,537.43,purchase,Alepa,5411
+aino,aino-current,2026-10-13,2026-10-13T12:00:00,Groceries,-3.8,533.63,purchase,Alepa,5411
+aino,aino-current,2026-10-13,2026-10-13T12:00:00,Restaurants,-4.8,528.83,purchase,Robert's Coffee,5814
+aino,aino-current,2026-10-13,2026-10-13T12:00:00,Restaurants,-16.8,512.03,purchase,Wolt,5812
+aino,aino-current,2026-10-14,2026-10-14T12:00:00,Groceries,-4.5,507.53,purchase,S-market,5411
+aino,aino-current,2026-10-14,2026-10-14T12:00:00,Groceries,-10.2,497.33,purchase,S-market,5411
+aino,aino-current,2026-10-15,2026-10-15T12:00:00,Groceries,-5.2,492.13,purchase,Alepa,5411
+aino,aino-current,2026-10-15,2026-10-15T12:00:00,Restaurants,-4.8,487.33,purchase,Robert's Coffee,5814
+aino,aino-current,2026-10-15,2026-10-15T12:00:00,Restaurants,-16.8,470.53,purchase,Wolt,5812
+aino,aino-current,2026-10-16,2026-10-16T12:00:00,Groceries,-5.9,464.63,purchase,S-market,5411
+aino,aino-current,2026-10-16,2026-10-16T12:00:00,Transportation,-3.2,461.43,purchase,HSL,4111
+aino,aino-current,2026-10-16,2026-10-16T12:00:00,Groceries,-10.2,451.23,purchase,Alepa,5411
+aino,aino-current,2026-10-17,2026-10-17T12:00:00,Groceries,-6.6,444.63,purchase,Alepa,5411
+aino,aino-current,2026-10-17,2026-10-17T12:00:00,Restaurants,-5.2,439.43,purchase,Robert's Coffee,5814
+aino,aino-current,2026-10-17,2026-10-17T12:00:00,Restaurants,-16.8,422.63,purchase,Wolt,5812
+aino,aino-current,2026-10-18,2026-10-18T12:00:00,Entertainment,-6.49,416.14,utilities_payment,Spotify,
+aino,aino-current,2026-10-18,2026-10-18T12:00:00,Groceries,-3.1,413.04,purchase,S-market,5411
+aino,aino-current,2026-10-18,2026-10-18T12:00:00,Groceries,-10.2,402.84,purchase,S-market,5411
+aino,aino-current,2026-10-19,2026-10-19T12:00:00,Groceries,-3.8,399.04,purchase,Alepa,5411
+aino,aino-current,2026-10-19,2026-10-19T12:00:00,Restaurants,-4.8,394.24,purchase,Robert's Coffee,5814
+aino,aino-current,2026-10-19,2026-10-19T12:00:00,Restaurants,-16.8,377.44,purchase,Wolt,5812
+aino,aino-current,2026-10-20,2026-10-20T12:00:00,Utilities,-14.9,362.54,utilities_payment,Elisa,
+aino,aino-current,2026-10-20,2026-10-20T12:00:00,Groceries,-4.5,358.04,purchase,S-market,5411
+aino,aino-current,2026-10-20,2026-10-20T12:00:00,Transportation,-3.2,354.84,purchase,HSL,4111
+aino,aino-current,2026-10-20,2026-10-20T12:00:00,Groceries,-10.2,344.64,purchase,Alepa,5411
+aino,aino-current,2026-10-21,2026-10-21T12:00:00,Groceries,-5.2,339.44,purchase,Alepa,5411
+aino,aino-current,2026-10-21,2026-10-21T12:00:00,Restaurants,-7.4,332.04,purchase,Fazer Café,5814
+aino,aino-current,2026-10-21,2026-10-21T12:00:00,Restaurants,-16.8,315.24,purchase,Wolt,5812
+aino,aino-current,2026-10-22,2026-10-22T12:00:00,Groceries,-5.9,309.34,purchase,S-market,5411
+aino,aino-current,2026-10-22,2026-10-22T12:00:00,Groceries,-10.2,299.14,purchase,S-market,5411
+aino,aino-current,2026-10-23,2026-10-23T12:00:00,Groceries,-6.6,292.54,purchase,Alepa,5411
+aino,aino-current,2026-10-23,2026-10-23T12:00:00,Restaurants,-6.2,286.34,purchase,Fazer Café,5814
+aino,aino-current,2026-10-23,2026-10-23T12:00:00,Restaurants,-16.8,269.54,purchase,Wolt,5812
+aino,aino-current,2026-10-24,2026-10-24T12:00:00,Groceries,-3.1,266.44,purchase,S-market,5411
+aino,aino-current,2026-10-24,2026-10-24T12:00:00,Transportation,-3.2,263.24,purchase,HSL,4111
+aino,aino-current,2026-10-24,2026-10-24T12:00:00,Groceries,-10.2,253.04,purchase,Alepa,5411
+aino,aino-current,2026-10-25,2026-10-25T12:00:00,Salary,590,843.04,salary,Kahvila Sävy Oy,
+aino,aino-current,2026-10-25,2026-10-25T12:00:00,Groceries,-3.8,839.24,purchase,Alepa,5411
+aino,aino-current,2026-10-25,2026-10-25T12:00:00,Restaurants,-5.5,833.74,purchase,Café Regatta,5814
+aino,aino-current,2026-10-25,2026-10-25T12:00:00,Restaurants,-16.8,816.94,purchase,Wolt,5812
+aino,aino-current,2026-10-26,2026-10-26T12:00:00,Invest Deposit,-18,798.94,investment_deposit,Interrail,
+aino,aino-current,2026-10-26,2026-10-26T12:00:00,Groceries,-4.5,794.44,purchase,S-market,5411
+aino,aino-current,2026-10-26,2026-10-26T12:00:00,Groceries,-10.2,784.24,purchase,S-market,5411
+aino,aino-savings,2026-10-26,2026-10-26T12:00:00,Invest Withdraw,18,60,investment_withdrawal,Käyttötili,
+aino,aino-current,2026-10-27,2026-10-27T12:00:00,Groceries,-5.2,779.04,purchase,Alepa,5411
+aino,aino-current,2026-10-27,2026-10-27T12:00:00,Restaurants,-4.5,774.54,purchase,Paulig Kulma,5814
+aino,aino-current,2026-10-27,2026-10-27T12:00:00,Restaurants,-16.8,757.74,purchase,Wolt,5812
+aino,aino-current,2026-10-28,2026-10-28T12:00:00,Entertainment,-9.99,747.75,utilities_payment,Netflix,
+aino,aino-current,2026-10-28,2026-10-28T12:00:00,Entertainment,-0.99,746.76,utilities_payment,iCloud,
+aino,aino-current,2026-10-28,2026-10-28T12:00:00,Entertainment,-5.99,740.77,utilities_payment,HBO Max,
+aino,aino-current,2026-10-28,2026-10-28T12:00:00,Groceries,-10.2,730.57,purchase,Alepa,5411
+aino,aino-current,2026-10-29,2026-10-29T12:00:00,Restaurants,-4.5,726.07,purchase,Paulig Kulma,5814
+aino,aino-current,2026-10-29,2026-10-29T12:00:00,Restaurants,-16.8,709.27,purchase,Wolt,5812
+aino,aino-current,2026-10-30,2026-10-30T12:00:00,Groceries,-10.2,699.07,purchase,S-market,5411
+aino,aino-current,2026-10-31,2026-10-31T12:00:00,Restaurants,-4.2,694.87,purchase,Kahvila Sävy,5814
+aino,aino-current,2026-11-01,2026-11-01T12:00:00,Groceries,-3.8,691.07,purchase,Alepa,5411
+aino,aino-current,2026-11-01,2026-11-01T12:00:00,Restaurants,-16.8,674.27,purchase,Wolt,5812
+aino,aino-current,2026-11-01,2026-11-01T12:00:00,Groceries,-10.2,664.07,purchase,Alepa,5411
+aino,aino-current,2026-11-02,2026-11-02T12:00:00,Housing,-480,184.07,housing_payment,HOAS,
+aino,aino-current,2026-11-02,2026-11-02T12:00:00,Groceries,-4.5,179.57,purchase,S-market,5411
+aino,aino-current,2026-11-03,2026-11-03T12:00:00,Groceries,-5.2,174.37,purchase,Alepa,5411
+aino,aino-current,2026-11-03,2026-11-03T12:00:00,Restaurants,-5.6,168.77,purchase,Espresso House,5814
+aino,aino-current,2026-11-03,2026-11-03T12:00:00,Restaurants,-16.8,151.97,purchase,Wolt,5812
+aino,aino-current,2026-11-03,2026-11-03T12:00:00,Groceries,-10.2,141.77,purchase,S-market,5411
+aino,aino-current,2026-11-04,2026-11-04T12:00:00,Other Income,279.38,421.15,other_income,Kela,
+aino,aino-current,2026-11-04,2026-11-04T12:00:00,Groceries,-5.9,415.25,purchase,S-market,5411
+aino,aino-current,2026-11-04,2026-11-04T12:00:00,Transportation,-3.2,412.05,purchase,HSL,4111
+aino,aino-current,2026-11-05,2026-11-05T12:00:00,Groceries,-6.6,405.45,purchase,Alepa,5411
+aino,aino-current,2026-11-05,2026-11-05T12:00:00,Restaurants,-16.8,388.65,purchase,Wolt,5812
+aino,aino-current,2026-11-05,2026-11-05T12:00:00,Groceries,-10.2,378.45,purchase,Alepa,5411
+aino,aino-current,2026-11-06,2026-11-06T12:00:00,Groceries,-3.1,375.35,purchase,S-market,5411
+aino,aino-current,2026-11-07,2026-11-07T12:00:00,Groceries,-3.8,371.55,purchase,Alepa,5411
+aino,aino-current,2026-11-07,2026-11-07T12:00:00,Restaurants,-5.6,365.95,purchase,Espresso House,5814
+aino,aino-current,2026-11-07,2026-11-07T12:00:00,Restaurants,-16.8,349.15,purchase,Wolt,5812
+aino,aino-current,2026-11-07,2026-11-07T12:00:00,Groceries,-10.2,338.95,purchase,S-market,5411
+aino,aino-current,2026-11-08,2026-11-08T12:00:00,Groceries,-4.5,334.45,purchase,S-market,5411
+aino,aino-current,2026-11-08,2026-11-08T12:00:00,Transportation,-3.2,331.25,purchase,HSL,4111
+aino,aino-current,2026-11-09,2026-11-09T12:00:00,Groceries,-5.2,326.05,purchase,Alepa,5411
+aino,aino-current,2026-11-09,2026-11-09T12:00:00,Restaurants,-16.8,309.25,purchase,Wolt,5812
+aino,aino-current,2026-11-09,2026-11-09T12:00:00,Groceries,-10.2,299.05,purchase,Alepa,5411
+aino,aino-current,2026-11-10,2026-11-10T12:00:00,Groceries,-5.9,293.15,purchase,S-market,5411
+aino,aino-current,2026-11-10,2026-11-10T12:00:00,Restaurants,-5.6,287.55,purchase,Espresso House,5814
+aino,aino-current,2026-11-11,2026-11-11T12:00:00,Groceries,-6.6,280.95,purchase,Alepa,5411
+aino,aino-current,2026-11-11,2026-11-11T12:00:00,Restaurants,-16.8,264.15,purchase,Wolt,5812
+aino,aino-current,2026-11-11,2026-11-11T12:00:00,Groceries,-10.2,253.95,purchase,S-market,5411
+aino,aino-current,2026-11-12,2026-11-12T12:00:00,Groceries,-3.1,250.85,purchase,S-market,5411
+aino,aino-current,2026-11-12,2026-11-12T12:00:00,Transportation,-3.2,247.65,purchase,HSL,4111
+aino,aino-current,2026-11-13,2026-11-13T12:00:00,Groceries,-3.8,243.85,purchase,Alepa,5411
+aino,aino-current,2026-11-13,2026-11-13T12:00:00,Restaurants,-16.8,227.05,purchase,Wolt,5812
+aino,aino-current,2026-11-13,2026-11-13T12:00:00,Groceries,-10.2,216.85,purchase,Alepa,5411
+aino,aino-current,2026-11-14,2026-11-14T12:00:00,Groceries,-4.5,212.35,purchase,S-market,5411

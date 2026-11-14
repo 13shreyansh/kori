@@ -1,0 +1,565 @@
+customer_id,bank_account_id,tx_date,tx_timestamp,category,tx_amount_eur,balance_after_eur,transaction_type,merchant_id,mcc_code
+laura,laura-current,2024-12-01,2024-12-01T12:00:00,Utilities,-64.8,-12205.4,utilities_payment,DNA,
+laura,laura-current,2024-12-02,2024-12-02T12:00:00,Groceries,-60,-12265.4,purchase,Prisma,5411
+laura,laura-current,2024-12-03,2024-12-03T12:00:00,Utilities,-38.2,-12303.6,utilities_payment,Home insurance,
+laura,laura-current,2024-12-06,2024-12-06T12:00:00,Groceries,-60,-12363.6,purchase,K-Supermarket,5411
+laura,laura-current,2024-12-08,2024-12-08T12:00:00,Utilities,-25,-12388.6,utilities_payment,HSY water,
+laura,laura-current,2024-12-09,2024-12-09T12:00:00,Utilities,-22,-12410.6,utilities_payment,Espoo music school,
+laura,laura-current,2024-12-10,2024-12-10T12:00:00,Groceries,-60,-12470.6,purchase,Prisma,5411
+laura,laura-current,2024-12-14,2024-12-14T12:00:00,Groceries,-60,-12530.6,purchase,Prisma,5411
+laura,laura-current,2024-12-16,2024-12-16T12:00:00,Utilities,-96.75,-12627.35,utilities_payment,Helen,
+laura,laura-current,2024-12-18,2024-12-18T12:00:00,Entertainment,-145,-12772.35,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2024-12-18,2024-12-18T12:00:00,Groceries,-60,-12832.35,purchase,K-Supermarket,5411
+laura,laura-current,2024-12-20,2024-12-20T12:00:00,Housing,-890,-13722.35,utilities_payment,Home loan payment,
+laura,laura-current,2024-12-22,2024-12-22T12:00:00,Groceries,-60,-13782.35,purchase,Prisma,5411
+laura,laura-current,2024-12-23,2024-12-23T12:00:00,Utilities,-120,-13902.35,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2024-12-26,2024-12-26T12:00:00,Utilities,-212.6,-14114.95,utilities_payment,Car insurance,
+laura,laura-current,2024-12-26,2024-12-26T12:00:00,Groceries,-60,-14174.95,purchase,Prisma,5411
+laura,laura-current,2024-12-27,2024-12-27T12:00:00,Salary,2840,-11334.95,salary,Espoon kaupunki,
+laura,laura-current,2024-12-28,2024-12-28T12:00:00,Invest Deposit,-114,-11448.95,investment_deposit,Savings,
+laura,laura-savings,2024-12-28,2024-12-28T12:00:00,Invest Withdraw,114,-208,investment_withdrawal,Household account,
+laura,laura-current,2025-01-01,2025-01-01T12:00:00,Utilities,-64.8,-11513.75,utilities_payment,DNA,
+laura,laura-current,2025-01-02,2025-01-02T12:00:00,Groceries,-60,-11573.75,purchase,Prisma,5411
+laura,laura-current,2025-01-03,2025-01-03T12:00:00,Utilities,-38.2,-11611.95,utilities_payment,Home insurance,
+laura,laura-current,2025-01-06,2025-01-06T12:00:00,Groceries,-60,-11671.95,purchase,K-Supermarket,5411
+laura,laura-current,2025-01-08,2025-01-08T12:00:00,Utilities,-25,-11696.95,utilities_payment,HSY water,
+laura,laura-current,2025-01-09,2025-01-09T12:00:00,Utilities,-22,-11718.95,utilities_payment,Espoo music school,
+laura,laura-current,2025-01-10,2025-01-10T12:00:00,Groceries,-60,-11778.95,purchase,Prisma,5411
+laura,laura-current,2025-01-14,2025-01-14T12:00:00,Groceries,-60,-11838.95,purchase,Prisma,5411
+laura,laura-current,2025-01-16,2025-01-16T12:00:00,Utilities,-96.75,-11935.7,utilities_payment,Helen,
+laura,laura-current,2025-01-18,2025-01-18T12:00:00,Entertainment,-145,-12080.7,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-01-18,2025-01-18T12:00:00,Groceries,-60,-12140.7,purchase,K-Supermarket,5411
+laura,laura-current,2025-01-20,2025-01-20T12:00:00,Housing,-890,-13030.7,utilities_payment,Home loan payment,
+laura,laura-current,2025-01-22,2025-01-22T12:00:00,Groceries,-60,-13090.7,purchase,Prisma,5411
+laura,laura-current,2025-01-23,2025-01-23T12:00:00,Utilities,-120,-13210.7,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-01-26,2025-01-26T12:00:00,Utilities,-212.6,-13423.3,utilities_payment,Car insurance,
+laura,laura-current,2025-01-26,2025-01-26T12:00:00,Groceries,-60,-13483.3,purchase,Prisma,5411
+laura,laura-current,2025-01-27,2025-01-27T12:00:00,Salary,2840,-10643.3,salary,Espoon kaupunki,
+laura,laura-current,2025-01-28,2025-01-28T12:00:00,Invest Deposit,-114,-10757.3,investment_deposit,Savings,
+laura,laura-savings,2025-01-28,2025-01-28T12:00:00,Invest Withdraw,114,-94,investment_withdrawal,Household account,
+laura,laura-current,2025-02-01,2025-02-01T12:00:00,Utilities,-64.8,-10822.1,utilities_payment,DNA,
+laura,laura-current,2025-02-02,2025-02-02T12:00:00,Groceries,-60,-10882.1,purchase,Prisma,5411
+laura,laura-current,2025-02-03,2025-02-03T12:00:00,Utilities,-38.2,-10920.3,utilities_payment,Home insurance,
+laura,laura-current,2025-02-06,2025-02-06T12:00:00,Groceries,-60,-10980.3,purchase,K-Supermarket,5411
+laura,laura-current,2025-02-08,2025-02-08T12:00:00,Utilities,-25,-11005.3,utilities_payment,HSY water,
+laura,laura-current,2025-02-09,2025-02-09T12:00:00,Utilities,-22,-11027.3,utilities_payment,Espoo music school,
+laura,laura-current,2025-02-10,2025-02-10T12:00:00,Groceries,-60,-11087.3,purchase,Prisma,5411
+laura,laura-current,2025-02-14,2025-02-14T12:00:00,Groceries,-60,-11147.3,purchase,Prisma,5411
+laura,laura-current,2025-02-16,2025-02-16T12:00:00,Utilities,-96.75,-11244.05,utilities_payment,Helen,
+laura,laura-current,2025-02-18,2025-02-18T12:00:00,Entertainment,-145,-11389.05,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-02-18,2025-02-18T12:00:00,Groceries,-60,-11449.05,purchase,K-Supermarket,5411
+laura,laura-current,2025-02-20,2025-02-20T12:00:00,Housing,-890,-12339.05,utilities_payment,Home loan payment,
+laura,laura-current,2025-02-22,2025-02-22T12:00:00,Groceries,-60,-12399.05,purchase,Prisma,5411
+laura,laura-current,2025-02-23,2025-02-23T12:00:00,Utilities,-120,-12519.05,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-02-26,2025-02-26T12:00:00,Utilities,-212.6,-12731.65,utilities_payment,Car insurance,
+laura,laura-current,2025-02-26,2025-02-26T12:00:00,Groceries,-60,-12791.65,purchase,Prisma,5411
+laura,laura-current,2025-02-27,2025-02-27T12:00:00,Salary,2840,-9951.65,salary,Espoon kaupunki,
+laura,laura-current,2025-02-28,2025-02-28T12:00:00,Invest Deposit,-114,-10065.65,investment_deposit,Savings,
+laura,laura-savings,2025-02-28,2025-02-28T12:00:00,Invest Withdraw,114,20,investment_withdrawal,Household account,
+laura,laura-current,2025-03-01,2025-03-01T12:00:00,Utilities,-64.8,-10130.45,utilities_payment,DNA,
+laura,laura-current,2025-03-02,2025-03-02T12:00:00,Groceries,-60,-10190.45,purchase,Prisma,5411
+laura,laura-current,2025-03-03,2025-03-03T12:00:00,Utilities,-38.2,-10228.65,utilities_payment,Home insurance,
+laura,laura-current,2025-03-06,2025-03-06T12:00:00,Groceries,-60,-10288.65,purchase,K-Supermarket,5411
+laura,laura-current,2025-03-08,2025-03-08T12:00:00,Utilities,-25,-10313.65,utilities_payment,HSY water,
+laura,laura-current,2025-03-09,2025-03-09T12:00:00,Utilities,-22,-10335.65,utilities_payment,Espoo music school,
+laura,laura-current,2025-03-10,2025-03-10T12:00:00,Groceries,-60,-10395.65,purchase,Prisma,5411
+laura,laura-current,2025-03-14,2025-03-14T12:00:00,Groceries,-60,-10455.65,purchase,Prisma,5411
+laura,laura-current,2025-03-16,2025-03-16T12:00:00,Utilities,-96.75,-10552.4,utilities_payment,Helen,
+laura,laura-current,2025-03-18,2025-03-18T12:00:00,Entertainment,-145,-10697.4,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-03-18,2025-03-18T12:00:00,Groceries,-60,-10757.4,purchase,K-Supermarket,5411
+laura,laura-current,2025-03-20,2025-03-20T12:00:00,Housing,-890,-11647.4,utilities_payment,Home loan payment,
+laura,laura-current,2025-03-22,2025-03-22T12:00:00,Groceries,-60,-11707.4,purchase,Prisma,5411
+laura,laura-current,2025-03-23,2025-03-23T12:00:00,Utilities,-120,-11827.4,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-03-26,2025-03-26T12:00:00,Utilities,-212.6,-12040.0,utilities_payment,Car insurance,
+laura,laura-current,2025-03-26,2025-03-26T12:00:00,Groceries,-60,-12100.0,purchase,Prisma,5411
+laura,laura-current,2025-03-27,2025-03-27T12:00:00,Salary,2840,-9260.0,salary,Espoon kaupunki,
+laura,laura-current,2025-03-28,2025-03-28T12:00:00,Invest Deposit,-114,-9374.0,investment_deposit,Savings,
+laura,laura-savings,2025-03-28,2025-03-28T12:00:00,Invest Withdraw,114,134,investment_withdrawal,Household account,
+laura,laura-current,2025-04-01,2025-04-01T12:00:00,Utilities,-64.8,-9438.8,utilities_payment,DNA,
+laura,laura-current,2025-04-02,2025-04-02T12:00:00,Groceries,-60,-9498.8,purchase,Prisma,5411
+laura,laura-current,2025-04-03,2025-04-03T12:00:00,Utilities,-38.2,-9537.0,utilities_payment,Home insurance,
+laura,laura-current,2025-04-06,2025-04-06T12:00:00,Groceries,-60,-9597.0,purchase,K-Supermarket,5411
+laura,laura-current,2025-04-08,2025-04-08T12:00:00,Utilities,-25,-9622.0,utilities_payment,HSY water,
+laura,laura-current,2025-04-09,2025-04-09T12:00:00,Utilities,-22,-9644.0,utilities_payment,Espoo music school,
+laura,laura-current,2025-04-10,2025-04-10T12:00:00,Groceries,-60,-9704.0,purchase,Prisma,5411
+laura,laura-current,2025-04-14,2025-04-14T12:00:00,Groceries,-60,-9764.0,purchase,Prisma,5411
+laura,laura-current,2025-04-16,2025-04-16T12:00:00,Utilities,-96.75,-9860.75,utilities_payment,Helen,
+laura,laura-current,2025-04-18,2025-04-18T12:00:00,Entertainment,-145,-10005.75,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-04-18,2025-04-18T12:00:00,Groceries,-60,-10065.75,purchase,K-Supermarket,5411
+laura,laura-current,2025-04-20,2025-04-20T12:00:00,Housing,-890,-10955.75,utilities_payment,Home loan payment,
+laura,laura-current,2025-04-22,2025-04-22T12:00:00,Groceries,-60,-11015.75,purchase,Prisma,5411
+laura,laura-current,2025-04-23,2025-04-23T12:00:00,Utilities,-120,-11135.75,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-04-26,2025-04-26T12:00:00,Utilities,-212.6,-11348.35,utilities_payment,Car insurance,
+laura,laura-current,2025-04-26,2025-04-26T12:00:00,Groceries,-60,-11408.35,purchase,Prisma,5411
+laura,laura-current,2025-04-27,2025-04-27T12:00:00,Salary,2840,-8568.35,salary,Espoon kaupunki,
+laura,laura-current,2025-04-28,2025-04-28T12:00:00,Invest Deposit,-114,-8682.35,investment_deposit,Savings,
+laura,laura-savings,2025-04-28,2025-04-28T12:00:00,Invest Withdraw,114,248,investment_withdrawal,Household account,
+laura,laura-current,2025-05-01,2025-05-01T12:00:00,Utilities,-64.8,-8747.15,utilities_payment,DNA,
+laura,laura-current,2025-05-02,2025-05-02T12:00:00,Groceries,-60,-8807.15,purchase,Prisma,5411
+laura,laura-current,2025-05-03,2025-05-03T12:00:00,Utilities,-38.2,-8845.35,utilities_payment,Home insurance,
+laura,laura-current,2025-05-06,2025-05-06T12:00:00,Groceries,-60,-8905.35,purchase,K-Supermarket,5411
+laura,laura-current,2025-05-08,2025-05-08T12:00:00,Utilities,-25,-8930.35,utilities_payment,HSY water,
+laura,laura-current,2025-05-09,2025-05-09T12:00:00,Utilities,-22,-8952.35,utilities_payment,Espoo music school,
+laura,laura-current,2025-05-10,2025-05-10T12:00:00,Groceries,-60,-9012.35,purchase,Prisma,5411
+laura,laura-current,2025-05-14,2025-05-14T12:00:00,Groceries,-60,-9072.35,purchase,Prisma,5411
+laura,laura-current,2025-05-16,2025-05-16T12:00:00,Utilities,-96.75,-9169.1,utilities_payment,Helen,
+laura,laura-current,2025-05-18,2025-05-18T12:00:00,Entertainment,-145,-9314.1,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-05-18,2025-05-18T12:00:00,Groceries,-60,-9374.1,purchase,K-Supermarket,5411
+laura,laura-current,2025-05-20,2025-05-20T12:00:00,Housing,-890,-10264.1,utilities_payment,Home loan payment,
+laura,laura-current,2025-05-22,2025-05-22T12:00:00,Groceries,-60,-10324.1,purchase,Prisma,5411
+laura,laura-current,2025-05-23,2025-05-23T12:00:00,Utilities,-120,-10444.1,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-05-26,2025-05-26T12:00:00,Utilities,-212.6,-10656.7,utilities_payment,Car insurance,
+laura,laura-current,2025-05-26,2025-05-26T12:00:00,Groceries,-60,-10716.7,purchase,Prisma,5411
+laura,laura-current,2025-05-27,2025-05-27T12:00:00,Salary,2840,-7876.7,salary,Espoon kaupunki,
+laura,laura-current,2025-05-28,2025-05-28T12:00:00,Invest Deposit,-114,-7990.7,investment_deposit,Savings,
+laura,laura-savings,2025-05-28,2025-05-28T12:00:00,Invest Withdraw,114,362,investment_withdrawal,Household account,
+laura,laura-current,2025-06-01,2025-06-01T12:00:00,Utilities,-64.8,-8055.5,utilities_payment,DNA,
+laura,laura-current,2025-06-02,2025-06-02T12:00:00,Groceries,-60,-8115.5,purchase,Prisma,5411
+laura,laura-current,2025-06-03,2025-06-03T12:00:00,Utilities,-38.2,-8153.7,utilities_payment,Home insurance,
+laura,laura-current,2025-06-06,2025-06-06T12:00:00,Groceries,-60,-8213.7,purchase,K-Supermarket,5411
+laura,laura-current,2025-06-08,2025-06-08T12:00:00,Utilities,-25,-8238.7,utilities_payment,HSY water,
+laura,laura-current,2025-06-09,2025-06-09T12:00:00,Utilities,-22,-8260.7,utilities_payment,Espoo music school,
+laura,laura-current,2025-06-10,2025-06-10T12:00:00,Groceries,-60,-8320.7,purchase,Prisma,5411
+laura,laura-current,2025-06-14,2025-06-14T12:00:00,Groceries,-60,-8380.7,purchase,Prisma,5411
+laura,laura-current,2025-06-16,2025-06-16T12:00:00,Utilities,-96.75,-8477.45,utilities_payment,Helen,
+laura,laura-current,2025-06-18,2025-06-18T12:00:00,Entertainment,-145,-8622.45,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-06-18,2025-06-18T12:00:00,Groceries,-60,-8682.45,purchase,K-Supermarket,5411
+laura,laura-current,2025-06-20,2025-06-20T12:00:00,Housing,-890,-9572.45,utilities_payment,Home loan payment,
+laura,laura-current,2025-06-22,2025-06-22T12:00:00,Groceries,-60,-9632.45,purchase,Prisma,5411
+laura,laura-current,2025-06-23,2025-06-23T12:00:00,Utilities,-120,-9752.45,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-06-26,2025-06-26T12:00:00,Utilities,-212.6,-9965.05,utilities_payment,Car insurance,
+laura,laura-current,2025-06-26,2025-06-26T12:00:00,Groceries,-60,-10025.05,purchase,Prisma,5411
+laura,laura-current,2025-06-27,2025-06-27T12:00:00,Salary,2840,-7185.05,salary,Espoon kaupunki,
+laura,laura-current,2025-06-28,2025-06-28T12:00:00,Invest Deposit,-114,-7299.05,investment_deposit,Savings,
+laura,laura-savings,2025-06-28,2025-06-28T12:00:00,Invest Withdraw,114,476,investment_withdrawal,Household account,
+laura,laura-current,2025-07-01,2025-07-01T12:00:00,Utilities,-64.8,-7363.85,utilities_payment,DNA,
+laura,laura-current,2025-07-02,2025-07-02T12:00:00,Groceries,-60,-7423.85,purchase,Prisma,5411
+laura,laura-current,2025-07-03,2025-07-03T12:00:00,Utilities,-38.2,-7462.05,utilities_payment,Home insurance,
+laura,laura-current,2025-07-06,2025-07-06T12:00:00,Groceries,-60,-7522.05,purchase,K-Supermarket,5411
+laura,laura-current,2025-07-08,2025-07-08T12:00:00,Utilities,-25,-7547.05,utilities_payment,HSY water,
+laura,laura-current,2025-07-09,2025-07-09T12:00:00,Utilities,-22,-7569.05,utilities_payment,Espoo music school,
+laura,laura-current,2025-07-10,2025-07-10T12:00:00,Groceries,-60,-7629.05,purchase,Prisma,5411
+laura,laura-current,2025-07-14,2025-07-14T12:00:00,Groceries,-60,-7689.05,purchase,Prisma,5411
+laura,laura-current,2025-07-16,2025-07-16T12:00:00,Utilities,-96.75,-7785.8,utilities_payment,Helen,
+laura,laura-current,2025-07-18,2025-07-18T12:00:00,Entertainment,-145,-7930.8,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-07-18,2025-07-18T12:00:00,Groceries,-60,-7990.8,purchase,K-Supermarket,5411
+laura,laura-current,2025-07-20,2025-07-20T12:00:00,Housing,-890,-8880.8,utilities_payment,Home loan payment,
+laura,laura-current,2025-07-22,2025-07-22T12:00:00,Groceries,-60,-8940.8,purchase,Prisma,5411
+laura,laura-current,2025-07-23,2025-07-23T12:00:00,Utilities,-120,-9060.8,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-07-26,2025-07-26T12:00:00,Utilities,-212.6,-9273.4,utilities_payment,Car insurance,
+laura,laura-current,2025-07-26,2025-07-26T12:00:00,Groceries,-60,-9333.4,purchase,Prisma,5411
+laura,laura-current,2025-07-27,2025-07-27T12:00:00,Salary,2840,-6493.4,salary,Espoon kaupunki,
+laura,laura-current,2025-07-28,2025-07-28T12:00:00,Invest Deposit,-114,-6607.4,investment_deposit,Savings,
+laura,laura-savings,2025-07-28,2025-07-28T12:00:00,Invest Withdraw,114,590,investment_withdrawal,Household account,
+laura,laura-current,2025-08-01,2025-08-01T12:00:00,Utilities,-64.8,-6672.2,utilities_payment,DNA,
+laura,laura-current,2025-08-02,2025-08-02T12:00:00,Groceries,-60,-6732.2,purchase,Prisma,5411
+laura,laura-current,2025-08-03,2025-08-03T12:00:00,Utilities,-38.2,-6770.4,utilities_payment,Home insurance,
+laura,laura-current,2025-08-06,2025-08-06T12:00:00,Groceries,-60,-6830.4,purchase,K-Supermarket,5411
+laura,laura-current,2025-08-08,2025-08-08T12:00:00,Utilities,-25,-6855.4,utilities_payment,HSY water,
+laura,laura-current,2025-08-09,2025-08-09T12:00:00,Utilities,-22,-6877.4,utilities_payment,Espoo music school,
+laura,laura-current,2025-08-10,2025-08-10T12:00:00,Groceries,-60,-6937.4,purchase,Prisma,5411
+laura,laura-current,2025-08-14,2025-08-14T12:00:00,Groceries,-60,-6997.4,purchase,Prisma,5411
+laura,laura-current,2025-08-16,2025-08-16T12:00:00,Utilities,-96.75,-7094.15,utilities_payment,Helen,
+laura,laura-current,2025-08-18,2025-08-18T12:00:00,Entertainment,-145,-7239.15,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-08-18,2025-08-18T12:00:00,Groceries,-60,-7299.15,purchase,K-Supermarket,5411
+laura,laura-current,2025-08-20,2025-08-20T12:00:00,Housing,-890,-8189.15,utilities_payment,Home loan payment,
+laura,laura-current,2025-08-22,2025-08-22T12:00:00,Groceries,-60,-8249.15,purchase,Prisma,5411
+laura,laura-current,2025-08-23,2025-08-23T12:00:00,Utilities,-120,-8369.15,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-08-26,2025-08-26T12:00:00,Utilities,-212.6,-8581.75,utilities_payment,Car insurance,
+laura,laura-current,2025-08-26,2025-08-26T12:00:00,Groceries,-60,-8641.75,purchase,Prisma,5411
+laura,laura-current,2025-08-27,2025-08-27T12:00:00,Salary,2840,-5801.75,salary,Espoon kaupunki,
+laura,laura-current,2025-08-28,2025-08-28T12:00:00,Invest Deposit,-114,-5915.75,investment_deposit,Savings,
+laura,laura-savings,2025-08-28,2025-08-28T12:00:00,Invest Withdraw,114,704,investment_withdrawal,Household account,
+laura,laura-current,2025-09-01,2025-09-01T12:00:00,Utilities,-64.8,-5980.55,utilities_payment,DNA,
+laura,laura-current,2025-09-02,2025-09-02T12:00:00,Groceries,-60,-6040.55,purchase,Prisma,5411
+laura,laura-current,2025-09-03,2025-09-03T12:00:00,Utilities,-38.2,-6078.75,utilities_payment,Home insurance,
+laura,laura-current,2025-09-06,2025-09-06T12:00:00,Groceries,-60,-6138.75,purchase,K-Supermarket,5411
+laura,laura-current,2025-09-08,2025-09-08T12:00:00,Utilities,-25,-6163.75,utilities_payment,HSY water,
+laura,laura-current,2025-09-09,2025-09-09T12:00:00,Utilities,-22,-6185.75,utilities_payment,Espoo music school,
+laura,laura-current,2025-09-10,2025-09-10T12:00:00,Groceries,-60,-6245.75,purchase,Prisma,5411
+laura,laura-current,2025-09-14,2025-09-14T12:00:00,Groceries,-60,-6305.75,purchase,Prisma,5411
+laura,laura-current,2025-09-16,2025-09-16T12:00:00,Utilities,-96.75,-6402.5,utilities_payment,Helen,
+laura,laura-current,2025-09-18,2025-09-18T12:00:00,Entertainment,-145,-6547.5,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-09-18,2025-09-18T12:00:00,Groceries,-60,-6607.5,purchase,K-Supermarket,5411
+laura,laura-current,2025-09-20,2025-09-20T12:00:00,Housing,-890,-7497.5,utilities_payment,Home loan payment,
+laura,laura-current,2025-09-22,2025-09-22T12:00:00,Groceries,-60,-7557.5,purchase,Prisma,5411
+laura,laura-current,2025-09-23,2025-09-23T12:00:00,Utilities,-120,-7677.5,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-09-26,2025-09-26T12:00:00,Utilities,-212.6,-7890.1,utilities_payment,Car insurance,
+laura,laura-current,2025-09-26,2025-09-26T12:00:00,Groceries,-60,-7950.1,purchase,Prisma,5411
+laura,laura-current,2025-09-27,2025-09-27T12:00:00,Salary,2840,-5110.1,salary,Espoon kaupunki,
+laura,laura-current,2025-09-28,2025-09-28T12:00:00,Invest Deposit,-114,-5224.1,investment_deposit,Savings,
+laura,laura-savings,2025-09-28,2025-09-28T12:00:00,Invest Withdraw,114,818,investment_withdrawal,Household account,
+laura,laura-current,2025-10-01,2025-10-01T12:00:00,Utilities,-64.8,-5288.9,utilities_payment,DNA,
+laura,laura-current,2025-10-02,2025-10-02T12:00:00,Groceries,-60,-5348.9,purchase,Prisma,5411
+laura,laura-current,2025-10-03,2025-10-03T12:00:00,Utilities,-38.2,-5387.1,utilities_payment,Home insurance,
+laura,laura-current,2025-10-06,2025-10-06T12:00:00,Groceries,-60,-5447.1,purchase,K-Supermarket,5411
+laura,laura-current,2025-10-08,2025-10-08T12:00:00,Utilities,-25,-5472.1,utilities_payment,HSY water,
+laura,laura-current,2025-10-09,2025-10-09T12:00:00,Utilities,-22,-5494.1,utilities_payment,Espoo music school,
+laura,laura-current,2025-10-10,2025-10-10T12:00:00,Groceries,-60,-5554.1,purchase,Prisma,5411
+laura,laura-current,2025-10-14,2025-10-14T12:00:00,Groceries,-60,-5614.1,purchase,Prisma,5411
+laura,laura-current,2025-10-16,2025-10-16T12:00:00,Utilities,-96.75,-5710.85,utilities_payment,Helen,
+laura,laura-current,2025-10-18,2025-10-18T12:00:00,Entertainment,-145,-5855.85,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-10-18,2025-10-18T12:00:00,Groceries,-60,-5915.85,purchase,K-Supermarket,5411
+laura,laura-current,2025-10-20,2025-10-20T12:00:00,Housing,-890,-6805.85,utilities_payment,Home loan payment,
+laura,laura-current,2025-10-22,2025-10-22T12:00:00,Groceries,-60,-6865.85,purchase,Prisma,5411
+laura,laura-current,2025-10-23,2025-10-23T12:00:00,Utilities,-120,-6985.85,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-10-26,2025-10-26T12:00:00,Utilities,-212.6,-7198.45,utilities_payment,Car insurance,
+laura,laura-current,2025-10-26,2025-10-26T12:00:00,Groceries,-60,-7258.45,purchase,Prisma,5411
+laura,laura-current,2025-10-27,2025-10-27T12:00:00,Salary,2840,-4418.45,salary,Espoon kaupunki,
+laura,laura-current,2025-10-28,2025-10-28T12:00:00,Invest Deposit,-114,-4532.45,investment_deposit,Savings,
+laura,laura-savings,2025-10-28,2025-10-28T12:00:00,Invest Withdraw,114,932,investment_withdrawal,Household account,
+laura,laura-current,2025-11-01,2025-11-01T12:00:00,Utilities,-64.8,-4597.25,utilities_payment,DNA,
+laura,laura-current,2025-11-02,2025-11-02T12:00:00,Groceries,-60,-4657.25,purchase,Prisma,5411
+laura,laura-current,2025-11-03,2025-11-03T12:00:00,Utilities,-38.2,-4695.45,utilities_payment,Home insurance,
+laura,laura-current,2025-11-06,2025-11-06T12:00:00,Groceries,-60,-4755.45,purchase,K-Supermarket,5411
+laura,laura-current,2025-11-08,2025-11-08T12:00:00,Utilities,-25,-4780.45,utilities_payment,HSY water,
+laura,laura-current,2025-11-09,2025-11-09T12:00:00,Utilities,-22,-4802.45,utilities_payment,Espoo music school,
+laura,laura-current,2025-11-10,2025-11-10T12:00:00,Groceries,-60,-4862.45,purchase,Prisma,5411
+laura,laura-current,2025-11-14,2025-11-14T12:00:00,Groceries,-60,-4922.45,purchase,Prisma,5411
+laura,laura-current,2025-11-16,2025-11-16T12:00:00,Utilities,-96.75,-5019.2,utilities_payment,Helen,
+laura,laura-current,2025-11-18,2025-11-18T12:00:00,Entertainment,-145,-5164.2,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-11-18,2025-11-18T12:00:00,Groceries,-53.5,-5217.7,purchase,K-Supermarket,5411
+laura,laura-current,2025-11-18,2025-11-18T17:20:00,Groceries,-6.5,-5224.2,purchase,Alepa,5411
+laura,laura-current,2025-11-20,2025-11-20T12:00:00,Housing,-890,-6114.2,utilities_payment,Home loan payment,
+laura,laura-current,2025-11-22,2025-11-22T12:00:00,Groceries,-53.5,-6167.7,purchase,Prisma,5411
+laura,laura-current,2025-11-22,2025-11-22T17:20:00,Groceries,-6.5,-6174.2,purchase,Alepa,5411
+laura,laura-current,2025-11-23,2025-11-23T12:00:00,Utilities,-120,-6294.2,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-11-26,2025-11-26T12:00:00,Utilities,-212.6,-6506.8,utilities_payment,Car insurance,
+laura,laura-current,2025-11-26,2025-11-26T12:00:00,Groceries,-53.5,-6560.3,purchase,Prisma,5411
+laura,laura-current,2025-11-26,2025-11-26T17:20:00,Groceries,-6.5,-6566.8,purchase,Alepa,5411
+laura,laura-current,2025-11-27,2025-11-27T12:00:00,Salary,2840,-3726.8,salary,Espoon kaupunki,
+laura,laura-current,2025-11-28,2025-11-28T12:00:00,Invest Deposit,-114,-3840.8,investment_deposit,Savings,
+laura,laura-savings,2025-11-28,2025-11-28T12:00:00,Invest Withdraw,114,1046,investment_withdrawal,Household account,
+laura,laura-current,2025-12-01,2025-12-01T12:00:00,Utilities,-64.8,-3905.6,utilities_payment,DNA,
+laura,laura-current,2025-12-02,2025-12-02T12:00:00,Groceries,-53.5,-3959.1,purchase,Prisma,5411
+laura,laura-current,2025-12-02,2025-12-02T17:20:00,Groceries,-6.5,-3965.6,purchase,Alepa,5411
+laura,laura-current,2025-12-03,2025-12-03T12:00:00,Utilities,-38.2,-4003.8,utilities_payment,Home insurance,
+laura,laura-current,2025-12-06,2025-12-06T12:00:00,Groceries,-53.5,-4057.3,purchase,K-Supermarket,5411
+laura,laura-current,2025-12-06,2025-12-06T17:20:00,Groceries,-6.5,-4063.8,purchase,Alepa,5411
+laura,laura-current,2025-12-08,2025-12-08T12:00:00,Utilities,-25,-4088.8,utilities_payment,HSY water,
+laura,laura-current,2025-12-09,2025-12-09T12:00:00,Utilities,-22,-4110.8,utilities_payment,Espoo music school,
+laura,laura-current,2025-12-10,2025-12-10T12:00:00,Groceries,-53.5,-4164.3,purchase,Prisma,5411
+laura,laura-current,2025-12-10,2025-12-10T17:20:00,Groceries,-6.5,-4170.8,purchase,Alepa,5411
+laura,laura-current,2025-12-14,2025-12-14T12:00:00,Groceries,-53.5,-4224.3,purchase,Prisma,5411
+laura,laura-current,2025-12-14,2025-12-14T17:20:00,Groceries,-6.5,-4230.8,purchase,Alepa,5411
+laura,laura-current,2025-12-16,2025-12-16T12:00:00,Utilities,-96.75,-4327.55,utilities_payment,Helen,
+laura,laura-current,2025-12-18,2025-12-18T12:00:00,Entertainment,-145,-4472.55,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2025-12-18,2025-12-18T12:00:00,Groceries,-53.5,-4526.05,purchase,K-Supermarket,5411
+laura,laura-current,2025-12-18,2025-12-18T17:20:00,Groceries,-6.5,-4532.55,purchase,Alepa,5411
+laura,laura-current,2025-12-20,2025-12-20T12:00:00,Housing,-890,-5422.55,utilities_payment,Home loan payment,
+laura,laura-current,2025-12-22,2025-12-22T12:00:00,Groceries,-53.5,-5476.05,purchase,Prisma,5411
+laura,laura-current,2025-12-22,2025-12-22T17:20:00,Groceries,-6.5,-5482.55,purchase,Alepa,5411
+laura,laura-current,2025-12-23,2025-12-23T12:00:00,Utilities,-120,-5602.55,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2025-12-26,2025-12-26T12:00:00,Utilities,-212.6,-5815.15,utilities_payment,Car insurance,
+laura,laura-current,2025-12-26,2025-12-26T12:00:00,Groceries,-53.5,-5868.65,purchase,Prisma,5411
+laura,laura-current,2025-12-26,2025-12-26T17:20:00,Groceries,-6.5,-5875.15,purchase,Alepa,5411
+laura,laura-current,2025-12-27,2025-12-27T12:00:00,Salary,2840,-3035.15,salary,Espoon kaupunki,
+laura,laura-current,2025-12-28,2025-12-28T12:00:00,Invest Deposit,-114,-3149.15,investment_deposit,Savings,
+laura,laura-savings,2025-12-28,2025-12-28T12:00:00,Invest Withdraw,114,1160,investment_withdrawal,Household account,
+laura,laura-current,2026-01-01,2026-01-01T12:00:00,Utilities,-64.8,-3213.95,utilities_payment,DNA,
+laura,laura-current,2026-01-02,2026-01-02T12:00:00,Groceries,-53.5,-3267.45,purchase,Prisma,5411
+laura,laura-current,2026-01-02,2026-01-02T17:20:00,Groceries,-6.5,-3273.95,purchase,Alepa,5411
+laura,laura-current,2026-01-03,2026-01-03T12:00:00,Utilities,-38.2,-3312.15,utilities_payment,Home insurance,
+laura,laura-current,2026-01-06,2026-01-06T12:00:00,Groceries,-53.5,-3365.65,purchase,K-Supermarket,5411
+laura,laura-current,2026-01-06,2026-01-06T17:20:00,Groceries,-6.5,-3372.15,purchase,Alepa,5411
+laura,laura-current,2026-01-08,2026-01-08T12:00:00,Utilities,-25,-3397.15,utilities_payment,HSY water,
+laura,laura-current,2026-01-09,2026-01-09T12:00:00,Utilities,-22,-3419.15,utilities_payment,Espoo music school,
+laura,laura-current,2026-01-10,2026-01-10T12:00:00,Groceries,-53.5,-3472.65,purchase,Prisma,5411
+laura,laura-current,2026-01-10,2026-01-10T17:20:00,Groceries,-6.5,-3479.15,purchase,Alepa,5411
+laura,laura-current,2026-01-14,2026-01-14T12:00:00,Groceries,-53.5,-3532.65,purchase,Prisma,5411
+laura,laura-current,2026-01-14,2026-01-14T17:20:00,Groceries,-6.5,-3539.15,purchase,Alepa,5411
+laura,laura-current,2026-01-16,2026-01-16T12:00:00,Utilities,-96.75,-3635.9,utilities_payment,Helen,
+laura,laura-current,2026-01-18,2026-01-18T12:00:00,Entertainment,-145,-3780.9,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-01-18,2026-01-18T12:00:00,Groceries,-53.5,-3834.4,purchase,K-Supermarket,5411
+laura,laura-current,2026-01-18,2026-01-18T17:20:00,Groceries,-6.5,-3840.9,purchase,Alepa,5411
+laura,laura-current,2026-01-20,2026-01-20T12:00:00,Housing,-890,-4730.9,utilities_payment,Home loan payment,
+laura,laura-current,2026-01-22,2026-01-22T12:00:00,Groceries,-53.5,-4784.4,purchase,Prisma,5411
+laura,laura-current,2026-01-22,2026-01-22T17:20:00,Groceries,-6.5,-4790.9,purchase,Alepa,5411
+laura,laura-current,2026-01-23,2026-01-23T12:00:00,Utilities,-120,-4910.9,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-01-26,2026-01-26T12:00:00,Utilities,-212.6,-5123.5,utilities_payment,Car insurance,
+laura,laura-current,2026-01-26,2026-01-26T12:00:00,Groceries,-53.5,-5177.0,purchase,Prisma,5411
+laura,laura-current,2026-01-26,2026-01-26T17:20:00,Groceries,-6.5,-5183.5,purchase,Alepa,5411
+laura,laura-current,2026-01-27,2026-01-27T12:00:00,Salary,2840,-2343.5,salary,Espoon kaupunki,
+laura,laura-current,2026-01-28,2026-01-28T12:00:00,Invest Deposit,-114,-2457.5,investment_deposit,Savings,
+laura,laura-savings,2026-01-28,2026-01-28T12:00:00,Invest Withdraw,114,1274,investment_withdrawal,Household account,
+laura,laura-current,2026-02-01,2026-02-01T12:00:00,Utilities,-64.8,-2522.3,utilities_payment,DNA,
+laura,laura-current,2026-02-02,2026-02-02T12:00:00,Groceries,-53.5,-2575.8,purchase,Prisma,5411
+laura,laura-current,2026-02-02,2026-02-02T17:20:00,Groceries,-6.5,-2582.3,purchase,Alepa,5411
+laura,laura-current,2026-02-03,2026-02-03T12:00:00,Utilities,-38.2,-2620.5,utilities_payment,Home insurance,
+laura,laura-current,2026-02-06,2026-02-06T12:00:00,Groceries,-53.5,-2674.0,purchase,K-Supermarket,5411
+laura,laura-current,2026-02-06,2026-02-06T17:20:00,Groceries,-6.5,-2680.5,purchase,Alepa,5411
+laura,laura-current,2026-02-08,2026-02-08T12:00:00,Utilities,-25,-2705.5,utilities_payment,HSY water,
+laura,laura-current,2026-02-09,2026-02-09T12:00:00,Utilities,-22,-2727.5,utilities_payment,Espoo music school,
+laura,laura-current,2026-02-10,2026-02-10T12:00:00,Groceries,-53.5,-2781.0,purchase,Prisma,5411
+laura,laura-current,2026-02-10,2026-02-10T17:20:00,Groceries,-6.5,-2787.5,purchase,Alepa,5411
+laura,laura-current,2026-02-14,2026-02-14T12:00:00,Groceries,-53.5,-2841.0,purchase,Prisma,5411
+laura,laura-current,2026-02-14,2026-02-14T17:20:00,Groceries,-6.5,-2847.5,purchase,Alepa,5411
+laura,laura-current,2026-02-16,2026-02-16T12:00:00,Utilities,-96.75,-2944.25,utilities_payment,Helen,
+laura,laura-current,2026-02-18,2026-02-18T12:00:00,Entertainment,-145,-3089.25,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-02-18,2026-02-18T12:00:00,Groceries,-53.5,-3142.75,purchase,K-Supermarket,5411
+laura,laura-current,2026-02-18,2026-02-18T17:20:00,Groceries,-6.5,-3149.25,purchase,Alepa,5411
+laura,laura-current,2026-02-20,2026-02-20T12:00:00,Housing,-890,-4039.25,utilities_payment,Home loan payment,
+laura,laura-current,2026-02-22,2026-02-22T12:00:00,Groceries,-53.5,-4092.75,purchase,Prisma,5411
+laura,laura-current,2026-02-22,2026-02-22T17:20:00,Groceries,-6.5,-4099.25,purchase,Alepa,5411
+laura,laura-current,2026-02-23,2026-02-23T12:00:00,Utilities,-120,-4219.25,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-02-26,2026-02-26T12:00:00,Utilities,-212.6,-4431.85,utilities_payment,Car insurance,
+laura,laura-current,2026-02-26,2026-02-26T12:00:00,Groceries,-53.5,-4485.35,purchase,Prisma,5411
+laura,laura-current,2026-02-26,2026-02-26T17:20:00,Groceries,-6.5,-4491.85,purchase,Alepa,5411
+laura,laura-current,2026-02-27,2026-02-27T12:00:00,Salary,2840,-1651.85,salary,Espoon kaupunki,
+laura,laura-current,2026-02-28,2026-02-28T12:00:00,Invest Deposit,-114,-1765.85,investment_deposit,Savings,
+laura,laura-savings,2026-02-28,2026-02-28T12:00:00,Invest Withdraw,114,1388,investment_withdrawal,Household account,
+laura,laura-current,2026-03-01,2026-03-01T12:00:00,Utilities,-64.8,-1830.65,utilities_payment,DNA,
+laura,laura-current,2026-03-02,2026-03-02T12:00:00,Groceries,-53.5,-1884.15,purchase,Prisma,5411
+laura,laura-current,2026-03-02,2026-03-02T17:20:00,Groceries,-6.5,-1890.65,purchase,Alepa,5411
+laura,laura-current,2026-03-03,2026-03-03T12:00:00,Utilities,-38.2,-1928.85,utilities_payment,Home insurance,
+laura,laura-current,2026-03-06,2026-03-06T12:00:00,Groceries,-53.5,-1982.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-03-06,2026-03-06T17:20:00,Groceries,-6.5,-1988.85,purchase,Alepa,5411
+laura,laura-current,2026-03-08,2026-03-08T12:00:00,Utilities,-25,-2013.85,utilities_payment,HSY water,
+laura,laura-current,2026-03-09,2026-03-09T12:00:00,Utilities,-22,-2035.85,utilities_payment,Espoo music school,
+laura,laura-current,2026-03-10,2026-03-10T12:00:00,Groceries,-53.5,-2089.35,purchase,Prisma,5411
+laura,laura-current,2026-03-10,2026-03-10T17:20:00,Groceries,-6.5,-2095.85,purchase,Alepa,5411
+laura,laura-current,2026-03-14,2026-03-14T12:00:00,Groceries,-53.5,-2149.35,purchase,Prisma,5411
+laura,laura-current,2026-03-14,2026-03-14T17:20:00,Groceries,-6.5,-2155.85,purchase,Alepa,5411
+laura,laura-current,2026-03-16,2026-03-16T12:00:00,Utilities,-96.75,-2252.6,utilities_payment,Helen,
+laura,laura-current,2026-03-18,2026-03-18T12:00:00,Entertainment,-145,-2397.6,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-03-18,2026-03-18T12:00:00,Groceries,-53.5,-2451.1,purchase,K-Supermarket,5411
+laura,laura-current,2026-03-18,2026-03-18T17:20:00,Groceries,-6.5,-2457.6,purchase,Alepa,5411
+laura,laura-current,2026-03-20,2026-03-20T12:00:00,Housing,-890,-3347.6,utilities_payment,Home loan payment,
+laura,laura-current,2026-03-22,2026-03-22T12:00:00,Groceries,-53.5,-3401.1,purchase,Prisma,5411
+laura,laura-current,2026-03-22,2026-03-22T17:20:00,Groceries,-6.5,-3407.6,purchase,Alepa,5411
+laura,laura-current,2026-03-23,2026-03-23T12:00:00,Utilities,-120,-3527.6,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-03-26,2026-03-26T12:00:00,Utilities,-212.6,-3740.2,utilities_payment,Car insurance,
+laura,laura-current,2026-03-26,2026-03-26T12:00:00,Groceries,-53.5,-3793.7,purchase,Prisma,5411
+laura,laura-current,2026-03-26,2026-03-26T17:20:00,Groceries,-6.5,-3800.2,purchase,Alepa,5411
+laura,laura-current,2026-03-27,2026-03-27T12:00:00,Salary,2840,-960.2,salary,Espoon kaupunki,
+laura,laura-current,2026-03-28,2026-03-28T12:00:00,Invest Deposit,-114,-1074.2,investment_deposit,Savings,
+laura,laura-savings,2026-03-28,2026-03-28T12:00:00,Invest Withdraw,114,1502,investment_withdrawal,Household account,
+laura,laura-current,2026-04-01,2026-04-01T12:00:00,Utilities,-64.8,-1139.0,utilities_payment,DNA,
+laura,laura-current,2026-04-02,2026-04-02T12:00:00,Groceries,-53.5,-1192.5,purchase,Prisma,5411
+laura,laura-current,2026-04-02,2026-04-02T17:20:00,Groceries,-6.5,-1199.0,purchase,Alepa,5411
+laura,laura-current,2026-04-03,2026-04-03T12:00:00,Utilities,-38.2,-1237.2,utilities_payment,Home insurance,
+laura,laura-current,2026-04-06,2026-04-06T12:00:00,Groceries,-53.5,-1290.7,purchase,K-Supermarket,5411
+laura,laura-current,2026-04-06,2026-04-06T17:20:00,Groceries,-6.5,-1297.2,purchase,Alepa,5411
+laura,laura-current,2026-04-08,2026-04-08T12:00:00,Utilities,-25,-1322.2,utilities_payment,HSY water,
+laura,laura-current,2026-04-09,2026-04-09T12:00:00,Utilities,-22,-1344.2,utilities_payment,Espoo music school,
+laura,laura-current,2026-04-10,2026-04-10T12:00:00,Groceries,-53.5,-1397.7,purchase,Prisma,5411
+laura,laura-current,2026-04-10,2026-04-10T17:20:00,Groceries,-6.5,-1404.2,purchase,Alepa,5411
+laura,laura-current,2026-04-14,2026-04-14T12:00:00,Groceries,-53.5,-1457.7,purchase,Prisma,5411
+laura,laura-current,2026-04-14,2026-04-14T17:20:00,Groceries,-6.5,-1464.2,purchase,Alepa,5411
+laura,laura-current,2026-04-16,2026-04-16T12:00:00,Utilities,-96.75,-1560.95,utilities_payment,Helen,
+laura,laura-current,2026-04-18,2026-04-18T12:00:00,Entertainment,-145,-1705.95,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-04-18,2026-04-18T12:00:00,Groceries,-53.5,-1759.45,purchase,K-Supermarket,5411
+laura,laura-current,2026-04-18,2026-04-18T17:20:00,Groceries,-6.5,-1765.95,purchase,Alepa,5411
+laura,laura-current,2026-04-20,2026-04-20T12:00:00,Housing,-890,-2655.95,utilities_payment,Home loan payment,
+laura,laura-current,2026-04-22,2026-04-22T12:00:00,Groceries,-53.5,-2709.45,purchase,Prisma,5411
+laura,laura-current,2026-04-22,2026-04-22T17:20:00,Groceries,-6.5,-2715.95,purchase,Alepa,5411
+laura,laura-current,2026-04-23,2026-04-23T12:00:00,Utilities,-120,-2835.95,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-04-26,2026-04-26T12:00:00,Utilities,-212.6,-3048.55,utilities_payment,Car insurance,
+laura,laura-current,2026-04-26,2026-04-26T12:00:00,Groceries,-53.5,-3102.05,purchase,Prisma,5411
+laura,laura-current,2026-04-26,2026-04-26T17:20:00,Groceries,-6.5,-3108.55,purchase,Alepa,5411
+laura,laura-current,2026-04-27,2026-04-27T12:00:00,Salary,2840,-268.55,salary,Espoon kaupunki,
+laura,laura-current,2026-04-28,2026-04-28T12:00:00,Invest Deposit,-114,-382.55,investment_deposit,Savings,
+laura,laura-savings,2026-04-28,2026-04-28T12:00:00,Invest Withdraw,114,1616,investment_withdrawal,Household account,
+laura,laura-current,2026-05-01,2026-05-01T12:00:00,Utilities,-64.8,-447.35,utilities_payment,DNA,
+laura,laura-current,2026-05-02,2026-05-02T12:00:00,Groceries,-53.5,-500.85,purchase,Prisma,5411
+laura,laura-current,2026-05-02,2026-05-02T17:20:00,Groceries,-6.5,-507.35,purchase,Alepa,5411
+laura,laura-current,2026-05-03,2026-05-03T12:00:00,Utilities,-38.2,-545.55,utilities_payment,Home insurance,
+laura,laura-current,2026-05-06,2026-05-06T12:00:00,Groceries,-53.5,-599.05,purchase,K-Supermarket,5411
+laura,laura-current,2026-05-06,2026-05-06T17:20:00,Groceries,-6.5,-605.55,purchase,Alepa,5411
+laura,laura-current,2026-05-08,2026-05-08T12:00:00,Utilities,-25,-630.55,utilities_payment,HSY water,
+laura,laura-current,2026-05-09,2026-05-09T12:00:00,Utilities,-22,-652.55,utilities_payment,Espoo music school,
+laura,laura-current,2026-05-10,2026-05-10T12:00:00,Groceries,-53.5,-706.05,purchase,Prisma,5411
+laura,laura-current,2026-05-10,2026-05-10T17:20:00,Groceries,-6.5,-712.55,purchase,Alepa,5411
+laura,laura-current,2026-05-14,2026-05-14T12:00:00,Groceries,-53.5,-766.05,purchase,Prisma,5411
+laura,laura-current,2026-05-14,2026-05-14T17:20:00,Groceries,-6.5,-772.55,purchase,Alepa,5411
+laura,laura-current,2026-05-16,2026-05-16T12:00:00,Utilities,-96.75,-869.3,utilities_payment,Helen,
+laura,laura-current,2026-05-18,2026-05-18T12:00:00,Entertainment,-145,-1014.3,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-05-18,2026-05-18T12:00:00,Groceries,-53.5,-1067.8,purchase,K-Supermarket,5411
+laura,laura-current,2026-05-18,2026-05-18T17:20:00,Groceries,-6.5,-1074.3,purchase,Alepa,5411
+laura,laura-current,2026-05-20,2026-05-20T12:00:00,Housing,-890,-1964.3,utilities_payment,Home loan payment,
+laura,laura-current,2026-05-22,2026-05-22T12:00:00,Groceries,-53.5,-2017.8,purchase,Prisma,5411
+laura,laura-current,2026-05-22,2026-05-22T17:20:00,Groceries,-6.5,-2024.3,purchase,Alepa,5411
+laura,laura-current,2026-05-23,2026-05-23T12:00:00,Utilities,-120,-2144.3,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-05-26,2026-05-26T12:00:00,Utilities,-212.6,-2356.9,utilities_payment,Car insurance,
+laura,laura-current,2026-05-26,2026-05-26T12:00:00,Groceries,-53.5,-2410.4,purchase,Prisma,5411
+laura,laura-current,2026-05-26,2026-05-26T17:20:00,Groceries,-6.5,-2416.9,purchase,Alepa,5411
+laura,laura-current,2026-05-27,2026-05-27T12:00:00,Salary,2840,423.1,salary,Espoon kaupunki,
+laura,laura-current,2026-05-28,2026-05-28T12:00:00,Invest Deposit,-114,309.1,investment_deposit,Savings,
+laura,laura-savings,2026-05-28,2026-05-28T12:00:00,Invest Withdraw,114,1730,investment_withdrawal,Household account,
+laura,laura-current,2026-06-01,2026-06-01T12:00:00,Utilities,-64.8,244.3,utilities_payment,DNA,
+laura,laura-current,2026-06-02,2026-06-02T12:00:00,Groceries,-53.5,190.8,purchase,Prisma,5411
+laura,laura-current,2026-06-02,2026-06-02T17:20:00,Groceries,-6.5,184.3,purchase,Alepa,5411
+laura,laura-current,2026-06-03,2026-06-03T12:00:00,Utilities,-38.2,146.1,utilities_payment,Home insurance,
+laura,laura-current,2026-06-06,2026-06-06T12:00:00,Groceries,-53.5,92.6,purchase,K-Supermarket,5411
+laura,laura-current,2026-06-06,2026-06-06T17:20:00,Groceries,-6.5,86.1,purchase,Alepa,5411
+laura,laura-current,2026-06-08,2026-06-08T12:00:00,Utilities,-25,61.1,utilities_payment,HSY water,
+laura,laura-current,2026-06-09,2026-06-09T12:00:00,Utilities,-22,39.1,utilities_payment,Espoo music school,
+laura,laura-current,2026-06-10,2026-06-10T12:00:00,Groceries,-53.5,-14.4,purchase,Prisma,5411
+laura,laura-current,2026-06-10,2026-06-10T17:20:00,Groceries,-6.5,-20.9,purchase,Alepa,5411
+laura,laura-current,2026-06-14,2026-06-14T12:00:00,Groceries,-53.5,-74.4,purchase,Prisma,5411
+laura,laura-current,2026-06-14,2026-06-14T17:20:00,Groceries,-6.5,-80.9,purchase,Alepa,5411
+laura,laura-current,2026-06-16,2026-06-16T12:00:00,Utilities,-96.75,-177.65,utilities_payment,Helen,
+laura,laura-current,2026-06-18,2026-06-18T12:00:00,Entertainment,-145,-322.65,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-06-18,2026-06-18T12:00:00,Groceries,-53.5,-376.15,purchase,K-Supermarket,5411
+laura,laura-current,2026-06-18,2026-06-18T17:20:00,Groceries,-6.5,-382.65,purchase,Alepa,5411
+laura,laura-current,2026-06-20,2026-06-20T12:00:00,Housing,-890,-1272.65,utilities_payment,Home loan payment,
+laura,laura-current,2026-06-22,2026-06-22T12:00:00,Groceries,-53.5,-1326.15,purchase,Prisma,5411
+laura,laura-current,2026-06-22,2026-06-22T17:20:00,Groceries,-6.5,-1332.65,purchase,Alepa,5411
+laura,laura-current,2026-06-23,2026-06-23T12:00:00,Utilities,-120,-1452.65,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-06-26,2026-06-26T12:00:00,Utilities,-212.6,-1665.25,utilities_payment,Car insurance,
+laura,laura-current,2026-06-26,2026-06-26T12:00:00,Groceries,-53.5,-1718.75,purchase,Prisma,5411
+laura,laura-current,2026-06-26,2026-06-26T17:20:00,Groceries,-6.5,-1725.25,purchase,Alepa,5411
+laura,laura-current,2026-06-27,2026-06-27T12:00:00,Salary,2840,1114.75,salary,Espoon kaupunki,
+laura,laura-current,2026-06-28,2026-06-28T12:00:00,Invest Deposit,-114,1000.75,investment_deposit,Savings,
+laura,laura-savings,2026-06-28,2026-06-28T12:00:00,Invest Withdraw,114,1844,investment_withdrawal,Household account,
+laura,laura-current,2026-07-01,2026-07-01T12:00:00,Utilities,-64.8,935.95,utilities_payment,DNA,
+laura,laura-current,2026-07-02,2026-07-02T12:00:00,Groceries,-53.5,882.45,purchase,Prisma,5411
+laura,laura-current,2026-07-02,2026-07-02T17:20:00,Groceries,-6.5,875.95,purchase,Alepa,5411
+laura,laura-current,2026-07-03,2026-07-03T12:00:00,Utilities,-38.2,837.75,utilities_payment,Home insurance,
+laura,laura-current,2026-07-06,2026-07-06T12:00:00,Groceries,-53.5,784.25,purchase,K-Supermarket,5411
+laura,laura-current,2026-07-06,2026-07-06T17:20:00,Groceries,-6.5,777.75,purchase,Alepa,5411
+laura,laura-current,2026-07-08,2026-07-08T12:00:00,Utilities,-25,752.75,utilities_payment,HSY water,
+laura,laura-current,2026-07-09,2026-07-09T12:00:00,Utilities,-22,730.75,utilities_payment,Espoo music school,
+laura,laura-current,2026-07-10,2026-07-10T12:00:00,Groceries,-53.5,677.25,purchase,Prisma,5411
+laura,laura-current,2026-07-10,2026-07-10T17:20:00,Groceries,-6.5,670.75,purchase,Alepa,5411
+laura,laura-current,2026-07-14,2026-07-14T12:00:00,Groceries,-53.5,617.25,purchase,Prisma,5411
+laura,laura-current,2026-07-14,2026-07-14T17:20:00,Groceries,-6.5,610.75,purchase,Alepa,5411
+laura,laura-current,2026-07-16,2026-07-16T12:00:00,Utilities,-96.75,514.0,utilities_payment,Helen,
+laura,laura-current,2026-07-18,2026-07-18T12:00:00,Entertainment,-145,369.0,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-07-18,2026-07-18T12:00:00,Groceries,-53.5,315.5,purchase,K-Supermarket,5411
+laura,laura-current,2026-07-18,2026-07-18T17:20:00,Groceries,-6.5,309.0,purchase,Alepa,5411
+laura,laura-current,2026-07-20,2026-07-20T12:00:00,Housing,-890,-581.0,utilities_payment,Home loan payment,
+laura,laura-current,2026-07-22,2026-07-22T12:00:00,Groceries,-53.5,-634.5,purchase,Prisma,5411
+laura,laura-current,2026-07-22,2026-07-22T17:20:00,Groceries,-6.5,-641.0,purchase,Alepa,5411
+laura,laura-current,2026-07-23,2026-07-23T12:00:00,Utilities,-120,-761.0,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-07-26,2026-07-26T12:00:00,Utilities,-212.6,-973.6,utilities_payment,Car insurance,
+laura,laura-current,2026-07-26,2026-07-26T12:00:00,Groceries,-53.5,-1027.1,purchase,Prisma,5411
+laura,laura-current,2026-07-26,2026-07-26T17:20:00,Groceries,-6.5,-1033.6,purchase,Alepa,5411
+laura,laura-current,2026-07-27,2026-07-27T12:00:00,Salary,2840,1806.4,salary,Espoon kaupunki,
+laura,laura-current,2026-07-28,2026-07-28T12:00:00,Invest Deposit,-114,1692.4,investment_deposit,Savings,
+laura,laura-savings,2026-07-28,2026-07-28T12:00:00,Invest Withdraw,114,1958,investment_withdrawal,Household account,
+laura,laura-current,2026-08-01,2026-08-01T12:00:00,Utilities,-64.8,1627.6,utilities_payment,DNA,
+laura,laura-current,2026-08-03,2026-08-03T12:00:00,Utilities,-38.2,1589.4,utilities_payment,Home insurance,
+laura,laura-current,2026-08-08,2026-08-08T12:00:00,Utilities,-25,1564.4,utilities_payment,HSY water,
+laura,laura-current,2026-08-09,2026-08-09T12:00:00,Utilities,-22,1542.4,utilities_payment,Espoo music school,
+laura,laura-current,2026-08-16,2026-08-16T12:00:00,Utilities,-96.75,1445.65,utilities_payment,Helen,
+laura,laura-current,2026-08-17,2026-08-17T12:00:00,Groceries,-33.7,1411.95,purchase,K-Supermarket,5411
+laura,laura-current,2026-08-18,2026-08-18T12:00:00,Entertainment,-145,1266.95,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-08-18,2026-08-18T12:00:00,Groceries,-34,1232.95,purchase,S-market,5411
+laura,laura-current,2026-08-19,2026-08-19T12:00:00,Groceries,-34,1198.95,purchase,S-market,5411
+laura,laura-current,2026-08-20,2026-08-20T12:00:00,Housing,-890,308.95,utilities_payment,Home loan payment,
+laura,laura-current,2026-08-20,2026-08-20T12:00:00,Groceries,-34,274.95,purchase,K-Supermarket,5411
+laura,laura-current,2026-08-21,2026-08-21T12:00:00,Groceries,-34,240.95,purchase,S-market,5411
+laura,laura-current,2026-08-22,2026-08-22T12:00:00,Groceries,-34,206.95,purchase,S-market,5411
+laura,laura-current,2026-08-23,2026-08-23T12:00:00,Utilities,-120,86.95,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-08-23,2026-08-23T12:00:00,Groceries,-34,52.95,purchase,K-Supermarket,5411
+laura,laura-current,2026-08-24,2026-08-24T12:00:00,Groceries,-34,18.95,purchase,S-market,5411
+laura,laura-current,2026-08-25,2026-08-25T12:00:00,Groceries,-34,-15.05,purchase,S-market,5411
+laura,laura-current,2026-08-26,2026-08-26T12:00:00,Utilities,-212.6,-227.65,utilities_payment,Car insurance,
+laura,laura-current,2026-08-26,2026-08-26T12:00:00,Groceries,-34,-261.65,purchase,K-Supermarket,5411
+laura,laura-current,2026-08-27,2026-08-27T12:00:00,Salary,2840,2578.35,salary,Espoon kaupunki,
+laura,laura-current,2026-08-27,2026-08-27T12:00:00,Groceries,-34,2544.35,purchase,S-market,5411
+laura,laura-current,2026-08-28,2026-08-28T12:00:00,Invest Deposit,-114,2430.35,investment_deposit,Savings,
+laura,laura-current,2026-08-28,2026-08-28T12:00:00,Groceries,-34,2396.35,purchase,S-market,5411
+laura,laura-savings,2026-08-28,2026-08-28T12:00:00,Invest Withdraw,114,2072,investment_withdrawal,Household account,
+laura,laura-current,2026-08-29,2026-08-29T12:00:00,Groceries,-34,2362.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-08-30,2026-08-30T12:00:00,Groceries,-34,2328.35,purchase,S-market,5411
+laura,laura-current,2026-08-31,2026-08-31T12:00:00,Groceries,-34,2294.35,purchase,S-market,5411
+laura,laura-current,2026-09-01,2026-09-01T12:00:00,Utilities,-64.8,2229.55,utilities_payment,DNA,
+laura,laura-current,2026-09-01,2026-09-01T12:00:00,Groceries,-34,2195.55,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-02,2026-09-02T12:00:00,Groceries,-34,2161.55,purchase,S-market,5411
+laura,laura-current,2026-09-03,2026-09-03T12:00:00,Utilities,-38.2,2123.35,utilities_payment,Home insurance,
+laura,laura-current,2026-09-03,2026-09-03T12:00:00,Groceries,-34,2089.35,purchase,S-market,5411
+laura,laura-current,2026-09-04,2026-09-04T12:00:00,Groceries,-34,2055.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-05,2026-09-05T12:00:00,Groceries,-34,2021.35,purchase,S-market,5411
+laura,laura-current,2026-09-06,2026-09-06T12:00:00,Groceries,-34,1987.35,purchase,S-market,5411
+laura,laura-current,2026-09-07,2026-09-07T12:00:00,Groceries,-34,1953.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-08,2026-09-08T12:00:00,Utilities,-25,1928.35,utilities_payment,HSY water,
+laura,laura-current,2026-09-08,2026-09-08T12:00:00,Groceries,-34,1894.35,purchase,S-market,5411
+laura,laura-current,2026-09-09,2026-09-09T12:00:00,Utilities,-22,1872.35,utilities_payment,Espoo music school,
+laura,laura-current,2026-09-09,2026-09-09T12:00:00,Groceries,-34,1838.35,purchase,S-market,5411
+laura,laura-current,2026-09-10,2026-09-10T12:00:00,Groceries,-34,1804.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-11,2026-09-11T12:00:00,Groceries,-34,1770.35,purchase,S-market,5411
+laura,laura-current,2026-09-12,2026-09-12T12:00:00,Groceries,-34,1736.35,purchase,S-market,5411
+laura,laura-current,2026-09-13,2026-09-13T12:00:00,Groceries,-34,1702.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-14,2026-09-14T12:00:00,Groceries,-34,1668.35,purchase,S-market,5411
+laura,laura-current,2026-09-15,2026-09-15T12:00:00,Groceries,-34,1634.35,purchase,S-market,5411
+laura,laura-current,2026-09-16,2026-09-16T12:00:00,Utilities,-96.75,1537.6,utilities_payment,Helen,
+laura,laura-current,2026-09-16,2026-09-16T12:00:00,Groceries,-34,1503.6,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-17,2026-09-17T12:00:00,Groceries,-34,1469.6,purchase,S-market,5411
+laura,laura-current,2026-09-18,2026-09-18T12:00:00,Entertainment,-145,1324.6,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-09-18,2026-09-18T12:00:00,Groceries,-34,1290.6,purchase,S-market,5411
+laura,laura-current,2026-09-19,2026-09-19T12:00:00,Groceries,-34,1256.6,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-20,2026-09-20T12:00:00,Housing,-890,366.6,utilities_payment,Home loan payment,
+laura,laura-current,2026-09-20,2026-09-20T12:00:00,Groceries,-34,332.6,purchase,S-market,5411
+laura,laura-current,2026-09-21,2026-09-21T12:00:00,Groceries,-34,298.6,purchase,S-market,5411
+laura,laura-current,2026-09-22,2026-09-22T12:00:00,Groceries,-34,264.6,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-23,2026-09-23T12:00:00,Utilities,-120,144.6,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-09-23,2026-09-23T12:00:00,Groceries,-34,110.6,purchase,S-market,5411
+laura,laura-current,2026-09-24,2026-09-24T12:00:00,Groceries,-34,76.6,purchase,S-market,5411
+laura,laura-current,2026-09-25,2026-09-25T12:00:00,Groceries,-34,42.6,purchase,K-Supermarket,5411
+laura,laura-current,2026-09-26,2026-09-26T12:00:00,Utilities,-212.6,-170.0,utilities_payment,Car insurance,
+laura,laura-current,2026-09-26,2026-09-26T12:00:00,Groceries,-34,-204.0,purchase,S-market,5411
+laura,laura-current,2026-09-27,2026-09-27T12:00:00,Salary,2840,2636.0,salary,Espoon kaupunki,
+laura,laura-current,2026-09-27,2026-09-27T12:00:00,Groceries,-34,2602.0,purchase,S-market,5411
+laura,laura-current,2026-09-28,2026-09-28T12:00:00,Invest Deposit,-114,2488.0,investment_deposit,Savings,
+laura,laura-current,2026-09-28,2026-09-28T12:00:00,Groceries,-34,2454.0,purchase,K-Supermarket,5411
+laura,laura-savings,2026-09-28,2026-09-28T12:00:00,Invest Withdraw,114,2186,investment_withdrawal,Household account,
+laura,laura-current,2026-09-29,2026-09-29T12:00:00,Groceries,-34,2420.0,purchase,S-market,5411
+laura,laura-current,2026-09-30,2026-09-30T12:00:00,Groceries,-34,2386.0,purchase,S-market,5411
+laura,laura-current,2026-10-01,2026-10-01T12:00:00,Utilities,-64.8,2321.2,utilities_payment,DNA,
+laura,laura-current,2026-10-01,2026-10-01T12:00:00,Groceries,-40,2281.2,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-02,2026-10-02T12:00:00,Groceries,-40,2241.2,purchase,S-market,5411
+laura,laura-current,2026-10-03,2026-10-03T12:00:00,Utilities,-38.2,2203.0,utilities_payment,Home insurance,
+laura,laura-current,2026-10-03,2026-10-03T12:00:00,Groceries,-40,2163.0,purchase,S-market,5411
+laura,laura-current,2026-10-04,2026-10-04T12:00:00,Groceries,-40,2123.0,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-05,2026-10-05T12:00:00,Groceries,-40,2083.0,purchase,S-market,5411
+laura,laura-current,2026-10-06,2026-10-06T12:00:00,Groceries,-40,2043.0,purchase,S-market,5411
+laura,laura-current,2026-10-07,2026-10-07T12:00:00,Groceries,-40,2003.0,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-08,2026-10-08T12:00:00,Utilities,-25,1978.0,utilities_payment,HSY water,
+laura,laura-current,2026-10-08,2026-10-08T12:00:00,Groceries,-40,1938.0,purchase,S-market,5411
+laura,laura-current,2026-10-09,2026-10-09T12:00:00,Utilities,-22,1916.0,utilities_payment,Espoo music school,
+laura,laura-current,2026-10-09,2026-10-09T12:00:00,Groceries,-40,1876.0,purchase,S-market,5411
+laura,laura-current,2026-10-10,2026-10-10T12:00:00,Groceries,-40,1836.0,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-11,2026-10-11T12:00:00,Groceries,-40,1796.0,purchase,S-market,5411
+laura,laura-current,2026-10-12,2026-10-12T12:00:00,Groceries,-40,1756.0,purchase,S-market,5411
+laura,laura-current,2026-10-13,2026-10-13T12:00:00,Groceries,-40,1716.0,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-14,2026-10-14T12:00:00,Groceries,-40,1676.0,purchase,S-market,5411
+laura,laura-current,2026-10-15,2026-10-15T12:00:00,Groceries,-28,1648.0,purchase,S-market,5411
+laura,laura-current,2026-10-16,2026-10-16T12:00:00,Utilities,-96.75,1551.25,utilities_payment,Helen,
+laura,laura-current,2026-10-16,2026-10-16T12:00:00,Groceries,-28,1523.25,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-17,2026-10-17T12:00:00,Groceries,-28,1495.25,purchase,S-market,5411
+laura,laura-current,2026-10-18,2026-10-18T12:00:00,Entertainment,-145,1350.25,utilities_payment,Kiekko-Espoo juniors,
+laura,laura-current,2026-10-18,2026-10-18T12:00:00,Groceries,-28,1322.25,purchase,S-market,5411
+laura,laura-current,2026-10-19,2026-10-19T12:00:00,Groceries,-28,1294.25,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-20,2026-10-20T12:00:00,Housing,-890,404.25,utilities_payment,Home loan payment,
+laura,laura-current,2026-10-20,2026-10-20T12:00:00,Groceries,-28,376.25,purchase,S-market,5411
+laura,laura-current,2026-10-21,2026-10-21T12:00:00,Groceries,-28,348.25,purchase,S-market,5411
+laura,laura-current,2026-10-22,2026-10-22T12:00:00,Groceries,-28,320.25,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-23,2026-10-23T12:00:00,Utilities,-120,200.25,utilities_payment,City of Espoo afternoon club,
+laura,laura-current,2026-10-23,2026-10-23T12:00:00,Groceries,-28,172.25,purchase,S-market,5411
+laura,laura-current,2026-10-24,2026-10-24T12:00:00,Groceries,-28,144.25,purchase,S-market,5411
+laura,laura-current,2026-10-25,2026-10-25T12:00:00,Groceries,-28,116.25,purchase,K-Supermarket,5411
+laura,laura-current,2026-10-26,2026-10-26T12:00:00,Utilities,-212.6,-96.35,utilities_payment,Car insurance,
+laura,laura-current,2026-10-26,2026-10-26T12:00:00,Groceries,-28,-124.35,purchase,S-market,5411
+laura,laura-current,2026-10-27,2026-10-27T12:00:00,Salary,2840,2715.65,salary,Espoon kaupunki,
+laura,laura-current,2026-10-27,2026-10-27T12:00:00,Groceries,-28,2687.65,purchase,S-market,5411
+laura,laura-current,2026-10-28,2026-10-28T12:00:00,Invest Deposit,-114,2573.65,investment_deposit,Savings,
+laura,laura-current,2026-10-28,2026-10-28T12:00:00,Groceries,-28,2545.65,purchase,K-Supermarket,5411
+laura,laura-savings,2026-10-28,2026-10-28T12:00:00,Invest Withdraw,114,2300,investment_withdrawal,Household account,
+laura,laura-current,2026-10-29,2026-10-29T12:00:00,Groceries,-34,2511.65,purchase,S-market,5411
+laura,laura-current,2026-10-30,2026-10-30T12:00:00,Groceries,-34,2477.65,purchase,S-market,5411
+laura,laura-current,2026-10-31,2026-10-31T12:00:00,Groceries,-34,2443.65,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-01,2026-11-01T12:00:00,Utilities,-64.8,2378.85,utilities_payment,DNA,
+laura,laura-current,2026-11-02,2026-11-02T12:00:00,Groceries,-43.5,2335.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-03,2026-11-03T12:00:00,Utilities,-38.2,2297.15,utilities_payment,Home insurance,
+laura,laura-current,2026-11-03,2026-11-03T12:00:00,Groceries,-42,2255.15,purchase,S-market,5411
+laura,laura-current,2026-11-04,2026-11-04T12:00:00,Groceries,-38.2,2216.95,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-06,2026-11-06T12:00:00,Groceries,-85,2131.95,purchase,Prisma,5411
+laura,laura-current,2026-11-07,2026-11-07T12:00:00,Groceries,-47.6,2084.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-08,2026-11-08T12:00:00,Utilities,-25,2059.35,utilities_payment,HSY water,
+laura,laura-current,2026-11-09,2026-11-09T12:00:00,Utilities,-22,2037.35,utilities_payment,Espoo music school,
+laura,laura-current,2026-11-09,2026-11-09T12:00:00,Groceries,-39.5,1997.85,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-10,2026-11-10T12:00:00,Groceries,-50,1947.85,purchase,S-market,5411
+laura,laura-current,2026-11-12,2026-11-12T12:00:00,Groceries,-45.5,1902.35,purchase,K-Supermarket,5411
+laura,laura-current,2026-11-13,2026-11-13T12:00:00,Groceries,-85,1817.35,purchase,Prisma,5411

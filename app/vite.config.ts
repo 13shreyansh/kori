@@ -10,6 +10,6 @@ const api = (env: Record<string, string>): Plugin => ({
 })
 
 export default defineConfig(({ mode }) => ({
-  base: './',
+  base: '/',
   plugins: [react(), api({ ...process.env, ...loadEnv(mode, process.cwd(), '') } as Record<string, string>)],
 }))

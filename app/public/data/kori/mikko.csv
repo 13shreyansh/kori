@@ -1,0 +1,677 @@
+customer_id,bank_account_id,tx_date,tx_timestamp,category,tx_amount_eur,balance_after_eur,transaction_type,merchant_id,mcc_code
+mikko,mikko-current,2024-12-02,2024-12-02T12:00:00,Housing,-850,-2710.3,utilities_payment,Lumo,
+mikko,mikko-current,2024-12-03,2024-12-03T12:00:00,Groceries,-7.8,-2718.1,purchase,Alepa,5411
+mikko,mikko-current,2024-12-03,2024-12-03T12:00:00,Restaurants,-12.9,-2731.0,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-04,2024-12-04T12:00:00,Groceries,-48.4,-2779.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2024-12-05,2024-12-05T12:00:00,Restaurants,-12.9,-2792.3,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-06,2024-12-06T12:00:00,Groceries,-7.8,-2800.1,purchase,Alepa,5411
+mikko,mikko-current,2024-12-08,2024-12-08T12:00:00,Utilities,-55,-2855.1,utilities_payment,Helen,
+mikko,mikko-current,2024-12-08,2024-12-08T12:00:00,Groceries,-48.4,-2903.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2024-12-09,2024-12-09T12:00:00,Groceries,-7.8,-2911.3,purchase,Alepa,5411
+mikko,mikko-current,2024-12-10,2024-12-10T12:00:00,Utilities,-29.9,-2941.2,utilities_payment,Elisa,
+mikko,mikko-current,2024-12-10,2024-12-10T12:00:00,Restaurants,-12.9,-2954.1,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-12,2024-12-12T12:00:00,Groceries,-7.8,-2961.9,purchase,Alepa,5411
+mikko,mikko-current,2024-12-12,2024-12-12T12:00:00,Restaurants,-12.9,-2974.8,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-15,2024-12-15T12:00:00,Groceries,-7.8,-2982.6,purchase,Alepa,5411
+mikko,mikko-current,2024-12-16,2024-12-16T12:00:00,Groceries,-48.4,-3031.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2024-12-17,2024-12-17T12:00:00,Restaurants,-12.9,-3043.9,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-18,2024-12-18T12:00:00,Groceries,-7.8,-3051.7,purchase,Alepa,5411
+mikko,mikko-current,2024-12-19,2024-12-19T12:00:00,Restaurants,-12.9,-3064.6,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-20,2024-12-20T12:00:00,Groceries,-48.4,-3113.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2024-12-21,2024-12-21T12:00:00,Utilities,-38,-3151.0,utilities_payment,If,
+mikko,mikko-current,2024-12-21,2024-12-21T12:00:00,Groceries,-7.8,-3158.8,purchase,Alepa,5411
+mikko,mikko-current,2024-12-24,2024-12-24T12:00:00,Groceries,-7.8,-3166.6,purchase,Alepa,5411
+mikko,mikko-current,2024-12-24,2024-12-24T12:00:00,Restaurants,-12.9,-3179.5,purchase,Sodexo,5812
+mikko,mikko-current,2024-12-26,2024-12-26T12:00:00,Restaurants,-12.9,-3192.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-02,2025-01-02T12:00:00,Housing,-850,-4042.4,utilities_payment,Lumo,
+mikko,mikko-current,2025-01-03,2025-01-03T12:00:00,Groceries,-7.8,-4050.2,purchase,Alepa,5411
+mikko,mikko-current,2025-01-03,2025-01-03T12:00:00,Restaurants,-12.9,-4063.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-04,2025-01-04T12:00:00,Groceries,-48.4,-4111.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-01-05,2025-01-05T12:00:00,Restaurants,-12.9,-4124.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-06,2025-01-06T12:00:00,Groceries,-7.8,-4132.2,purchase,Alepa,5411
+mikko,mikko-current,2025-01-08,2025-01-08T12:00:00,Utilities,-55,-4187.2,utilities_payment,Helen,
+mikko,mikko-current,2025-01-08,2025-01-08T12:00:00,Groceries,-48.4,-4235.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-01-09,2025-01-09T12:00:00,Groceries,-7.8,-4243.4,purchase,Alepa,5411
+mikko,mikko-current,2025-01-10,2025-01-10T12:00:00,Utilities,-29.9,-4273.3,utilities_payment,Elisa,
+mikko,mikko-current,2025-01-10,2025-01-10T12:00:00,Restaurants,-12.9,-4286.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-12,2025-01-12T12:00:00,Groceries,-7.8,-4294.0,purchase,Alepa,5411
+mikko,mikko-current,2025-01-12,2025-01-12T12:00:00,Restaurants,-12.9,-4306.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-15,2025-01-15T12:00:00,Groceries,-7.8,-4314.7,purchase,Alepa,5411
+mikko,mikko-current,2025-01-16,2025-01-16T12:00:00,Groceries,-48.4,-4363.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-01-17,2025-01-17T12:00:00,Restaurants,-12.9,-4376.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-18,2025-01-18T12:00:00,Groceries,-7.8,-4383.8,purchase,Alepa,5411
+mikko,mikko-current,2025-01-19,2025-01-19T12:00:00,Restaurants,-12.9,-4396.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-20,2025-01-20T12:00:00,Groceries,-48.4,-4445.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-01-21,2025-01-21T12:00:00,Utilities,-38,-4483.1,utilities_payment,If,
+mikko,mikko-current,2025-01-21,2025-01-21T12:00:00,Groceries,-7.8,-4490.9,purchase,Alepa,5411
+mikko,mikko-current,2025-01-24,2025-01-24T12:00:00,Groceries,-7.8,-4498.7,purchase,Alepa,5411
+mikko,mikko-current,2025-01-24,2025-01-24T12:00:00,Restaurants,-12.9,-4511.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-01-26,2025-01-26T12:00:00,Restaurants,-12.9,-4524.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-02,2025-02-02T12:00:00,Housing,-850,-5374.5,utilities_payment,Lumo,
+mikko,mikko-current,2025-02-03,2025-02-03T12:00:00,Groceries,-7.8,-5382.3,purchase,Alepa,5411
+mikko,mikko-current,2025-02-03,2025-02-03T12:00:00,Restaurants,-12.9,-5395.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-04,2025-02-04T12:00:00,Groceries,-48.4,-5443.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-02-05,2025-02-05T12:00:00,Restaurants,-12.9,-5456.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-06,2025-02-06T12:00:00,Groceries,-7.8,-5464.3,purchase,Alepa,5411
+mikko,mikko-current,2025-02-08,2025-02-08T12:00:00,Utilities,-55,-5519.3,utilities_payment,Helen,
+mikko,mikko-current,2025-02-08,2025-02-08T12:00:00,Groceries,-48.4,-5567.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-02-09,2025-02-09T12:00:00,Groceries,-7.8,-5575.5,purchase,Alepa,5411
+mikko,mikko-current,2025-02-10,2025-02-10T12:00:00,Utilities,-29.9,-5605.4,utilities_payment,Elisa,
+mikko,mikko-current,2025-02-10,2025-02-10T12:00:00,Restaurants,-12.9,-5618.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-12,2025-02-12T12:00:00,Groceries,-7.8,-5626.1,purchase,Alepa,5411
+mikko,mikko-current,2025-02-12,2025-02-12T12:00:00,Restaurants,-12.9,-5639.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-15,2025-02-15T12:00:00,Groceries,-7.8,-5646.8,purchase,Alepa,5411
+mikko,mikko-current,2025-02-16,2025-02-16T12:00:00,Groceries,-48.4,-5695.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-02-17,2025-02-17T12:00:00,Restaurants,-12.9,-5708.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-18,2025-02-18T12:00:00,Groceries,-7.8,-5715.9,purchase,Alepa,5411
+mikko,mikko-current,2025-02-19,2025-02-19T12:00:00,Restaurants,-12.9,-5728.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-20,2025-02-20T12:00:00,Groceries,-48.4,-5777.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-02-21,2025-02-21T12:00:00,Utilities,-38,-5815.2,utilities_payment,If,
+mikko,mikko-current,2025-02-21,2025-02-21T12:00:00,Groceries,-7.8,-5823.0,purchase,Alepa,5411
+mikko,mikko-current,2025-02-24,2025-02-24T12:00:00,Groceries,-7.8,-5830.8,purchase,Alepa,5411
+mikko,mikko-current,2025-02-24,2025-02-24T12:00:00,Restaurants,-12.9,-5843.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-02-26,2025-02-26T12:00:00,Restaurants,-12.9,-5856.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-02,2025-03-02T12:00:00,Housing,-850,-6706.6,utilities_payment,Lumo,
+mikko,mikko-current,2025-03-03,2025-03-03T12:00:00,Groceries,-7.8,-6714.4,purchase,Alepa,5411
+mikko,mikko-current,2025-03-03,2025-03-03T12:00:00,Restaurants,-12.9,-6727.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-04,2025-03-04T12:00:00,Groceries,-48.4,-6775.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-03-05,2025-03-05T12:00:00,Restaurants,-12.9,-6788.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-06,2025-03-06T12:00:00,Groceries,-7.8,-6796.4,purchase,Alepa,5411
+mikko,mikko-current,2025-03-08,2025-03-08T12:00:00,Utilities,-55,-6851.4,utilities_payment,Helen,
+mikko,mikko-current,2025-03-08,2025-03-08T12:00:00,Groceries,-48.4,-6899.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-03-09,2025-03-09T12:00:00,Groceries,-7.8,-6907.6,purchase,Alepa,5411
+mikko,mikko-current,2025-03-10,2025-03-10T12:00:00,Utilities,-29.9,-6937.5,utilities_payment,Elisa,
+mikko,mikko-current,2025-03-10,2025-03-10T12:00:00,Restaurants,-12.9,-6950.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-12,2025-03-12T12:00:00,Groceries,-7.8,-6958.2,purchase,Alepa,5411
+mikko,mikko-current,2025-03-12,2025-03-12T12:00:00,Restaurants,-12.9,-6971.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-15,2025-03-15T12:00:00,Groceries,-7.8,-6978.9,purchase,Alepa,5411
+mikko,mikko-current,2025-03-16,2025-03-16T12:00:00,Groceries,-48.4,-7027.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-03-17,2025-03-17T12:00:00,Restaurants,-12.9,-7040.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-18,2025-03-18T12:00:00,Groceries,-7.8,-7048.0,purchase,Alepa,5411
+mikko,mikko-current,2025-03-19,2025-03-19T12:00:00,Restaurants,-12.9,-7060.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-20,2025-03-20T12:00:00,Groceries,-48.4,-7109.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-03-21,2025-03-21T12:00:00,Utilities,-38,-7147.3,utilities_payment,If,
+mikko,mikko-current,2025-03-21,2025-03-21T12:00:00,Groceries,-7.8,-7155.1,purchase,Alepa,5411
+mikko,mikko-current,2025-03-24,2025-03-24T12:00:00,Groceries,-7.8,-7162.9,purchase,Alepa,5411
+mikko,mikko-current,2025-03-24,2025-03-24T12:00:00,Restaurants,-12.9,-7175.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-03-26,2025-03-26T12:00:00,Restaurants,-12.9,-7188.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-02,2025-04-02T12:00:00,Housing,-850,-8038.7,utilities_payment,Lumo,
+mikko,mikko-current,2025-04-03,2025-04-03T12:00:00,Groceries,-7.8,-8046.5,purchase,Alepa,5411
+mikko,mikko-current,2025-04-03,2025-04-03T12:00:00,Restaurants,-12.9,-8059.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-04,2025-04-04T12:00:00,Groceries,-48.4,-8107.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-04-05,2025-04-05T12:00:00,Restaurants,-12.9,-8120.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-06,2025-04-06T12:00:00,Groceries,-7.8,-8128.5,purchase,Alepa,5411
+mikko,mikko-current,2025-04-08,2025-04-08T12:00:00,Utilities,-55,-8183.5,utilities_payment,Helen,
+mikko,mikko-current,2025-04-08,2025-04-08T12:00:00,Groceries,-48.4,-8231.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-04-09,2025-04-09T12:00:00,Groceries,-7.8,-8239.7,purchase,Alepa,5411
+mikko,mikko-current,2025-04-10,2025-04-10T12:00:00,Utilities,-29.9,-8269.6,utilities_payment,Elisa,
+mikko,mikko-current,2025-04-10,2025-04-10T12:00:00,Restaurants,-12.9,-8282.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-12,2025-04-12T12:00:00,Groceries,-7.8,-8290.3,purchase,Alepa,5411
+mikko,mikko-current,2025-04-12,2025-04-12T12:00:00,Restaurants,-12.9,-8303.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-15,2025-04-15T12:00:00,Groceries,-7.8,-8311.0,purchase,Alepa,5411
+mikko,mikko-current,2025-04-16,2025-04-16T12:00:00,Groceries,-48.4,-8359.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-04-17,2025-04-17T12:00:00,Restaurants,-12.9,-8372.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-18,2025-04-18T12:00:00,Groceries,-7.8,-8380.1,purchase,Alepa,5411
+mikko,mikko-current,2025-04-19,2025-04-19T12:00:00,Restaurants,-12.9,-8393.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-20,2025-04-20T12:00:00,Groceries,-48.4,-8441.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-04-21,2025-04-21T12:00:00,Utilities,-38,-8479.4,utilities_payment,If,
+mikko,mikko-current,2025-04-21,2025-04-21T12:00:00,Groceries,-7.8,-8487.2,purchase,Alepa,5411
+mikko,mikko-current,2025-04-24,2025-04-24T12:00:00,Groceries,-7.8,-8495.0,purchase,Alepa,5411
+mikko,mikko-current,2025-04-24,2025-04-24T12:00:00,Restaurants,-12.9,-8507.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-04-26,2025-04-26T12:00:00,Restaurants,-12.9,-8520.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-02,2025-05-02T12:00:00,Housing,-850,-9370.8,utilities_payment,Lumo,
+mikko,mikko-current,2025-05-03,2025-05-03T12:00:00,Groceries,-7.8,-9378.6,purchase,Alepa,5411
+mikko,mikko-current,2025-05-03,2025-05-03T12:00:00,Restaurants,-12.9,-9391.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-04,2025-05-04T12:00:00,Groceries,-48.4,-9439.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-05-05,2025-05-05T12:00:00,Restaurants,-12.9,-9452.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-06,2025-05-06T12:00:00,Groceries,-7.8,-9460.6,purchase,Alepa,5411
+mikko,mikko-current,2025-05-08,2025-05-08T12:00:00,Utilities,-55,-9515.6,utilities_payment,Helen,
+mikko,mikko-current,2025-05-08,2025-05-08T12:00:00,Groceries,-48.4,-9564.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-05-09,2025-05-09T12:00:00,Groceries,-7.8,-9571.8,purchase,Alepa,5411
+mikko,mikko-current,2025-05-10,2025-05-10T12:00:00,Utilities,-29.9,-9601.7,utilities_payment,Elisa,
+mikko,mikko-current,2025-05-10,2025-05-10T12:00:00,Restaurants,-12.9,-9614.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-12,2025-05-12T12:00:00,Groceries,-7.8,-9622.4,purchase,Alepa,5411
+mikko,mikko-current,2025-05-12,2025-05-12T12:00:00,Restaurants,-12.9,-9635.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-15,2025-05-15T12:00:00,Groceries,-7.8,-9643.1,purchase,Alepa,5411
+mikko,mikko-current,2025-05-16,2025-05-16T12:00:00,Groceries,-48.4,-9691.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-05-17,2025-05-17T12:00:00,Restaurants,-12.9,-9704.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-18,2025-05-18T12:00:00,Groceries,-7.8,-9712.2,purchase,Alepa,5411
+mikko,mikko-current,2025-05-19,2025-05-19T12:00:00,Restaurants,-12.9,-9725.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-20,2025-05-20T12:00:00,Groceries,-48.4,-9773.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-05-21,2025-05-21T12:00:00,Utilities,-38,-9811.5,utilities_payment,If,
+mikko,mikko-current,2025-05-21,2025-05-21T12:00:00,Groceries,-7.8,-9819.3,purchase,Alepa,5411
+mikko,mikko-current,2025-05-24,2025-05-24T12:00:00,Groceries,-7.8,-9827.1,purchase,Alepa,5411
+mikko,mikko-current,2025-05-24,2025-05-24T12:00:00,Restaurants,-12.9,-9840.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-05-26,2025-05-26T12:00:00,Restaurants,-12.9,-9852.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-02,2025-06-02T12:00:00,Housing,-850,-10702.9,utilities_payment,Lumo,
+mikko,mikko-current,2025-06-03,2025-06-03T12:00:00,Groceries,-7.8,-10710.7,purchase,Alepa,5411
+mikko,mikko-current,2025-06-03,2025-06-03T12:00:00,Restaurants,-12.9,-10723.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-04,2025-06-04T12:00:00,Groceries,-48.4,-10772.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-06-05,2025-06-05T12:00:00,Restaurants,-12.9,-10784.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-06,2025-06-06T12:00:00,Groceries,-7.8,-10792.7,purchase,Alepa,5411
+mikko,mikko-current,2025-06-08,2025-06-08T12:00:00,Utilities,-55,-10847.7,utilities_payment,Helen,
+mikko,mikko-current,2025-06-08,2025-06-08T12:00:00,Groceries,-48.4,-10896.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-06-09,2025-06-09T12:00:00,Groceries,-7.8,-10903.9,purchase,Alepa,5411
+mikko,mikko-current,2025-06-10,2025-06-10T12:00:00,Utilities,-29.9,-10933.8,utilities_payment,Elisa,
+mikko,mikko-current,2025-06-10,2025-06-10T12:00:00,Restaurants,-12.9,-10946.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-12,2025-06-12T12:00:00,Groceries,-7.8,-10954.5,purchase,Alepa,5411
+mikko,mikko-current,2025-06-12,2025-06-12T12:00:00,Restaurants,-12.9,-10967.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-15,2025-06-15T12:00:00,Groceries,-7.8,-10975.2,purchase,Alepa,5411
+mikko,mikko-current,2025-06-16,2025-06-16T12:00:00,Groceries,-48.4,-11023.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-06-17,2025-06-17T12:00:00,Restaurants,-12.9,-11036.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-18,2025-06-18T12:00:00,Groceries,-7.8,-11044.3,purchase,Alepa,5411
+mikko,mikko-current,2025-06-19,2025-06-19T12:00:00,Restaurants,-12.9,-11057.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-20,2025-06-20T12:00:00,Groceries,-48.4,-11105.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-06-21,2025-06-21T12:00:00,Utilities,-38,-11143.6,utilities_payment,If,
+mikko,mikko-current,2025-06-21,2025-06-21T12:00:00,Groceries,-7.8,-11151.4,purchase,Alepa,5411
+mikko,mikko-current,2025-06-24,2025-06-24T12:00:00,Groceries,-7.8,-11159.2,purchase,Alepa,5411
+mikko,mikko-current,2025-06-24,2025-06-24T12:00:00,Restaurants,-12.9,-11172.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-06-26,2025-06-26T12:00:00,Restaurants,-12.9,-11185.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-02,2025-07-02T12:00:00,Housing,-850,-12035.0,utilities_payment,Lumo,
+mikko,mikko-current,2025-07-03,2025-07-03T12:00:00,Groceries,-7.8,-12042.8,purchase,Alepa,5411
+mikko,mikko-current,2025-07-03,2025-07-03T12:00:00,Restaurants,-12.9,-12055.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-04,2025-07-04T12:00:00,Groceries,-48.4,-12104.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-07-05,2025-07-05T12:00:00,Restaurants,-12.9,-12117.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-06,2025-07-06T12:00:00,Groceries,-7.8,-12124.8,purchase,Alepa,5411
+mikko,mikko-current,2025-07-08,2025-07-08T12:00:00,Utilities,-55,-12179.8,utilities_payment,Helen,
+mikko,mikko-current,2025-07-08,2025-07-08T12:00:00,Groceries,-48.4,-12228.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-07-09,2025-07-09T12:00:00,Groceries,-7.8,-12236.0,purchase,Alepa,5411
+mikko,mikko-current,2025-07-10,2025-07-10T12:00:00,Utilities,-29.9,-12265.9,utilities_payment,Elisa,
+mikko,mikko-current,2025-07-10,2025-07-10T12:00:00,Restaurants,-12.9,-12278.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-12,2025-07-12T12:00:00,Groceries,-7.8,-12286.6,purchase,Alepa,5411
+mikko,mikko-current,2025-07-12,2025-07-12T12:00:00,Restaurants,-12.9,-12299.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-15,2025-07-15T12:00:00,Groceries,-7.8,-12307.3,purchase,Alepa,5411
+mikko,mikko-current,2025-07-16,2025-07-16T12:00:00,Groceries,-48.4,-12355.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-07-17,2025-07-17T12:00:00,Restaurants,-12.9,-12368.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-18,2025-07-18T12:00:00,Groceries,-7.8,-12376.4,purchase,Alepa,5411
+mikko,mikko-current,2025-07-19,2025-07-19T12:00:00,Restaurants,-12.9,-12389.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-20,2025-07-20T12:00:00,Groceries,-48.4,-12437.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-07-21,2025-07-21T12:00:00,Utilities,-38,-12475.7,utilities_payment,If,
+mikko,mikko-current,2025-07-21,2025-07-21T12:00:00,Groceries,-7.8,-12483.5,purchase,Alepa,5411
+mikko,mikko-current,2025-07-24,2025-07-24T12:00:00,Groceries,-7.8,-12491.3,purchase,Alepa,5411
+mikko,mikko-current,2025-07-24,2025-07-24T12:00:00,Restaurants,-12.9,-12504.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-07-26,2025-07-26T12:00:00,Restaurants,-12.9,-12517.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-02,2025-08-02T12:00:00,Housing,-850,-13367.1,utilities_payment,Lumo,
+mikko,mikko-current,2025-08-03,2025-08-03T12:00:00,Groceries,-7.8,-13374.9,purchase,Alepa,5411
+mikko,mikko-current,2025-08-03,2025-08-03T12:00:00,Restaurants,-12.9,-13387.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-04,2025-08-04T12:00:00,Groceries,-48.4,-13436.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-08-05,2025-08-05T12:00:00,Restaurants,-12.9,-13449.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-06,2025-08-06T12:00:00,Groceries,-7.8,-13456.9,purchase,Alepa,5411
+mikko,mikko-current,2025-08-08,2025-08-08T12:00:00,Utilities,-55,-13511.9,utilities_payment,Helen,
+mikko,mikko-current,2025-08-08,2025-08-08T12:00:00,Groceries,-48.4,-13560.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-08-09,2025-08-09T12:00:00,Groceries,-7.8,-13568.1,purchase,Alepa,5411
+mikko,mikko-current,2025-08-10,2025-08-10T12:00:00,Utilities,-29.9,-13598.0,utilities_payment,Elisa,
+mikko,mikko-current,2025-08-10,2025-08-10T12:00:00,Restaurants,-12.9,-13610.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-12,2025-08-12T12:00:00,Groceries,-7.8,-13618.7,purchase,Alepa,5411
+mikko,mikko-current,2025-08-12,2025-08-12T12:00:00,Restaurants,-12.9,-13631.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-15,2025-08-15T12:00:00,Groceries,-7.8,-13639.4,purchase,Alepa,5411
+mikko,mikko-current,2025-08-16,2025-08-16T12:00:00,Groceries,-48.4,-13687.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-08-17,2025-08-17T12:00:00,Restaurants,-12.9,-13700.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-18,2025-08-18T12:00:00,Groceries,-7.8,-13708.5,purchase,Alepa,5411
+mikko,mikko-current,2025-08-19,2025-08-19T12:00:00,Restaurants,-12.9,-13721.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-20,2025-08-20T12:00:00,Groceries,-48.4,-13769.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-08-21,2025-08-21T12:00:00,Utilities,-38,-13807.8,utilities_payment,If,
+mikko,mikko-current,2025-08-21,2025-08-21T12:00:00,Groceries,-7.8,-13815.6,purchase,Alepa,5411
+mikko,mikko-current,2025-08-24,2025-08-24T12:00:00,Groceries,-7.8,-13823.4,purchase,Alepa,5411
+mikko,mikko-current,2025-08-24,2025-08-24T12:00:00,Restaurants,-12.9,-13836.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-08-26,2025-08-26T12:00:00,Restaurants,-12.9,-13849.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-02,2025-09-02T12:00:00,Housing,-850,-14699.2,utilities_payment,Lumo,
+mikko,mikko-current,2025-09-03,2025-09-03T12:00:00,Groceries,-7.8,-14707.0,purchase,Alepa,5411
+mikko,mikko-current,2025-09-03,2025-09-03T12:00:00,Restaurants,-12.9,-14719.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-04,2025-09-04T12:00:00,Groceries,-48.4,-14768.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-09-05,2025-09-05T12:00:00,Restaurants,-12.9,-14781.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-06,2025-09-06T12:00:00,Groceries,-7.8,-14789.0,purchase,Alepa,5411
+mikko,mikko-current,2025-09-08,2025-09-08T12:00:00,Utilities,-55,-14844.0,utilities_payment,Helen,
+mikko,mikko-current,2025-09-08,2025-09-08T12:00:00,Groceries,-48.4,-14892.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-09-09,2025-09-09T12:00:00,Groceries,-7.8,-14900.2,purchase,Alepa,5411
+mikko,mikko-current,2025-09-10,2025-09-10T12:00:00,Utilities,-29.9,-14930.1,utilities_payment,Elisa,
+mikko,mikko-current,2025-09-10,2025-09-10T12:00:00,Restaurants,-12.9,-14943.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-12,2025-09-12T12:00:00,Groceries,-7.8,-14950.8,purchase,Alepa,5411
+mikko,mikko-current,2025-09-12,2025-09-12T12:00:00,Restaurants,-12.9,-14963.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-15,2025-09-15T12:00:00,Groceries,-7.8,-14971.5,purchase,Alepa,5411
+mikko,mikko-current,2025-09-16,2025-09-16T12:00:00,Groceries,-48.4,-15019.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-09-17,2025-09-17T12:00:00,Restaurants,-12.9,-15032.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-18,2025-09-18T12:00:00,Groceries,-7.8,-15040.6,purchase,Alepa,5411
+mikko,mikko-current,2025-09-19,2025-09-19T12:00:00,Restaurants,-12.9,-15053.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-20,2025-09-20T12:00:00,Groceries,-48.4,-15101.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-09-21,2025-09-21T12:00:00,Utilities,-38,-15139.9,utilities_payment,If,
+mikko,mikko-current,2025-09-21,2025-09-21T12:00:00,Groceries,-7.8,-15147.7,purchase,Alepa,5411
+mikko,mikko-current,2025-09-24,2025-09-24T12:00:00,Groceries,-7.8,-15155.5,purchase,Alepa,5411
+mikko,mikko-current,2025-09-24,2025-09-24T12:00:00,Restaurants,-12.9,-15168.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-09-26,2025-09-26T12:00:00,Restaurants,-12.9,-15181.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-02,2025-10-02T12:00:00,Housing,-850,-16031.3,utilities_payment,Lumo,
+mikko,mikko-current,2025-10-03,2025-10-03T12:00:00,Groceries,-7.8,-16039.1,purchase,Alepa,5411
+mikko,mikko-current,2025-10-03,2025-10-03T12:00:00,Restaurants,-12.9,-16052.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-04,2025-10-04T12:00:00,Groceries,-48.4,-16100.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-10-05,2025-10-05T12:00:00,Restaurants,-12.9,-16113.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-06,2025-10-06T12:00:00,Groceries,-7.8,-16121.1,purchase,Alepa,5411
+mikko,mikko-current,2025-10-08,2025-10-08T12:00:00,Utilities,-55,-16176.1,utilities_payment,Helen,
+mikko,mikko-current,2025-10-08,2025-10-08T12:00:00,Groceries,-48.4,-16224.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-10-09,2025-10-09T12:00:00,Groceries,-7.8,-16232.3,purchase,Alepa,5411
+mikko,mikko-current,2025-10-10,2025-10-10T12:00:00,Utilities,-29.9,-16262.2,utilities_payment,Elisa,
+mikko,mikko-current,2025-10-10,2025-10-10T12:00:00,Restaurants,-12.9,-16275.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-12,2025-10-12T12:00:00,Groceries,-7.8,-16282.9,purchase,Alepa,5411
+mikko,mikko-current,2025-10-12,2025-10-12T12:00:00,Restaurants,-12.9,-16295.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-15,2025-10-15T12:00:00,Salary,3150,-13145.8,salary,Nordkode Oy,
+mikko,mikko-current,2025-10-15,2025-10-15T12:00:00,Groceries,-7.8,-13153.6,purchase,Alepa,5411
+mikko,mikko-current,2025-10-16,2025-10-16T12:00:00,Groceries,-48.4,-13202.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-10-17,2025-10-17T12:00:00,Restaurants,-12.9,-13214.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-18,2025-10-18T12:00:00,Groceries,-7.8,-13222.7,purchase,Alepa,5411
+mikko,mikko-current,2025-10-19,2025-10-19T12:00:00,Restaurants,-12.9,-13235.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-20,2025-10-20T12:00:00,Groceries,-48.4,-13284.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-10-21,2025-10-21T12:00:00,Utilities,-38,-13322.0,utilities_payment,If,
+mikko,mikko-current,2025-10-21,2025-10-21T12:00:00,Groceries,-7.8,-13329.8,purchase,Alepa,5411
+mikko,mikko-current,2025-10-24,2025-10-24T12:00:00,Groceries,-7.8,-13337.6,purchase,Alepa,5411
+mikko,mikko-current,2025-10-24,2025-10-24T12:00:00,Restaurants,-12.9,-13350.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-10-26,2025-10-26T12:00:00,Restaurants,-12.9,-13363.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-02,2025-11-02T12:00:00,Housing,-850,-14213.4,utilities_payment,Lumo,
+mikko,mikko-current,2025-11-03,2025-11-03T12:00:00,Groceries,-7.8,-14221.2,purchase,Alepa,5411
+mikko,mikko-current,2025-11-03,2025-11-03T12:00:00,Restaurants,-12.9,-14234.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-04,2025-11-04T12:00:00,Groceries,-48.4,-14282.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-11-05,2025-11-05T12:00:00,Restaurants,-12.9,-14295.4,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-06,2025-11-06T12:00:00,Groceries,-7.8,-14303.2,purchase,Alepa,5411
+mikko,mikko-current,2025-11-08,2025-11-08T12:00:00,Utilities,-55,-14358.2,utilities_payment,Helen,
+mikko,mikko-current,2025-11-08,2025-11-08T12:00:00,Groceries,-48.4,-14406.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-11-09,2025-11-09T12:00:00,Groceries,-7.8,-14414.4,purchase,Alepa,5411
+mikko,mikko-current,2025-11-10,2025-11-10T12:00:00,Utilities,-29.9,-14444.3,utilities_payment,Elisa,
+mikko,mikko-current,2025-11-10,2025-11-10T12:00:00,Restaurants,-12.9,-14457.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-12,2025-11-12T12:00:00,Groceries,-7.8,-14465.0,purchase,Alepa,5411
+mikko,mikko-current,2025-11-12,2025-11-12T12:00:00,Restaurants,-12.9,-14477.9,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-14,2025-11-14T12:00:00,Salary,3150,-11327.9,salary,Nordkode Oy,
+mikko,mikko-current,2025-11-15,2025-11-15T12:00:00,Groceries,-7.8,-11335.7,purchase,Alepa,5411
+mikko,mikko-current,2025-11-16,2025-11-16T12:00:00,Groceries,-48.4,-11384.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-11-17,2025-11-17T12:00:00,Restaurants,-12.9,-11397.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-18,2025-11-18T12:00:00,Groceries,-7.8,-11404.8,purchase,Alepa,5411
+mikko,mikko-current,2025-11-19,2025-11-19T12:00:00,Restaurants,-12.9,-11417.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-20,2025-11-20T12:00:00,Groceries,-48.4,-11466.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-11-21,2025-11-21T12:00:00,Utilities,-38,-11504.1,utilities_payment,If,
+mikko,mikko-current,2025-11-21,2025-11-21T12:00:00,Groceries,-7.8,-11511.9,purchase,Alepa,5411
+mikko,mikko-current,2025-11-24,2025-11-24T12:00:00,Groceries,-7.8,-11519.7,purchase,Alepa,5411
+mikko,mikko-current,2025-11-24,2025-11-24T12:00:00,Restaurants,-12.9,-11532.6,purchase,Sodexo,5812
+mikko,mikko-current,2025-11-26,2025-11-26T12:00:00,Restaurants,-12.9,-11545.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-02,2025-12-02T12:00:00,Housing,-850,-12395.5,utilities_payment,Lumo,
+mikko,mikko-current,2025-12-03,2025-12-03T12:00:00,Groceries,-7.8,-12403.3,purchase,Alepa,5411
+mikko,mikko-current,2025-12-03,2025-12-03T12:00:00,Restaurants,-12.9,-12416.2,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-04,2025-12-04T12:00:00,Groceries,-48.4,-12464.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-12-05,2025-12-05T12:00:00,Restaurants,-12.9,-12477.5,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-06,2025-12-06T12:00:00,Groceries,-7.8,-12485.3,purchase,Alepa,5411
+mikko,mikko-current,2025-12-08,2025-12-08T12:00:00,Utilities,-55,-12540.3,utilities_payment,Helen,
+mikko,mikko-current,2025-12-08,2025-12-08T12:00:00,Groceries,-48.4,-12588.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-12-09,2025-12-09T12:00:00,Groceries,-7.8,-12596.5,purchase,Alepa,5411
+mikko,mikko-current,2025-12-10,2025-12-10T12:00:00,Utilities,-29.9,-12626.4,utilities_payment,Elisa,
+mikko,mikko-current,2025-12-10,2025-12-10T12:00:00,Restaurants,-12.9,-12639.3,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-12,2025-12-12T12:00:00,Groceries,-7.8,-12647.1,purchase,Alepa,5411
+mikko,mikko-current,2025-12-12,2025-12-12T12:00:00,Restaurants,-12.9,-12660.0,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-15,2025-12-15T12:00:00,Salary,3150,-9510.0,salary,Nordkode Oy,
+mikko,mikko-current,2025-12-15,2025-12-15T12:00:00,Groceries,-7.8,-9517.8,purchase,Alepa,5411
+mikko,mikko-current,2025-12-16,2025-12-16T12:00:00,Invest Deposit,-600,-10117.8,investment_deposit,ASP account,
+mikko,mikko-current,2025-12-16,2025-12-16T12:00:00,Groceries,-48.4,-10166.2,purchase,K-Citymarket,5411
+mikko,mikko-savings,2025-12-16,2025-12-16T12:00:00,Invest Withdraw,600,400,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2025-12-17,2025-12-17T12:00:00,Restaurants,-12.9,-10179.1,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-18,2025-12-18T12:00:00,Groceries,-7.8,-10186.9,purchase,Alepa,5411
+mikko,mikko-current,2025-12-19,2025-12-19T12:00:00,Restaurants,-12.9,-10199.8,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-20,2025-12-20T12:00:00,Groceries,-48.4,-10248.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2025-12-21,2025-12-21T12:00:00,Utilities,-38,-10286.2,utilities_payment,If,
+mikko,mikko-current,2025-12-21,2025-12-21T12:00:00,Groceries,-7.8,-10294.0,purchase,Alepa,5411
+mikko,mikko-current,2025-12-24,2025-12-24T12:00:00,Groceries,-7.8,-10301.8,purchase,Alepa,5411
+mikko,mikko-current,2025-12-24,2025-12-24T12:00:00,Restaurants,-12.9,-10314.7,purchase,Sodexo,5812
+mikko,mikko-current,2025-12-26,2025-12-26T12:00:00,Restaurants,-12.9,-10327.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-02,2026-01-02T12:00:00,Housing,-850,-11177.6,utilities_payment,Lumo,
+mikko,mikko-current,2026-01-03,2026-01-03T12:00:00,Groceries,-7.8,-11185.4,purchase,Alepa,5411
+mikko,mikko-current,2026-01-03,2026-01-03T12:00:00,Restaurants,-12.9,-11198.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-04,2026-01-04T12:00:00,Groceries,-48.4,-11246.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-01-05,2026-01-05T12:00:00,Restaurants,-12.9,-11259.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-06,2026-01-06T12:00:00,Groceries,-7.8,-11267.4,purchase,Alepa,5411
+mikko,mikko-current,2026-01-08,2026-01-08T12:00:00,Utilities,-55,-11322.4,utilities_payment,Helen,
+mikko,mikko-current,2026-01-08,2026-01-08T12:00:00,Groceries,-48.4,-11370.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-01-09,2026-01-09T12:00:00,Groceries,-7.8,-11378.6,purchase,Alepa,5411
+mikko,mikko-current,2026-01-10,2026-01-10T12:00:00,Utilities,-29.9,-11408.5,utilities_payment,Elisa,
+mikko,mikko-current,2026-01-10,2026-01-10T12:00:00,Restaurants,-12.9,-11421.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-12,2026-01-12T12:00:00,Groceries,-7.8,-11429.2,purchase,Alepa,5411
+mikko,mikko-current,2026-01-12,2026-01-12T12:00:00,Restaurants,-12.9,-11442.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-15,2026-01-15T12:00:00,Salary,3150,-8292.1,salary,Nordkode Oy,
+mikko,mikko-current,2026-01-15,2026-01-15T12:00:00,Groceries,-7.8,-8299.9,purchase,Alepa,5411
+mikko,mikko-current,2026-01-16,2026-01-16T12:00:00,Invest Deposit,-600,-8899.9,investment_deposit,ASP account,
+mikko,mikko-current,2026-01-16,2026-01-16T12:00:00,Groceries,-48.4,-8948.3,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-01-16,2026-01-16T12:00:00,Invest Withdraw,600,1000,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-01-17,2026-01-17T12:00:00,Restaurants,-12.9,-8961.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-18,2026-01-18T12:00:00,Groceries,-7.8,-8969.0,purchase,Alepa,5411
+mikko,mikko-current,2026-01-19,2026-01-19T12:00:00,Restaurants,-12.9,-8981.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-20,2026-01-20T12:00:00,Groceries,-48.4,-9030.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-01-21,2026-01-21T12:00:00,Utilities,-38,-9068.3,utilities_payment,If,
+mikko,mikko-current,2026-01-21,2026-01-21T12:00:00,Groceries,-7.8,-9076.1,purchase,Alepa,5411
+mikko,mikko-current,2026-01-24,2026-01-24T12:00:00,Groceries,-7.8,-9083.9,purchase,Alepa,5411
+mikko,mikko-current,2026-01-24,2026-01-24T12:00:00,Restaurants,-12.9,-9096.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-01-26,2026-01-26T12:00:00,Restaurants,-12.9,-9109.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-02,2026-02-02T12:00:00,Housing,-850,-9959.7,utilities_payment,Lumo,
+mikko,mikko-current,2026-02-03,2026-02-03T12:00:00,Groceries,-7.8,-9967.5,purchase,Alepa,5411
+mikko,mikko-current,2026-02-03,2026-02-03T12:00:00,Restaurants,-12.9,-9980.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-04,2026-02-04T12:00:00,Groceries,-48.4,-10028.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-02-05,2026-02-05T12:00:00,Restaurants,-12.9,-10041.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-06,2026-02-06T12:00:00,Groceries,-7.8,-10049.5,purchase,Alepa,5411
+mikko,mikko-current,2026-02-08,2026-02-08T12:00:00,Utilities,-55,-10104.5,utilities_payment,Helen,
+mikko,mikko-current,2026-02-08,2026-02-08T12:00:00,Groceries,-48.4,-10152.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-02-09,2026-02-09T12:00:00,Groceries,-7.8,-10160.7,purchase,Alepa,5411
+mikko,mikko-current,2026-02-10,2026-02-10T12:00:00,Utilities,-29.9,-10190.6,utilities_payment,Elisa,
+mikko,mikko-current,2026-02-10,2026-02-10T12:00:00,Restaurants,-12.9,-10203.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-12,2026-02-12T12:00:00,Groceries,-7.8,-10211.3,purchase,Alepa,5411
+mikko,mikko-current,2026-02-12,2026-02-12T12:00:00,Restaurants,-12.9,-10224.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-13,2026-02-13T12:00:00,Salary,3150,-7074.2,salary,Nordkode Oy,
+mikko,mikko-current,2026-02-15,2026-02-15T12:00:00,Groceries,-7.8,-7082.0,purchase,Alepa,5411
+mikko,mikko-current,2026-02-16,2026-02-16T12:00:00,Invest Deposit,-600,-7682.0,investment_deposit,ASP account,
+mikko,mikko-current,2026-02-16,2026-02-16T12:00:00,Groceries,-48.4,-7730.4,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-02-16,2026-02-16T12:00:00,Invest Withdraw,600,1600,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-02-17,2026-02-17T12:00:00,Restaurants,-12.9,-7743.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-18,2026-02-18T12:00:00,Groceries,-7.8,-7751.1,purchase,Alepa,5411
+mikko,mikko-current,2026-02-19,2026-02-19T12:00:00,Restaurants,-12.9,-7764.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-20,2026-02-20T12:00:00,Groceries,-48.4,-7812.4,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-02-21,2026-02-21T12:00:00,Utilities,-38,-7850.4,utilities_payment,If,
+mikko,mikko-current,2026-02-21,2026-02-21T12:00:00,Groceries,-7.8,-7858.2,purchase,Alepa,5411
+mikko,mikko-current,2026-02-24,2026-02-24T12:00:00,Groceries,-7.8,-7866.0,purchase,Alepa,5411
+mikko,mikko-current,2026-02-24,2026-02-24T12:00:00,Restaurants,-12.9,-7878.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-02-26,2026-02-26T12:00:00,Restaurants,-12.9,-7891.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-02,2026-03-02T12:00:00,Housing,-850,-8741.8,utilities_payment,Lumo,
+mikko,mikko-current,2026-03-03,2026-03-03T12:00:00,Groceries,-7.8,-8749.6,purchase,Alepa,5411
+mikko,mikko-current,2026-03-03,2026-03-03T12:00:00,Restaurants,-12.9,-8762.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-04,2026-03-04T12:00:00,Groceries,-48.4,-8810.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-03-05,2026-03-05T12:00:00,Restaurants,-12.9,-8823.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-06,2026-03-06T12:00:00,Groceries,-7.8,-8831.6,purchase,Alepa,5411
+mikko,mikko-current,2026-03-08,2026-03-08T12:00:00,Utilities,-55,-8886.6,utilities_payment,Helen,
+mikko,mikko-current,2026-03-08,2026-03-08T12:00:00,Groceries,-48.4,-8935.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-03-09,2026-03-09T12:00:00,Groceries,-7.8,-8942.8,purchase,Alepa,5411
+mikko,mikko-current,2026-03-10,2026-03-10T12:00:00,Utilities,-29.9,-8972.7,utilities_payment,Elisa,
+mikko,mikko-current,2026-03-10,2026-03-10T12:00:00,Restaurants,-12.9,-8985.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-12,2026-03-12T12:00:00,Groceries,-7.8,-8993.4,purchase,Alepa,5411
+mikko,mikko-current,2026-03-12,2026-03-12T12:00:00,Restaurants,-12.9,-9006.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-13,2026-03-13T12:00:00,Salary,3150,-5856.3,salary,Nordkode Oy,
+mikko,mikko-current,2026-03-15,2026-03-15T12:00:00,Groceries,-7.8,-5864.1,purchase,Alepa,5411
+mikko,mikko-current,2026-03-16,2026-03-16T12:00:00,Invest Deposit,-600,-6464.1,investment_deposit,ASP account,
+mikko,mikko-current,2026-03-16,2026-03-16T12:00:00,Groceries,-48.4,-6512.5,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-03-16,2026-03-16T12:00:00,Invest Withdraw,600,2200,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-03-17,2026-03-17T12:00:00,Restaurants,-12.9,-6525.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-18,2026-03-18T12:00:00,Groceries,-7.8,-6533.2,purchase,Alepa,5411
+mikko,mikko-current,2026-03-19,2026-03-19T12:00:00,Restaurants,-12.9,-6546.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-20,2026-03-20T12:00:00,Groceries,-48.4,-6594.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-03-21,2026-03-21T12:00:00,Utilities,-38,-6632.5,utilities_payment,If,
+mikko,mikko-current,2026-03-21,2026-03-21T12:00:00,Groceries,-7.8,-6640.3,purchase,Alepa,5411
+mikko,mikko-current,2026-03-24,2026-03-24T12:00:00,Groceries,-7.8,-6648.1,purchase,Alepa,5411
+mikko,mikko-current,2026-03-24,2026-03-24T12:00:00,Restaurants,-12.9,-6661.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-26,2026-03-26T12:00:00,Restaurants,-12.9,-6673.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-03-27,2026-03-27T12:00:00,Restaurants,-4.2,-6678.1,purchase,Fazer Café,5814
+mikko,mikko-current,2026-04-02,2026-04-02T12:00:00,Housing,-850,-7528.1,utilities_payment,Lumo,
+mikko,mikko-current,2026-04-03,2026-04-03T12:00:00,Groceries,-7.8,-7535.9,purchase,Alepa,5411
+mikko,mikko-current,2026-04-03,2026-04-03T12:00:00,Restaurants,-12.9,-7548.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-04,2026-04-04T12:00:00,Groceries,-48.4,-7597.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-04-05,2026-04-05T12:00:00,Restaurants,-12.9,-7610.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-06,2026-04-06T12:00:00,Groceries,-7.8,-7617.9,purchase,Alepa,5411
+mikko,mikko-current,2026-04-06,2026-04-06T12:00:00,Restaurants,-4.2,-7622.1,purchase,Fazer Café,5814
+mikko,mikko-current,2026-04-08,2026-04-08T12:00:00,Utilities,-55,-7677.1,utilities_payment,Helen,
+mikko,mikko-current,2026-04-08,2026-04-08T12:00:00,Groceries,-48.4,-7725.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-04-09,2026-04-09T12:00:00,Groceries,-7.8,-7733.3,purchase,Alepa,5411
+mikko,mikko-current,2026-04-10,2026-04-10T12:00:00,Utilities,-29.9,-7763.2,utilities_payment,Elisa,
+mikko,mikko-current,2026-04-10,2026-04-10T12:00:00,Restaurants,-12.9,-7776.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-12,2026-04-12T12:00:00,Groceries,-7.8,-7783.9,purchase,Alepa,5411
+mikko,mikko-current,2026-04-12,2026-04-12T12:00:00,Restaurants,-12.9,-7796.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-15,2026-04-15T12:00:00,Salary,3150,-4646.8,salary,Nordkode Oy,
+mikko,mikko-current,2026-04-15,2026-04-15T12:00:00,Groceries,-7.8,-4654.6,purchase,Alepa,5411
+mikko,mikko-current,2026-04-16,2026-04-16T12:00:00,Invest Deposit,-600,-5254.6,investment_deposit,ASP account,
+mikko,mikko-current,2026-04-16,2026-04-16T12:00:00,Groceries,-48.4,-5303.0,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-04-16,2026-04-16T12:00:00,Restaurants,-4.2,-5307.2,purchase,Fazer Café,5814
+mikko,mikko-savings,2026-04-16,2026-04-16T12:00:00,Invest Withdraw,600,2800,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-04-17,2026-04-17T12:00:00,Restaurants,-12.9,-5320.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-18,2026-04-18T12:00:00,Groceries,-7.8,-5327.9,purchase,Alepa,5411
+mikko,mikko-current,2026-04-19,2026-04-19T12:00:00,Restaurants,-12.9,-5340.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-20,2026-04-20T12:00:00,Groceries,-48.4,-5389.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-04-21,2026-04-21T12:00:00,Utilities,-38,-5427.2,utilities_payment,If,
+mikko,mikko-current,2026-04-21,2026-04-21T12:00:00,Groceries,-7.8,-5435.0,purchase,Alepa,5411
+mikko,mikko-current,2026-04-24,2026-04-24T12:00:00,Groceries,-7.8,-5442.8,purchase,Alepa,5411
+mikko,mikko-current,2026-04-24,2026-04-24T12:00:00,Restaurants,-12.9,-5455.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-26,2026-04-26T12:00:00,Restaurants,-12.9,-5468.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-04-26,2026-04-26T12:00:00,Restaurants,-4.2,-5472.8,purchase,Fazer Café,5814
+mikko,mikko-current,2026-05-02,2026-05-02T12:00:00,Housing,-850,-6322.8,utilities_payment,Lumo,
+mikko,mikko-current,2026-05-03,2026-05-03T12:00:00,Groceries,-7.8,-6330.6,purchase,Alepa,5411
+mikko,mikko-current,2026-05-03,2026-05-03T12:00:00,Restaurants,-12.9,-6343.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-04,2026-05-04T12:00:00,Groceries,-48.4,-6391.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-05-05,2026-05-05T12:00:00,Restaurants,-12.9,-6404.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-06,2026-05-06T12:00:00,Groceries,-7.8,-6412.6,purchase,Alepa,5411
+mikko,mikko-current,2026-05-06,2026-05-06T12:00:00,Restaurants,-4.2,-6416.8,purchase,Fazer Café,5814
+mikko,mikko-current,2026-05-08,2026-05-08T12:00:00,Utilities,-55,-6471.8,utilities_payment,Helen,
+mikko,mikko-current,2026-05-08,2026-05-08T12:00:00,Groceries,-48.4,-6520.2,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-05-09,2026-05-09T12:00:00,Groceries,-7.8,-6528.0,purchase,Alepa,5411
+mikko,mikko-current,2026-05-10,2026-05-10T12:00:00,Utilities,-29.9,-6557.9,utilities_payment,Elisa,
+mikko,mikko-current,2026-05-10,2026-05-10T12:00:00,Restaurants,-12.9,-6570.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-12,2026-05-12T12:00:00,Groceries,-7.8,-6578.6,purchase,Alepa,5411
+mikko,mikko-current,2026-05-12,2026-05-12T12:00:00,Restaurants,-12.9,-6591.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-15,2026-05-15T12:00:00,Salary,3150,-3441.5,salary,Nordkode Oy,
+mikko,mikko-current,2026-05-15,2026-05-15T12:00:00,Groceries,-7.8,-3449.3,purchase,Alepa,5411
+mikko,mikko-current,2026-05-16,2026-05-16T12:00:00,Invest Deposit,-550,-3999.3,investment_deposit,ASP account,
+mikko,mikko-current,2026-05-16,2026-05-16T12:00:00,Groceries,-48.4,-4047.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-05-16,2026-05-16T12:00:00,Restaurants,-4.2,-4051.9,purchase,Fazer Café,5814
+mikko,mikko-savings,2026-05-16,2026-05-16T12:00:00,Invest Withdraw,550,3350,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-05-17,2026-05-17T12:00:00,Restaurants,-12.9,-4064.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-18,2026-05-18T12:00:00,Groceries,-7.8,-4072.6,purchase,Alepa,5411
+mikko,mikko-current,2026-05-19,2026-05-19T12:00:00,Restaurants,-12.9,-4085.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-20,2026-05-20T12:00:00,Groceries,-48.4,-4133.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-05-21,2026-05-21T12:00:00,Utilities,-38,-4171.9,utilities_payment,If,
+mikko,mikko-current,2026-05-21,2026-05-21T12:00:00,Groceries,-7.8,-4179.7,purchase,Alepa,5411
+mikko,mikko-current,2026-05-24,2026-05-24T12:00:00,Groceries,-7.8,-4187.5,purchase,Alepa,5411
+mikko,mikko-current,2026-05-24,2026-05-24T12:00:00,Restaurants,-12.9,-4200.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-26,2026-05-26T12:00:00,Restaurants,-12.9,-4213.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-05-26,2026-05-26T12:00:00,Restaurants,-4.2,-4217.5,purchase,Fazer Café,5814
+mikko,mikko-current,2026-06-02,2026-06-02T12:00:00,Housing,-850,-5067.5,utilities_payment,Lumo,
+mikko,mikko-current,2026-06-03,2026-06-03T12:00:00,Groceries,-7.8,-5075.3,purchase,Alepa,5411
+mikko,mikko-current,2026-06-03,2026-06-03T12:00:00,Restaurants,-12.9,-5088.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-04,2026-06-04T12:00:00,Groceries,-48.4,-5136.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-06-05,2026-06-05T12:00:00,Restaurants,-12.9,-5149.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-05,2026-06-05T12:00:00,Restaurants,-4.2,-5153.7,purchase,Fazer Café,5814
+mikko,mikko-current,2026-06-06,2026-06-06T12:00:00,Groceries,-7.8,-5161.5,purchase,Alepa,5411
+mikko,mikko-current,2026-06-08,2026-06-08T12:00:00,Utilities,-55,-5216.5,utilities_payment,Helen,
+mikko,mikko-current,2026-06-08,2026-06-08T12:00:00,Groceries,-48.4,-5264.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-06-09,2026-06-09T12:00:00,Groceries,-7.8,-5272.7,purchase,Alepa,5411
+mikko,mikko-current,2026-06-10,2026-06-10T12:00:00,Utilities,-29.9,-5302.6,utilities_payment,Elisa,
+mikko,mikko-current,2026-06-10,2026-06-10T12:00:00,Restaurants,-12.9,-5315.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-12,2026-06-12T12:00:00,Groceries,-7.8,-5323.3,purchase,Alepa,5411
+mikko,mikko-current,2026-06-12,2026-06-12T12:00:00,Restaurants,-12.9,-5336.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-15,2026-06-15T12:00:00,Salary,3150,-2186.2,salary,Nordkode Oy,
+mikko,mikko-current,2026-06-15,2026-06-15T12:00:00,Groceries,-7.8,-2194.0,purchase,Alepa,5411
+mikko,mikko-current,2026-06-15,2026-06-15T12:00:00,Restaurants,-4.2,-2198.2,purchase,Fazer Café,5814
+mikko,mikko-current,2026-06-16,2026-06-16T12:00:00,Invest Deposit,-650,-2848.2,investment_deposit,ASP account,
+mikko,mikko-current,2026-06-16,2026-06-16T12:00:00,Groceries,-48.4,-2896.6,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-06-16,2026-06-16T12:00:00,Invest Withdraw,650,4000,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-06-17,2026-06-17T12:00:00,Restaurants,-12.9,-2909.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-18,2026-06-18T12:00:00,Groceries,-7.8,-2917.3,purchase,Alepa,5411
+mikko,mikko-current,2026-06-19,2026-06-19T12:00:00,Restaurants,-12.9,-2930.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-20,2026-06-20T12:00:00,Groceries,-48.4,-2978.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-06-21,2026-06-21T12:00:00,Utilities,-38,-3016.6,utilities_payment,If,
+mikko,mikko-current,2026-06-21,2026-06-21T12:00:00,Groceries,-7.8,-3024.4,purchase,Alepa,5411
+mikko,mikko-current,2026-06-24,2026-06-24T12:00:00,Groceries,-7.8,-3032.2,purchase,Alepa,5411
+mikko,mikko-current,2026-06-24,2026-06-24T12:00:00,Restaurants,-12.9,-3045.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-06-25,2026-06-25T12:00:00,Restaurants,-4.2,-3049.3,purchase,Fazer Café,5814
+mikko,mikko-current,2026-06-26,2026-06-26T12:00:00,Restaurants,-12.9,-3062.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-02,2026-07-02T12:00:00,Housing,-850,-3912.2,utilities_payment,Lumo,
+mikko,mikko-current,2026-07-03,2026-07-03T12:00:00,Groceries,-7.8,-3920.0,purchase,Alepa,5411
+mikko,mikko-current,2026-07-03,2026-07-03T12:00:00,Restaurants,-12.9,-3932.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-04,2026-07-04T12:00:00,Groceries,-48.4,-3981.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-07-05,2026-07-05T12:00:00,Restaurants,-12.9,-3994.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-05,2026-07-05T12:00:00,Restaurants,-4.2,-3998.4,purchase,Fazer Café,5814
+mikko,mikko-current,2026-07-06,2026-07-06T12:00:00,Groceries,-7.8,-4006.2,purchase,Alepa,5411
+mikko,mikko-current,2026-07-08,2026-07-08T12:00:00,Utilities,-55,-4061.2,utilities_payment,Helen,
+mikko,mikko-current,2026-07-08,2026-07-08T12:00:00,Groceries,-48.4,-4109.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-07-09,2026-07-09T12:00:00,Groceries,-7.8,-4117.4,purchase,Alepa,5411
+mikko,mikko-current,2026-07-10,2026-07-10T12:00:00,Utilities,-29.9,-4147.3,utilities_payment,Elisa,
+mikko,mikko-current,2026-07-10,2026-07-10T12:00:00,Restaurants,-12.9,-4160.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-12,2026-07-12T12:00:00,Groceries,-7.8,-4168.0,purchase,Alepa,5411
+mikko,mikko-current,2026-07-12,2026-07-12T12:00:00,Restaurants,-12.9,-4180.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-15,2026-07-15T12:00:00,Salary,3150,-1030.9,salary,Nordkode Oy,
+mikko,mikko-current,2026-07-15,2026-07-15T12:00:00,Groceries,-7.8,-1038.7,purchase,Alepa,5411
+mikko,mikko-current,2026-07-15,2026-07-15T12:00:00,Restaurants,-4.2,-1042.9,purchase,Fazer Café,5814
+mikko,mikko-current,2026-07-16,2026-07-16T12:00:00,Invest Deposit,-600,-1642.9,investment_deposit,ASP account,
+mikko,mikko-current,2026-07-16,2026-07-16T12:00:00,Groceries,-48.4,-1691.3,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-07-16,2026-07-16T12:00:00,Invest Withdraw,600,4600,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-07-17,2026-07-17T12:00:00,Restaurants,-12.9,-1704.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-18,2026-07-18T12:00:00,Groceries,-7.8,-1712.0,purchase,Alepa,5411
+mikko,mikko-current,2026-07-19,2026-07-19T12:00:00,Restaurants,-12.9,-1724.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-20,2026-07-20T12:00:00,Groceries,-48.4,-1773.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-07-21,2026-07-21T12:00:00,Utilities,-38,-1811.3,utilities_payment,If,
+mikko,mikko-current,2026-07-21,2026-07-21T12:00:00,Groceries,-7.8,-1819.1,purchase,Alepa,5411
+mikko,mikko-current,2026-07-24,2026-07-24T12:00:00,Groceries,-7.8,-1826.9,purchase,Alepa,5411
+mikko,mikko-current,2026-07-24,2026-07-24T12:00:00,Restaurants,-12.9,-1839.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-07-25,2026-07-25T12:00:00,Restaurants,-4.2,-1844.0,purchase,Fazer Café,5814
+mikko,mikko-current,2026-07-26,2026-07-26T12:00:00,Restaurants,-12.9,-1856.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-02,2026-08-02T12:00:00,Housing,-850,-2706.9,utilities_payment,Lumo,
+mikko,mikko-current,2026-08-03,2026-08-03T12:00:00,Groceries,-7.8,-2714.7,purchase,Alepa,5411
+mikko,mikko-current,2026-08-04,2026-08-04T12:00:00,Groceries,-48.4,-2763.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-08-04,2026-08-04T12:00:00,Restaurants,-4.2,-2767.3,purchase,Fazer Café,5814
+mikko,mikko-current,2026-08-06,2026-08-06T12:00:00,Groceries,-7.8,-2775.1,purchase,Alepa,5411
+mikko,mikko-current,2026-08-08,2026-08-08T12:00:00,Utilities,-55,-2830.1,utilities_payment,Helen,
+mikko,mikko-current,2026-08-08,2026-08-08T12:00:00,Groceries,-48.4,-2878.5,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-08-09,2026-08-09T12:00:00,Groceries,-7.8,-2886.3,purchase,Alepa,5411
+mikko,mikko-current,2026-08-10,2026-08-10T12:00:00,Utilities,-29.9,-2916.2,utilities_payment,Elisa,
+mikko,mikko-current,2026-08-12,2026-08-12T12:00:00,Groceries,-7.8,-2924.0,purchase,Alepa,5411
+mikko,mikko-current,2026-08-14,2026-08-14T12:00:00,Salary,3150,226.0,salary,Nordkode Oy,
+mikko,mikko-current,2026-08-14,2026-08-14T12:00:00,Restaurants,-4.2,221.8,purchase,Fazer Café,5814
+mikko,mikko-current,2026-08-15,2026-08-15T12:00:00,Groceries,-7.8,214.0,purchase,Alepa,5411
+mikko,mikko-current,2026-08-16,2026-08-16T12:00:00,Invest Deposit,-600,-386.0,investment_deposit,ASP account,
+mikko,mikko-current,2026-08-16,2026-08-16T12:00:00,Groceries,-48.4,-434.4,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-08-16,2026-08-16T12:00:00,Invest Withdraw,600,5200,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-08-18,2026-08-18T12:00:00,Groceries,-7.8,-442.2,purchase,Alepa,5411
+mikko,mikko-current,2026-08-20,2026-08-20T12:00:00,Groceries,-48.4,-490.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-08-21,2026-08-21T12:00:00,Utilities,-38,-528.6,utilities_payment,If,
+mikko,mikko-current,2026-08-21,2026-08-21T12:00:00,Groceries,-7.8,-536.4,purchase,Alepa,5411
+mikko,mikko-current,2026-08-22,2026-08-22T19:30:00,Restaurants,-24.0,-560.4,purchase,Bar Loose,5813
+mikko,mikko-current,2026-08-22,2026-08-22T20:30:00,Restaurants,-24.0,-584.4,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-08-22,2026-08-22T21:30:00,Transportation,-24.0,-608.4,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-08-24,2026-08-24T11:45:00,Restaurants,-12.9,-621.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-24,2026-08-24T12:00:00,Groceries,-7.8,-629.1,purchase,Alepa,5411
+mikko,mikko-current,2026-08-24,2026-08-24T12:00:00,Restaurants,-4.2,-633.3,purchase,Fazer Café,5814
+mikko,mikko-current,2026-08-25,2026-08-25T11:45:00,Restaurants,-12.9,-646.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-26,2026-08-26T11:45:00,Restaurants,-12.9,-659.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-27,2026-08-27T11:45:00,Restaurants,-12.9,-672.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-28,2026-08-28T11:45:00,Restaurants,-12.9,-684.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-08-29,2026-08-29T19:30:00,Restaurants,-26.67,-711.57,purchase,Bar Loose,5813
+mikko,mikko-current,2026-08-29,2026-08-29T20:30:00,Restaurants,-26.67,-738.24,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-08-29,2026-08-29T21:30:00,Transportation,-26.66,-764.9,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-08-31,2026-08-31T11:45:00,Restaurants,-12.9,-777.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-01,2026-09-01T11:45:00,Restaurants,-12.9,-790.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-02,2026-09-02T11:45:00,Restaurants,-12.9,-803.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-02,2026-09-02T12:00:00,Housing,-850,-1653.6,utilities_payment,Lumo,
+mikko,mikko-current,2026-09-03,2026-09-03T11:45:00,Restaurants,-12.9,-1666.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-03,2026-09-03T12:00:00,Groceries,-7.8,-1674.3,purchase,Alepa,5411
+mikko,mikko-current,2026-09-03,2026-09-03T12:00:00,Restaurants,-4.2,-1678.5,purchase,Fazer Café,5814
+mikko,mikko-current,2026-09-04,2026-09-04T11:45:00,Restaurants,-12.9,-1691.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-04,2026-09-04T12:00:00,Groceries,-48.4,-1739.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-09-05,2026-09-05T19:30:00,Restaurants,-28.0,-1767.8,purchase,Bar Loose,5813
+mikko,mikko-current,2026-09-05,2026-09-05T20:30:00,Restaurants,-28.0,-1795.8,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-09-05,2026-09-05T21:30:00,Transportation,-28.0,-1823.8,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-09-06,2026-09-06T12:00:00,Groceries,-7.8,-1831.6,purchase,Alepa,5411
+mikko,mikko-current,2026-09-07,2026-09-07T11:45:00,Restaurants,-12.9,-1844.5,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-08,2026-09-08T11:45:00,Restaurants,-12.9,-1857.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-08,2026-09-08T12:00:00,Utilities,-55,-1912.4,utilities_payment,Helen,
+mikko,mikko-current,2026-09-08,2026-09-08T12:00:00,Groceries,-48.4,-1960.8,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-09-09,2026-09-09T11:45:00,Restaurants,-12.9,-1973.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-09,2026-09-09T12:00:00,Groceries,-7.8,-1981.5,purchase,Alepa,5411
+mikko,mikko-current,2026-09-10,2026-09-10T11:45:00,Restaurants,-12.9,-1994.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-10,2026-09-10T12:00:00,Utilities,-29.9,-2024.3,utilities_payment,Elisa,
+mikko,mikko-current,2026-09-11,2026-09-11T11:45:00,Restaurants,-12.9,-2037.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-12,2026-09-12T12:00:00,Groceries,-7.8,-2045.0,purchase,Alepa,5411
+mikko,mikko-current,2026-09-12,2026-09-12T19:30:00,Restaurants,-28.67,-2073.67,purchase,Bar Loose,5813
+mikko,mikko-current,2026-09-12,2026-09-12T20:30:00,Restaurants,-28.67,-2102.34,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-09-12,2026-09-12T21:30:00,Transportation,-28.66,-2131.0,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-09-13,2026-09-13T12:00:00,Restaurants,-4.2,-2135.2,purchase,Fazer Café,5814
+mikko,mikko-current,2026-09-14,2026-09-14T11:45:00,Restaurants,-12.9,-2148.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-15,2026-09-15T11:45:00,Restaurants,-12.9,-2161.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-15,2026-09-15T12:00:00,Salary,3150,989.0,salary,Nordkode Oy,
+mikko,mikko-current,2026-09-15,2026-09-15T12:00:00,Groceries,-7.8,981.2,purchase,Alepa,5411
+mikko,mikko-current,2026-09-16,2026-09-16T11:45:00,Restaurants,-12.9,968.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-16,2026-09-16T12:00:00,Invest Deposit,-500,468.3,investment_deposit,ASP account,
+mikko,mikko-current,2026-09-16,2026-09-16T12:00:00,Groceries,-48.4,419.9,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-09-16,2026-09-16T12:00:00,Invest Withdraw,500,5700,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-09-17,2026-09-17T11:45:00,Restaurants,-12.9,407.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-18,2026-09-18T11:45:00,Restaurants,-12.9,394.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-18,2026-09-18T12:00:00,Groceries,-7.8,386.3,purchase,Alepa,5411
+mikko,mikko-current,2026-09-19,2026-09-19T19:30:00,Restaurants,-30.0,356.3,purchase,Bar Loose,5813
+mikko,mikko-current,2026-09-19,2026-09-19T20:30:00,Restaurants,-30.0,326.3,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-09-19,2026-09-19T21:30:00,Transportation,-30.0,296.3,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-09-20,2026-09-20T12:00:00,Groceries,-48.4,247.9,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-09-21,2026-09-21T11:45:00,Restaurants,-12.9,235.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-21,2026-09-21T12:00:00,Utilities,-38,197.0,utilities_payment,If,
+mikko,mikko-current,2026-09-21,2026-09-21T12:00:00,Groceries,-7.8,189.2,purchase,Alepa,5411
+mikko,mikko-current,2026-09-22,2026-09-22T11:45:00,Restaurants,-12.9,176.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-23,2026-09-23T11:45:00,Restaurants,-12.9,163.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-23,2026-09-23T12:00:00,Restaurants,-4.2,159.2,purchase,Fazer Café,5814
+mikko,mikko-current,2026-09-24,2026-09-24T11:45:00,Restaurants,-12.9,146.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-24,2026-09-24T12:00:00,Groceries,-7.8,138.5,purchase,Alepa,5411
+mikko,mikko-current,2026-09-25,2026-09-25T11:45:00,Restaurants,-12.9,125.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-26,2026-09-26T19:30:00,Restaurants,-28.0,97.6,purchase,Bar Loose,5813
+mikko,mikko-current,2026-09-26,2026-09-26T20:30:00,Restaurants,-28.0,69.6,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-09-26,2026-09-26T21:30:00,Transportation,-28.0,41.6,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-09-28,2026-09-28T11:45:00,Restaurants,-12.9,28.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-29,2026-09-29T11:45:00,Restaurants,-12.9,15.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-09-30,2026-09-30T11:45:00,Restaurants,-12.9,2.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-01,2026-10-01T11:45:00,Restaurants,-12.9,-10.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-02,2026-10-02T11:45:00,Restaurants,-12.9,-22.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-02,2026-10-02T12:00:00,Housing,-850,-872.9,utilities_payment,Lumo,
+mikko,mikko-current,2026-10-03,2026-10-03T12:00:00,Groceries,-7.8,-880.7,purchase,Alepa,5411
+mikko,mikko-current,2026-10-03,2026-10-03T12:00:00,Restaurants,-4.2,-884.9,purchase,Fazer Café,5814
+mikko,mikko-current,2026-10-03,2026-10-03T19:30:00,Restaurants,-26.0,-910.9,purchase,Bar Loose,5813
+mikko,mikko-current,2026-10-03,2026-10-03T20:30:00,Restaurants,-26.0,-936.9,purchase,Ravintola Kuu,5813
+mikko,mikko-current,2026-10-03,2026-10-03T21:30:00,Transportation,-26.0,-962.9,purchase,Taksi Helsinki,4121
+mikko,mikko-current,2026-10-04,2026-10-04T12:00:00,Groceries,-48.4,-1011.3,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-10-05,2026-10-05T11:45:00,Restaurants,-12.9,-1024.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-06,2026-10-06T11:45:00,Restaurants,-12.9,-1037.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-06,2026-10-06T12:00:00,Groceries,-7.8,-1044.9,purchase,Alepa,5411
+mikko,mikko-current,2026-10-07,2026-10-07T11:45:00,Restaurants,-12.9,-1057.8,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-08,2026-10-08T11:45:00,Restaurants,-12.9,-1070.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-08,2026-10-08T12:00:00,Utilities,-55,-1125.7,utilities_payment,Helen,
+mikko,mikko-current,2026-10-08,2026-10-08T12:00:00,Groceries,-48.4,-1174.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-10-09,2026-10-09T11:45:00,Restaurants,-12.9,-1187.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-09,2026-10-09T12:00:00,Groceries,-7.8,-1194.8,purchase,Alepa,5411
+mikko,mikko-current,2026-10-10,2026-10-10T12:00:00,Utilities,-29.9,-1224.7,utilities_payment,Elisa,
+mikko,mikko-current,2026-10-10,2026-10-10T19:30:00,Restaurants,-45.0,-1269.7,purchase,Bar Loose,5813
+mikko,mikko-current,2026-10-10,2026-10-10T20:30:00,Transportation,-45.0,-1314.7,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-12,2026-10-12T11:45:00,Restaurants,-12.9,-1327.6,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-12,2026-10-12T12:00:00,Groceries,-7.8,-1335.4,purchase,Alepa,5411
+mikko,mikko-current,2026-10-13,2026-10-13T11:45:00,Restaurants,-12.9,-1348.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-13,2026-10-13T12:00:00,Restaurants,-4.2,-1352.5,purchase,Fazer Café,5814
+mikko,mikko-current,2026-10-14,2026-10-14T11:45:00,Restaurants,-12.9,-1365.4,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-15,2026-10-15T11:45:00,Restaurants,-12.9,-1378.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-15,2026-10-15T12:00:00,Salary,3150,1771.7,salary,Nordkode Oy,
+mikko,mikko-current,2026-10-15,2026-10-15T12:00:00,Groceries,-7.8,1763.9,purchase,Alepa,5411
+mikko,mikko-current,2026-10-16,2026-10-16T11:45:00,Restaurants,-12.9,1751.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-16,2026-10-16T12:00:00,Invest Deposit,-700,1051.0,investment_deposit,ASP account,
+mikko,mikko-current,2026-10-16,2026-10-16T12:00:00,Groceries,-48.4,1002.6,purchase,K-Citymarket,5411
+mikko,mikko-savings,2026-10-16,2026-10-16T12:00:00,Invest Withdraw,700,6400,investment_withdrawal,Käyttötili,
+mikko,mikko-current,2026-10-17,2026-10-17T19:30:00,Restaurants,-82.0,920.6,purchase,Bar Loose,5813
+mikko,mikko-current,2026-10-17,2026-10-17T20:30:00,Transportation,-82.0,838.6,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-18,2026-10-18T12:00:00,Groceries,-7.8,830.8,purchase,Alepa,5411
+mikko,mikko-current,2026-10-19,2026-10-19T11:45:00,Restaurants,-12.9,817.9,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-20,2026-10-20T11:45:00,Restaurants,-12.9,805.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-20,2026-10-20T12:00:00,Groceries,-48.4,756.6,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-10-21,2026-10-21T11:45:00,Restaurants,-12.9,743.7,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-21,2026-10-21T12:00:00,Utilities,-38,705.7,utilities_payment,If,
+mikko,mikko-current,2026-10-21,2026-10-21T12:00:00,Groceries,-7.8,697.9,purchase,Alepa,5411
+mikko,mikko-current,2026-10-22,2026-10-22T11:45:00,Restaurants,-12.9,685.0,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-23,2026-10-23T11:45:00,Restaurants,-12.9,672.1,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-23,2026-10-23T12:00:00,Restaurants,-4.2,667.9,purchase,Fazer Café,5814
+mikko,mikko-current,2026-10-24,2026-10-24T12:00:00,Groceries,-7.8,660.1,purchase,Alepa,5411
+mikko,mikko-current,2026-10-24,2026-10-24T19:30:00,Restaurants,-46.0,614.1,purchase,Bar Loose,5813
+mikko,mikko-current,2026-10-24,2026-10-24T20:30:00,Transportation,-46.0,568.1,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-26,2026-10-26T11:45:00,Restaurants,-12.9,555.2,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-27,2026-10-27T11:45:00,Restaurants,-12.9,542.3,purchase,Sodexo,5812
+mikko,mikko-current,2026-10-31,2026-10-31T19:30:00,Restaurants,-45.0,497.3,purchase,Bar Loose,5813
+mikko,mikko-current,2026-10-31,2026-10-31T20:30:00,Transportation,-45.0,452.3,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-11-02,2026-11-02T12:00:00,Housing,-850,-397.7,utilities_payment,Lumo,
+mikko,mikko-current,2026-11-02,2026-11-02T12:00:00,Restaurants,-4.2,-401.9,purchase,Fazer Café,5814
+mikko,mikko-current,2026-11-03,2026-11-03T12:00:00,Groceries,-7.8,-409.7,purchase,Alepa,5411
+mikko,mikko-current,2026-11-04,2026-11-04T12:00:00,Groceries,-48.4,-458.1,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-11-06,2026-11-06T12:00:00,Groceries,-7.8,-465.9,purchase,Alepa,5411
+mikko,mikko-current,2026-11-07,2026-11-07T12:00:00,Groceries,-118.4,-584.3,purchase,Prisma,5411
+mikko,mikko-current,2026-11-07,2026-11-07T19:30:00,Restaurants,-47.0,-631.3,purchase,Bar Loose,5813
+mikko,mikko-current,2026-11-07,2026-11-07T20:30:00,Transportation,-47.0,-678.3,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-11-08,2026-11-08T12:00:00,Utilities,-55,-733.3,utilities_payment,Helen,
+mikko,mikko-current,2026-11-08,2026-11-08T12:00:00,Groceries,-48.4,-781.7,purchase,K-Citymarket,5411
+mikko,mikko-current,2026-11-09,2026-11-09T12:00:00,Groceries,-7.8,-789.5,purchase,Alepa,5411
+mikko,mikko-current,2026-11-10,2026-11-10T12:00:00,Utilities,-29.9,-819.4,utilities_payment,Elisa,
+mikko,mikko-current,2026-11-12,2026-11-12T12:00:00,Groceries,-7.8,-827.2,purchase,Alepa,5411
+mikko,mikko-current,2026-11-12,2026-11-12T12:00:00,Restaurants,-4.2,-831.4,purchase,Fazer Café,5814
+mikko,mikko-current,2026-11-13,2026-11-13T12:00:00,Salary,3150,2318.6,salary,Nordkode Oy,

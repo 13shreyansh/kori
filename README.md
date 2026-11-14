@@ -1,41 +1,48 @@
-# Kori: a money coach for S-mobiili
+# Kori
 
-Junction 2026 · S-Pankki challenge "Personal Economic Trainer".
+One bank. A different app for every life.
 
-Kori lives inside the S-mobiili banking app and helps people understand their money through
-S-Pankki's three baskets: **fixed bills** (mandatory and regular), **surprise costs** (mandatory but
-irregular) and **everyday spending** (the small taps that slip through your fingers).
+Kori is a money tab designed for S-mobiili. A fixed rule chooses Play, Plan or Month from age and transaction behaviour. The bank shell stays the same. The lead tool, module order, voice and text density change. Customers can inspect and override the choice in “Why this home?”.
 
-![Three customers, three coaches](shots/compare.png)
+The production build is https://kori-wheat.vercel.app. The three invented customers are available through the login screen. `/three` contains live interactive instances. `/embed?customer=...` skips login only when embedded. The unlinked `/reset?customer=aino|mikko|laura|all` clears session actions.
 
-## What it does
-- **Safe to spend this week:** income, minus bills that are coming, a monthly share of surprise costs and savings, spread over the days to payday. Tap it to see the whole calculation.
-- **A coach you can ask anything** in English or Finnish. Every number in an answer is a tappable receipt that shows the formula and the payments behind it.
-- **Behaviour segments.** Kori puts each customer into one of 8 segments from what they do with money, not just their age: salary passed on to another bank, light users, retirees, starters, tight months, many small taps, savers and heavy fixed bills. Each segment has its own home card, coach tone, questions, what-if sliders and nudges. Nothing is generated per person, so it scales to 1.7 million weekly users.
-- **Guess first:** guess what you spent on cafés before you see it. Most people guess low.
-- **What-if lab:** sliders picked for your segment, showing the effect a year out and five years out.
+## Run and verify
 
-## How the AI is used
-A deterministic engine (`app/src/engine`) computes every number on the device. The language model (Gemini, optional)
-only writes the answer, through function calls that return **totals, never raw transactions**. A grounding guard
-rejects any answer whose euro amounts or percentages do not match a tool result, and falls back to the on-device coach,
-so the demo works with no API key at all.
-
-## Evaluation
-The evals live in `eval/` and are tied to the challenge rubric:
-- An **independent Python answer key** (`eval/make_items.py`, `eval/segment_key.py`) re-derives every expected number from the raw
-  data, using a written spec (`eval/SPEC.md`, `eval/SEGMENTS_SPEC.md`). It shares no code with the app.
-- **Dev and held-out splits** are separated by a hash of the customer id, and the two splits use different wording. The held-out split is only
-  run at checkpoints, and every run is logged in `eval/HELDOUT_LEDGER.md`.
-- **Planted-truth checks** for segments, and hand spot checks of the home cards.
-- First run on S-Pankki's data, held-out customers: coach 99.5% macro score, segment assignment 100% in agreement with the key.
-
-## Run it
+```sh
+cd app
+npm install
+npm run generate
+npm run dev
+npm run build
+npm run lint
+npm test
+BASE_URL=https://kori-wheat.vercel.app npm run test:e2e
 ```
-cd app && npm install && npm run dev
-```
-Set `GEMINI_API_KEY` to turn on the Gemini coach, which works through `api/gemini.js` on Vercel or the dev middleware locally.
-The processed data comes from S-Pankki's challenge dataset (see `data/prepare_data.py`). Full output: github.com/13shreyansh/kori-spankki-data.
 
-## Licence
-MIT
+Generate the independent cent-arithmetic key from the official-column CSV files before changing financial expectations:
+
+```sh
+python3 app/scripts/independent_key.py > artifacts/independent-key.json
+```
+
+The Vercel project is `kori`, under `13shreyanshs-projects`, with Root Directory `app`. Deploy from the repository root with `npx vercel deploy --prod --yes`. A Git push does not deploy this project.
+
+## Data and calculations
+
+`app/scripts/generate_customers.py` writes twenty-four months of invented Finnish transactions per customer in the sponsor's original CSV columns and category/type vocabulary. The compact JSON is an adapter of those rows, matching the existing `data/prepare_data.py` convention. Account openings, goals and scheduled e-invoices are customer/account records alongside the transaction history. No real customer data is used.
+
+`app/src/banking/finance.ts` adapts the existing model and computes totals, rules, recurring items, forecasts and source receipts. Each financial proof shows its payments and any derivation. Corrections update the session's transaction labels and recompute the home.
+
+The synthetic story anchors to the real Helsinki date. Weekly Saturday-night patterns stay on actual Saturdays. The calendar starts on the current week's Monday. Tests cover the recording date and a month boundary. Source dates and stable transaction indices keep the underlying ledger auditable after reanchoring.
+
+`app/api/route.js` sends only the question to Gemini and accepts a block identifier plus parameters copied from the question. Arithmetic and wording templates stay in code. A timeout or unavailable model uses the local router. No API key enters the client bundle or receipts.
+
+Bonus rates and cooperative eligibility have not been connected. The approved fallback shows the grocery basket and its S Group purchase receipts. It does not quote an estimated Bonus.
+
+Savings actions, approvals, plans and corrections persist per customer in session storage. They are working actions in the test account, with no connection to a banking transfer or booking API. The loan appointment sheet states that no booking is sent.
+
+## Evidence
+
+`artifacts/independent-key.json` contains the independently recomputed fixture values. `artifacts/e2e/` contains deployed test results and screenshots. `screenshots/kori/` contains the named design acceptance images. `artifacts/review.md` records the independent spec and build-quality review. `DEMO_SCRIPT.md` is the two-minute path of real user actions.
+
+The older coach/persona evaluation code remains in `eval/` as historical work. Its benchmark results are not measurements of this rebuilt home selector.

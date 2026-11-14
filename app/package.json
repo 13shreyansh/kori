@@ -9,15 +9,20 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "data": "tsx scripts/pick_demo.ts && tsx scripts/persona_map.ts",
-    "shots": "node scripts/shots.cjs"
+    "shots": "node scripts/shots.cjs",
+    "test": "vitest run scripts/banking.test.ts scripts/date-rollover.test.ts",
+    "test:e2e": "playwright test",
+    "generate": "python3 scripts/generate_customers.py"
   },
   "dependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
     "framer-motion": "^14.14.0",
     "lucide-react": "^1.73.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

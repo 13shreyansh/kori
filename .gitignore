@@ -8,3 +8,5 @@ data/raw/
 *.log
 eval/runs/*.jsonl
 artifact/
+.vercel
+.env*

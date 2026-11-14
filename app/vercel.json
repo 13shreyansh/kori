@@ -2,5 +2,23 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": { "api/gemini.js": { "maxDuration": 30 } }
+  "functions": {
+    "api/gemini.js": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/three",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/embed",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/reset",
+      "destination": "/index.html"
+    }
+  ]
 }
