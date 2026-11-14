@@ -12,7 +12,7 @@ for (const today of ["2026-11-15", "2026-12-01"])
       vi.setSystemTime(new Date(today + "T12:00:00+02:00"));
       vi.resetModules();
       const F = await import("../src/banking/finance");
-      expect(F.APP_TODAY).toBe(today);
+      expect(F.getToday()).toBe(today);
       const load = (id: string) =>
         F.adapt(
           JSON.parse(readFileSync(`public/data/kori/${id}.json`, "utf8")),
@@ -44,3 +44,14 @@ for (const today of ["2026-11-15", "2026-12-01"])
       expect(a.tx.every((t) => t.date <= today)).toBe(true);
     },
   );
+it("financial dates advance after Helsinki midnight without reloading the module", async () => {
+  vi.useFakeTimers();
+  vi.setSystemTime(new Date("2026-11-14T23:59:59.500+02:00"));
+  vi.resetModules();
+  const F = await import("../src/banking/finance");
+  const raw = JSON.parse(readFileSync("public/data/kori/laura.json", "utf8"));
+  expect(F.projection(F.adapt(raw))[0].date).toBe("2026-11-14");
+  vi.advanceTimersByTime(1000);
+  expect(F.getToday()).toBe("2026-11-15");
+  expect(F.projection(F.adapt(raw))[0].date).toBe("2026-11-15");
+});

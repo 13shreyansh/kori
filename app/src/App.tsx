@@ -468,7 +468,7 @@ function AskResult({
             "december",
           ].indexOf(namedMonth)
         : -1;
-      const year = Number(F.APP_TODAY.slice(0, 4));
+      const year = Number(F.getToday().slice(0, 4));
       const namedStart =
         monthIndex >= 0
           ? `${year}-${String(monthIndex + 1).padStart(2, "0")}-01`
@@ -482,10 +482,10 @@ function AskResult({
       tx = F.payments(
         d,
         route.params.year && cat !== "subscriptions"
-          ? F.APP_TODAY.slice(0, 4) + "-01-01"
+          ? F.getToday().slice(0, 4) + "-01-01"
           : (namedStart ?? F.refDate("2026-10-01")),
         route.params.year && cat !== "subscriptions"
-          ? F.APP_TODAY
+          ? F.getToday()
           : (namedEnd ?? F.refDate("2026-10-31")),
         cat === "wolt"
           ? F.wolt
@@ -596,7 +596,89 @@ const suggestions: Record<string, string[]> = {
     "What did we spend on groceries in October?",
   ],
 };
+function useCurrentDate() {
+  const [date, setDate] = useState(F.getToday);
+  useEffect(() => {
+    const refresh = () => setDate(F.getToday());
+    const timer = window.setInterval(refresh, 1000);
+    window.addEventListener("focus", refresh);
+    document.addEventListener("visibilitychange", refresh);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("focus", refresh);
+      document.removeEventListener("visibilitychange", refresh);
+    };
+  }, []);
+  return date;
+}
+
+function ThreeHomes() {
+  const [ready, setReady] = useState<Record<string, boolean>>({}),
+    [failed, setFailed] = useState(false),
+    [attempt, setAttempt] = useState(0);
+  const frames = useRef<Record<string, HTMLIFrameElement | null>>({});
+  const complete = ids.every((id) => ready[id]);
+  useEffect(() => {
+    function receive(event: MessageEvent) {
+      const message = event.data;
+      if (
+        event.origin !== location.origin ||
+        !message ||
+        !ids.includes(message.customer) ||
+        frames.current[message.customer]?.contentWindow !== event.source
+      )
+        return;
+      if (message.type === "kori-home-ready")
+        setReady((old) => ({ ...old, [message.customer]: true }));
+      if (message.type === "kori-home-error") setFailed(true);
+    }
+    window.addEventListener("message", receive);
+    const timer = window.setTimeout(() => setFailed(true), 15000);
+    return () => {
+      window.removeEventListener("message", receive);
+      clearTimeout(timer);
+    };
+  }, [attempt]);
+  return (
+    <div
+      className="three-stage"
+      data-ready={String(complete)}
+      aria-busy={!complete}
+    >
+      {!complete && (
+        <div className="overview-status" role={failed ? "alert" : "status"}>
+          <Mark />
+          <p>{failed ? "Couldn't load all homes." : "Loading homes…"}</p>
+          {failed && (
+            <button
+              className="quiet"
+              onClick={() => {
+                setReady({});
+                setFailed(false);
+                setAttempt((v) => v + 1);
+              }}
+            >
+              Try again
+            </button>
+          )}
+        </div>
+      )}
+      {ids.map((id) => (
+        <iframe
+          ref={(node) => {
+            frames.current[id] = node;
+          }}
+          title={id + " Kori home"}
+          key={id + ":" + attempt}
+          src={"/embed?customer=" + id}
+        />
+      ))}
+    </div>
+  );
+}
+
 function Phone({ embed }: { embed?: string }) {
+  const currentDate = useCurrentDate();
   const [id, setId] = useState(
       embed ?? sessionStorage.getItem("kori:auth") ?? "",
     ),
@@ -636,8 +718,9 @@ function Phone({ embed }: { embed?: string }) {
       return;
     }
     let active = true;
+    setError("");
     setS(loadSession(id));
-    fetch("/data/kori/" + id + ".json")
+    fetch("/data/kori/" + id + ".json", { signal: AbortSignal.timeout(8000) })
       .then((r) => {
         if (!r.ok) throw Error("Account unavailable");
         return r.json();
@@ -645,9 +728,10 @@ function Phone({ embed }: { embed?: string }) {
       .then((r) => {
         if (active) setRaw(r);
       })
-      .catch(() =>
-        setError("Your account could not load. Please try logging in again."),
-      );
+      .catch(() => {
+        if (active)
+          setError("Your account could not load. Please try logging in again.");
+      });
     return () => {
       active = false;
     };
@@ -655,6 +739,46 @@ function Phone({ embed }: { embed?: string }) {
   useEffect(() => {
     scroll.current?.scrollTo(0, 0);
   }, [tab, why, id]);
+  useEffect(() => {
+    if (!embed) return;
+    if (error) {
+      window.parent.postMessage(
+        { type: "kori-home-error", customer: embed },
+        location.origin,
+      );
+      return;
+    }
+    if (!raw || raw.id !== embed) return;
+    let active = true;
+    let frame = 0;
+    Promise.all([
+      document.fonts.load('400 16px "Figtree Variable"'),
+      document.fonts.load('700 22px "Figtree Variable"'),
+      document.fonts.ready,
+    ])
+      .then(() => {
+        frame = requestAnimationFrame(() => {
+          frame = requestAnimationFrame(() => {
+            if (active)
+              window.parent.postMessage(
+                { type: "kori-home-ready", customer: embed },
+                location.origin,
+              );
+          });
+        });
+      })
+      .catch(() => {
+        if (active)
+          window.parent.postMessage(
+            { type: "kori-home-error", customer: embed },
+            location.origin,
+          );
+      });
+    return () => {
+      active = false;
+      cancelAnimationFrame(frame);
+    };
+  }, [embed, raw, error]);
   const modalOpen = (title: string, body: ReactNode) =>
     setModal({ title, body });
   const d = raw ? F.adapt(raw) : null;
@@ -711,6 +835,7 @@ function Phone({ embed }: { embed?: string }) {
     <div className="device">
       <div
         className={`phone-screen preset-${preset.toLowerCase()} ${id ? "" : "is-login"}`}
+        data-current-date={currentDate}
       >
         <StatusBar login={!id} />
         {!id ? (
@@ -887,7 +1012,7 @@ function Phone({ embed }: { embed?: string }) {
                         F.payments(
                           d,
                           F.refDate("2026-11-01"),
-                          F.APP_TODAY,
+                          F.getToday(),
                           F.isSGroup,
                         ).map((t) => t.merchant),
                       ),
@@ -895,7 +1020,7 @@ function Phone({ embed }: { embed?: string }) {
                       const ts = F.payments(
                         d,
                         F.refDate("2026-11-01"),
-                        F.APP_TODAY,
+                        F.getToday(),
                         (t) => t.merchant === merchant,
                       );
                       return (
@@ -1144,18 +1269,7 @@ export default function App() {
     location.replace("/");
     return null;
   }
-  if (location.pathname === "/three")
-    return (
-      <div className="three-stage">
-        {ids.map((id) => (
-          <iframe
-            title={id + " Kori home"}
-            key={id}
-            src={"/embed?customer=" + id}
-          />
-        ))}
-      </div>
-    );
+  if (location.pathname === "/three") return <ThreeHomes />;
   const params = new URLSearchParams(location.search);
   const insideThree = (() => {
     try {

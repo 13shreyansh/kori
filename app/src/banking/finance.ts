@@ -7,16 +7,25 @@ import {
   type Tx,
 } from "../engine/model";
 import { r2 } from "../engine/analytics";
-export const getToday = () =>
-  new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Helsinki",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(new Date());
-export const APP_TODAY = getToday();
+const dateFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Europe/Helsinki",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+let clockSecond = NaN,
+  clockDate = "";
+export function getToday() {
+  const now = Date.now(),
+    second = Math.floor(now / 1000);
+  if (second !== clockSecond) {
+    clockDate = dateFormatter.format(new Date(now));
+    clockSecond = second;
+  }
+  return clockDate;
+}
 // Original design example is a reference for relative story intervals, never the app clock.
-export const refDate = (date: string, today = APP_TODAY) =>
+export const refDate = (date: string, today = getToday()) =>
   addDays(date, daysBetween("2026-11-14", today));
 export const periodLabel = () =>
   refDate("2026-10-01").endsWith("-01")
@@ -88,8 +97,8 @@ export function adapt(profile: Profile): AccountData {
     "2026-11-14",
     profile.anchorDate ?? "2026-11-14",
   );
-  const dow = toDate(APP_TODAY).getUTCDay(),
-    lastSaturday = addDays(APP_TODAY, -((dow + 1) % 7 || 7));
+  const dow = toDate(getToday()).getUTCDay(),
+    lastSaturday = addDays(getToday(), -((dow + 1) % 7 || 7));
   const saturdayDelta = daysBetween("2026-11-07", lastSaturday);
   const rows = profile.tx
     .map((row, index) => {
@@ -119,13 +128,13 @@ export function adapt(profile: Profile): AccountData {
   }
   const shifted = {
     ...profile,
-    anchorDate: APP_TODAY,
+    anchorDate: getToday(),
     tx: rows.map((x) => x.row),
     invoices: profile.invoices.map((i) => ({
       ...i,
       date: addDays(
         i.date,
-        daysBetween(profile.anchorDate ?? "2026-11-14", APP_TODAY),
+        daysBetween(profile.anchorDate ?? "2026-11-14", getToday()),
       ),
     })),
   };
@@ -173,7 +182,7 @@ export function recurring(d: AccountData) {
       (ts) =>
         new Set(
           ts.map((t) =>
-            addDays(t.date, -daysBetween("2026-11-14", APP_TODAY)).slice(0, 7),
+            addDays(t.date, -daysBetween("2026-11-14", getToday())).slice(0, 7),
           ),
         ).size >= 3,
     )
@@ -202,12 +211,12 @@ export function upcoming(d: AccountData): Upcoming[] {
     const last = ts.at(-1)!;
     const sourceLast = addDays(
       last.date,
-      -daysBetween("2026-11-14", APP_TODAY),
+      -daysBetween("2026-11-14", getToday()),
     );
     let sourceNext = advanceMonth(sourceLast);
     while (sourceNext <= "2026-11-14") sourceNext = advanceMonth(sourceNext);
     const next = refDate(sourceNext);
-    if (next <= addDays(APP_TODAY, 28))
+    if (next <= addDays(getToday(), 28))
       rows.push({
         date: next,
         amount: last.amount,
@@ -226,21 +235,21 @@ export function upcoming(d: AccountData): Upcoming[] {
     if (
       new Set(
         ts.map((t) =>
-          addDays(t.date, -daysBetween("2026-11-14", APP_TODAY)).slice(0, 7),
+          addDays(t.date, -daysBetween("2026-11-14", getToday())).slice(0, 7),
         ),
       ).size >= 3
     )
       addSeries(merchant, ts, ts[0].category);
   for (const i of d.profile.invoices)
-    if (i.date > APP_TODAY && i.date <= addDays(APP_TODAY, 28))
+    if (i.date > getToday() && i.date <= addDays(getToday(), 28))
       rows.push({ ...i, tx: [] });
   return rows.sort((a, b) => a.date.localeCompare(b.date));
 }
 export function everyday(d: AccountData) {
   const tx = payments(
     d,
-    addDays(APP_TODAY, -89),
-    APP_TODAY,
+    addDays(getToday(), -89),
+    getToday(),
     (t) => isCard(t) && ["5411", "5541", "5912"].includes(t.mcc),
   );
   return proof(
@@ -259,7 +268,7 @@ export function projection(d: AccountData, moved = 0) {
   const daily = everyday(d).value;
   const known = upcoming(d);
   return Array.from({ length: 29 }, (_, n) => {
-    const date = addDays(APP_TODAY, n);
+    const date = addDays(getToday(), n);
     return {
       date,
       value: r2(
@@ -278,7 +287,7 @@ export function shortfall(d: AccountData, moved = 0) {
 }
 export function forecastProof(d: AccountData, moved = 0): Proof {
   const low = shortfall(d, moved),
-    n = daysBetween(APP_TODAY, low.date),
+    n = daysBetween(getToday(), low.date),
     items = upcoming(d).filter((x) => x.date <= low.date);
   return proof(
     "Balance on " + dateLabel(low.date),
@@ -310,14 +319,14 @@ export function salaryStreak(d: AccountData) {
       const prev = streak.at(-1);
       const prevMonth = prev
         ? Number(
-            addDays(prev.date, -daysBetween("2026-11-14", APP_TODAY)).slice(
+            addDays(prev.date, -daysBetween("2026-11-14", getToday())).slice(
               0,
               4,
             ),
           ) *
             12 +
           Number(
-            addDays(prev.date, -daysBetween("2026-11-14", APP_TODAY)).slice(
+            addDays(prev.date, -daysBetween("2026-11-14", getToday())).slice(
               5,
               7,
             ),
@@ -325,11 +334,11 @@ export function salaryStreak(d: AccountData) {
         : 0;
       const month =
         Number(
-          addDays(t.date, -daysBetween("2026-11-14", APP_TODAY)).slice(0, 4),
+          addDays(t.date, -daysBetween("2026-11-14", getToday())).slice(0, 4),
         ) *
           12 +
         Number(
-          addDays(t.date, -daysBetween("2026-11-14", APP_TODAY)).slice(5, 7),
+          addDays(t.date, -daysBetween("2026-11-14", getToday())).slice(5, 7),
         );
       if (
         prev &&
@@ -340,7 +349,7 @@ export function salaryStreak(d: AccountData) {
     }
     if (streak.length > best.length) best = streak;
   }
-  return best.length && daysBetween(best.at(-1)!.date, APP_TODAY) <= 45
+  return best.length && daysBetween(best.at(-1)!.date, getToday()) <= 45
     ? best
     : [];
 }
@@ -479,7 +488,7 @@ export function assignHome(d: AccountData, override?: Layout) {
     .filter(
       (id) =>
         id !== "bonus" ||
-        sum(payments(d, refDate("2026-11-01"), APP_TODAY, isSGroup)) > 50,
+        sum(payments(d, refDate("2026-11-01"), getToday(), isSGroup)) > 50,
     );
   if (s.shortfall && layout !== "Month") ids.splice(1, 0, "shortfall-fix");
   ids.push("why-link");
@@ -535,7 +544,7 @@ export function goalDates(d: AccountData, monthly: number) {
     const asp = name === "Own home" ? currentBalance(d, "savings") : 0;
     cumulative += Math.max(0, target - asp);
     const months = monthly > 0 ? Math.ceil(cumulative / monthly) : Infinity;
-    const now = toDate(APP_TODAY);
+    const now = toDate(getToday());
     const date = new Date(
       Date.UTC(
         now.getUTCFullYear(),
@@ -562,8 +571,8 @@ export function goalDates(d: AccountData, monthly: number) {
   });
 }
 export function saturday(d: AccountData) {
-  const dow = toDate(APP_TODAY).getUTCDay(),
-    last = addDays(APP_TODAY, -((dow + 1) % 7 || 7));
+  const dow = toDate(getToday()).getUTCDay(),
+    last = addDays(getToday(), -((dow + 1) % 7 || 7));
   const start = addDays(last, -11 * 7);
   const nights = Array.from({ length: 12 }, (_, i) => addDays(start, i * 7));
   const tx = payments(d, start, addDays(last, 1), (t) => {
@@ -599,10 +608,10 @@ export function woltStats(d: AccountData) {
 }
 export function runway(d: AccountData) {
   const payday =
-    upcoming(d).find((x) => x.amount > 0)?.date ?? addDays(APP_TODAY, 30);
+    upcoming(d).find((x) => x.amount > 0)?.date ?? addDays(getToday(), 30);
   const bills = upcoming(d).filter((x) => x.date < payday && x.amount < 0);
   const free = r2(currentBalance(d) + bills.reduce((a, b) => a + b.amount, 0));
-  const days = daysBetween(APP_TODAY, payday);
+  const days = daysBetween(getToday(), payday);
   return {
     payday,
     bills,
@@ -634,7 +643,7 @@ export function savingsStreak(d: AccountData) {
       d.tx
         .filter(isSavings)
         .map((t) =>
-          addDays(t.date, -daysBetween("2026-11-14", APP_TODAY)).slice(0, 7),
+          addDays(t.date, -daysBetween("2026-11-14", getToday())).slice(0, 7),
         ),
     ),
   ].sort();
@@ -648,13 +657,13 @@ export function savingsStreak(d: AccountData) {
   return count;
 }
 export function nextMonthStart() {
-  const now = toDate(APP_TODAY);
+  const now = toDate(getToday());
   return new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1, 12))
     .toISOString()
     .slice(0, 10);
 }
 export function nextMonday() {
-  let date = addDays(APP_TODAY, 1);
+  let date = addDays(getToday(), 1);
   while (toDate(date).getUTCDay() !== 1) date = addDays(date, 1);
   return date;
 }

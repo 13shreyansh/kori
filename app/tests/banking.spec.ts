@@ -93,11 +93,13 @@ for (const width of [1440, 390])
       expect((await response.json()).id).toBe(id);
     }
     await page.goto("/");
-    await page.evaluate(() => {
-      sessionStorage.clear();
-      localStorage.clear();
-    });
-    await page.reload();
+    await page.evaluate(() => localStorage.clear());
+    await page.goto("/reset?customer=all");
+    await page.waitForURL("/");
+    for (const id of ["aino", "mikko", "laura"])
+      expect(
+        await page.evaluate((id) => sessionStorage.getItem("kori:" + id), id),
+      ).toBeNull();
     await page.getByLabel("User ID", { exact: true }).fill("");
     await shot(page, "01-login", width);
     await page.getByLabel("User ID", { exact: true }).fill("aino");
@@ -260,12 +262,40 @@ for (const width of [1440, 390])
 test("three live independent homes and embed guard", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/three");
+  await expect(page.locator(".three-stage")).toHaveAttribute(
+    "data-ready",
+    "true",
+  );
   for (const id of ["aino", "mikko", "laura"])
     await expect(
       page
         .frameLocator(`iframe[title="${id} Kori home"]`)
         .locator('[data-block="account-line"]'),
     ).toBeVisible();
+  const frames = await Promise.all(
+    ["aino", "mikko", "laura"].map(async (id) => {
+      const frame = page
+        .frames()
+        .find((f) => f.url().includes("customer=" + id))!;
+      const state = await frame.evaluate(() => ({
+        fontReady:
+          document.fonts.check('400 16px "Figtree Variable"') &&
+          document.fonts.check('700 22px "Figtree Variable"'),
+        account: document.querySelector('[data-block="account-line"]')
+          ?.textContent,
+        blocks: document.querySelectorAll("[data-block]").length,
+      }));
+      expect(state.fontReady).toBe(true);
+      expect(state.account).toContain(
+        id === "aino" ? "Aino" : id === "mikko" ? "Mikko" : "Laura",
+      );
+      return { customer: id, ...state };
+    }),
+  );
+  writeFileSync(
+    "../artifacts/job02/overview-ready.json",
+    JSON.stringify(frames, null, 2),
+  );
   await shot(page, "03-three", 1440);
   await page.goto("/embed?customer=mikko");
   await expect(page.getByLabel("User ID")).toBeVisible();

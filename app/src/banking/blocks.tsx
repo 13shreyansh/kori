@@ -90,7 +90,7 @@ export function AccountLine({ d, s, bank }: BlockProps) {
       ? `Hi ${name}. ${r.days} days to payday.`
       : d.profile.age < 40
         ? `Good ${hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening"}, ${name}.`
-        : `${name} · ${F.dateLabel(F.APP_TODAY, { weekday: "long", day: "numeric", month: "long" })}`;
+        : `${name} · ${F.dateLabel(F.getToday(), { weekday: "long", day: "numeric", month: "long" })}`;
   return (
     <Module id="account-line" className="account-line">
       <p className="small secondary greeting">{greet}</p>
@@ -401,10 +401,10 @@ export function WhatIf({ d, s, patch, open }: BlockProps) {
   if (!goal) return null;
   const pot = F.currentBalance(d, "savings"),
     weeks = weekly ? Math.ceil((goal[1] - pot) / weekly) : 0,
-    date = F.addDays(F.APP_TODAY, weeks * 7),
+    date = F.addDays(F.getToday(), weeks * 7),
     position =
-      (F.daysBetween(F.APP_TODAY, date) /
-        F.daysBetween(F.APP_TODAY, F.refDate("2028-01-31"))) *
+      (F.daysBetween(F.getToday(), date) /
+        F.daysBetween(F.getToday(), F.refDate("2028-01-31"))) *
       100;
   const weeklyProof = F.proof(
     "Fewer Wolt orders per week",
@@ -595,7 +595,7 @@ export function Payday({ d, open }: BlockProps) {
       <div className="runway-days">
         {Array.from({ length: Math.min(31, r.days) }, (_, i) => (
           <span key={i}>
-            {r.bills.some((b) => b.date === F.addDays(F.APP_TODAY, i + 1)) && (
+            {r.bills.some((b) => b.date === F.addDays(F.getToday(), i + 1)) && (
               <i />
             )}
           </span>
@@ -967,7 +967,7 @@ export function Loan({ d, open, modal }: BlockProps) {
           className="primary full"
           onClick={() => {
             const dates: string[] = [];
-            let date = F.APP_TODAY;
+            let date = F.getToday();
             while (dates.length < 3) {
               date = F.addDays(date, 1);
               if (![0, 6].includes(new Date(date + "T12:00Z").getUTCDay()))
@@ -1281,8 +1281,8 @@ export function Calendar(p: BlockProps) {
       <div className="calendar">
         {Array.from({ length: 28 }, (_, i) => {
           const date = F.addDays(
-              F.APP_TODAY,
-              -((new Date(F.APP_TODAY + "T12:00Z").getUTCDay() + 6) % 7) + i,
+              F.getToday(),
+              -((new Date(F.getToday() + "T12:00Z").getUTCDay() + 6) % 7) + i,
             ),
             out = items.filter((t) => t.date === date && t.amount < 0),
             incoming = items.filter((t) => t.date === date && t.amount > 0);
@@ -1293,7 +1293,7 @@ export function Calendar(p: BlockProps) {
                 day: "numeric",
                 month: "long",
               })}
-              className={`day ${date < F.APP_TODAY ? "past" : ""} ${date === F.APP_TODAY ? "today" : ""} ${date === low.date && low.value < 0 ? "short-day" : ""} ${date === selected ? "selected" : ""}`}
+              className={`day ${date < F.getToday() ? "past" : ""} ${date === F.getToday() ? "today" : ""} ${date === low.date && low.value < 0 ? "short-day" : ""} ${date === selected ? "selected" : ""}`}
               key={date}
               onClick={() => {
                 setSelected(date);
@@ -1400,7 +1400,7 @@ export function Balance({ d, s, open }: BlockProps) {
           {F.upcoming(d)
             .filter((item) => item.amount > 0)
             .map((item) => {
-              const n = F.daysBetween(F.APP_TODAY, item.date);
+              const n = F.daysBetween(F.getToday(), item.date);
               return (
                 <g key={item.merchant}>
                   <circle
@@ -1419,7 +1419,7 @@ export function Balance({ d, s, open }: BlockProps) {
               );
             })}
           <circle
-            cx={(F.daysBetween(F.APP_TODAY, low.date) / 28) * 334}
+            cx={(F.daysBetween(F.getToday(), low.date) / 28) * 334}
             cy={y(
               F.projection(d, movedDisplay).find((v) => v.date === low.date)!
                 .value,
@@ -1551,7 +1551,12 @@ export function Coming({ d, s, patch, open }: BlockProps) {
   );
 }
 export function GroceryProgress({ d, open }: BlockProps) {
-  const thisTx = F.payments(d, F.refDate("2026-11-01"), F.APP_TODAY, F.grocery),
+  const thisTx = F.payments(
+      d,
+      F.refDate("2026-11-01"),
+      F.getToday(),
+      F.grocery,
+    ),
     sGroup = thisTx.filter(F.isSGroup),
     elsewhere = thisTx.filter((t) => !F.isSGroup(t)),
     oct = F.payments(
@@ -1565,13 +1570,13 @@ export function GroceryProgress({ d, open }: BlockProps) {
     <Module id="bonus" title="Your grocery basket">
       <p>
         From {F.dateLabel(F.refDate("2026-11-01"))} to{" "}
-        {F.dateLabel(F.APP_TODAY)},{" "}
+        {F.dateLabel(F.getToday())},{" "}
         <ProofNumber
           p={F.proof(
             "S Group purchases, " +
               F.dateLabel(F.refDate("2026-11-01")) +
               " to " +
-              F.dateLabel(F.APP_TODAY),
+              F.dateLabel(F.getToday()),
             sGroup,
           )}
           open={open}
@@ -1589,7 +1594,7 @@ export function GroceryProgress({ d, open }: BlockProps) {
           [
             F.dateLabel(F.refDate("2026-11-01")) +
               "–" +
-              F.dateLabel(F.APP_TODAY),
+              F.dateLabel(F.getToday()),
             thisTx,
           ],
         ].map(([label, ts]) => (

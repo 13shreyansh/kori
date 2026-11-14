@@ -563,9 +563,9 @@ small,
   touch-action: pan-y;
 }
 .guess-result-track {
-  height: 86px;
+  height: 35px;
   position: relative;
-  margin: 24px 12px 8px;
+  margin: 24px 12px 0;
   border-top: 6px solid rgba(74, 93, 83, 0.12);
 }
 .gap-band {
@@ -1450,6 +1450,7 @@ label {
   margin-top: 12px;
 }
 .login-footer {
+  font-weight: 500;
   position: absolute;
   bottom: 28px;
   left: 8px;
@@ -1621,6 +1622,7 @@ label {
     top: 280px;
   }
   .login-footer {
+    font-weight: 500;
     bottom: max(28px, env(safe-area-inset-bottom));
   }
   .embedded {
@@ -1756,4 +1758,25 @@ input::placeholder {
 }
 .preset-large .day {
   height: 64px;
+}
+
+.guess-reveal > p:first-child {
+  margin-top: var(--gap);
+}
+.three-stage {
+  position: relative;
+}
+.three-stage[data-ready="false"] iframe {
+  visibility: hidden;
+}
+.overview-status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overview-status p {
+  color: #4a5d53;
 }

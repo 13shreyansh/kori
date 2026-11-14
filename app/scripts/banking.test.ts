@@ -90,7 +90,7 @@ describe("regression and sensitivity", () => {
     expect(F.shortfall(d).value).toBeCloseTo(key.laura.low, 2);
     expect(F.shortfall(d, 140).value).toBe(0);
     expect(F.everyday(d).value).toBe(34);
-    expect(F.sum(F.payments(d, "2026-11-01", F.APP_TODAY, F.isSGroup))).toBe(
+    expect(F.sum(F.payments(d, "2026-11-01", F.getToday(), F.isSGroup))).toBe(
       262,
     );
   });
@@ -109,7 +109,7 @@ describe("regression and sensitivity", () => {
     expect(w.weekly).toBe(3.5);
     expect(
       F.addDays(
-        F.APP_TODAY,
+        F.getToday(),
         Math.ceil((900 - 60) / Math.round(2 * w.average)) * 7,
       ),
     ).toBe("2027-05-08");
@@ -148,7 +148,7 @@ describe("review regressions", () => {
     const d = load("mikko");
     expect(
       F.upcoming(d).filter(
-        (x) => x.amount > 0 && x.date.slice(0, 7) === F.APP_TODAY.slice(0, 7),
+        (x) => x.amount > 0 && x.date.slice(0, 7) === F.getToday().slice(0, 7),
       ),
     ).toEqual([]);
   });
@@ -169,4 +169,11 @@ describe("review regressions", () => {
   });
 });
 
-it('savings histories never rely on an overdrawn pot',()=>{for(const id of ['aino','mikko','laura'])expect(load(id).tx.filter(t=>t.account.endsWith('-savings')).every(t=>(t.balance??0)>=0)).toBe(true);});
+it("savings histories never rely on an overdrawn pot", () => {
+  for (const id of ["aino", "mikko", "laura"])
+    expect(
+      load(id)
+        .tx.filter((t) => t.account.endsWith("-savings"))
+        .every((t) => (t.balance ?? 0) >= 0),
+    ).toBe(true);
+});
