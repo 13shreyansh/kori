@@ -12,7 +12,7 @@ const root = new URL('..', import.meta.url).pathname;
 const items = readFileSync(`${root}eval/items/segments_${split}.jsonl`, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
 const truth = new Map<string, { persona: string; fwd: boolean; light: boolean }>();
 const tp = `${root}data/synth_raw/truth.csv`;
-if (existsSync(tp)) for (const l of readFileSync(tp, 'utf8').trim().split('\n').slice(1)) {
+if (process.argv.includes('--planted') && existsSync(tp)) for (const l of readFileSync(tp, 'utf8').trim().split('\n').slice(1)) {
   const [id, persona, fwd, light] = l.trim().split(',');
   truth.set(id, { persona, fwd: fwd === '1', light: light === '1' });
 }

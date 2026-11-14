@@ -80,7 +80,7 @@ export default function App() {
           <TabBtn on={tab === 'me'} icon="UserRound" label="Me" onClick={() => setTab('me')} />
         </nav>
       </div>
-      <div className="demo-bar">Kori · a money coach for S-mobiili · Junction 2026 prototype on synthetic S-Pankki data</div>
+      <div className="demo-bar">Kori · a money coach for S-mobiili · Junction 2026 prototype on S-Pankki’s challenge dataset</div>
     </div>
   );
 }

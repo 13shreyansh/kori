@@ -42,6 +42,8 @@ export const CATEGORIES: Record<string, CatInfo> = Object.fromEntries([
   C('sports', 'Sports', 'Dumbbell', 'everyday', false),
   C('personal_care', 'Personal care', 'Sparkles', 'everyday', false),
   C('travel', 'Travel', 'Plane', 'everyday', false),
+  C('parking', 'Parking', 'SquareParking', 'everyday', true),
+  C('hobbies', 'Books & hobbies', 'BookOpen', 'everyday', false),
   C('furniture', 'Furniture', 'Sofa', 'everyday', false),
   C('pharmacy', 'Pharmacy', 'Pill', 'surprise', true),
   C('healthcare', 'Doctor & dentist', 'Stethoscope', 'surprise', true),
@@ -63,7 +65,7 @@ export const CATEGORIES: Record<string, CatInfo> = Object.fromEntries([
 
 // MCC fallback for categories we have not seen (the real file may name categories differently).
 const MCC_RANGES: [number, number, string][] = [
-  [4111, 4112, 'public_transport'], [4121, 4121, 'taxi'], [3000, 3350, 'travel'], [4411, 4411, 'travel'], [7011, 7011, 'travel'],
+  [7523, 7523, 'parking'], [5942, 5942, 'hobbies'], [5945, 5945, 'hobbies'], [4111, 4112, 'public_transport'], [4121, 4121, 'taxi'], [3000, 3350, 'travel'], [4411, 4411, 'travel'], [7011, 7011, 'travel'],
   [4814, 4816, 'telecom'], [4899, 4899, 'subscriptions'], [4900, 4900, 'utilities'], [5411, 5411, 'groceries'], [5422, 5499, 'groceries'],
   [5541, 5542, 'fuel'], [5611, 5699, 'clothing'], [5712, 5719, 'furniture'], [5722, 5722, 'household_appliances'], [5732, 5734, 'electronics'],
   [5811, 5813, 'restaurants_cafes'], [5814, 5814, 'restaurants_cafes'], [5815, 5818, 'subscriptions'], [5912, 5912, 'pharmacy'], [5921, 5921, 'alcohol_tobacco'],

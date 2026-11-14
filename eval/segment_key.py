@@ -4,6 +4,8 @@ Usage: python3 eval/segment_key.py app/public/data/customers eval/items
 Writes items/segments_dev.jsonl and items/segments_heldout.jsonl.
 """
 import json, os, sys, glob, hashlib, statistics, datetime as dt
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from keylib import normalise, assign_rkeys
 
 src, out = sys.argv[1], sys.argv[2]
 INCOME = {'income_salary', 'income_benefits', 'income_pension', 'tax_refund', 'income_other', 'Salary', 'Other Income'}
@@ -13,13 +15,13 @@ NOT_SPEND = INCOME | SAVINGS | SWEEP | {'transfer_p2p', 'invest_withdraw', 'Inve
 FIXED_CATS = {'housing', 'loan_repayment', 'utilities', 'telecom', 'insurance', 'childcare', 'subscriptions', 'Housing', 'Utilities'}
 FIXED_DEFAULT = FIXED_CATS
 SURPRISE = {'taxes', 'pharmacy', 'healthcare', 'vehicle_maintenance', 'household_appliances', 'home_improvement', 'pets'}
-ESSENTIAL_EVERYDAY = {'groceries', 'public_transport', 'fuel', 'Groceries'}
+ESSENTIAL_EVERYDAY = {'groceries', 'public_transport', 'fuel', 'parking'}
 WINDOW = 182
 
 def rec_bills(tx, today):
     by = {}
     for t in tx:
-        if t['amount'] < 0 and t['category'] not in NOT_SPEND: by.setdefault(t['merchant'] or t['category'], []).append(t)
+        if t['amount'] < 0 and t['category'] not in NOT_SPEND: by.setdefault(t['rkey'], []).append(t)
     out = set()
     for m, ts in by.items():
         ts.sort(key=lambda t: t['date'])
@@ -37,8 +39,9 @@ def rec_bills(tx, today):
 
 def features(j):
     c = {k: i for i, k in enumerate(j['columns'])}
-    tx = [dict(date=dt.date.fromisoformat(r[c['date']]), amount=float(r[c['amount']]), category=r[c['category']],
+    tx = [dict(date=dt.date.fromisoformat(r[c['date']]), amount=float(r[c['amount']]), category=normalise(r[c['category']], r[c['mcc']]),
                merchant=r[c['merchant']], balance=r[c['balance']]) for r in j['tx']]
+    assign_rkeys(tx, NOT_SPEND)
     today = max(t['date'] for t in tx)
     rec = rec_bills(tx, today)  # recurrence uses the whole history, like the app
     start = today - dt.timedelta(days=WINDOW - 1)
@@ -49,7 +52,7 @@ def features(j):
     sweep = -sum(t['amount'] for t in w if t['amount'] < 0 and t['category'] in SWEEP)
     saved = -sum(t['amount'] for t in w if t['amount'] < 0 and t['category'] in SAVINGS)
     def basket(t):
-        if (t['merchant'] or t['category']) in rec: return 'fixed'
+        if t['rkey'] in rec: return 'fixed'
         if t['category'] in SURPRISE: return 'surprise'
         if t['category'] in FIXED_DEFAULT: return 'fixed'
         return 'everyday'
@@ -69,12 +72,12 @@ def features(j):
 
 def segment(f):
     if f['income_pm'] > 0 and f['sweep_share'] >= 0.30: return 'pass_through'
-    if f['everyday_pm'] < 20: return 'light_user'
+    if f['everyday_pm'] < 10: return 'light_user'
     if f['age'] >= 65 or f['pension_share'] >= 0.5: return 'golden_years'
     if f['age'] <= 25 or f['income_pm'] < 1300: return 'starter'
     if f['spend_ratio'] >= 1.0 or f['low_balance'] >= 0.25: return 'stretched'
-    if f['slips_pw'] >= 5: return 'grazer'
-    if f['savings_rate'] >= 0.06: return 'saver'
+    if f['slips_pw'] >= 2.5: return 'grazer'
+    if f['savings_rate'] >= 0.05: return 'saver'
     if f['fixed_share'] >= 0.45: return 'fixed_heavy'
     return 'steady'
 

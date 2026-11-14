@@ -1,22 +1,22 @@
 [
  {
-  "id": "CUST00016",
+  "id": "CUST01567",
   "name": "Aino",
-  "age": 36,
-  "type": "The Quiet Saver",
-  "segment": "saver",
+  "age": 47,
+  "type": "The Fixed-Cost Juggler",
+  "segment": "fixed_heavy",
   "compare": true
  },
  {
-  "id": "CUST00171",
+  "id": "CUST00394",
   "name": "Eero",
-  "age": 21,
+  "age": 45,
   "type": "The Pass-Through",
   "segment": "pass_through",
   "compare": false
  },
  {
-  "id": "CUST00197",
+  "id": "CUST00138",
   "name": "Sanna",
   "age": 18,
   "type": "The Starter",
@@ -24,49 +24,49 @@
   "compare": true
  },
  {
-  "id": "CUST00072",
+  "id": "CUST00229",
   "name": "Mikko",
-  "age": 70,
+  "age": 83,
   "type": "Golden Years",
   "segment": "golden_years",
   "compare": true
  },
  {
-  "id": "CUST00681",
+  "id": "CUST00982",
   "name": "Leena",
-  "age": 29,
+  "age": 26,
   "type": "The Tap-and-Go",
   "segment": "grazer",
   "compare": false
  },
  {
-  "id": "CUST00363",
+  "id": "CUST00025",
   "name": "Juho",
-  "age": 28,
+  "age": 26,
   "type": "The Quiet Saver",
   "segment": "saver",
   "compare": false
  },
  {
-  "id": "CUST00097",
+  "id": "CUST00374",
   "name": "Helmi",
-  "age": 51,
+  "age": 54,
   "type": "The Tightrope",
   "segment": "stretched",
   "compare": false
  },
  {
-  "id": "CUST00349",
+  "id": "CUST00121",
   "name": "Onni",
-  "age": 32,
+  "age": 70,
   "type": "The Light Touch",
   "segment": "light_user",
   "compare": false
  },
  {
-  "id": "CUST00062",
+  "id": "CUST00038",
   "name": "Venla",
-  "age": 54,
+  "age": 40,
   "type": "The Steady Planner",
   "segment": "steady",
   "compare": false

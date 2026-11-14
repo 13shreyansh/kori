@@ -55,7 +55,7 @@ export const SLIP_MAX_EUR = 20; // a "slip" is a discretionary purchase under th
 // Real data: merchants are opaque ids like MRC-GRO-0035, and bill payments carry no merchant.
 const MRC_NOUN: Record<string, string> = {
   GRO: 'Grocery store', RES: 'Restaurant', REST: 'Restaurant', TRA: 'Transport', TRN: 'Transport', UTI: 'Utility', ENT: 'Entertainment',
-  HEA: 'Health', HLT: 'Health', HOM: 'Home & tech shop', HOU: 'Housing', LIF: 'Lifestyle shop', TRV: 'Travel', CAF: 'Café',
+  HEA: 'Health', HLT: 'Health', HOM: 'Home & tech shop', HMT: 'Home & tech shop', HOU: 'Housing', LIF: 'Lifestyle shop', TRV: 'Travel', CAF: 'Café',
 };
 export function merchantName(id: string): string {
   if (!id) return 'Unknown';

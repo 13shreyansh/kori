@@ -1,5 +1,5 @@
 {
- "rows": 189843,
+ "rows": 3626755,
  "columns": [
   "customer_id",
   "bank_account_id",
@@ -13,1082 +13,1280 @@
   "mcc_code"
  ],
  "bad_dates": 0,
- "min_date": "2025-11-01",
- "max_date": "2026-10-31",
- "n_customers": 300,
- "n_accounts": 300,
- "n_merchants": 70,
- "positive_amounts": 7399,
- "negative_amounts": 182444,
+ "min_date": "2024-10-01",
+ "max_date": "2026-09-30",
+ "n_customers": 5100,
+ "n_accounts": 5100,
+ "n_merchants": 516,
+ "positive_amounts": 128556,
+ "negative_amounts": 3498199,
  "category": [
   [
-   "groceries",
-   57885,
-   -4011405.81
+   "Groceries",
+   868519,
+   -60464109.44
   ],
   [
-   "restaurants_cafes",
-   43647,
-   -849159.08
+   "Restaurants",
+   759280,
+   -30573265.94
   ],
   [
-   "food_delivery",
-   7446,
-   -174911.79
+   "Transportation",
+   626930,
+   -28400046.24
   ],
   [
-   "taxi",
-   7340,
-   -149718.03
+   "Utilities",
+   342728,
+   -19670711.35
   ],
   [
-   "telecom",
-   6972,
-   -207297.8
+   "Entertainment",
+   302691,
+   -18064325.14
   ],
   [
-   "subscriptions",
-   6947,
-   -143879.92
+   "Health",
+   151912,
+   -13724379.08
   ],
   [
-   "public_transport",
-   4952,
-   -107778.7
+   "Salary",
+   121725,
+   409242537.43
   ],
   [
-   "alcohol_tobacco",
-   4888,
-   -164682.82
+   "Home & Tech",
+   115086,
+   -25101608.58
   ],
   [
-   "fuel",
-   4885,
-   -346773.72
+   "Housing",
+   112903,
+   -122856237.97
   ],
   [
-   "income_salary",
-   4436,
-   15431176.73
+   "Lifestyle",
+   110916,
+   -22399904.15
   ],
   [
-   "utilities",
-   4012,
-   -246633.99
+   "Travel",
+   65377,
+   -15872527.55
   ],
   [
-   "entertainment",
-   3955,
-   -134921.27
+   "Invest Deposit",
+   35668,
+   -12770129.26
   ],
   [
-   "online_shopping",
-   3611,
-   -109562.98
+   "Other Income",
+   6299,
+   16735157.63
   ],
   [
-   "clothing",
-   3601,
-   -256413.43
+   "Salary Sweep",
+   6189,
+   -23675868.5
   ],
   [
-   "housing",
-   3600,
-   -3072133.45
-  ],
-  [
-   "transfer_savings",
-   2943,
-   -616760.0
-  ],
-  [
-   "pharmacy",
-   2567,
-   -66008.97
-  ],
-  [
-   "personal_care",
-   2512,
-   -101299.22
-  ],
-  [
-   "transfer_p2p",
-   2214,
-   2075.91
-  ],
-  [
-   "income_benefits",
-   1548,
-   319692.0
-  ],
-  [
-   "healthcare",
-   1354,
-   -206259.55
-  ],
-  [
-   "childcare",
-   1320,
-   -296070.0
-  ],
-  [
-   "loan_repayment",
-   1236,
-   -1194570.0
-  ],
-  [
-   "insurance",
-   1200,
-   -276383.03
-  ],
-  [
-   "sports",
-   1024,
-   -72133.09
-  ],
-  [
-   "travel",
-   750,
-   -187030.92
-  ],
-  [
-   "salary_sweep",
-   592,
-   -1385250.0
-  ],
-  [
-   "electronics",
-   567,
-   -95849.24
-  ],
-  [
-   "home_improvement",
-   488,
-   -61428.26
-  ],
-  [
-   "furniture",
-   480,
-   -96723.84
-  ],
-  [
-   "vehicle_maintenance",
-   280,
-   -141713.83
-  ],
-  [
-   "income_pension",
-   216,
-   434170.08
-  ],
-  [
-   "household_appliances",
-   162,
-   -96975.88
-  ],
-  [
-   "pets",
-   140,
-   -24011.53
-  ],
-  [
-   "tax_refund",
-   73,
-   5756.34
+   "Invest Withdraw",
+   532,
+   834034.66
   ]
  ],
  "transaction_type": [
   [
-   "card_payment",
-   159131,
+   "purchase",
+   3000711,
    [
-    159131,
+    3000711,
     0
    ]
   ],
   [
-   "e_invoice",
-   10482,
+   "utilities_payment",
+   342728,
    [
-    10482,
+    342728,
     0
    ]
   ],
   [
-   "direct_debit",
-   6972,
-   [
-    6972,
-    0
-   ]
-  ],
-  [
-   "credit_transfer",
-   6273,
+   "salary",
+   121725,
    [
     0,
-    6273
+    121725
    ]
   ],
   [
-   "own_transfer",
-   2943,
+   "housing_payment",
+   112903,
    [
-    2943,
+    112903,
     0
    ]
   ],
   [
-   "mobilepay",
-   2214,
+   "investment_deposit",
+   35668,
    [
-    1088,
-    1126
+    35668,
+    0
    ]
   ],
   [
-   "loan_payment",
-   1236,
+   "other_income",
+   6299,
    [
-    1236,
-    0
+    0,
+    6299
    ]
   ],
   [
    "salary_sweep",
-   592,
+   6189,
    [
-    592,
+    6189,
     0
+   ]
+  ],
+  [
+   "investment_withdrawal",
+   532,
+   [
+    0,
+    532
    ]
   ]
  ],
  "mcc": [
   [
-   "5411",
-   57885,
-   [
-    [
-     "groceries",
-     57885
-    ]
-   ]
-  ],
-  [
-   "5814",
-   30397,
-   [
-    [
-     "restaurants_cafes",
-     22951
-    ],
-    [
-     "food_delivery",
-     7446
-    ]
-   ]
-  ],
-  [
    "",
-   11949,
+   786668,
    [
     [
-     "income_salary",
-     4436
+     "Utilities",
+     342728
     ],
     [
-     "transfer_savings",
-     2943
+     "Salary",
+     121725
     ],
     [
-     "transfer_p2p",
-     2214
+     "Housing",
+     112903
     ]
    ]
   ],
   [
-   "5499",
-   9469,
+   "5411",
+   709071,
    [
     [
-     "restaurants_cafes",
-     9469
+     "Groceries",
+     709071
     ]
    ]
   ],
   [
    "5812",
-   7494,
+   438738,
    [
     [
-     "restaurants_cafes",
-     7494
+     "Restaurants",
+     438738
     ]
    ]
   ],
   [
-   "4121",
-   7340,
+   "5814",
+   254588,
    [
     [
-     "taxi",
-     7340
+     "Restaurants",
+     254588
     ]
    ]
   ],
   [
-   "4814",
-   6972,
+   "5542",
+   133716,
    [
     [
-     "telecom",
-     6972
+     "Transportation",
+     133716
+    ]
+   ]
+  ],
+  [
+   "7523",
+   133629,
+   [
+    [
+     "Transportation",
+     133629
     ]
    ]
   ],
   [
    "4111",
-   4952,
+   112751,
    [
     [
-     "public_transport",
-     4952
-    ]
-   ]
-  ],
-  [
-   "5921",
-   4888,
-   [
-    [
-     "alcohol_tobacco",
-     4888
+     "Transportation",
+     112751
     ]
    ]
   ],
   [
    "5541",
-   4885,
+   112293,
    [
     [
-     "fuel",
-     4885
+     "Transportation",
+     112293
     ]
    ]
   ],
   [
-   "4900",
-   4012,
+   "5499",
+   96321,
    [
     [
-     "utilities",
-     4012
-    ]
-   ]
-  ],
-  [
-   "5813",
-   3733,
-   [
-    [
-     "restaurants_cafes",
-     3733
-    ]
-   ]
-  ],
-  [
-   "5999",
-   3611,
-   [
-    [
-     "online_shopping",
-     3611
-    ]
-   ]
-  ],
-  [
-   "6513",
-   3600,
-   [
-    [
-     "housing",
-     3600
+     "Groceries",
+     96321
     ]
    ]
   ],
   [
    "5912",
-   2567,
+   82258,
    [
     [
-     "pharmacy",
-     2567
-    ]
-   ]
-  ],
-  [
-   "5651",
-   2414,
-   [
-    [
-     "clothing",
-     2414
-    ]
-   ]
-  ],
-  [
-   "4899",
-   1802,
-   [
-    [
-     "subscriptions",
-     1802
-    ]
-   ]
-  ],
-  [
-   "5818",
-   1786,
-   [
-    [
-     "subscriptions",
-     1786
-    ]
-   ]
-  ],
-  [
-   "7997",
-   1739,
-   [
-    [
-     "subscriptions",
-     1739
-    ]
-   ]
-  ],
-  [
-   "5815",
-   1620,
-   [
-    [
-     "subscriptions",
-     1620
-    ]
-   ]
-  ],
-  [
-   "5816",
-   1372,
-   [
-    [
-     "entertainment",
-     1372
-    ]
-   ]
-  ],
-  [
-   "8351",
-   1320,
-   [
-    [
-     "childcare",
-     1320
-    ]
-   ]
-  ],
-  [
-   "7832",
-   1298,
-   [
-    [
-     "entertainment",
-     1298
+     "Health",
+     82258
     ]
    ]
   ],
   [
    "7922",
-   1285,
+   79728,
    [
     [
-     "entertainment",
-     1285
+     "Entertainment",
+     79728
     ]
    ]
   ],
   [
-   "7230",
-   1257,
+   "7999",
+   70140,
    [
     [
-     "personal_care",
-     1257
+     "Entertainment",
+     70140
     ]
    ]
   ],
   [
-   "5977",
-   1255,
+   "4121",
+   59201,
    [
     [
-     "personal_care",
-     1255
+     "Transportation",
+     59201
     ]
    ]
   ],
   [
-   "6012",
-   1236,
+   "7832",
+   58146,
    [
     [
-     "loan_repayment",
-     1236
+     "Entertainment",
+     58146
     ]
    ]
   ],
   [
-   "6300",
-   1200,
+   "7991",
+   54977,
    [
     [
-     "insurance",
-     1200
+     "Entertainment",
+     54977
     ]
    ]
   ],
   [
-   "5311",
-   1187,
+   "5813",
+   47003,
    [
     [
-     "clothing",
-     1187
-    ]
-   ]
-  ],
-  [
-   "5941",
-   1024,
-   [
-    [
-     "sports",
-     1024
-    ]
-   ]
-  ],
-  [
-   "5732",
-   567,
-   [
-    [
-     "electronics",
-     567
-    ]
-   ]
-  ],
-  [
-   "8011",
-   512,
-   [
-    [
-     "healthcare",
-     512
-    ]
-   ]
-  ],
-  [
-   "8062",
-   492,
-   [
-    [
-     "healthcare",
-     492
+     "Restaurants",
+     47003
     ]
    ]
   ],
   [
    "5200",
-   488,
+   44838,
    [
     [
-     "home_improvement",
-     488
+     "Home & Tech",
+     44838
     ]
    ]
   ],
   [
-   "5712",
-   480,
+   "5941",
+   35864,
    [
     [
-     "furniture",
-     480
+     "Lifestyle",
+     35864
     ]
    ]
   ],
   [
-   "8021",
-   350,
+   "8011",
+   33281,
    [
     [
-     "healthcare",
-     350
+     "Health",
+     33281
     ]
    ]
   ],
   [
-   "7538",
-   280,
+   "5422",
+   30861,
    [
     [
-     "vehicle_maintenance",
-     280
+     "Groceries",
+     30861
     ]
    ]
   ],
   [
-   "4112",
-   204,
+   "7996",
+   27584,
    [
     [
-     "travel",
-     204
+     "Entertainment",
+     27584
     ]
    ]
   ],
   [
-   "4411",
-   194,
+   "5651",
+   25815,
    [
     [
-     "travel",
-     194
+     "Lifestyle",
+     25815
+    ]
+   ]
+  ],
+  [
+   "5732",
+   25485,
+   [
+    [
+     "Home & Tech",
+     25485
+    ]
+   ]
+  ],
+  [
+   "5451",
+   19254,
+   [
+    [
+     "Groceries",
+     19254
+    ]
+   ]
+  ],
+  [
+   "5251",
+   19170,
+   [
+    [
+     "Home & Tech",
+     19170
+    ]
+   ]
+  ],
+  [
+   "4722",
+   18023,
+   [
+    [
+     "Travel",
+     18023
+    ]
+   ]
+  ],
+  [
+   "4511",
+   15779,
+   [
+    [
+     "Travel",
+     15779
     ]
    ]
   ],
   [
    "7011",
-   186,
+   15391,
    [
     [
-     "travel",
-     186
+     "Travel",
+     15391
     ]
    ]
   ],
   [
-   "3008",
-   166,
+   "5999",
+   15132,
    [
     [
-     "travel",
-     166
+     "Lifestyle",
+     15132
     ]
    ]
   ],
   [
-   "5722",
-   162,
+   "5712",
+   13996,
    [
     [
-     "household_appliances",
-     162
+     "Home & Tech",
+     13996
     ]
    ]
   ],
   [
-   "0742",
-   140,
+   "8099",
+   12513,
    [
     [
-     "pets",
-     140
+     "Health",
+     12513
     ]
    ]
   ],
   [
-   "9311",
-   73,
+   "5691",
+   11869,
    [
     [
-     "tax_refund",
-     73
+     "Lifestyle",
+     11869
+    ]
+   ]
+  ],
+  [
+   "5942",
+   7918,
+   [
+    [
+     "Lifestyle",
+     7918
+    ]
+   ]
+  ],
+  [
+   "5945",
+   7605,
+   [
+    [
+     "Lifestyle",
+     7605
+    ]
+   ]
+  ],
+  [
+   "7512",
+   6983,
+   [
+    [
+     "Travel",
+     6983
+    ]
+   ]
+  ],
+  [
+   "8021",
+   5524,
+   [
+    [
+     "Health",
+     5524
+    ]
+   ]
+  ],
+  [
+   "5734",
+   4642,
+   [
+    [
+     "Home & Tech",
+     4642
     ]
    ]
   ]
  ],
  "date_examples": [
-  "01NOV25",
-  "02NOV25",
-  "03NOV25",
-  "04NOV25",
-  "05NOV25",
-  "06NOV25",
-  "07NOV25",
-  "08NOV25",
-  "09NOV25",
-  "10NOV25"
+  "2024-10-03",
+  "2024-10-05",
+  "2024-10-08",
+  "2024-10-10",
+  "2024-10-11",
+  "2024-10-12",
+  "2024-10-13",
+  "2024-10-14",
+  "2024-10-15",
+  "2024-10-16"
  ],
  "ts_examples": [
-  "01NOV25:10:53:35",
-  "02NOV25:19:21:59",
-  "03NOV25:13:24:58",
-  "04NOV25:08:00:00",
-  "05NOV25:19:54:59",
-  "06NOV25:17:29:50",
-  "07NOV25:15:48:16",
-  "08NOV25:02:56:00",
-  "09NOV25:11:10:18",
-  "10NOV25:11:56:34"
+  "03OCT24:09:04:04",
+  "05OCT24:17:51:20",
+  "08OCT24:14:02:17",
+  "10OCT24:19:47:49",
+  "11OCT24:13:04:48",
+  "12OCT24:17:04:51",
+  "13OCT24:12:00:37",
+  "14OCT24:22:46:18",
+  "15OCT24:15:05:54",
+  "16OCT24:15:04:18"
  ],
  "raw_samples": [
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "01NOV25",
-   "tx_timestamp": "01NOV25:10:53:35",
-   "category": "groceries",
-   "tx_amount_eur": "-32.65",
-   "balance_after_eur": "1750.45",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_ALEPA_HAKANIEMI",
-   "mcc_code": "5411"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "02NOV25",
-   "tx_timestamp": "02NOV25:19:21:59",
-   "category": "housing",
-   "tx_amount_eur": "-607.57",
-   "balance_after_eur": "1142.88",
-   "transaction_type": "e_invoice",
-   "merchant_id": "M_AS_OY_VASTIKE",
-   "mcc_code": "6513"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "03NOV25",
-   "tx_timestamp": "03NOV25:13:24:58",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-3.73",
-   "balance_after_eur": "1139.15",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_RFOOD_KIOSK",
-   "mcc_code": "5499"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "03NOV25",
-   "tx_timestamp": "03NOV25:18:53:00",
-   "category": "food_delivery",
-   "tx_amount_eur": "-30.39",
-   "balance_after_eur": "1108.76",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_WOLT",
-   "mcc_code": "5814"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "03NOV25",
-   "tx_timestamp": "03NOV25:19:15:58",
-   "category": "furniture",
-   "tx_amount_eur": "-206.53",
-   "balance_after_eur": "902.23",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_IKEA_VANTAA",
-   "mcc_code": "5712"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "04NOV25",
-   "tx_timestamp": "04NOV25:08:00:00",
-   "category": "transfer_savings",
-   "tx_amount_eur": "-150.00",
-   "balance_after_eur": "752.23",
-   "transaction_type": "own_transfer",
-   "merchant_id": "M_OWN_SAVINGS",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-03",
+   "tx_timestamp": "03OCT24:09:04:04",
+   "category": "Utilities",
+   "tx_amount_eur": "-27.32",
+   "balance_after_eur": "3113.21",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
    "mcc_code": ""
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "04NOV25",
-   "tx_timestamp": "04NOV25:18:27:10",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-11.19",
-   "balance_after_eur": "741.04",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_ESPRESSO_HOUSE",
-   "mcc_code": "5814"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "05NOV25",
-   "tx_timestamp": "05NOV25:19:54:59",
-   "category": "loan_repayment",
-   "tx_amount_eur": "-1305.00",
-   "balance_after_eur": "-563.96",
-   "transaction_type": "loan_payment",
-   "merchant_id": "M_SPANKKI_LAINA",
-   "mcc_code": "6012"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "06NOV25",
-   "tx_timestamp": "06NOV25:17:29:50",
-   "category": "groceries",
-   "tx_amount_eur": "-84.91",
-   "balance_after_eur": "-648.87",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_SMARKET_KALLIO",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-05",
+   "tx_timestamp": "05OCT24:17:51:20",
+   "category": "Groceries",
+   "tx_amount_eur": "-32.51",
+   "balance_after_eur": "3080.7",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0035",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "06NOV25",
-   "tx_timestamp": "06NOV25:18:24:30",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-3.72",
-   "balance_after_eur": "-652.59",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_RFOOD_KIOSK",
-   "mcc_code": "5499"
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-08",
+   "tx_timestamp": "08OCT24:14:02:17",
+   "category": "Housing",
+   "tx_amount_eur": "-511.9",
+   "balance_after_eur": "2568.8",
+   "transaction_type": "housing_payment",
+   "merchant_id": "",
+   "mcc_code": ""
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "06NOV25",
-   "tx_timestamp": "06NOV25:20:01:51",
-   "category": "subscriptions",
-   "tx_amount_eur": "-13.99",
-   "balance_after_eur": "-666.58",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_NETFLIX",
-   "mcc_code": "4899"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "07NOV25",
-   "tx_timestamp": "07NOV25:15:48:16",
-   "category": "groceries",
-   "tx_amount_eur": "-113.07",
-   "balance_after_eur": "-779.65",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_PRISMA_ITIS",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-10",
+   "tx_timestamp": "10OCT24:19:47:49",
+   "category": "Groceries",
+   "tx_amount_eur": "-76.22",
+   "balance_after_eur": "2492.58",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0032",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "07NOV25",
-   "tx_timestamp": "07NOV25:20:48:54",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-3.77",
-   "balance_after_eur": "-783.42",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_RFOOD_KIOSK",
-   "mcc_code": "5499"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "07NOV25",
-   "tx_timestamp": "07NOV25:23:55:00",
-   "category": "taxi",
-   "tx_amount_eur": "-10.35",
-   "balance_after_eur": "-793.77",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_BOLT",
-   "mcc_code": "4121"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "08NOV25",
-   "tx_timestamp": "08NOV25:02:56:00",
-   "category": "taxi",
-   "tx_amount_eur": "-30.42",
-   "balance_after_eur": "-824.19",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_TAXI_HELSINKI",
-   "mcc_code": "4121"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "08NOV25",
-   "tx_timestamp": "08NOV25:11:26:50",
-   "category": "groceries",
-   "tx_amount_eur": "-50.50",
-   "balance_after_eur": "-874.69",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_ALEPA_HAKANIEMI",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-11",
+   "tx_timestamp": "11OCT24:13:04:48",
+   "category": "Groceries",
+   "tx_amount_eur": "-101.79",
+   "balance_after_eur": "2390.79",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0064",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "08NOV25",
-   "tx_timestamp": "08NOV25:13:22:31",
-   "category": "travel",
-   "tx_amount_eur": "-271.08",
-   "balance_after_eur": "-1145.77",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_FINNAIR",
-   "mcc_code": "3008"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "09NOV25",
-   "tx_timestamp": "09NOV25:11:10:18",
-   "category": "subscriptions",
-   "tx_amount_eur": "-11.99",
-   "balance_after_eur": "-1157.76",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_SPOTIFY",
-   "mcc_code": "5815"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "09NOV25",
-   "tx_timestamp": "09NOV25:16:54:11",
-   "category": "online_shopping",
-   "tx_amount_eur": "-2.98",
-   "balance_after_eur": "-1160.74",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_AMAZON_DE",
-   "mcc_code": "5999"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "09NOV25",
-   "tx_timestamp": "09NOV25:21:13:25",
-   "category": "groceries",
-   "tx_amount_eur": "-50.34",
-   "balance_after_eur": "-1211.08",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_SMARKET_KALLIO",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-12",
+   "tx_timestamp": "12OCT24:17:04:51",
+   "category": "Groceries",
+   "tx_amount_eur": "-33.7",
+   "balance_after_eur": "2357.09",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0026",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "10NOV25",
-   "tx_timestamp": "10NOV25:11:56:34",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-6.63",
-   "balance_after_eur": "-1217.71",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_ROBERTS_COFFEE",
-   "mcc_code": "5814"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "10NOV25",
-   "tx_timestamp": "10NOV25:13:51:03",
-   "category": "childcare",
-   "tx_amount_eur": "-230.00",
-   "balance_after_eur": "-1447.71",
-   "transaction_type": "e_invoice",
-   "merchant_id": "M_HELSINGIN_KAUPUNKI",
-   "mcc_code": "8351"
-  },
-  {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "10NOV25",
-   "tx_timestamp": "10NOV25:14:07:37",
-   "category": "clothing",
-   "tx_amount_eur": "-90.63",
-   "balance_after_eur": "-1538.34",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_ZALANDO",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-13",
+   "tx_timestamp": "13OCT24:12:00:37",
+   "category": "Lifestyle",
+   "tx_amount_eur": "-834.42",
+   "balance_after_eur": "1522.67",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-LIF-0063",
    "mcc_code": "5651"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "10NOV25",
-   "tx_timestamp": "10NOV25:14:44:54",
-   "category": "restaurants_cafes",
-   "tx_amount_eur": "-98.72",
-   "balance_after_eur": "-1637.06",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_RAVINTOLA_SAVOTTA",
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-13",
+   "tx_timestamp": "13OCT24:17:02:37",
+   "category": "Utilities",
+   "tx_amount_eur": "-19.38",
+   "balance_after_eur": "1503.29",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-14",
+   "tx_timestamp": "14OCT24:22:46:18",
+   "category": "Groceries",
+   "tx_amount_eur": "-69.72",
+   "balance_after_eur": "1433.57",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0034",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-15",
+   "tx_timestamp": "15OCT24:15:05:54",
+   "category": "Salary",
+   "tx_amount_eur": "2280.78",
+   "balance_after_eur": "3714.35",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-16",
+   "tx_timestamp": "16OCT24:15:04:18",
+   "category": "Groceries",
+   "tx_amount_eur": "-85.11",
+   "balance_after_eur": "3629.24",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0075",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-18",
+   "tx_timestamp": "18OCT24:10:09:00",
+   "category": "Invest Deposit",
+   "tx_amount_eur": "-219.64",
+   "balance_after_eur": "3409.6",
+   "transaction_type": "investment_deposit",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-18",
+   "tx_timestamp": "18OCT24:16:04:52",
+   "category": "Groceries",
+   "tx_amount_eur": "-135.17",
+   "balance_after_eur": "3274.43",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0036",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-20",
+   "tx_timestamp": "20OCT24:13:17:24",
+   "category": "Groceries",
+   "tx_amount_eur": "-74.61",
+   "balance_after_eur": "3199.82",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0065",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-23",
+   "tx_timestamp": "23OCT24:18:37:03",
+   "category": "Utilities",
+   "tx_amount_eur": "-21.58",
+   "balance_after_eur": "3178.24",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-23",
+   "tx_timestamp": "23OCT24:19:23:37",
+   "category": "Groceries",
+   "tx_amount_eur": "-31.52",
+   "balance_after_eur": "3146.72",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0020",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-24",
+   "tx_timestamp": "24OCT24:17:20:28",
+   "category": "Groceries",
+   "tx_amount_eur": "-37.35",
+   "balance_after_eur": "3109.37",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0007",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-10-30",
+   "tx_timestamp": "30OCT24:16:05:29",
+   "category": "Groceries",
+   "tx_amount_eur": "-75.05",
+   "balance_after_eur": "3034.32",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0022",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-01",
+   "tx_timestamp": "01NOV24:19:40:06",
+   "category": "Groceries",
+   "tx_amount_eur": "-45.94",
+   "balance_after_eur": "2988.38",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0024",
+   "mcc_code": "5499"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-03",
+   "tx_timestamp": "03NOV24:19:34:18",
+   "category": "Utilities",
+   "tx_amount_eur": "-40.15",
+   "balance_after_eur": "2948.23",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-03",
+   "tx_timestamp": "03NOV24:22:04:02",
+   "category": "Groceries",
+   "tx_amount_eur": "-73.29",
+   "balance_after_eur": "2874.94",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0035",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-04",
+   "tx_timestamp": "04NOV24:10:26:44",
+   "category": "Housing",
+   "tx_amount_eur": "-535.2",
+   "balance_after_eur": "2339.74",
+   "transaction_type": "housing_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-08",
+   "tx_timestamp": "08NOV24:11:46:56",
+   "category": "Groceries",
+   "tx_amount_eur": "-119.18",
+   "balance_after_eur": "2220.56",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0019",
+   "mcc_code": "5499"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-08",
+   "tx_timestamp": "08NOV24:17:24:55",
+   "category": "Groceries",
+   "tx_amount_eur": "-69.9",
+   "balance_after_eur": "2150.66",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0065",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00001",
+   "bank_account_id": "ACC000001",
+   "tx_date": "2024-11-08",
+   "tx_timestamp": "08NOV24:21:49:41",
+   "category": "Groceries",
+   "tx_amount_eur": "-98.57",
+   "balance_after_eur": "2052.09",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0070",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00051",
+   "bank_account_id": "ACC000051",
+   "tx_date": "2025-06-10",
+   "tx_timestamp": "10JUN25:18:29:53",
+   "category": "Transportation",
+   "tx_amount_eur": "-96.8",
+   "balance_after_eur": "4840.71",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-TRN-0046",
+   "mcc_code": "7523"
+  },
+  {
+   "customer_id": "CUST00081",
+   "bank_account_id": "ACC000081",
+   "tx_date": "2025-03-10",
+   "tx_timestamp": "10MAR25:22:53:49",
+   "category": "Groceries",
+   "tx_amount_eur": "-59.65",
+   "balance_after_eur": "-109.03",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0069",
+   "mcc_code": "5499"
+  },
+  {
+   "customer_id": "CUST00122",
+   "bank_account_id": "ACC000122",
+   "tx_date": "2025-06-15",
+   "tx_timestamp": "15JUN25:21:16:50",
+   "category": "Salary",
+   "tx_amount_eur": "5534.03",
+   "balance_after_eur": "6866.15",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00215",
+   "bank_account_id": "ACC000215",
+   "tx_date": "2025-08-02",
+   "tx_timestamp": "02AUG25:23:09:08",
+   "category": "Entertainment",
+   "tx_amount_eur": "-4.46",
+   "balance_after_eur": "135.9",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-ENT-0012",
+   "mcc_code": "7922"
+  },
+  {
+   "customer_id": "CUST00254",
+   "bank_account_id": "ACC000254",
+   "tx_date": "2026-08-24",
+   "tx_timestamp": "24AUG26:17:54:46",
+   "category": "Restaurants",
+   "tx_amount_eur": "-12.93",
+   "balance_after_eur": "6657.11",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0038",
+   "mcc_code": "5814"
+  },
+  {
+   "customer_id": "CUST00259",
+   "bank_account_id": "ACC000259",
+   "tx_date": "2026-07-26",
+   "tx_timestamp": "26JUL26:22:11:25",
+   "category": "Restaurants",
+   "tx_amount_eur": "-86.65",
+   "balance_after_eur": "5904.02",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0022",
    "mcc_code": "5812"
   },
   {
-   "customer_id": "CUST02844",
-   "bank_account_id": "ACC0284401",
-   "tx_date": "10NOV25",
-   "tx_timestamp": "10NOV25:15:10:09",
-   "category": "vehicle_maintenance",
-   "tx_amount_eur": "-201.05",
-   "balance_after_eur": "-1838.11",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_KAHDEKSIKKO_AUTOHUOLTO",
-   "mcc_code": "7538"
+   "customer_id": "CUST00303",
+   "bank_account_id": "ACC000303",
+   "tx_date": "2026-05-29",
+   "tx_timestamp": "29MAY26:19:15:31",
+   "category": "Restaurants",
+   "tx_amount_eur": "-6.21",
+   "balance_after_eur": "11677.58",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0086",
+   "mcc_code": "5814"
   },
   {
-   "customer_id": "CUST04772",
-   "bank_account_id": "ACC0477201",
-   "tx_date": "01MAR26",
-   "tx_timestamp": "01MAR26:12:39:50",
-   "category": "groceries",
-   "tx_amount_eur": "-88.61",
-   "balance_after_eur": "4808.54",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_SMARKET_KALLIO",
+   "customer_id": "CUST00386",
+   "bank_account_id": "ACC000386",
+   "tx_date": "2026-02-28",
+   "tx_timestamp": "28FEB26:20:37:53",
+   "category": "Groceries",
+   "tx_amount_eur": "-133.73",
+   "balance_after_eur": "4889.55",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0038",
    "mcc_code": "5411"
   },
   {
-   "customer_id": "CUST02004",
-   "bank_account_id": "ACC0200401",
-   "tx_date": "23OCT26",
-   "tx_timestamp": "23OCT26:21:52:21",
-   "category": "online_shopping",
-   "tx_amount_eur": "-88.11",
-   "balance_after_eur": "6817.93",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_AMAZON_DE",
-   "mcc_code": "5999"
+   "customer_id": "CUST00523",
+   "bank_account_id": "ACC000523",
+   "tx_date": "2026-04-24",
+   "tx_timestamp": "24APR26:16:51:50",
+   "category": "Transportation",
+   "tx_amount_eur": "-16.74",
+   "balance_after_eur": "7149.45",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-TRN-0029",
+   "mcc_code": "5542"
   },
   {
-   "customer_id": "CUST00016",
-   "bank_account_id": "ACC0001601",
-   "tx_date": "20APR26",
-   "tx_timestamp": "20APR26:20:18:36",
-   "category": "insurance",
-   "tx_amount_eur": "-303.00",
-   "balance_after_eur": "6437.30",
-   "transaction_type": "e_invoice",
-   "merchant_id": "M_LAHITAPIOLA",
-   "mcc_code": "6300"
-  },
-  {
-   "customer_id": "CUST04464",
-   "bank_account_id": "ACC0446401",
-   "tx_date": "10JAN26",
-   "tx_timestamp": "10JAN26:19:13:27",
-   "category": "groceries",
-   "tx_amount_eur": "-59.98",
-   "balance_after_eur": "3346.96",
-   "transaction_type": "card_payment",
-   "merchant_id": "M_SMARKET_KALLIO",
+   "customer_id": "CUST00536",
+   "bank_account_id": "ACC000536",
+   "tx_date": "2025-03-08",
+   "tx_timestamp": "08MAR25:16:38:25",
+   "category": "Groceries",
+   "tx_amount_eur": "-61.11",
+   "balance_after_eur": "9176.95",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0076",
    "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00554",
+   "bank_account_id": "ACC000554",
+   "tx_date": "2026-04-02",
+   "tx_timestamp": "02APR26:18:41:28",
+   "category": "Groceries",
+   "tx_amount_eur": "-98.48",
+   "balance_after_eur": "14517.41",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0068",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00602",
+   "bank_account_id": "ACC000602",
+   "tx_date": "2024-11-08",
+   "tx_timestamp": "08NOV24:12:40:12",
+   "category": "Housing",
+   "tx_amount_eur": "-895.79",
+   "balance_after_eur": "1034.73",
+   "transaction_type": "housing_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00662",
+   "bank_account_id": "ACC000662",
+   "tx_date": "2025-12-20",
+   "tx_timestamp": "20DEC25:14:25:37",
+   "category": "Groceries",
+   "tx_amount_eur": "-56.25",
+   "balance_after_eur": "5882.67",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0044",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00800",
+   "bank_account_id": "ACC000800",
+   "tx_date": "2025-10-06",
+   "tx_timestamp": "06OCT25:17:11:19",
+   "category": "Groceries",
+   "tx_amount_eur": "-77.46",
+   "balance_after_eur": "2205.92",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0060",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST00817",
+   "bank_account_id": "ACC000817",
+   "tx_date": "2026-07-25",
+   "tx_timestamp": "25JUL26:11:35:22",
+   "category": "Lifestyle",
+   "tx_amount_eur": "-5.69",
+   "balance_after_eur": "31269.08",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-LIF-0012",
+   "mcc_code": "5651"
+  },
+  {
+   "customer_id": "CUST00963",
+   "bank_account_id": "ACC000963",
+   "tx_date": "2026-06-15",
+   "tx_timestamp": "15JUN26:16:02:23",
+   "category": "Salary",
+   "tx_amount_eur": "4407.95",
+   "balance_after_eur": "31778.53",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST00978",
+   "bank_account_id": "ACC000978",
+   "tx_date": "2026-01-19",
+   "tx_timestamp": "19JAN26:18:18:49",
+   "category": "Restaurants",
+   "tx_amount_eur": "-43.99",
+   "balance_after_eur": "1617.27",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0072",
+   "mcc_code": "5814"
+  },
+  {
+   "customer_id": "CUST00997",
+   "bank_account_id": "ACC000997",
+   "tx_date": "2026-01-15",
+   "tx_timestamp": "15JAN26:17:17:05",
+   "category": "Salary",
+   "tx_amount_eur": "2932.02",
+   "balance_after_eur": "2922.37",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST01081",
+   "bank_account_id": "ACC001081",
+   "tx_date": "2024-10-24",
+   "tx_timestamp": "24OCT24:12:48:15",
+   "category": "Groceries",
+   "tx_amount_eur": "-75.28",
+   "balance_after_eur": "1227.23",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0027",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST01218",
+   "bank_account_id": "ACC001218",
+   "tx_date": "2026-05-22",
+   "tx_timestamp": "22MAY26:19:32:47",
+   "category": "Groceries",
+   "tx_amount_eur": "-44.04",
+   "balance_after_eur": "21672.23",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0068",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST01232",
+   "bank_account_id": "ACC001232",
+   "tx_date": "2024-11-24",
+   "tx_timestamp": "24NOV24:18:56:37",
+   "category": "Utilities",
+   "tx_amount_eur": "-76.34",
+   "balance_after_eur": "926.53",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST01314",
+   "bank_account_id": "ACC001314",
+   "tx_date": "2026-02-23",
+   "tx_timestamp": "23FEB26:19:50:18",
+   "category": "Groceries",
+   "tx_amount_eur": "-97.63",
+   "balance_after_eur": "5547.86",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0029",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST01346",
+   "bank_account_id": "ACC001346",
+   "tx_date": "2024-11-27",
+   "tx_timestamp": "27NOV24:15:21:45",
+   "category": "Transportation",
+   "tx_amount_eur": "-119.01",
+   "balance_after_eur": "1427.92",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-TRN-0049",
+   "mcc_code": "7523"
+  },
+  {
+   "customer_id": "CUST01374",
+   "bank_account_id": "ACC001374",
+   "tx_date": "2025-01-05",
+   "tx_timestamp": "05JAN25:22:32:01",
+   "category": "Restaurants",
+   "tx_amount_eur": "-10.91",
+   "balance_after_eur": "2897.03",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0064",
+   "mcc_code": "5814"
+  },
+  {
+   "customer_id": "CUST01388",
+   "bank_account_id": "ACC001388",
+   "tx_date": "2024-12-05",
+   "tx_timestamp": "05DEC24:14:32:28",
+   "category": "Groceries",
+   "tx_amount_eur": "-106.68",
+   "balance_after_eur": "1509.38",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0051",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST01854",
+   "bank_account_id": "ACC001854",
+   "tx_date": "2025-10-17",
+   "tx_timestamp": "17OCT25:22:37:31",
+   "category": "Restaurants",
+   "tx_amount_eur": "-16.46",
+   "balance_after_eur": "572.91",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0052",
+   "mcc_code": "5812"
+  },
+  {
+   "customer_id": "CUST01937",
+   "bank_account_id": "ACC001937",
+   "tx_date": "2025-08-15",
+   "tx_timestamp": "15AUG25:20:29:33",
+   "category": "Entertainment",
+   "tx_amount_eur": "-79.9",
+   "balance_after_eur": "727",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-ENT-0046",
+   "mcc_code": "7991"
+  },
+  {
+   "customer_id": "CUST01975",
+   "bank_account_id": "ACC001975",
+   "tx_date": "2026-08-01",
+   "tx_timestamp": "01AUG26:18:45:49",
+   "category": "Restaurants",
+   "tx_amount_eur": "-6.61",
+   "balance_after_eur": "4818.68",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0035",
+   "mcc_code": "5814"
+  },
+  {
+   "customer_id": "CUST01987",
+   "bank_account_id": "ACC001987",
+   "tx_date": "2025-09-03",
+   "tx_timestamp": "03SEP25:17:11:41",
+   "category": "Housing",
+   "tx_amount_eur": "-1294.3",
+   "balance_after_eur": "6350.83",
+   "transaction_type": "housing_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST02131",
+   "bank_account_id": "ACC002131",
+   "tx_date": "2025-01-24",
+   "tx_timestamp": "24JAN25:13:16:37",
+   "category": "Restaurants",
+   "tx_amount_eur": "-20.52",
+   "balance_after_eur": "3345.49",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-RES-0072",
+   "mcc_code": "5814"
+  },
+  {
+   "customer_id": "CUST02229",
+   "bank_account_id": "ACC002229",
+   "tx_date": "2026-04-25",
+   "tx_timestamp": "25APR26:08:30:00",
+   "category": "Utilities",
+   "tx_amount_eur": "-40.83",
+   "balance_after_eur": "4344.25",
+   "transaction_type": "utilities_payment",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST02273",
+   "bank_account_id": "ACC002273",
+   "tx_date": "2025-10-05",
+   "tx_timestamp": "05OCT25:17:05:38",
+   "category": "Groceries",
+   "tx_amount_eur": "-95.46",
+   "balance_after_eur": "-152.15",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-GRO-0032",
+   "mcc_code": "5411"
+  },
+  {
+   "customer_id": "CUST02421",
+   "bank_account_id": "ACC002421",
+   "tx_date": "2025-10-15",
+   "tx_timestamp": "15OCT25:08:21:25",
+   "category": "Salary",
+   "tx_amount_eur": "3397.88",
+   "balance_after_eur": "4865.39",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
+  },
+  {
+   "customer_id": "CUST02453",
+   "bank_account_id": "ACC002453",
+   "tx_date": "2024-11-27",
+   "tx_timestamp": "27NOV24:17:30:49",
+   "category": "Transportation",
+   "tx_amount_eur": "-62.94",
+   "balance_after_eur": "752.93",
+   "transaction_type": "purchase",
+   "merchant_id": "MRC-TRN-0061",
+   "mcc_code": "7523"
+  },
+  {
+   "customer_id": "CUST02473",
+   "bank_account_id": "ACC002473",
+   "tx_date": "2026-07-15",
+   "tx_timestamp": "15JUL26:09:37:23",
+   "category": "Salary",
+   "tx_amount_eur": "5175.34",
+   "balance_after_eur": "39132.41",
+   "transaction_type": "salary",
+   "merchant_id": "",
+   "mcc_code": ""
   }
  ]
 }

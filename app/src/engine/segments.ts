@@ -27,8 +27,8 @@ export interface SegmentFeatures {
 
 export const WINDOW_DAYS = 182;
 export const T = {
-  sweepShare: 0.3, lightEverydayPerMonth: 20, retireAge: 65, pensionShare: 0.5, starterAge: 25, starterIncome: 1300,
-  stretchedSpendRatio: 1.0, stretchedLowBalance: 0.25, grazerSlipsPerWeek: 5, saverRate: 0.06, fixedShare: 0.45, lowBalanceEur: 100,
+  sweepShare: 0.3, lightEverydayPerMonth: 10, retireAge: 65, pensionShare: 0.5, starterAge: 25, starterIncome: 1300,
+  stretchedSpendRatio: 1.0, stretchedLowBalance: 0.25, grazerSlipsPerWeek: 2.5, saverRate: 0.05, fixedShare: 0.45, lowBalanceEur: 100,
 };
 
 export function segmentFeatures(c: Customer): SegmentFeatures {
@@ -103,7 +103,7 @@ export const PLAYBOOKS: Record<SegmentId, Playbook> = {
     tone: 'This customer moves most of their salary to another bank right after payday. Never guilt them. Show what Kori can do when bills and buffer live in one place, and be concrete about their own numbers.',
     questions: ['How much of my salary do I move out?', 'What bills are coming up?', 'What is safe to spend this week?'],
     sliders: [{ kind: 'keep', title: 'Keep enough here for your bills' }, { kind: 'cut', title: 'Everyday habits', basket: 'everyday', exclude: ['groceries'], top: 2 }],
-    card: (f, e) => ({ title: 'Your salary passes through', body: `About ${pct(f.sweepShare)} of your pay moves to another account within a day, ${e(f.sweepShare * f.incomePerMonth)} a month. Kori can only see what stays here, so your safe-to-spend covers part of the picture.`, ask: 'How much of my salary do I move out?' }),
+    card: (f, e) => ({ title: 'Your salary passes through', body: `About ${pct(f.sweepShare)} of your pay moves to another bank soon after payday, ${e(f.sweepShare * f.incomePerMonth)} a month. Kori can only see what stays here, so your safe-to-spend covers part of the picture.`, ask: 'How much of my salary do I move out?' }),
     nudge: (f, e) => (1 - f.sweepShare) >= f.fixedShare ? `What stays here already covers your ${e(f.fixedShare * f.incomePerMonth)} of fixed bills a month. Paying them from here lets Kori warn you before one bounces.` : `Keeping ${e(f.fixedShare * f.incomePerMonth)} here each payday would cover your fixed bills, so Kori can warn you before a bill bounces.`,
   },
   light_user: {
@@ -135,7 +135,7 @@ export const PLAYBOOKS: Record<SegmentId, Playbook> = {
     tone: 'This customer spends about everything that comes in, or runs low before payday. Be kind and practical, never judgemental. Focus on the next payday, the one or two biggest leaks and bills that are coming.',
     questions: ['What is safe to spend this week?', 'What bills are coming up?', 'Where can I cut back?'],
     sliders: [{ kind: 'cut', title: 'Where a little goes a long way', basket: 'everyday', exclude: ['groceries'], top: 3 }],
-    card: (f) => ({ title: 'Making it to payday', body: `You spent about ${pct(Math.min(f.spendRatio, 9.99))} of what came in, and ${pct(f.lowBalanceShare)} of days ended under €100. Kori will flag bills before they land and show what's safe each day.`, ask: 'What is safe to spend this week?' }),
+    card: (f) => ({ title: 'Making it to payday', body: `You spent about ${pct(Math.min(f.spendRatio, 9.99))} of what came in${f.lowBalanceShare >= 0.1 ? `, and ${pct(f.lowBalanceShare)} of days ended under €100` : ''}. Kori will flag bills before they land and show what's safe each day.`, ask: 'What is safe to spend this week?' }),
     nudge: () => 'The days right after payday decide the month. Try checking safe-to-spend before the first weekend.',
   },
   grazer: {
@@ -159,8 +159,8 @@ export const PLAYBOOKS: Record<SegmentId, Playbook> = {
     tone: 'Most of this customer\'s income goes to fixed bills like rent, loans and daycare. Be practical: help them see which bills are fixed and which can be renegotiated, and protect their buffer.',
     questions: ['What bills are coming up?', 'Explain my three baskets', 'How do I compare to similar households?'],
     sliders: [{ kind: 'cut', title: 'Bills you could renegotiate', basket: 'fixed', exclude: ['housing', 'loan_repayment', 'childcare'], top: 3 }, { kind: 'cut', title: 'Everyday spending', basket: 'everyday', exclude: ['groceries'], top: 1 }],
-    card: (f) => ({ title: 'Bills take the first bite', body: `Fixed bills take ${pct(f.fixedShare)} of your income before you buy anything. Small cuts to phone, insurance or subscriptions repeat every month.`, ask: 'What bills are coming up?' }),
-    nudge: () => 'Insurance and phone plans are worth a yearly check. One call can save every month after.',
+    card: (f) => ({ title: 'Bills take the first bite', body: `Fixed bills take ${pct(f.fixedShare)} of your income before you buy anything. Every euro you trim from a regular bill is saved again every month.`, ask: 'What bills are coming up?' }),
+    nudge: () => 'Energy, phone and insurance contracts are worth a yearly check. One call can save every month after.',
   },
   steady: {
     id: 'steady', name: 'The Steady Planner', icon: 'Compass',

@@ -1,33 +1,33 @@
-{"kind": "robust_baskets", "q": "break down my spending into needs and wants", "expect": {"intent": "baskets"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_baskets", "q": "how much goes to bills vs everyday spending", "expect": {"intent": "baskets"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_baskets", "q": "what share of my money is fixed costs?", "expect": {"intent": "baskets"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_baskets", "q": "show my spending baskets", "expect": {"intent": "baskets"}, "customer": "CUST00156", "split": "dev"}
-{"kind": "robust_baskets", "q": "how much of my spending is regular bills", "expect": {"intent": "baskets"}, "customer": "CUST00197", "split": "dev"}
-{"kind": "robust_baskets", "q": "split my spending by type", "expect": {"intent": "baskets"}, "customer": "CUST00285", "split": "dev"}
-{"kind": "robust_subscriptions", "q": "what subscriptions am I paying for", "expect": {"intent": "subscriptions"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_subscriptions", "q": "list my monthly subscriptions", "expect": {"intent": "subscriptions"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_subscriptions", "q": "which streaming services do I pay for?", "expect": {"intent": "subscriptions"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_subscriptions", "q": "do I have any recurring payments I could cancel?", "expect": {"intent": "subscriptions"}, "customer": "CUST00156", "split": "dev"}
-{"kind": "robust_subscriptions", "q": "what renews every month", "expect": {"intent": "subscriptions"}, "customer": "CUST00197", "split": "dev"}
-{"kind": "robust_safe_to_spend", "q": "how much money do I have left to spend", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_safe_to_spend", "q": "what can I afford this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_safe_to_spend", "q": "is it ok to spend 50 euros on dinner tonight?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_safe_to_spend", "q": "how much can I spend until payday", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00156", "split": "dev"}
-{"kind": "robust_safe_to_spend", "q": "whats my budget for the week", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00197", "split": "dev"}
-{"kind": "robust_spender_type", "q": "what are my spending habits like?", "expect": {"intent": "spender_type"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_spender_type", "q": "analyse my spending personality", "expect": {"intent": "spender_type"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_spender_type", "q": "am I a big spender?", "expect": {"intent": "spender_type"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_spender_type", "q": "what does my spending say about me", "expect": {"intent": "spender_type"}, "customer": "CUST00156", "split": "dev"}
-{"kind": "robust_surprise", "q": "how much did I spend on unplanned stuff", "expect": {"intent": "surprise"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_surprise", "q": "what did emergencies cost me", "expect": {"intent": "surprise"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_surprise", "q": "how much should I keep aside for unexpected bills?", "expect": {"intent": "surprise"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_explain", "q": "what does compound interest mean", "expect": {"intent": "explain"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_explain", "q": "how does an emergency fund work?", "expect": {"intent": "explain"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_explain", "q": "tell me about inflation", "expect": {"intent": "explain"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_explain", "q": "what is a budget", "expect": {"intent": "explain"}, "customer": "CUST00156", "split": "dev"}
-{"kind": "robust_what_if", "q": "if I stopped taking taxis how much would I save", "expect": {"intent": "what_if"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_what_if", "q": "what would I save by eating out half as much", "expect": {"intent": "what_if"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_what_if", "q": "how much would cutting coffee save me per year", "expect": {"intent": "what_if"}, "customer": "CUST00089", "split": "dev"}
-{"kind": "robust_breakdown", "q": "where did my money go last month?", "expect": {"intent": "breakdown"}, "customer": "CUST00016", "split": "dev"}
-{"kind": "robust_breakdown", "q": "what are my biggest expenses", "expect": {"intent": "breakdown"}, "customer": "CUST00087", "split": "dev"}
-{"kind": "robust_breakdown", "q": "what did I spend the most on?", "expect": {"intent": "breakdown"}, "customer": "CUST00089", "split": "dev"}
+{"kind": "robust_baskets", "q": "break down my spending into needs and wants", "expect": {"intent": "baskets"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_baskets", "q": "how much goes to bills vs everyday spending", "expect": {"intent": "baskets"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_baskets", "q": "what share of my money is fixed costs?", "expect": {"intent": "baskets"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_baskets", "q": "show my spending baskets", "expect": {"intent": "baskets"}, "customer": "CUST00052", "split": "dev"}
+{"kind": "robust_baskets", "q": "how much of my spending is regular bills", "expect": {"intent": "baskets"}, "customer": "CUST00115", "split": "dev"}
+{"kind": "robust_baskets", "q": "split my spending by type", "expect": {"intent": "baskets"}, "customer": "CUST00121", "split": "dev"}
+{"kind": "robust_subscriptions", "q": "what subscriptions am I paying for", "expect": {"intent": "subscriptions"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_subscriptions", "q": "list my monthly subscriptions", "expect": {"intent": "subscriptions"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_subscriptions", "q": "which streaming services do I pay for?", "expect": {"intent": "subscriptions"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_subscriptions", "q": "do I have any recurring payments I could cancel?", "expect": {"intent": "subscriptions"}, "customer": "CUST00052", "split": "dev"}
+{"kind": "robust_subscriptions", "q": "what renews every month", "expect": {"intent": "subscriptions"}, "customer": "CUST00115", "split": "dev"}
+{"kind": "robust_safe_to_spend", "q": "how much money do I have left to spend", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_safe_to_spend", "q": "what can I afford this week?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_safe_to_spend", "q": "is it ok to spend 50 euros on dinner tonight?", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_safe_to_spend", "q": "how much can I spend until payday", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00052", "split": "dev"}
+{"kind": "robust_safe_to_spend", "q": "whats my budget for the week", "expect": {"intent": "safe_to_spend"}, "customer": "CUST00115", "split": "dev"}
+{"kind": "robust_spender_type", "q": "what are my spending habits like?", "expect": {"intent": "spender_type"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_spender_type", "q": "analyse my spending personality", "expect": {"intent": "spender_type"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_spender_type", "q": "am I a big spender?", "expect": {"intent": "spender_type"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_spender_type", "q": "what does my spending say about me", "expect": {"intent": "spender_type"}, "customer": "CUST00052", "split": "dev"}
+{"kind": "robust_surprise", "q": "how much did I spend on unplanned stuff", "expect": {"intent": "surprise"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_surprise", "q": "what did emergencies cost me", "expect": {"intent": "surprise"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_surprise", "q": "how much should I keep aside for unexpected bills?", "expect": {"intent": "surprise"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_explain", "q": "what does compound interest mean", "expect": {"intent": "explain"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_explain", "q": "how does an emergency fund work?", "expect": {"intent": "explain"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_explain", "q": "tell me about inflation", "expect": {"intent": "explain"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_explain", "q": "what is a budget", "expect": {"intent": "explain"}, "customer": "CUST00052", "split": "dev"}
+{"kind": "robust_what_if", "q": "if I stopped taking taxis how much would I save", "expect": {"intent": "what_if"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_what_if", "q": "what would I save by eating out half as much", "expect": {"intent": "what_if"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_what_if", "q": "how much would cutting coffee save me per year", "expect": {"intent": "what_if"}, "customer": "CUST00038", "split": "dev"}
+{"kind": "robust_breakdown", "q": "where did my money go last month?", "expect": {"intent": "breakdown"}, "customer": "CUST00006", "split": "dev"}
+{"kind": "robust_breakdown", "q": "what are my biggest expenses", "expect": {"intent": "breakdown"}, "customer": "CUST00025", "split": "dev"}
+{"kind": "robust_breakdown", "q": "what did I spend the most on?", "expect": {"intent": "breakdown"}, "customer": "CUST00038", "split": "dev"}

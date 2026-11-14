@@ -10,3 +10,9 @@
    healthcare, car repairs, appliances, home repairs, pets → surprise; everything else → everyday.
 5. **What-if**: monthly = spend in the last 3 full months ÷ (days/30.44); yearly saving = monthly × cut% × 12.
 6. **Surprise buffer**: surprise costs over the last 12 months ÷ 12.
+
+### §3 addendum (real data, Sat 16:20)
+Bill payments in the real file carry no merchant. They are grouped by category, and a category group with more
+than 1.3 payments a month is split into clusters of similar amounts (sorted by size; a new cluster starts when an
+amount is more than 1.25x the previous one). Each cluster is then judged as its own possible bill.
+Real categories are mapped to the spec's keys with the MCC table in eval/keylib.py.

@@ -14,7 +14,7 @@ const rows = readdirSync(dir).filter((f) => f.startsWith('CUST')).map((f) => {
 const nice = (r: (typeof rows)[0]) => r.safe > 40 && r.safe < 700;
 const used = new Set<string>();
 const take = (ok: (r: (typeof rows)[0]) => boolean) => { const r = rows.find((x) => !used.has(x.id) && ok(x) && nice(x)) ?? rows.find((x) => !used.has(x.id) && ok(x)); if (r) used.add(r.id); return r; };
-const trio = [take((r) => r.seg === 'starter' && r.age <= 24), take((r) => r.kids && r.age >= 30 && r.age <= 50 && ['steady', 'saver', 'fixed_heavy', 'stretched', 'grazer'].includes(r.seg)), take((r) => r.seg === 'golden_years')];
+const trio = [take((r) => r.seg === 'starter' && r.age <= 24), take((r) => r.age >= 32 && r.age <= 50 && r.seg === 'fixed_heavy') ?? take((r) => r.age >= 32 && r.age <= 50 && ['steady', 'saver', 'stretched'].includes(r.seg)), take((r) => r.seg === 'golden_years')];
 const others = ['pass_through', 'grazer', 'saver', 'stretched', 'light_user', 'steady'].map((s) => take((r) => r.seg === s));
 const names = ['Aino', 'Eero', 'Sanna', 'Mikko', 'Leena', 'Juho', 'Helmi', 'Onni', 'Venla'];
 const picks = [trio[1], others[0], trio[0], trio[2], ...others.slice(1)].filter(Boolean) as (typeof rows)[0][];

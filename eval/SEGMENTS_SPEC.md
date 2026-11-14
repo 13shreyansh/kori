@@ -29,18 +29,20 @@ and `segment_eval.ts` compares the app against it on the dev and held-out custom
 | # | Segment | Rule |
 |---|---|---|
 | 1 | pass_through | income > 0 and sweep share >= 30% |
-| 2 | light_user | everyday payments < 20 a month |
+| 2 | light_user | everyday payments < 10 a month |
 | 3 | golden_years | age >= 65 or pension share >= 50% |
 | 4 | starter | age <= 25 or income < €1,300 a month |
 | 5 | stretched | spend ratio >= 100% or low-balance share >= 25% |
-| 6 | grazer | slips >= 5 a week |
-| 7 | saver | savings rate >= 6% |
+| 6 | grazer | slips >= 2.5 a week |
+| 7 | saver | savings rate >= 5% |
 | 8 | fixed_heavy | fixed share >= 45% |
 | 9 | steady | everything else |
 
 Order: behaviours the bank can act on (forwarding the salary, a quiet account) come first, then life stage,
-then money pressure, then habits. Thresholds for rules 5 to 8 were set from the DEV split's feature quantiles
-only, and must be re-set the same way (dev split only) when the real data arrives.
+then money pressure, then habits. Thresholds for rules 2, 6 and 7 were re-set on the REAL data's dev split only (Sat 16:20): the real file has
+about 19 everyday payments a month at the median (the stand-in data had about 41), so 'light' is now under 10
+(about the bottom 10%), grazer is 2.5+ small taps a week (top ~10%), saver 5%+ (top ~25%). Rules 1, 3, 4, 5 and 8 kept
+their absolute thresholds. The held-out split was not looked at while choosing them.
 
 ## What the eval measures
 1. **Spec agreement** (dev and held-out): share of customers where the app's segment equals the Python key.

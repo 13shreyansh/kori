@@ -161,7 +161,11 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
       calls.push({ name: 'what_if', args: { ...f, cut_percent: cut } });
       const w = A.whatIf(c, f, cut);
       const what = filter.slipsOnly ? 'coffee' : catLabel(f.category);
-      if (w.perMonth < 1) return { ...base, text: `You barely spend on ${what}, so cutting it won’t move the needle. Your biggest everyday category is a better place to look.`, receipts: w.receipts, followups: ['Where does my money go?'] };
+      if (w.perMonth < 1) {
+        const top = A.breakdown(c, 'category', { period: 'last_3_months', basket: 'everyday' }).filter((r) => !CATEGORIES[r.key]?.essential)[0];
+        const tr = top && A.receipt(`${top.label}, per month`, top.total / 3, 'EUR', `${eur(top.total)} over the last 3 full months ÷ 3`, top.ids);
+        return { ...base, text: `You spent ${eur(w.perMonth * 3)} on ${what} over the last 3 full months, so there is nothing to cut here: a good habit.${top ? ` Your biggest everyday want is ${top.label.toLowerCase()} at ${eur(tr!.value)} a month, a better place to look.` : ''}`, receipts: [...w.receipts, ...(tr ? [tr] : [])], followups: top ? [`How much could I save if I cut ${top.label.toLowerCase()} by ${cut}%?`] : ['Where does my money go?'] };
+      }
       return {
         ...base,
         text: `You spend about ${eur(w.perMonth)} a month on ${what}. Cutting that by ${cut}% frees ${eur(w.monthlySaving)} a month, which is ${eur(w.yearSaving)} a year. Saved at a cautious 3%, it would grow to about ${eur(w.fiveYears)} in five years.`,

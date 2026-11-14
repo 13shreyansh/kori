@@ -11,6 +11,8 @@ Splits (so we never tune on what we report):
 Usage: python3 eval/make_items.py app/public/data/customers eval/items [--per-split 40]
 """
 import json, os, sys, hashlib, statistics, datetime as dt, random, glob
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from keylib import normalise, assign_rkeys
 
 src, out = sys.argv[1], sys.argv[2]
 PER = int(sys.argv[sys.argv.index('--per-split') + 1]) if '--per-split' in sys.argv else 40
@@ -47,7 +49,8 @@ def window(today, key):
 def load(path):
     j = json.load(open(path))
     cols = {c: i for i, c in enumerate(j['columns'])}
-    tx = [dict(date=d(r[cols['date']]), amount=float(r[cols['amount']]), category=r[cols['category']], merchant=r[cols['merchant']], time=r[cols['time']]) for r in j['tx']]
+    tx = [dict(date=d(r[cols['date']]), amount=float(r[cols['amount']]), category=normalise(r[cols['category']], r[cols['mcc']]), merchant=r[cols['merchant']], time=r[cols['time']]) for r in j['tx']]
+    assign_rkeys(tx, SPEND_KINDS_EXCLUDED)
     return j['id'], j['age'], tx
 
 def is_spend(t): return t['amount'] < 0 and t['category'] not in SPEND_KINDS_EXCLUDED
@@ -62,7 +65,7 @@ def recurring_merchants(tx, today):
     """Spec §3: bill = same merchant, >=3 payments, at most ~1 per month, steady gap, steady price."""
     by = {}
     for t in tx:
-        if is_spend(t): by.setdefault(t['merchant'] or t['category'], []).append(t)
+        if is_spend(t): by.setdefault(t['rkey'], []).append(t)
     fixed_cats = {'housing', 'loan_repayment', 'utilities', 'telecom', 'insurance', 'childcare', 'subscriptions'}
     surprise_cats = {'taxes', 'pharmacy', 'healthcare', 'vehicle_maintenance', 'household_appliances', 'home_improvement', 'pets'}
     out = {}
@@ -86,7 +89,7 @@ def recurring_merchants(tx, today):
 def basket_of(t, rec):
     fixed_default = {'housing', 'loan_repayment', 'utilities', 'telecom', 'insurance', 'childcare'}
     surprise = {'taxes', 'pharmacy', 'healthcare', 'vehicle_maintenance', 'household_appliances', 'home_improvement', 'pets'}
-    if (t['merchant'] or t['category']) in rec: return 'fixed'
+    if t['rkey'] in rec: return 'fixed'
     if t['category'] in surprise: return 'surprise'
     if t['category'] in fixed_default: return 'fixed'
     return 'everyday'

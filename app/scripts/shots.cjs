@@ -30,7 +30,7 @@ const { chromium } = require('playwright');
   await p.goto(base + '?compare'); await p.waitForTimeout(2000);
   await p.screenshot({ path: '/home/user/kori/shots/9-compare.png' });
   const m = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
-  await m.goto(base + '?c=CUST00171'); await m.waitForTimeout(1500);
+  await m.goto(base + '?c=CUST00394'); await m.waitForTimeout(1500);
   await m.evaluate(() => document.querySelector('.screen').scrollTo(0, 330)); await m.waitForTimeout(400);
   await m.screenshot({ path: '/home/user/kori/shots/10-passthrough-card.png' });
   await m.click('nav >> text=Explore'); await m.waitForTimeout(500);

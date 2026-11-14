@@ -48,7 +48,7 @@ export function Me({ c, personas, current, pick, open, ask }: { c: Customer; per
         Kori calculates every number on the device. When the AI writes an answer, it only sees the totals it asked for, never your raw payments, merchants or balance history.
       </div>
       <a className="btn ghost" href="#compare" style={{ width: '100%', margin: '4px 0 6px' }}><Icon name="Columns3" size={16} /> See three customers side by side</a>
-      <div className="section-title">Demo customers <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>synthetic S-Pankki data</span></div>
+      <div className="section-title">Demo customers <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>S-Pankki challenge data</span></div>
       <div className="card" style={{ padding: 6 }}>
         {personas.map((x) => (
           <button key={x.id} className={'persona' + (x.id === current ? ' on' : '')} onClick={() => pick(x.id)}>
