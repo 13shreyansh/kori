@@ -128,7 +128,7 @@ export const PLAYBOOKS: Record<SegmentId, Playbook> = {
     questions: ['What is safe to spend this week?', 'How much do I spend on food delivery?', 'What is an emergency fund?'],
     sliders: [{ kind: 'save', title: 'Your first buffer', label: 'Save each month', max: 150, step: 5, start: 25, goal: 500, goalLabel: 'a €500 first buffer' }, { kind: 'cut', title: 'Small habits', basket: 'everyday', exclude: ['groceries'], top: 3 }],
     card: (f, e) => ({ title: 'Building your first buffer', body: `${f.incomePerMonth < 1800 ? `With about ${e(f.incomePerMonth)} a month coming in, every euro counts.` : `You're early in your money life, with about ${e(f.incomePerMonth)} a month coming in.`} A first €500 buffer means one surprise bill doesn't wreck your month.`, ask: 'What is an emergency fund?' }),
-    nudge: (f, e) => `${e(25)} a month reaches €500 in about 20 months. Rounding up small taps gets you there faster.`,
+    nudge: (_f, e) => `${e(25)} a month reaches €500 in about 20 months. Rounding up small taps gets you there faster.`,
   },
   stretched: {
     id: 'stretched', name: 'The Tightrope', icon: 'Activity',

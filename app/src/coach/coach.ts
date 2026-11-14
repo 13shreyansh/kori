@@ -247,7 +247,7 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
     case 'cut_back': {
       const rows = A.breakdown(c, 'category', { period: 'last_3_months', basket: 'everyday' }).filter((r) => !CATEGORIES[r.key]?.essential).slice(0, 3);
       calls.push({ name: 'breakdown', args: { by: 'category', basket: 'everyday', period: 'last_3_months' } });
-      if (!rows.length) return { ...base, text: 'Your everyday spending is almost all essentials, so there is no obvious habit to trim. The bigger lever is your fixed bills: phone, insurance and subscriptions are worth a yearly check.', followups: ['What bills are coming up?'] };
+      if (!rows.length) return { ...base, receipts: [], text: 'Your everyday spending is almost all essentials, so there is no obvious habit to trim. The bigger lever is your fixed bills: phone, insurance and subscriptions are worth a yearly check.', followups: ['What bills are coming up?'] };
       const recs = rows.map((r) => A.receipt(`${r.label}, 20% less for a year`, (r.total / 3) * 0.2 * 12, 'EUR', `${eur(r.total)} over 3 months ÷ 3 × 20% × 12`, r.ids));
       return { ...base, text: `Your easiest wins are the wants in your everyday basket: ${rows.map((r, k) => `${r.label.toLowerCase()} (${eur(r.total / 3)} a month, 20% less is ${eur(recs[k].value)} a year)`).join(', ')}. Pick the one you'd miss least.`, receipts: recs, visual: { kind: 'bars', title: 'Everyday wants, last 3 months', rows: rows.map((r) => ({ label: r.label, value: r.total, ids: r.ids })) }, lesson: LESSONS.slips, followups: [`How much could I save if I cut ${rows[0].label.toLowerCase()} by 20%?`] };
     }
