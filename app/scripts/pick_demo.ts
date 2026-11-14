@@ -1,23 +1,25 @@
-// Picks demo customers with distinct stories: one per behaviour segment, plus a compare trio
-// (student, family, retiree) for the side-by-side view (?compare).
+// Picks demo customers that show the persona grid: different life stages, money styles and traits,
+// plus a compare trio (Starter, Established, Golden) for the side-by-side view.
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { buildCustomer } from '../src/engine/model';
 import * as A from '../src/engine/analytics';
-import { segmentOf } from '../src/engine/segments';
+import { personaOf } from '../src/engine/personas';
 const dir = 'public/data/customers/';
-const rows = readdirSync(dir).filter((f) => f.startsWith('CUST')).map((f) => {
+const rows = readdirSync(dir).filter((f) => f.startsWith('CUST')).sort().map((f) => {
   const c = buildCustomer(JSON.parse(readFileSync(dir + f, 'utf8')));
-  const s = segmentOf(c); const safe = A.safeToSpend(c).week;
-  const kids = c.tx.some((t) => t.category === 'childcare' || t.merchant.includes('LAPSILISA'));
-  return { id: c.id, age: c.age, seg: s.id, name: s.play.name, safe, kids, n: c.tx.length };
-}).sort((a, b) => a.id.localeCompare(b.id));
-const nice = (r: (typeof rows)[0]) => r.safe > 40 && r.safe < 700;
+  const p = personaOf(c);
+  return { id: c.id, age: c.age, stage: p.stage, style: p.style, traits: p.traits, name: p.name, safe: A.safeToSpend(c).week };
+});
+const nice = (r: (typeof rows)[0]) => r.safe > 40 && r.safe < 900;
 const used = new Set<string>();
 const take = (ok: (r: (typeof rows)[0]) => boolean) => { const r = rows.find((x) => !used.has(x.id) && ok(x) && nice(x)) ?? rows.find((x) => !used.has(x.id) && ok(x)); if (r) used.add(r.id); return r; };
-const trio = [take((r) => r.seg === 'starter' && r.age <= 24), take((r) => r.age >= 32 && r.age <= 50 && r.seg === 'fixed_heavy') ?? take((r) => r.age >= 32 && r.age <= 50 && ['steady', 'saver', 'stretched'].includes(r.seg)), take((r) => r.seg === 'golden_years')];
-const others = ['pass_through', 'grazer', 'saver', 'stretched', 'light_user', 'steady'].map((s) => take((r) => r.seg === s));
-const names = ['Aino', 'Eero', 'Sanna', 'Mikko', 'Leena', 'Juho', 'Helmi', 'Onni', 'Venla'];
-const picks = [trio[1], others[0], trio[0], trio[2], ...others.slice(1)].filter(Boolean) as (typeof rows)[0][];
-const demo = picks.map((r, i) => ({ id: r.id, name: names[i], age: r.age, type: r.name, segment: r.seg, compare: trio.includes(r) }));
-console.log(demo);
+const want: [string, string, string?][] = [
+  ['established', 'steady', 'bills'], ['established', 'pass_through'], ['starter', 'steady', 'taps'], ['golden', 'saver'],
+  ['builder', 'saver'], ['builder', 'tightrope'], ['starter', 'tightrope'], ['golden', 'tightrope'], ['established', 'saver', 'quiet'], ['builder', 'steady', 'irregular'],
+];
+const picks = want.map(([s, y, t]) => take((r) => r.stage === s && r.style === y && (!t || r.traits.includes(t as never))) ?? take((r) => r.stage === s && r.style === y)).filter(Boolean) as (typeof rows)[0][];
+const trio = new Set([picks[2]?.id, picks[0]?.id, picks[3]?.id]);
+const names = ['Aino', 'Eero', 'Sanna', 'Mikko', 'Leena', 'Juho', 'Helmi', 'Onni', 'Venla', 'Ilmari'];
+const demo = picks.map((r, i) => ({ id: r.id, name: names[i], age: r.age, type: r.name, segment: `${r.stage}.${r.style}`, traits: r.traits, compare: trio.has(r.id) }));
+console.log(demo.map((d) => `${d.name} ${d.age} ${d.type} [${d.traits}] ${d.compare ? '*' : ''}`).join('\n'));
 writeFileSync('public/data/demo.json', JSON.stringify(demo, null, 1));

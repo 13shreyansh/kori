@@ -3,7 +3,9 @@ import * as A from './engine/analytics';
 import { eur } from './engine/analytics';
 import { buildCustomer, type Customer, type RawCustomer } from './engine/model';
 import { askCoach, providerStatus } from './coach/provider';
-import { segmentOf } from './engine/segments';
+import { personaOf } from './engine/personas';
+import { TONE_TEXT, usePrefs } from './ui/prefs';
+import { Customise } from './ui/Customise';
 import { Coach, type Msg } from './ui/Coach';
 import { Explore } from './ui/Explore';
 import { Icon } from './ui/Icon';
@@ -26,6 +28,8 @@ export default function App() {
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [busy, setBusy] = useState(false);
   const [provider, setProvider] = useState('offline');
+  const { prefs, update: updatePrefs, reset: resetPrefs } = usePrefs(pid);
+  const [czOpen, setCzOpen] = useState(false);
 
   useEffect(() => { providerStatus().then(setProvider); }, []);
   const [compare, setCompare] = useState(() => new URLSearchParams(location.search).has('compare') || location.hash === '#compare');
@@ -54,10 +58,10 @@ export default function App() {
     setMsgs((m) => [...m, { role: 'user', text: q }]);
     setBusy(true);
     const history = msgs.slice(-6).map((m) => ({ role: m.role, text: m.text }));
-    const a = await askCoach(c, q, history, provider);
+    const a = await askCoach(c, q, history, provider, TONE_TEXT[prefs.tone]);
     setBusy(false);
     setMsgs((m) => [...m, { role: 'bot', text: a.text, answer: a }]);
-  }, [c, msgs, provider]);
+  }, [c, msgs, provider, prefs.tone]);
 
   if (compare) return personas.length ? <Compare personas={personas} /> : null;
   return (
@@ -66,10 +70,11 @@ export default function App() {
         <div className="statusbar"><span>9:41</span><span style={{ display: 'flex', gap: 6 }}><Icon name="Signal" size={15} /><Icon name="Wifi" size={15} /><Icon name="BatteryFull" size={17} /></span></div>
         {!c ? <div className="screen" style={{ display: 'grid', placeItems: 'center' }}><div className="typing"><i /><i /><i /></div></div> : (
           <>
-            {tab === 'today' && <Today c={c} name={name} open={setSheet} ask={send} />}
-            {tab === 'coach' && <Coach msgs={msgs} busy={busy} send={send} open={setSheet} provider={provider} starters={[...segmentOf(c).play.questions, 'What kind of spender am I?']} />}
+            {tab === 'today' && <Today c={c} name={name} open={setSheet} ask={send} prefs={prefs} customise={() => setCzOpen(true)} />}
+            <Customise open={czOpen} onClose={() => setCzOpen(false)} p={personaOf(c)} prefs={prefs} update={updatePrefs} reset={resetPrefs} />
+            {tab === 'coach' && <Coach msgs={msgs} busy={busy} send={send} open={setSheet} provider={provider} starters={personaOf(c).questions} />}
             {tab === 'explore' && <Explore c={c} open={setSheet} />}
-            {tab === 'me' && <Me c={c} personas={personas} current={pid} pick={(id) => { setPid(id); setTab('today'); }} open={setSheet} ask={send} />}
+            {tab === 'me' && <Me c={c} personas={personas} current={pid} pick={(id) => { setPid(id); setTab('today'); }} open={setSheet} ask={send} customise={() => setCzOpen(true)} />}
             <SheetView c={c} s={sheet} close={() => setSheet(null)} ask={(q) => { setSheet(null); send(q); }} />
           </>
         )}

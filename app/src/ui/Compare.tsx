@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { buildCustomer, type Customer, type RawCustomer } from '../engine/model';
-import { segmentOf } from '../engine/segments';
+import { personaOf } from '../engine/personas';
+import { DEFAULT_PREFS } from './prefs';
 import { Icon } from './Icon';
 import type { Persona } from './Me';
 import { Today } from './Today';
@@ -22,13 +23,13 @@ export function Compare({ personas }: { personas: Persona[] }) {
       </div>
       <div className="compare">
         {cs.map((c) => {
-          const p = personas.find((x) => x.id === c.id); const seg = segmentOf(c);
+          const p = personas.find((x) => x.id === c.id); const seg = personaOf(c);
           return (
             <div className="compare-col" key={c.id}>
-              <div className="compare-label"><b>{p?.name ?? c.id}, {c.age} · {seg.play.name}</b><span>{seg.play.questions[0]}</span></div>
+              <div className="compare-label"><b>{p?.name ?? c.id}, {c.age} · {seg.name}</b><span>{seg.line}</span></div>
               <div className="phone">
                 <div className="statusbar"><span>9:41</span><span style={{ display: 'flex', gap: 6 }}><Icon name="Signal" size={15} /><Icon name="Wifi" size={15} /><Icon name="BatteryFull" size={17} /></span></div>
-                <Today c={c} name={p?.name ?? 'there'} open={noop} ask={noop} />
+                <Today c={c} name={p?.name ?? 'there'} open={noop} ask={noop} prefs={DEFAULT_PREFS} />
               </div>
               <a className="btn ghost" href={`#c=${c.id}`}>Open {p?.name ?? 'this'} in the app</a>
             </div>

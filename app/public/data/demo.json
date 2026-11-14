@@ -3,72 +3,100 @@
   "id": "CUST01567",
   "name": "Aino",
   "age": 47,
-  "type": "The Fixed-Cost Juggler",
-  "segment": "fixed_heavy",
+  "type": "The Steady Household",
+  "segment": "established.steady",
+  "traits": [
+   "bills"
+  ],
   "compare": true
  },
  {
   "id": "CUST00394",
   "name": "Eero",
   "age": 45,
-  "type": "The Pass-Through",
-  "segment": "pass_through",
+  "type": "The Split-Bank Household",
+  "segment": "established.pass_through",
+  "traits": [
+   "taps"
+  ],
   "compare": false
  },
  {
-  "id": "CUST00138",
+  "id": "CUST00306",
   "name": "Sanna",
-  "age": 18,
-  "type": "The Starter",
-  "segment": "starter",
+  "age": 22,
+  "type": "The Finding-Feet",
+  "segment": "starter.steady",
+  "traits": [
+   "taps"
+  ],
   "compare": true
  },
  {
   "id": "CUST00229",
   "name": "Mikko",
   "age": 83,
-  "type": "Golden Years",
-  "segment": "golden_years",
+  "type": "The Comfortable Retiree",
+  "segment": "golden.saver",
+  "traits": [],
   "compare": true
  },
  {
-  "id": "CUST00982",
+  "id": "CUST00025",
   "name": "Leena",
   "age": 26,
-  "type": "The Tap-and-Go",
-  "segment": "grazer",
+  "type": "The Goal Builder",
+  "segment": "builder.saver",
+  "traits": [],
   "compare": false
  },
  {
-  "id": "CUST00025",
+  "id": "CUST01090",
   "name": "Juho",
-  "age": 26,
-  "type": "The Quiet Saver",
-  "segment": "saver",
+  "age": 30,
+  "type": "The Stretched Builder",
+  "segment": "builder.tightrope",
+  "traits": [],
   "compare": false
  },
  {
-  "id": "CUST00374",
+  "id": "CUST00171",
   "name": "Helmi",
-  "age": 54,
-  "type": "The Tightrope",
-  "segment": "stretched",
+  "age": 21,
+  "type": "The Month-End Juggler",
+  "segment": "starter.tightrope",
+  "traits": [],
   "compare": false
  },
  {
-  "id": "CUST00121",
+  "id": "CUST00854",
   "name": "Onni",
-  "age": 70,
-  "type": "The Light Touch",
-  "segment": "light_user",
+  "age": 71,
+  "type": "The Careful Pensioner",
+  "segment": "golden.tightrope",
+  "traits": [],
   "compare": false
  },
  {
-  "id": "CUST00038",
+  "id": "CUST02144",
   "name": "Venla",
-  "age": 40,
-  "type": "The Steady Planner",
-  "segment": "steady",
+  "age": 49,
+  "type": "The Cushioned Household",
+  "segment": "established.saver",
+  "traits": [
+   "quiet"
+  ],
+  "compare": false
+ },
+ {
+  "id": "CUST00263",
+  "name": "Ilmari",
+  "age": 39,
+  "type": "The Busy Builder",
+  "segment": "builder.steady",
+  "traits": [
+   "irregular"
+  ],
   "compare": false
  }
 ]

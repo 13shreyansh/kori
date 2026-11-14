@@ -5,29 +5,25 @@ import { eur } from '../engine/analytics';
 import type { Customer } from '../engine/model';
 import type { Basket } from '../engine/taxonomy';
 import { Icon } from './Icon';
-import { SegmentCard } from './SegmentCard';
-import { segmentOf } from '../engine/segments';
+import { PersonaCardView, TraitCards } from './PersonaCard';
+import { personaOf } from '../engine/personas';
+import { effectiveLayout, type Prefs } from './prefs';
+import type { ReactNode } from 'react';
 import type { Open } from './types';
 
 const TONE: Record<Basket, string> = { fixed: 'fixed', surprise: 'surprise', everyday: 'everyday' };
 
-export function Today({ c, name, open, ask }: { c: Customer; name: string; open: Open; ask: (q: string) => void }) {
+export function Today({ c, name, open, ask, prefs, customise }: { c: Customer; name: string; open: Open; ask: (q: string) => void; prefs: Prefs; customise?: () => void }) {
   const s = useMemo(() => A.safeToSpend(c), [c]);
   const b = useMemo(() => A.baskets(c, 'last_3_months'), [c]);
   const notes = useMemo(() => A.insights(c), [c]);
-  const seg = useMemo(() => segmentOf(c), [c]);
+  const p = useMemo(() => personaOf(c, (x) => eur(x)), [c]);
   const bills = useMemo(() => A.upcomingBills(c, addDays(c.today, 14)).slice(0, 4), [c]);
   const hour = 9;
   const greeting = hour < 12 ? 'Good morning' : 'Hello';
   const [whole, cents] = s.week.toFixed(2).split('.');
-
-  return (
-    <div className="screen fade-in">
-      <div className="topbar">
-        <div className="hello">{greeting}<b>{name}</b></div>
-        <div className="avatar">{name[0]}</div>
-      </div>
-
+  const blocks: Record<string, ReactNode> = {
+    safe: (<>
       <motion.button className="card hero" style={{ width: '100%', textAlign: 'left' }} whileTap={{ scale: 0.985 }}
         onClick={() => open({ kind: 'safe', safe: s })} aria-label="How safe to spend is calculated">
         <svg className="hero-ring" width="190" height="190" viewBox="0 0 190 190" aria-hidden>
@@ -44,8 +40,10 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
         <div className="hero-cta">See how it’s worked out <Icon name="ChevronRight" size={15} /></div>
       </motion.button>
 
-      <SegmentCard seg={seg} ask={ask} />
-
+</>),
+    persona: <PersonaCardView p={p} ask={ask} customise={customise} />,
+    traits: <TraitCards p={p} ask={ask} />,
+    baskets: (<>
       <div className="section-title">Your three baskets <button onClick={() => ask('Explain my three baskets')}>Why three?</button></div>
       <div className="baskets">
         {b.rows.map((r, i) => (
@@ -64,6 +62,8 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
         Average of your last 3 full months. <b style={{ color: 'var(--everyday)' }}>{b.slips.count} small taps</b> under €20 made up {eur(b.slips.total)} of everyday spending.
       </p>
 
+</>),
+    notes: (<>
       <div className="section-title">Coach notes</div>
       <div className="notes">
         {notes.map((n) => (
@@ -79,8 +79,9 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
         ))}
       </div>
 
-      <GuessGame c={c} open={open} />
-
+</>),
+    guess: <GuessGame c={c} open={open} />,
+    bills: (<>
       {bills.length > 0 && (
         <>
           <div className="section-title">Coming up <button onClick={() => ask('What bills are coming up?')}>All bills</button></div>
@@ -95,6 +96,17 @@ export function Today({ c, name, open, ask }: { c: Customer; name: string; open:
           </div>
         </>
       )}
+</>),
+  };
+  const layout = effectiveLayout(p, prefs);
+
+  return (
+    <div className="screen fade-in" style={{ ['--ts' as string]: prefs.textScale ?? p.textScale }}>
+      <div className="topbar">
+        <div className="hello">{greeting}<b>{name}</b></div>
+        <div className="avatar">{name[0]}</div>
+      </div>
+      {layout.map((m) => <div key={m} className={`mod mod-${m}`}>{blocks[m]}</div>)}
     </div>
   );
 }

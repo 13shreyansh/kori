@@ -2,7 +2,7 @@ import type { Receipt } from '../engine/analytics';
 import type { Customer } from '../engine/model';
 import { answerOffline, type CoachAnswer } from './coach';
 import { SYSTEM_PROMPT } from './prompt';
-import { segmentOf } from '../engine/segments';
+import { personaOf } from '../engine/personas';
 import { runTool, TOOL_DECLS, ungroundedNumbers } from './tools';
 
 export async function providerStatus(): Promise<string> {
@@ -43,15 +43,15 @@ export async function askGemini(c: Customer, q: string, history: { role: string;
   return answerOffline(c, q);
 }
 
-export async function askCoach(c: Customer, q: string, history: { role: string; text: string }[], provider: string): Promise<CoachAnswer> {
+export async function askCoach(c: Customer, q: string, history: { role: string; text: string }[], provider: string, toneNote = ''): Promise<CoachAnswer> {
   if (provider === 'gemini') {
     try {
-      const seg = segmentOf(c).play;
+      const seg = personaOf(c);
       return await askGemini(c, q, history, async (body) => {
         const r = await fetch('api/gemini', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
         if (!r.ok) throw new Error('gemini ' + r.status);
         return r.json();
-      }, `${SYSTEM_PROMPT}\n\nThis customer's behaviour segment: ${seg.name}. ${seg.tone}`);
+      }, `${SYSTEM_PROMPT}\n\nThis customer's persona: ${seg.name}. ${seg.tone} ${toneNote}`);
     } catch (e) { console.warn('Gemini failed, using on-device coach', e); }
   }
   await new Promise((r) => setTimeout(r, 450)); // feels less robotic than an instant reply

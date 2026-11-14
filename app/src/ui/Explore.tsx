@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useMemo, useState } from 'react';
 import { CATEGORIES } from '../engine/taxonomy';
-import { segmentOf } from '../engine/segments';
+import { personaOf } from '../engine/personas';
 import * as A from '../engine/analytics';
 import { eur } from '../engine/analytics';
 import { merchantName, type Customer } from '../engine/model';
@@ -66,11 +66,11 @@ export function Explore({ c, open }: { c: Customer; open: Open }) {
 }
 
 function WhatIfLab({ c }: { c: Customer }) {
-  const seg = useMemo(() => segmentOf(c), [c]);
+  const seg = useMemo(() => personaOf(c), [c]);
   const s = A.safeToSpend(c);
   const [vals, setVals] = useState<Record<string, number>>({});
   const set = (k: string, v: number) => setVals((x) => ({ ...x, [k]: v }));
-  const parts = seg.play.sliders.map((sp, si) => {
+  const parts = seg.sliders.map((sp, si) => {
     if (sp.kind === 'cut') {
       const rows = A.breakdown(c, 'category', { period: 'last_3_months', basket: sp.basket }).filter((r) => !sp.exclude.includes(r.key) && (sp.basket === 'fixed' || !CATEGORIES[r.key]?.essential)).slice(0, sp.top);
       const monthly = rows.reduce((a, r) => a + (r.total / 3) * ((vals[`${si}:${r.key}`] ?? 0) / 100), 0);
@@ -118,7 +118,7 @@ function WhatIfLab({ c }: { c: Customer }) {
   const goal = parts.find((p) => 'goal' in p && p.goal)?.goal;
   return (
     <>
-      <div className="section-title">What-if lab <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>tuned for {seg.play.name}</span></div>
+      <div className="section-title">What-if lab <span className="muted" style={{ textTransform: 'none', letterSpacing: 0 }}>tuned for {seg.name}</span></div>
       <div className="card">
         <p className="muted" style={{ margin: '0 0 4px', fontSize: 13.5, fontWeight: 600 }}>Drag to try a change. The sliders are picked for how you use money.</p>
         {parts.map((p) => p.ui)}

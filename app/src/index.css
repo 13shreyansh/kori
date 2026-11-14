@@ -256,3 +256,16 @@ input[type='range'] { width: 100%; accent-color: var(--everyday); }
 .lab-sub { font-size: 12px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); margin: 14px 0 2px; }
 .keep-bar { height: 10px; border-radius: 99px; background: var(--line); overflow: hidden; margin: 6px 0 6px; }
 .keep-bar i { display: block; height: 100%; background: var(--brand); border-radius: 99px; transition: width 0.25s; }
+.seg-edit { margin-left: auto; width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; color: var(--ink-2); }
+.seg-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.seg-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; padding: 4px 9px; border-radius: 99px; background: color-mix(in srgb, var(--seg) 10%, transparent); color: var(--ink); }
+.screen { font-size: calc(16px * var(--ts, 1)); }
+.cz-title { font-size: 12px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); margin: 18px 0 8px; }
+.cz-list { border-radius: 16px; box-shadow: inset 0 0 0 1.5px var(--line); overflow: hidden; }
+.cz-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; font-weight: 700; font-size: 14.5px; }
+.cz-row + .cz-row { border-top: 1.5px solid var(--line); }
+.cz-row.off > span:first-child { opacity: 0.45; text-decoration: line-through; }
+.cz-actions { display: flex; gap: 4px; }
+.cz-actions button { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; }
+.cz-actions button:disabled { opacity: 0.3; }
+.chip.on { background: var(--ink); color: var(--paper); }
