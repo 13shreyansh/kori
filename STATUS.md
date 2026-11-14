@@ -1,6 +1,7 @@
 ENTRY Kori / 2026-11-14 23:20 EET / app commit 7b8f6e5 / https://kori-wheat.vercel.app
 
 DONE:
+
 - Rebuilt login, shared bank shell, rule-selected Play/Plan/Month homes, editable receipts, Ask Kori/pinning and “Why this home?”.
 - Generated invented transaction histories in the official schema. Current Helsinki dates, Saturday patterns, projections and saving plans come from code and account data.
 - Deployed the existing Kori project and rewrote DEMO_SCRIPT.md as real user actions. All acceptance checks pass.
@@ -16,6 +17,7 @@ NEEDS DECISION: none
 BLOCKED: none
 
 Spec gaps I filled:
+
 - Used the explicitly permitted grocery trend instead of unverified Bonus rates. No Bonus estimate or original Bonus-threshold receipt is claimed.
 - Kept opening balances, goals and scheduled e-invoices as explicit account records alongside transaction rows. An overridden Plan home without a goal offers a goal form.
 - Described the implemented merchant/category rules truthfully on “Why this home?”. Gemini selects answer blocks; the local router handles unavailable model responses. No arithmetic comes from generated prose.
@@ -30,7 +32,7 @@ Taste gate on the deployed site:
 | 3. Start screen, entry login override | yes | [01-login-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/01-login-desktop.png) |
 | 4. Working controls and navigation | yes | [16-profile-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/16-profile-desktop.png) |
 | 5. Computed numbers and receipts | yes | [06-aino-receipt-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/06-aino-receipt-desktop.png) |
-| 6. Screen spec, with choices listed below | yes | [03-three-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/03-three-desktop.png) |
+| 6. Screen spec, with documented choices | yes | [03-three-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/03-three-desktop.png) |
 | 7. Specified primary actions | yes | [04-aino-ask-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/04-aino-ask-desktop.png) |
 | 8. Plain banking language | yes | [10-mikko-loan-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/10-mikko-loan-desktop.png) |
 | 9. Purpose clear at first glance | yes | [03-three-desktop.png](/Users/shreyansh/Documents/ChatGPT/Junction/kori/screenshots/kori/03-three-desktop.png) |
