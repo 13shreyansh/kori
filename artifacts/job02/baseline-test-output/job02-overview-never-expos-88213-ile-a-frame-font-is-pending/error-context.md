@@ -66,5 +66,5 @@ Call log:
   27 |  const space=await page.locator('[data-block="guess"]').evaluate(el=>{const labels=[...el.querySelectorAll('.guess-label,.actual-label')].map(x=>x.getBoundingClientRect().bottom);const text=el.querySelector('.guess-reveal>p')!.getBoundingClientRect();return {actualGap:text.top-Math.max(...labels),moduleGap:parseFloat(getComputedStyle(el).getPropertyValue('--gap'))};});
   28 |  writeFileSync(`../artifacts/job02/spacing-${width}.json`,JSON.stringify(space,null,2));expect(space.actualGap).toBeCloseTo(space.moduleGap,0);
   29 | });
-  30 | 
+  30 |
 ```

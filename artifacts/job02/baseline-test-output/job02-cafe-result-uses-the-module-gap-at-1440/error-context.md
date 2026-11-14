@@ -167,5 +167,5 @@ Received difference:   43
 > 28 |  writeFileSync(`../artifacts/job02/spacing-${width}.json`,JSON.stringify(space,null,2));expect(space.actualGap).toBeCloseTo(space.moduleGap,0);
      |                                                                                                                 ^ Error: expect(received).toBeCloseTo(expected, precision)
   29 | });
-  30 | 
+  30 |
 ```
