@@ -7,7 +7,6 @@ import json, os, sys, glob, hashlib, statistics, datetime as dt
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from keylib import normalise, assign_rkeys
 
-src, out = sys.argv[1], sys.argv[2]
 INCOME = {'income_salary', 'income_benefits', 'income_pension', 'tax_refund', 'income_other', 'Salary', 'Other Income'}
 SAVINGS = {'transfer_savings', 'invest_deposit', 'Invest Deposit'}
 SWEEP = {'salary_sweep', 'Salary Sweep'}
@@ -81,14 +80,16 @@ def segment(f):
     if f['fixed_share'] >= 0.45: return 'fixed_heavy'
     return 'steady'
 
-os.makedirs(out, exist_ok=True)
-rows = {'dev': [], 'heldout': []}
-for p in sorted(glob.glob(os.path.join(src, 'CUST*.json'))):
-    j = json.load(open(p))
-    split = 'dev' if int(hashlib.sha1(j['id'].encode()).hexdigest(), 16) % 2 == 0 else 'heldout'
-    f = features(j)
-    rows[split].append(dict(customer=j['id'], expect=segment(f), features={k: (round(v, 4) if v != float('inf') else 'inf') for k, v in f.items()}))
-for s, r in rows.items():
-    with open(os.path.join(out, f'segments_{s}.jsonl'), 'w') as fh:
-        for x in r: fh.write(json.dumps(x) + '\n')
-    print(s, len(r), 'customers')
+if __name__ == '__main__':
+    src, out = sys.argv[1], sys.argv[2]
+    os.makedirs(out, exist_ok=True)
+    rows = {'dev': [], 'heldout': []}
+    for p in sorted(glob.glob(os.path.join(src, 'CUST*.json'))):
+        j = json.load(open(p))
+        split = 'dev' if int(hashlib.sha1(j['id'].encode()).hexdigest(), 16) % 2 == 0 else 'heldout'
+        f = features(j)
+        rows[split].append(dict(customer=j['id'], expect=segment(f), features={k: (round(v, 4) if v != float('inf') else 'inf') for k, v in f.items()}))
+    for s, r in rows.items():
+        with open(os.path.join(out, f'segments_{s}.jsonl'), 'w') as fh:
+            for x in r: fh.write(json.dumps(x) + '\n')
+        print(s, len(r), 'customers')

@@ -1,3 +1,4 @@
+import { personaOf, STAGE_INFO, STYLE_INFO } from '../engine/personas';
 // The coach. Numbers ALWAYS come from the engine (tools); language comes from templates (offline) or Gemini.
 import * as A from '../engine/analytics';
 import { eur, type Receipt } from '../engine/analytics';
@@ -181,7 +182,7 @@ function answerEnglish(c: Customer, question: string): CoachAnswer {
       const t = sp.traits;
       return {
         ...base,
-        text: `${sp.type.emoji} ${sp.type.name}. ${sp.type.line} Based on your last 3 months: ${t[0].display} small taps a week, ${t[1].display} of everyday spending on Fri–Sun, and ${t[5].display} moved to savings.`,
+        text: `${(() => { const pp = personaOf(c); return `${pp.name}: ${pp.line.toLowerCase()}. ${STAGE_INFO[pp.stage].label} life stage, ${STYLE_INFO[pp.style].label.toLowerCase()} money style.`; })()} Based on your last 3 months: ${t[0].display} small taps a week, ${t[1].display} of everyday spending on Fri–Sun, and ${t[5].display} moved to savings.`,
         receipts: t.map((x) => A.receipt(x.label, x.key === 'weekend' || x.key === 'saving' || x.key === 'steady' ? Math.round(x.value * 100) : x.value, x.key === 'weekend' || x.key === 'saving' || x.key === 'steady' ? '%' : x.key === 'slips' ? 'count' : 'EUR', x.note, x.ids)),
         visual: { kind: 'traits', title: 'Your patterns', rows: t.map((x) => ({ label: x.label, value: x.value, display: x.display })) },
         lesson: LESSONS.profile,
