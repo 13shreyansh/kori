@@ -267,6 +267,11 @@ test("receipt relabelling, restored sessions, reduced motion and tabs", async ({
         .getByRole("button", { name: "Show older payments", exact: true })
         .click();
       expect(await page.locator(".payment").count()).toBeGreaterThan(before);
+      await page.getByRole("searchbox").fill("Kela");
+      await expect(
+        page.getByRole("button", { name: "Show older payments", exact: true }),
+      ).toHaveCount(0);
+      await page.getByRole("searchbox").fill("");
     }
   }
 });

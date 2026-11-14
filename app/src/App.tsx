@@ -664,6 +664,12 @@ function Phone({ embed }: { embed?: string }) {
       const t = d.tx.find((t) => t.i === Number(i));
       if (t) t.mcc = cat;
     }
+  const bankPayments =
+    d?.tx.filter(
+      (t) =>
+        t.merchant.toLowerCase().includes(search.toLowerCase()) ||
+        t.category.toLowerCase().includes(search.toLowerCase()),
+    ) ?? [];
   const home = d ? F.assignHome(d, s.layout) : null;
   const preset = s.preset ?? home?.preset ?? "Regular";
   const p: BlockProps | null = d
@@ -850,20 +856,8 @@ function Phone({ embed }: { embed?: string }) {
                     />
                   </label>
                   <Module>
-                    <PaymentRows
-                      tx={d.tx
-                        .filter(
-                          (t) =>
-                            t.merchant
-                              .toLowerCase()
-                              .includes(search.toLowerCase()) ||
-                            t.category
-                              .toLowerCase()
-                              .includes(search.toLowerCase()),
-                        )
-                        .slice(-bankLimit)}
-                    />
-                    {bankLimit < d.tx.length && (
+                    <PaymentRows tx={bankPayments.slice(-bankLimit)} />
+                    {bankLimit < bankPayments.length && (
                       <button
                         className="text-button full"
                         onClick={() => setBankLimit((v) => v + 100)}
