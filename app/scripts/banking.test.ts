@@ -168,3 +168,5 @@ describe("review regressions", () => {
     expect(F.currentBalance(d, "savings") - 140).toBe(2160);
   });
 });
+
+it('savings histories never rely on an overdrawn pot',()=>{for(const id of ['aino','mikko','laura'])expect(load(id).tx.filter(t=>t.account.endsWith('-savings')).every(t=>(t.balance??0)>=0)).toBe(true);});

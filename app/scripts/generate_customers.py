@@ -31,7 +31,7 @@ for cid,p in people.items():
    add(day(2),-480,'Housing','HOAS','housing_payment')
    add(day(20),-14.9,'Utilities','Elisa','utilities_payment')
    for d,amt,name in [(18,6.49,'Spotify'),(28,9.99,'Netflix'),(28,.99,'iCloud'),(28,5.99,'HBO Max')]:add(day(d),-amt,'Subscriptions',name,'subscription')
-   save(day(26),18)
+   if (y,m)>=(2026,5):save(day(26),18)
    for d in range(1,28):
     add(day(d),-(3.1+(d%6)*.7),'Groceries','Alepa' if d%2 else 'S-market',mcc='5411')
     if d%4==0:add(day(d),-3.2,'Transportation','HSL',mcc='4111')
@@ -45,7 +45,7 @@ for cid,p in people.items():
     while sal.weekday()>4:sal-=dt.timedelta(days=1)
     add(sal,3150,'Salary','Nordkode Oy','salary')
    for d,amt,cat,name in [(2,850,'Housing','Lumo'),(8,55,'Utilities','Helen'),(10,29.9,'Utilities','Elisa'),(21,38,'Insurance','If')]:add(day(d),-amt,cat,name,'bill_payment')
-   if (y,m)>=(2025,12) and (y,m)<=(2026,10):save(day(16),([550,650,600,600,500,700][m-5] if y==2026 and 5<=m<=10 else 600))
+   if (y,m)>=(2025,12) and (y,m)<=(2026,10):save(day(16),([550,650,600,600,500,700][m-5] if y==2026 and 5<=m<=10 else (400 if (y,m)==(2025,12) else 600)))
    for d in range(1,27):
     if d%3==0:add(day(d),-7.8,'Groceries','Alepa',mcc='5411')
     elif d%4==0:add(day(d),-48.4,'Groceries','K-Citymarket',mcc='5411')
@@ -54,10 +54,12 @@ for cid,p in people.items():
   else:
    add(day(27),2840,'Salary','Espoon kaupunki','salary')
    for d,amt,cat,name in [(16,96.75,'Utilities','Helen'),(18,145,'Sports','Kiekko-Espoo juniors'),(20,890,'Loan Repayment','Home loan payment'),(23,120,'Childcare','City of Espoo afternoon club'),(26,212.6,'Insurance','Car insurance'),(1,64.8,'Utilities','DNA'),(3,38.2,'Insurance','Home insurance'),(8,25,'Utilities','HSY water'),(9,22,'Childcare','Espoo music school')]:add(day(d),-amt,cat,name,'bill_payment')
-   save(day(28),114)
+   if (y,m)>=(2025,3):save(day(28),114)
    if (y,m)<(2026,8):
     for d in [2,6,10,14,18,22,26]:add(day(d),-60,'Groceries','Prisma' if d%3 else 'K-Supermarket',mcc='5411')
  if cid=='aino':
+  add('2026-08-28',-48,'Invest Withdraw','Interrail withdrawal','investment_withdrawal',account='savings')
+  add('2026-08-28',48,'Invest Withdraw','Interrail withdrawal','investment_withdrawal')
   cafe=[('Espresso House',v) for v in [5.6,5.6,6.9,5.6,4.9,6.9]]+[("Robert's Coffee",v) for v in [4.8,4.8,5.2,4.8]]+[('Fazer Café',v) for v in [7.4,6.2]]+[('Café Regatta',5.5),('Paulig Kulma',4.5),('Paulig Kulma',4.5),('Kahvila Sävy',4.2)]
   for i,(name,v) in enumerate(cafe):add(f'2026-10-{i*2+1:02}',-v,'Restaurants',name,mcc='5814')
   dates=[dt.date(2026,9,19)+dt.timedelta(days=d) for d in [0,2,4,6,8,10]]+[dt.date(2026,10,1)+dt.timedelta(days=i*2) for i in range(15)]+[dt.date(2026,11,1)+dt.timedelta(days=i*2) for i in range(7)]
@@ -112,7 +114,7 @@ for cid,p in people.items():
   for r in rows:
    if r['bank_account_id']==acc:bal=round(bal+r['tx_amount_eur'],2);r['balance_after_eur']=bal
  with open(OUT/(cid+'.csv'),'w') as f:
-  w=csv.DictWriter(f,fieldnames=cols,extrasaction="ignore");w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(f,fieldnames=cols,extrasaction="ignore",lineterminator="\n");w.writeheader();w.writerows(rows)
  p.update(id=cid,postal_code='00100' if cid!='laura' else '02100',openingBalances=opening,
   columns=['date','time','amount','balance','category','type','merchant','mcc','account'],
   tx=[[r['tx_date'],r['tx_timestamp'][-8:],r['tx_amount_eur'],r['balance_after_eur'],r['category'],r['transaction_type'],r['merchant_id'],r['mcc_code'],r['bank_account_id']] for r in rows],
