@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap');
 
 :root {
-  --paper: #f3efe6;
-  --card: #fffdf8;
+  --stage: #cfd9d2;
+  --paper: #edf2ee;
+  --card: #ffffff;
   --ink: #12241c;
   --ink-2: #4a5a52;
   --ink-3: #8a968f;
-  --line: #e4ded1;
+  --line: #dde5df;
   --brand: #0d5c3c;
   --brand-2: #127a50;
   --mint: #d9efe2;
@@ -21,12 +22,13 @@
   --shadow: 0 1px 0 rgba(18, 36, 28, 0.04), 0 8px 24px -12px rgba(18, 36, 28, 0.18);
   --radius: 22px;
   --font: 'Manrope', system-ui, -apple-system, Segoe UI, sans-serif;
-  --display: 'Fraunces', Georgia, serif;
+  --display: 'Bricolage Grotesque', 'Manrope', system-ui, sans-serif;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
+    --stage: #070b09;
     --paper: #0f1714;
     --card: #17221d;
     --ink: #eef3ef;
@@ -47,21 +49,21 @@
   }
 }
 :root[data-theme='dark'] {
-  --paper: #0f1714; --card: #17221d; --ink: #eef3ef; --ink-2: #b4c2ba; --ink-3: #7c8b83; --line: #26332d;
+  --stage: #070b09; --paper: #0f1714; --card: #17221d; --ink: #eef3ef; --ink-2: #b4c2ba; --ink-3: #7c8b83; --line: #26332d;
   --brand: #49c48a; --brand-2: #5fd49c; --mint: #1d3a2c; --fixed: #8d9bff; --fixed-soft: #232a4f;
   --surprise: #f0b552; --surprise-soft: #3d2f16; --everyday: #ff8a70; --everyday-soft: #42241d; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; margin: 0; }
+html { background: var(--paper); }
 body {
-  background: #dcd6c8;
+  background: var(--stage);
   color: var(--ink);
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   font-feature-settings: 'tnum' 1, 'ss01' 1;
 }
-@media (prefers-color-scheme: dark) { body { background: #070b09; } }
 button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; padding: 0; }
 input { font: inherit; color: inherit; }
 
@@ -77,6 +79,7 @@ input { font: inherit; color: inherit; }
   .stage { padding: 0; display: block; }
   .phone { width: 100%; height: 100dvh; max-height: none; border-radius: 0; box-shadow: none; }
   .demo-bar { display: none !important; }
+  body { background: var(--paper); }
 }
 
 .screen { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 0 16px 110px; scrollbar-width: none; }
@@ -99,7 +102,7 @@ input { font: inherit; color: inherit; }
 :root[data-theme='dark'] .hero, .hero { --hero-ink: #f4fbf6; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .hero { background: #0f4a31; } }
 .hero-label { font-size: 13px; font-weight: 700; opacity: 0.85; display: flex; align-items: center; gap: 6px; }
-.hero-amount { font-family: var(--display); font-size: 56px; line-height: 1; letter-spacing: -0.03em; margin: 10px 0 6px; font-weight: 700; }
+.hero-amount { font-family: var(--display); font-size: 60px; line-height: 1; letter-spacing: -0.045em; margin: 10px 0 6px; font-weight: 800; }
 .hero-amount small { font-size: 26px; opacity: 0.7; margin-left: 2px; }
 .hero-sub { font-size: 14px; opacity: 0.9; }
 .hero-row { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }

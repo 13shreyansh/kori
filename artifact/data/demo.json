@@ -1,0 +1,44 @@
+[
+ {
+  "id": "CUST00814",
+  "name": "Aino",
+  "age": 25,
+  "type": "The Weekend Splurger"
+ },
+ {
+  "id": "CUST05033",
+  "name": "Eero",
+  "age": 32,
+  "type": "The Subscription Collector"
+ },
+ {
+  "id": "CUST03841",
+  "name": "Sanna",
+  "age": 60,
+  "type": "The Rollercoaster"
+ },
+ {
+  "id": "CUST02908",
+  "name": "Mikko",
+  "age": 54,
+  "type": "The Quiet Saver"
+ },
+ {
+  "id": "CUST01157",
+  "name": "Leena",
+  "age": 65,
+  "type": "The Steady Planner"
+ },
+ {
+  "id": "CUST00978",
+  "name": "Juho",
+  "age": 19,
+  "type": "The Tap-and-Go Grazer"
+ },
+ {
+  "id": "CUST00089",
+  "name": "Helmi",
+  "age": 50,
+  "type": "The Steady Planner"
+ }
+]
