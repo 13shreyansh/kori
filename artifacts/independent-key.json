@@ -1,0 +1,60 @@
+{
+  "aino": {
+    "cats": {
+      "cafe": 87.4,
+      "wolt": 252.0,
+      "groceries": 282.9,
+      "subscriptions": 23.46
+    },
+    "balance": 212.35,
+    "pot": 60.0,
+    "woltCount": 28,
+    "woltAverage": 16.8,
+    "saturdayTotal": 0.0,
+    "saturdayCount": 0,
+    "baseline": 18.0,
+    "daily": 9.31,
+    "savingRate": 0.019811860700606098,
+    "fixed": 2,
+    "smallShare": 0.709726443768997
+  },
+  "mikko": {
+    "cats": {
+      "cafe": 12.6,
+      "wolt": 0.0,
+      "groceries": 256.0,
+      "subscriptions": 0.0
+    },
+    "balance": 2318.6,
+    "pot": 6400.0,
+    "woltCount": 0,
+    "woltAverage": 0,
+    "saturdayTotal": 1104.0,
+    "saturdayCount": 31,
+    "baseline": 600.0,
+    "daily": 9.22,
+    "savingRate": 0.19047619047619047,
+    "fixed": 4,
+    "smallShare": 0.38095238095238093
+  },
+  "laura": {
+    "cats": {
+      "cafe": 0.0,
+      "wolt": 0.0,
+      "groceries": 1054.0,
+      "subscriptions": 0.0
+    },
+    "balance": 1817.35,
+    "pot": 2300.0,
+    "woltCount": 0,
+    "woltAverage": 0,
+    "saturdayTotal": 0.0,
+    "saturdayCount": 0,
+    "baseline": 114.0,
+    "daily": 34.0,
+    "savingRate": 0.04014084507042254,
+    "fixed": 9,
+    "smallShare": 0.29064039408866993,
+    "low": -140.0
+  }
+}

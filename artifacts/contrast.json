@@ -1,0 +1,90 @@
+[
+  {
+    "pair": "ink",
+    "foreground": "#10241B",
+    "background": "#F3F6F2",
+    "ratio": 14.94,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "secondary",
+    "foreground": "#4A5D53",
+    "background": "#FFFFFF",
+    "ratio": 7.043,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "tertiary",
+    "foreground": "#5F7067",
+    "background": "#F3F6F2",
+    "ratio": 4.819,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "tertiary field",
+    "foreground": "#5F7067",
+    "background": "#EDF2EC",
+    "ratio": 4.628,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "action",
+    "foreground": "#007A3D",
+    "background": "#FFFFFF",
+    "ratio": 5.453,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "action on tint",
+    "foreground": "#007A3D",
+    "background": "#E6F4EA",
+    "ratio": 4.802,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "login secondary",
+    "foreground": "#B7CDBF",
+    "background": "#0E3B2A",
+    "ratio": 7.45,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "warning",
+    "foreground": "#6B4200",
+    "background": "#FFF1D0",
+    "ratio": 7.796,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "negative",
+    "foreground": "#B3261E",
+    "background": "#FCE9E7",
+    "ratio": 5.587,
+    "required": 4.5,
+    "pass_": true
+  },
+  {
+    "pair": "fill mark",
+    "foreground": "#00A651",
+    "background": "#FFFFFF",
+    "ratio": 3.195,
+    "required": 3,
+    "pass_": true
+  },
+  {
+    "pair": "warning mark",
+    "foreground": "#B86E00",
+    "background": "#FFF1D0",
+    "ratio": 3.558,
+    "required": 3,
+    "pass_": true
+  }
+]

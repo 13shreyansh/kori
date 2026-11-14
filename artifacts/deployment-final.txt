@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_EYthCCthu13qgaqGR14v9xHXDA3F",
+    "url": "https://kori-8nxkvuq78-13shreyanshs-projects.vercel.app",
+    "productionUrl": "https://kori-wheat.vercel.app",
+    "inspectorUrl": "https://vercel.com/13shreyanshs-projects/kori/EYthCCthu13qgaqGR14v9xHXDA3F",
+    "readyState": "READY",
+    "target": "production",
+    "environment": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_EYthCCthu13qgaqGR14v9xHXDA3F",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    },
+    "deploymentProtection": [
+      "vercel_authentication"
+    ]
+  },
+  "message": "Deployment kori-8nxkvuq78-13shreyanshs-projects.vercel.app ready. Production URL: https://kori-wheat.vercel.app",
+  "next": [
+    {
+      "command": "vercel git connect",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://kori-wheat.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect kori-8nxkvuq78-13shreyanshs-projects.vercel.app",
+      "when": "Inspect deployment"
+    }
+  ]
+}

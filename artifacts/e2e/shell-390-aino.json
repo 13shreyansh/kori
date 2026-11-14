@@ -1,0 +1,12 @@
+{
+  "screenWidth": 390,
+  "screenHeight": 844,
+  "header": 55,
+  "ask": 63,
+  "tabs": 61,
+  "accountRow": 44,
+  "font": "\"Figtree Variable\", system-ui, sans-serif",
+  "numerals": "lining-nums tabular-nums",
+  "loaded": true,
+  "overflow": false
+}
