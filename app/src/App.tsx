@@ -28,6 +28,17 @@ export default function App() {
   const [provider, setProvider] = useState('offline');
 
   useEffect(() => { providerStatus().then(setProvider); }, []);
+  const [compare, setCompare] = useState(() => new URLSearchParams(location.search).has('compare') || location.hash === '#compare');
+  useEffect(() => {
+    const on = () => {
+      const h = location.hash;
+      if (h === '#compare') { setCompare(true); window.scrollTo(0, 0); }
+      else if (h.startsWith('#c=')) { setCompare(false); setPid(h.slice(3)); setTab('today'); }
+      else setCompare(false);
+    };
+    window.addEventListener('hashchange', on);
+    return () => window.removeEventListener('hashchange', on);
+  }, []);
   useEffect(() => {
     fetch('data/demo.json').then((r) => r.json()).then((d: Persona[]) => { setPersonas(d); setPid((p) => p || d[0].id); });
   }, []);
@@ -48,7 +59,7 @@ export default function App() {
     setMsgs((m) => [...m, { role: 'bot', text: a.text, answer: a }]);
   }, [c, msgs, provider]);
 
-  if (new URLSearchParams(location.search).has('compare')) return personas.length ? <Compare personas={personas} /> : null;
+  if (compare) return personas.length ? <Compare personas={personas} /> : null;
   return (
     <div className="stage">
       <div className="phone">

@@ -30,7 +30,7 @@ export function Compare({ personas }: { personas: Persona[] }) {
                 <div className="statusbar"><span>9:41</span><span style={{ display: 'flex', gap: 6 }}><Icon name="Signal" size={15} /><Icon name="Wifi" size={15} /><Icon name="BatteryFull" size={17} /></span></div>
                 <Today c={c} name={p?.name ?? 'there'} open={noop} ask={noop} />
               </div>
-              <a className="btn ghost" href={`?c=${c.id}`}>Open {p?.name ?? 'this'} in the app</a>
+              <a className="btn ghost" href={`#c=${c.id}`}>Open {p?.name ?? 'this'} in the app</a>
             </div>
           );
         })}
