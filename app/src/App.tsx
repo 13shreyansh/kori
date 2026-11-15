@@ -89,116 +89,55 @@ function StatusBar({ login }: { login: boolean }) {
     </div>
   );
 }
+const DEMO_PEOPLE = [
+  { id: "aino", name: "Aino", about: "21 · Student, first own flat" },
+  { id: "mikko", name: "Mikko", about: "31 · Saving for a home" },
+  { id: "laura", name: "Laura", about: "44 · Two kids, a house of bills" },
+];
 function Login({
   onLogin,
-  modal,
   last,
 }: {
   onLogin: (id: string) => void;
   modal: (title: string, body: ReactNode) => void;
   last: string;
 }) {
-  const [user, setUser] = useState(last),
-    [pin, setPin] = useState(""),
-    [error, setError] = useState(""),
-    [loading, setLoading] = useState(false);
-  const input = useRef<HTMLInputElement>(null);
+  const [loading, setLoading] = useState("");
   return (
     <div className="login">
       <div className="login-brand">
         <Mark />
       </div>
       <p className="login-tagline">Your money, arranged for your life.</p>
-      <form
-        className={`login-panel ${error ? "has-error" : ""}`}
-        onSubmit={(e) => {
-          e.preventDefault();
-          const id = user.trim().toLowerCase();
-          if (!ids.includes(id)) {
-            setError(
-              "We don't know that user ID. The demo customers are aino, mikko and laura.",
-            );
-            return;
-          }
-          if (pin !== [1, 2, 3, 4].join("")) {
-            setPin("");
-            setError("That PIN doesn't match. Try again.");
-            input.current?.focus();
-            return;
-          }
-          setError("");
-          setLoading(true);
-          setTimeout(() => {
-            localStorage.setItem("kori:last", id);
-            onLogin(id);
-          }, 500);
-        }}
-      >
-        <label htmlFor="user">User ID</label>
-        <input
-          id="user"
-          autoCapitalize="none"
-          autoComplete="username"
-          autoFocus
-          value={user}
-          onChange={(e) => {
-            setUser(e.target.value);
-            setError("");
-          }}
-        />
-        <label htmlFor="pin">PIN</label>
-        <div
-          className={`pin-control ${error.startsWith("That PIN") ? "shake" : ""}`}
-          onClick={() => input.current?.focus()}
-        >
-          <input
-            ref={input}
-            id="pin"
-            aria-label="PIN"
-            type="password"
-            inputMode="numeric"
-            autoComplete="off"
-            maxLength={4}
-            value={pin}
-            onChange={(e) => {
-              setPin(e.target.value.replace(/\D/g, ""));
-              setError("");
+      <div className="login-panel login-pick">
+        <p className="login-demo">Demo accounts</p>
+        {DEMO_PEOPLE.filter((x) => ids.includes(x.id)).map((x) => (
+          <button
+            key={x.id}
+            type="button"
+            className={`login-person ${x.id === last ? "last" : ""}`}
+            disabled={!!loading}
+            onClick={() => {
+              setLoading(x.id);
+              setTimeout(() => {
+                localStorage.setItem("kori:last", x.id);
+                onLogin(x.id);
+              }, 350);
             }}
-          />
-          {[0, 1, 2, 3].map((i) => (
-            <span key={i} className={pin.length === i ? "active" : ""}>
-              {pin.length > i && <i />}
+          >
+            <span className="login-avatar" aria-hidden="true">
+              {x.name[0]}
             </span>
-          ))}
-        </div>
-        {error && (
-          <p role="alert" className="form-error">
-            {error}
-          </p>
-        )}
-        <button className="primary full" disabled={loading} type="submit">
-          {loading && <span className="spinner" />}Log in
-        </button>
-        <button
-          className="text-button full"
-          type="button"
-          onClick={() =>
-            modal(
-              "Forgot your PIN?",
-              <p>
-                In S-mobiili you would reset your PIN with your bank codes. In
-                this test environment the PIN is {[1, 2, 3, 4].join("")}.
-              </p>,
-            )
-          }
-        >
-          Forgot your PIN?
-        </button>
-      </form>
+            <span className="login-person-text">
+              <b>Log in as {x.name}</b>
+              <small>{x.about}</small>
+            </span>
+            {loading === x.id ? <span className="spinner" /> : <ChevronRight size={18} aria-hidden="true" />}
+          </button>
+        ))}
+      </div>
       <p className="login-footer">
-        Test environment
-        <br />
-        Demo customers: aino, mikko, laura · PIN {[1, 2, 3, 4].join("")}
+        Demo only. Real customers would log in with S-mobiili as usual.
       </p>
     </div>
   );

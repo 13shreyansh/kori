@@ -4,9 +4,7 @@ const root = "../screenshots/kori";
 mkdirSync(root, { recursive: true });
 mkdirSync("../artifacts/e2e", { recursive: true });
 async function login(page: Page, id: string) {
-  await page.getByLabel("User ID", { exact: true }).fill(id);
-  await page.getByLabel("PIN", { exact: true }).fill("1234");
-  await page.getByRole("button", { name: "Log in", exact: true }).click();
+  await page.getByRole("button", { name: new RegExp(`Log in as ${id}`, "i") }).click();
   await expect(page.locator('[data-block="account-line"]')).toBeVisible();
   const width = page.viewportSize()?.width;
   if (width === 1440 || width === 390) {

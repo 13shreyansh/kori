@@ -272,7 +272,7 @@ export default function Landing() {
           ))}
         </div>
         <p className="lp-try">
-          Try it yourself: <a href="/app">log in</a> as <b>aino</b>, <b>mikko</b> or <b>laura</b> with PIN <b>1234</b>.
+          Try it yourself: <a href="/app">open the app</a> and pick Aino, Mikko or Laura.
         </p>
       </section>
 
