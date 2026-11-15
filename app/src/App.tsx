@@ -34,7 +34,6 @@ import {
 import {
   blockComponents,
   Timeline,
-  Payday,
   Coming,
   GroceryProgress,
   Baskets,
@@ -528,29 +527,59 @@ function AskResult({
   else if (route.block === "baskets") content = <Baskets {...p} verdict />;
   else if (route.block === "payday-runway") {
     const r = F.runway(d),
-      free = r.free - (route.params.ticket ?? 0);
+      ticket = route.params.ticket ?? 0,
+      free = F.r2(r.free - ticket),
+      perDay = r.days > 0 ? Math.floor(free / r.days) : free,
+      when = F.dateLabel(r.payday, {
+        weekday: "short",
+        day: "numeric",
+        month: "short",
+      }),
+      after = {
+        ...r.proof,
+        title: ticket ? "After your ticket" : "Free until payday",
+        value: free,
+        steps: [
+          ...(r.proof.steps ?? []).slice(0, -2),
+          ...(ticket
+            ? ([["Ticket", F.money(-ticket, 2)]] as [string, string][])
+            : []),
+          ["Left until payday", F.money(free, 2)],
+          ["Days", String(r.days)],
+          ["Per day, rounded down", F.money(perDay, 0)],
+        ] as [string, string][],
+      },
+      verdict = !ticket
+        ? null
+        : free <= 0
+          ? "No."
+          : perDay < 5
+            ? "Only just."
+            : "Yes.";
     content = (
       <>
-        <p>
-          After the ticket,{" "}
-          <ProofNumber
-            p={{
-              ...r.proof,
-              title: "After your ticket",
-              value: free,
-              steps: [
-                ...(r.proof.steps ?? []),
-                ["Ticket", F.money(-(route.params.ticket ?? 0), 2)],
-                ["Left", F.money(free, 2)],
-              ],
-            }}
-            open={open}
-          >
+        <p className="answer-verdict">
+          {verdict && <b>{verdict} </b>}
+          {ticket ? "After the ticket, " : ""}
+          <ProofNumber p={after} open={open}>
             {F.money(free, 2)}
           </ProofNumber>{" "}
-          remains before payday.
+          {free > 0 ? (
+            <>
+              is left, about{" "}
+              <ProofNumber p={{ ...after, value: perDay }} open={open}>
+                {F.money(perDay, 0)}
+              </ProofNumber>{" "}
+              a day until {when}.
+            </>
+          ) : (
+            <>is what you would have until {when}.</>
+          )}
         </p>
-        <Payday {...p} />
+        <p className="small secondary">
+          Counted from your balance today and the bills Kori knows are due
+          before payday.
+        </p>
       </>
     );
   } else
@@ -1178,6 +1207,7 @@ function Phone({ embed }: { embed?: string }) {
             className="ask-sheet"
           >
             <div className="sheet-scroll">
+              {!route && (
               <form
                 className="ask-input"
                 onSubmit={(e) => {
@@ -1200,6 +1230,7 @@ function Phone({ embed }: { embed?: string }) {
                   <ArrowIcon />
                 </button>
               </form>
+              )}
               {asking ? (
                 <div aria-label="Loading answer" className="answer-skeleton">
                   <i />

@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import "@fontsource-variable/schibsted-grotesk";
 import "./landing.css";
 
 type Dot = [number, string, string, number, string];
@@ -49,6 +48,13 @@ function layout(dots: Dot[]) {
   return { sorted, block };
 }
 
+// Invented demo customers, placed by hand for orientation (not part of the 393).
+const RINGS: { name: string; age: number; style: Style }[] = [
+  { name: "Aino 21", age: 21, style: "steady" },
+  { name: "Mikko 31", age: 31, style: "saver" },
+  { name: "Laura 44", age: 44, style: "tightrope" },
+];
+
 function DotField() {
   const [dots, setDots] = useState<Dot[] | null>(null);
   const [sorted, setSorted] = useState(false);
@@ -61,10 +67,17 @@ function DotField() {
   }, []);
   useEffect(() => {
     if (!dots?.length) return;
-    const t = window.setTimeout(() => {
+    const go = () => {
       if (!touched.current) setSorted(true);
-    }, 1400);
-    return () => clearTimeout(t);
+    };
+    const t = window.setTimeout(go, 3200);
+    window.addEventListener("scroll", go, { once: true, passive: true });
+    window.addEventListener("wheel", go, { once: true, passive: true });
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener("scroll", go);
+      window.removeEventListener("wheel", go);
+    };
   }, [dots]);
   const pos = useMemo(() => (dots ? layout(dots) : null), [dots]);
   const counts = useMemo(() => {
@@ -76,7 +89,7 @@ function DotField() {
     <figure className="lp-field" data-sorted={sorted}>
       <div className="lp-field-head">
         <p className="lp-field-title">
-          {sorted ? "The same 393 people, by how their money moves" : "393 customers. One home screen."}
+          {sorted ? "The same 393, by how money moves" : "393 customers. One home screen."}
         </p>
         <div className="lp-switch" role="group" aria-label="Arrange customers">
           <button
@@ -120,6 +133,21 @@ function DotField() {
             </g>
           ))}
         </g>
+        <g className="lp-rings" aria-hidden="true">
+          {RINGS.map((r) => {
+            const row = STYLES.findIndex((x) => x.id === r.style);
+            const x = ageX(r.age),
+              y = TOP + 24 + row * ROW + ROW / 2 - 12;
+            return (
+              <g key={r.name}>
+                <circle cx={x} cy={y} r={9} />
+                <text x={x + 13} y={y - 12}>
+                  {r.name}
+                </text>
+              </g>
+            );
+          })}
+        </g>
         <g>
           {dots?.map((d, i) => {
             const p = sorted ? pos!.sorted[i] : pos!.block[i];
@@ -138,8 +166,9 @@ function DotField() {
         </g>
       </svg>
       <figcaption>
-        Each dot is one customer from S-Pankki's synthetic challenge dataset (393 sampled, 3.6 million payments). Age
-        across, money style down. Age alone would put a saver and someone who runs out before payday in the same box.
+        Each dot is one of 393 customers sampled from S-Pankki's synthetic dataset of 3.6 million payments. Age across,
+        money style down. Age alone would put a saver and someone who runs out before payday in the same box. Rings mark
+        where Kori's three invented demo customers sit.
       </figcaption>
     </figure>
   );
@@ -232,10 +261,10 @@ export default function Landing() {
         <div className="lp-people-grid">
           {PEOPLE.map((p) => (
             <article key={p.id} className="lp-person">
-              <LivePhone id={p.id} />
               <h3>{p.name}</h3>
               <p className="lp-who">{p.who}</p>
-              <p>{p.gets}</p>
+              <p className="lp-gets">{p.gets}</p>
+              <LivePhone id={p.id} />
             </article>
           ))}
         </div>
@@ -301,10 +330,10 @@ export default function Landing() {
             </p>
           </div>
           <div>
-            <p className="lp-num">71 / 393</p>
+            <p className="lp-num">73 / 393</p>
             <p>
-              sampled customers move at least half their pay to another bank. Kori spots them, which matters to a bank
-              that wants to be the main one.
+              sampled customers send at least 30% of their pay on to another bank soon after it lands: the "Pay moves
+              on" row above. Kori spots them, which matters to a bank that wants to be the main one.
             </p>
           </div>
         </div>

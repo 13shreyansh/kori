@@ -83,6 +83,7 @@ function useAmount(target: number, ms: number) {
 export function AccountLine({ d, s, bank, open }: BlockProps) {
   const movedDisplay = useAmount(s.moved ?? 0, 600);
   const r = F.runway(d);
+  const usual = F.everyday(d);
   const name = d.profile.name.split(" ")[0];
   const hour = new Date().getHours();
   const greet =
@@ -110,6 +111,11 @@ export function AccountLine({ d, s, bank, open }: BlockProps) {
         <small>
           until payday,{" "}
           {F.dateLabel(r.payday, { weekday: "short", day: "numeric", month: "short" })}
+          {usual.value > r.proof.value + 1 && (
+            <>
+              . Essentials usually cost <ProofNumber p={usual} open={open} /> a day
+            </>
+          )}
         </small>
       </div>
       {d.profile.age >= 25 && (

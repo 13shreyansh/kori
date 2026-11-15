@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Schibsted Kori";
+  font-style: normal;
+  font-display: block;
+  font-weight: 400 900;
+  src: url("../../node_modules/@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-normal.woff2")
+    format("woff2-variations");
+}
 .lp {
   --lp-spruce: #0c3a2b;
   --lp-spruce-2: #0f4533;
@@ -14,7 +22,7 @@
   --s-saver: #e4ef9a;
   --s-tightrope: #f4b04a;
   --s-pass_through: #ff8f70;
-  font-family: "Schibsted Grotesk Variable", "Figtree Variable", system-ui, sans-serif;
+  font-family: "Schibsted Kori", "Figtree Variable", system-ui, sans-serif;
   color: var(--lp-ink);
   background: var(--lp-paper);
   min-height: 100dvh;
@@ -299,7 +307,7 @@
   margin-top: 56px;
 }
 .lp-person h3 {
-  margin-top: 24px;
+  margin-top: 0;
   font-size: 26px;
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -310,8 +318,10 @@
   font-weight: 600;
   color: var(--lp-action);
 }
-.lp-person p:last-child {
+.lp-person .lp-gets {
   margin-top: 12px;
+  margin-bottom: 28px;
+  min-height: 4.65em;
   font-size: 17px;
   line-height: 1.55;
   color: var(--lp-ink-2);
@@ -488,5 +498,78 @@
 @media (prefers-reduced-motion: reduce) {
   .lp-dot {
     transition: none;
+  }
+}
+
+/* review fixes */
+.lp-field-head {
+  flex-wrap: nowrap;
+}
+.lp-field-title {
+  flex: 1;
+  min-width: 0;
+}
+.lp-switch {
+  flex: none;
+}
+.lp-rings circle {
+  fill: none;
+  stroke: var(--lp-chalk);
+  stroke-width: 1.6;
+}
+.lp-rings text {
+  fill: var(--lp-chalk);
+  font-size: 13px;
+  font-weight: 650;
+}
+.lp-rings {
+  opacity: 0;
+  transition: opacity 0.6s ease 1.1s;
+}
+.lp-field[data-sorted="true"] .lp-rings {
+  opacity: 1;
+}
+@media (min-width: 1400px) {
+  .lp-phone {
+    --scale: 1;
+  }
+}
+@media (max-width: 640px) {
+  .lp-field-head {
+    flex-wrap: wrap;
+  }
+  .lp-field-title {
+    flex-basis: 100%;
+  }
+  .lp-axes text {
+    font-size: 20px;
+  }
+  .lp-axes .lp-row-label {
+    font-size: 20px;
+  }
+  .lp-rings text {
+    font-size: 20px;
+  }
+  .lp-person .lp-gets {
+    min-height: 0;
+  }
+}
+.lp-rings text,
+.lp-axes .lp-row-label {
+  paint-order: stroke;
+  stroke: var(--lp-spruce-2);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+@media (min-width: 1400px) {
+  .lp-people-grid {
+    gap: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .lp-axes text,
+  .lp-axes .lp-row-label,
+  .lp-rings text {
+    font-size: 17px;
   }
 }

@@ -612,7 +612,8 @@ export function runway(d: AccountData) {
     upcoming(d).find((x) => x.amount > 0)?.date ?? addDays(getToday(), 30);
   const bills = upcoming(d).filter((x) => x.date < payday && x.amount < 0);
   const free = r2(currentBalance(d) + bills.reduce((a, b) => a + b.amount, 0));
-  const days = daysBetween(getToday(), payday);
+  const days = Math.max(1, daysBetween(getToday(), payday));
+  const perDay = Math.max(0, Math.floor(free / days));
   return {
     payday,
     bills,
@@ -621,8 +622,8 @@ export function runway(d: AccountData) {
     proof: proof(
       "Free to spend per day",
       bills.flatMap((x) => x.tx),
-      free / days,
-      "Balance minus known bills before payday, divided by days until payday.",
+      perDay,
+      "Balance minus known bills before payday, divided by days until payday, rounded down.",
       [
         ["In your account today", money(currentBalance(d), 2)],
         ...bills.map(
@@ -630,7 +631,7 @@ export function runway(d: AccountData) {
         ),
         ["Free until payday", money(free, 2)],
         ["Days", String(days)],
-        ["Per day", money(free / days, 2)],
+        ["Per day, rounded down", money(perDay, 0)],
       ],
     ),
   };

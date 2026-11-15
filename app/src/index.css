@@ -1987,3 +1987,54 @@ input::placeholder {
   line-height: 1.45;
   font-weight: 600;
 }
+
+/* ---- Kori v3.1: review fixes ---- */
+.account-line {
+  padding: 2px 20px 16px;
+}
+.account-hero {
+  padding: 6px 0 2px;
+}
+.safe-line {
+  margin-top: 8px;
+  background: none;
+  border-radius: 0;
+  padding: 10px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  row-gap: 2px;
+}
+.account-line .account-row {
+  margin-top: 6px;
+  min-height: 40px;
+}
+.game .guess-live {
+  font-size: calc(44px * var(--text-scale));
+  margin-top: 2px;
+}
+.game .slider-wrap input {
+  background: rgba(14, 59, 42, 0.24);
+}
+.game .slider-wrap input::-webkit-slider-thumb {
+  border: 2px solid #0e3b2a;
+}
+.game .slider-wrap input::-moz-range-thumb {
+  border: 2px solid #0e3b2a;
+}
+/* one surface: a tool inside a card or sheet is not a second card */
+.module .module,
+.ask-sheet .module {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+.answer-verdict {
+  font-size: calc(19px * var(--text-scale));
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+.answer-verdict > b {
+  font-weight: 750;
+}
