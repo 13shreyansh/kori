@@ -1,0 +1,882 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T02:42:18+00:00",
+  "title": "Design System: Kori",
+  "extensions": {
+    "colorMeta": {
+      "spruce": {
+        "role": "primary",
+        "displayName": "Spruce",
+        "canonical": "#0e3b2a",
+        "tonalRamp": [
+          "#000f07",
+          "#102b20",
+          "#294a3b",
+          "#456b59",
+          "#628e79",
+          "#88b09d",
+          "#afd3c1",
+          "#d7f7e7"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Mint",
+        "canonical": "#bfe8cc",
+        "tonalRamp": [
+          "#010f05",
+          "#142b1c",
+          "#2d4937",
+          "#496a54",
+          "#678d74",
+          "#8caf97",
+          "#b3d2bd",
+          "#dbf7e3"
+        ]
+      },
+      "action-green": {
+        "role": "primary",
+        "displayName": "Action Green",
+        "canonical": "#007a3d",
+        "tonalRamp": [
+          "#001003",
+          "#012e14",
+          "#065027",
+          "#16743d",
+          "#35985a",
+          "#67ba80",
+          "#94dda8",
+          "#cafed7"
+        ]
+      },
+      "action-green-deep": {
+        "role": "primary",
+        "displayName": "Deep Action Green",
+        "canonical": "#00652f",
+        "tonalRamp": [
+          "#001102",
+          "#002f11",
+          "#0a5026",
+          "#287241",
+          "#45965d",
+          "#71b883",
+          "#9cdbab",
+          "#c7ffd3"
+        ]
+      },
+      "mark-green": {
+        "role": "secondary",
+        "displayName": "Mark Green",
+        "canonical": "#00a651",
+        "tonalRamp": [
+          "#001002",
+          "#012e12",
+          "#045025",
+          "#13743a",
+          "#1f9b50",
+          "#4fbf72",
+          "#83e29c",
+          "#cafed5"
+        ]
+      },
+      "green-tint": {
+        "role": "secondary",
+        "displayName": "Green Tint",
+        "canonical": "#e6f4ea",
+        "tonalRamp": [
+          "#050e08",
+          "#1e2821",
+          "#3a453d",
+          "#59655c",
+          "#79867d",
+          "#9ca9a0",
+          "#c0cdc4",
+          "#e5f3e9"
+        ]
+      },
+      "green-tint-2": {
+        "role": "secondary",
+        "displayName": "Pressed Tint",
+        "canonical": "#cde9d5",
+        "tonalRamp": [
+          "#040e07",
+          "#1a291f",
+          "#35473a",
+          "#516858",
+          "#708a78",
+          "#94ac9b",
+          "#bad0c0",
+          "#e1f4e6"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "#f3f6f2",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242623",
+          "#404340",
+          "#5f625f",
+          "#808380",
+          "#a3a6a2",
+          "#c7cac6",
+          "#ecefeb"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "surface-sunk": {
+        "role": "neutral",
+        "displayName": "Sunk",
+        "canonical": "#edf2ec",
+        "tonalRamp": [
+          "#090c08",
+          "#232622",
+          "#3f433f",
+          "#5e635e",
+          "#7f847e",
+          "#a2a7a1",
+          "#c6cbc5",
+          "#ebf0ea"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#dde5de",
+        "tonalRamp": [
+          "#080d08",
+          "#212722",
+          "#3d443e",
+          "#5c635d",
+          "#7d857e",
+          "#a0a7a1",
+          "#c4ccc5",
+          "#e9f1ea"
+        ]
+      },
+      "line-soft": {
+        "role": "neutral",
+        "displayName": "Soft Line",
+        "canonical": "#e8eee9",
+        "tonalRamp": [
+          "#080c09",
+          "#222623",
+          "#3f433f",
+          "#5e635e",
+          "#7f847f",
+          "#a1a7a2",
+          "#c5cbc6",
+          "#eaf0eb"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#10241b",
+        "tonalRamp": [
+          "#040e09",
+          "#1b2922",
+          "#36463e",
+          "#53675d",
+          "#72897d",
+          "#96aba0",
+          "#bbcfc5",
+          "#e2f3ea"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#4a5d53",
+        "tonalRamp": [
+          "#050d09",
+          "#1c2822",
+          "#37463e",
+          "#55665d",
+          "#74887d",
+          "#98aaa0",
+          "#bdcec5",
+          "#e4f3ea"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#5f7067",
+        "tonalRamp": [
+          "#060d09",
+          "#1e2823",
+          "#39453f",
+          "#56655d",
+          "#76877e",
+          "#99aaa1",
+          "#bfcdc5",
+          "#e5f2eb"
+        ]
+      },
+      "warn-tint": {
+        "role": "tertiary",
+        "displayName": "Warm Paper",
+        "canonical": "#fff1d0",
+        "tonalRamp": [
+          "#100a01",
+          "#2c2412",
+          "#4a412b",
+          "#6b6046",
+          "#8e8163",
+          "#b0a489",
+          "#d3c8af",
+          "#f7eed7"
+        ]
+      },
+      "warn-600": {
+        "role": "tertiary",
+        "displayName": "Amber",
+        "canonical": "#b86e00",
+        "tonalRamp": [
+          "#180600",
+          "#391d00",
+          "#5e3808",
+          "#8b5200",
+          "#b86f04",
+          "#d9944c",
+          "#f9bb7d",
+          "#feebd8"
+        ]
+      },
+      "warn-text": {
+        "role": "tertiary",
+        "displayName": "Brown",
+        "canonical": "#6b4200",
+        "tonalRamp": [
+          "#170600",
+          "#361f00",
+          "#5a3a0f",
+          "#7f5828",
+          "#a57843",
+          "#c69c6d",
+          "#e8c297",
+          "#ffebd5"
+        ]
+      },
+      "bell-amber": {
+        "role": "tertiary",
+        "displayName": "Bell Amber",
+        "canonical": "#ffb547",
+        "tonalRamp": [
+          "#160700",
+          "#352001",
+          "#5b3a04",
+          "#825711",
+          "#ad761c",
+          "#d69737",
+          "#f7bd6f",
+          "#fdebd5"
+        ]
+      },
+      "neg-600": {
+        "role": "tertiary",
+        "displayName": "Below Zero",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#210000",
+          "#4e0000",
+          "#7d100c",
+          "#aa2f25",
+          "#d84d3f",
+          "#f8796a",
+          "#fbb5ab",
+          "#fde9e6"
+        ]
+      },
+      "basket-fixed": {
+        "role": "tertiary",
+        "displayName": "Basket: Fixed",
+        "canonical": "#0e3b2a",
+        "tonalRamp": [
+          "#000f07",
+          "#102b20",
+          "#294a3b",
+          "#456b59",
+          "#628e79",
+          "#88b09d",
+          "#afd3c1",
+          "#d7f7e7"
+        ]
+      },
+      "basket-surprise": {
+        "role": "tertiary",
+        "displayName": "Basket: Surprises",
+        "canonical": "#f0a63a",
+        "tonalRamp": [
+          "#170700",
+          "#371f00",
+          "#5b3a06",
+          "#825715",
+          "#ad7521",
+          "#d7963b",
+          "#f8bd71",
+          "#feebd6"
+        ]
+      },
+      "basket-slips": {
+        "role": "tertiary",
+        "displayName": "Basket: Slips Away",
+        "canonical": "#36b26b",
+        "tonalRamp": [
+          "#001003",
+          "#002e14",
+          "#005028",
+          "#07743f",
+          "#119b56",
+          "#57bd7d",
+          "#89e0a5",
+          "#c8fed8"
+        ]
+      },
+      "stage": {
+        "role": "neutral",
+        "displayName": "Stage",
+        "canonical": "#e4eae3",
+        "tonalRamp": [
+          "#090c08",
+          "#222621",
+          "#3f443e",
+          "#5e635d",
+          "#7f847e",
+          "#a1a7a0",
+          "#c5cbc4",
+          "#eaf0e9"
+        ]
+      },
+      "bezel": {
+        "role": "neutral",
+        "displayName": "Bezel",
+        "canonical": "#141a17",
+        "tonalRamp": [
+          "#070d0a",
+          "#202724",
+          "#3d4440",
+          "#5c635f",
+          "#7d8480",
+          "#9fa7a3",
+          "#c3cbc7",
+          "#e8f1ec"
+        ]
+      },
+      "lp-spruce": {
+        "role": "primary",
+        "displayName": "Landing Spruce",
+        "canonical": "#0c3a2b",
+        "tonalRamp": [
+          "#000f08",
+          "#0f2b21",
+          "#294a3d",
+          "#446b5b",
+          "#618d7b",
+          "#87b09e",
+          "#afd3c3",
+          "#d7f7e9"
+        ]
+      },
+      "lp-spruce-2": {
+        "role": "primary",
+        "displayName": "Raised Spruce",
+        "canonical": "#0f4533",
+        "tonalRamp": [
+          "#001008",
+          "#0b2c20",
+          "#254b3c",
+          "#3f6c5a",
+          "#5c8f7a",
+          "#83b19d",
+          "#abd4c2",
+          "#d4f8e8"
+        ]
+      },
+      "lp-chalk": {
+        "role": "neutral",
+        "displayName": "Chalk",
+        "canonical": "#f4f7f2",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242622",
+          "#40433f",
+          "#60625e",
+          "#81837f",
+          "#a3a6a1",
+          "#c7cac5",
+          "#edf0eb"
+        ]
+      },
+      "lp-chalk-2": {
+        "role": "neutral",
+        "displayName": "Chalk 2",
+        "canonical": "#c5d6cb",
+        "tonalRamp": [
+          "#070d09",
+          "#1f2822",
+          "#3a453e",
+          "#58655c",
+          "#77877d",
+          "#9ba9a0",
+          "#c0cdc4",
+          "#e6f2ea"
+        ]
+      },
+      "lp-chalk-3": {
+        "role": "neutral",
+        "displayName": "Chalk 3",
+        "canonical": "#9cb5a6",
+        "tonalRamp": [
+          "#040e08",
+          "#1b2921",
+          "#35473d",
+          "#52675b",
+          "#71897b",
+          "#95ab9e",
+          "#bbcfc3",
+          "#e2f4e9"
+        ]
+      },
+      "lp-paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#f3f6f1",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242622",
+          "#40433f",
+          "#60625e",
+          "#81837f",
+          "#a3a6a1",
+          "#c7cac5",
+          "#edf0eb"
+        ]
+      },
+      "lp-ink": {
+        "role": "neutral",
+        "displayName": "Landing Ink",
+        "canonical": "#0f241a",
+        "tonalRamp": [
+          "#040e09",
+          "#1b2921",
+          "#35473e",
+          "#52675c",
+          "#71897c",
+          "#95ab9f",
+          "#bbcfc4",
+          "#e2f4ea"
+        ]
+      },
+      "lp-ink-2": {
+        "role": "neutral",
+        "displayName": "Landing Ink 2",
+        "canonical": "#44594d",
+        "tonalRamp": [
+          "#050e08",
+          "#1b2921",
+          "#36463d",
+          "#53675b",
+          "#72897c",
+          "#96ab9f",
+          "#bccfc3",
+          "#e3f3e9"
+        ]
+      },
+      "lp-line": {
+        "role": "neutral",
+        "displayName": "Landing Line",
+        "canonical": "#d6e0d8",
+        "tonalRamp": [
+          "#070d08",
+          "#202721",
+          "#3c443e",
+          "#5b645d",
+          "#7c857e",
+          "#9ea8a0",
+          "#c2ccc4",
+          "#e7f2e9"
+        ]
+      },
+      "dot-statement": {
+        "role": "tertiary",
+        "displayName": "Statement Grey",
+        "canonical": "#6f8f7f",
+        "tonalRamp": [
+          "#020e08",
+          "#172a21",
+          "#31483d",
+          "#4d685b",
+          "#6b8b7b",
+          "#90ad9e",
+          "#b6d1c3",
+          "#def5e9"
+        ]
+      },
+      "style-steady": {
+        "role": "tertiary",
+        "displayName": "Style: Steady",
+        "canonical": "#8fd3a8",
+        "tonalRamp": [
+          "#001004",
+          "#002e17",
+          "#1a4d31",
+          "#356f4d",
+          "#51936b",
+          "#7ab590",
+          "#a3d8b6",
+          "#cdfcdd"
+        ]
+      },
+      "style-saver": {
+        "role": "tertiary",
+        "displayName": "Style: Saver",
+        "canonical": "#e4ef9a",
+        "tonalRamp": [
+          "#0b0d00",
+          "#252800",
+          "#414700",
+          "#60671b",
+          "#818937",
+          "#a3ac64",
+          "#c7d090",
+          "#edf5bc"
+        ]
+      },
+      "style-tightrope": {
+        "role": "tertiary",
+        "displayName": "Style: Tight months",
+        "canonical": "#f4b04a",
+        "tonalRamp": [
+          "#160700",
+          "#352000",
+          "#5b3a00",
+          "#835705",
+          "#ae750d",
+          "#d39840",
+          "#f4be75",
+          "#feebd4"
+        ]
+      },
+      "style-pass-through": {
+        "role": "tertiary",
+        "displayName": "Style: Pay moves on",
+        "canonical": "#ff8f70",
+        "tonalRamp": [
+          "#230000",
+          "#470e00",
+          "#72240d",
+          "#9c4127",
+          "#c85e41",
+          "#e9866b",
+          "#feb5a0",
+          "#ffe9e3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "lp-display": {
+        "displayName": "Landing Display",
+        "purpose": "Landing hero headline and close line."
+      },
+      "lp-headline": {
+        "displayName": "Landing Headline",
+        "purpose": "Landing section heads."
+      },
+      "lp-numeral": {
+        "displayName": "Landing Numeral",
+        "purpose": "Proof figures in the landing scale grid."
+      },
+      "lp-statement": {
+        "displayName": "Landing Statement",
+        "purpose": "The problem paragraph on spruce."
+      },
+      "lp-lede": {
+        "displayName": "Landing Lede",
+        "purpose": "Hero lede under the headline."
+      },
+      "lp-body": {
+        "displayName": "Landing Body",
+        "purpose": "Person copy, rule lists, section ledes (17-19px)."
+      },
+      "lp-label": {
+        "displayName": "Landing Label",
+        "purpose": "Captions, footer, chart notes."
+      },
+      "app-balance": {
+        "displayName": "App Balance",
+        "purpose": "The balance in the spruce band."
+      },
+      "app-guess": {
+        "displayName": "App Guess",
+        "purpose": "The live number in the guess game only."
+      },
+      "app-title": {
+        "displayName": "App Title",
+        "purpose": "Lead-module sentence, sheet titles, game question."
+      },
+      "app-module-title": {
+        "displayName": "App Module Title",
+        "purpose": "Module headings."
+      },
+      "app-body": {
+        "displayName": "App Body",
+        "purpose": "Rows and body text."
+      },
+      "app-small": {
+        "displayName": "App Small",
+        "purpose": "Secondary lines."
+      },
+      "app-micro": {
+        "displayName": "App Micro",
+        "purpose": "Tab labels, weekday letters, legal print."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-whisper",
+        "value": "0 1px 2px rgba(16,36,27,0.06)",
+        "purpose": "App modules only; separates white from the pale ground."
+      },
+      {
+        "name": "sheet",
+        "value": "0 -8px 32px rgba(16,36,27,0.16)",
+        "purpose": "Receipt, Ask and profile sheets."
+      },
+      {
+        "name": "thumb",
+        "value": "0 1px 3px rgba(16,36,27,0.30)",
+        "purpose": "Slider thumb."
+      },
+      {
+        "name": "landing-phone",
+        "value": "0 30px 60px -28px rgba(12,58,43,0.45)",
+        "purpose": "Live phone frames on the landing."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All app and landing transitions."
+      },
+      {
+        "name": "d-press",
+        "value": "120ms",
+        "purpose": "Pressed and hover states of buttons."
+      },
+      {
+        "name": "d-state",
+        "value": "200ms",
+        "purpose": "Chips, rows, banners, landing link colour."
+      },
+      {
+        "name": "d-sheet",
+        "value": "320ms",
+        "purpose": "Sheets rising."
+      },
+      {
+        "name": "d-land",
+        "value": "900ms",
+        "purpose": "The guess game landing only."
+      },
+      {
+        "name": "d-glide",
+        "value": "700ms",
+        "purpose": "Slider glide from a chip; balance line redraw."
+      },
+      {
+        "name": "dot-resort",
+        "value": "transform 1.1s ease-out, fill 0.8s ease, 9ms stagger (i % 60)",
+        "purpose": "Landing dot field re-sort; axes fade after 0.5s, rings after 1.1s; none under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lp-phone",
+        "value": "640px"
+      },
+      {
+        "name": "device-frame",
+        "value": "900px"
+      },
+      {
+        "name": "lp-stack",
+        "value": "1080px"
+      },
+      {
+        "name": "lp-wide",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action per view in the app; white label on Action Green.",
+      "html": "<button class=\"ds-btn-primary\">Move €140 from savings</button>",
+      "css": ".ds-btn-primary{font-family:\"Figtree Variable\",system-ui,sans-serif;min-height:48px;padding:10px 24px;border:0;border-radius:999px;background:#007a3d;color:#fff;font-size:16px;font-weight:600;line-height:24px;cursor:pointer;transition:background 120ms;}.ds-btn-primary:hover,.ds-btn-primary:active{background:#00652f;}.ds-btn-primary:focus-visible{outline:2px solid #007a3d;outline-offset:2px;}.ds-btn-primary:disabled{background:#edf2ec;color:#5f7067;}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action, e.g. \"Add to my Kori\".",
+      "html": "<button class=\"ds-btn-quiet\">Add to my Kori</button>",
+      "css": ".ds-btn-quiet{font-family:\"Figtree Variable\",system-ui,sans-serif;min-height:48px;padding:10px 24px;border:1px solid #dde5de;border-radius:999px;background:#fff;color:#10241b;font-size:16px;font-weight:600;line-height:24px;cursor:pointer;transition:background 120ms;}.ds-btn-quiet:hover,.ds-btn-quiet:active{background:#edf2ec;}.ds-btn-quiet:focus-visible{outline:2px solid #007a3d;outline-offset:2px;}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Toggle chip; selected takes Green Tint.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\">€600</button><button class=\"ds-chip ds-chip-on\" aria-pressed=\"true\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M20 6 9 17l-5-5\"/></svg>€900</button></div>",
+      "css": ".ds-chips{display:flex;gap:8px;}.ds-chip{font-family:\"Figtree Variable\",system-ui,sans-serif;display:inline-flex;align-items:center;gap:4px;min-height:36px;padding:7px 12px;border:1px solid #dde5de;border-radius:999px;background:#fff;color:#10241b;font-size:14px;font-weight:600;line-height:20px;cursor:pointer;transition:background 200ms,border-color 200ms;}.ds-chip:hover{background:#edf2ec;}.ds-chip:focus-visible{outline:2px solid #007a3d;outline-offset:2px;}.ds-chip-on,.ds-chip-on:hover{background:#e6f4ea;border-color:#007a3d;color:#007a3d;}"
+    },
+    {
+      "name": "Ask Kori Field",
+      "kind": "input",
+      "refersTo": "ask-field",
+      "description": "The single question field above the tab bar.",
+      "html": "<label class=\"ds-ask\"><input placeholder=\"Ask Kori about your money\"><button aria-label=\"Send\" class=\"ds-ask-send\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"m5 12 7-7 7 7M12 19V5\"/></svg></button></label>",
+      "css": ".ds-ask{display:flex;align-items:center;height:48px;width:340px;padding:6px 6px 6px 16px;border-radius:999px;background:#edf2ec;}.ds-ask input{font-family:\"Figtree Variable\",system-ui,sans-serif;flex:1;border:0;background:none;font-size:16px;color:#10241b;caret-color:#007a3d;outline:0;}.ds-ask input::placeholder{color:#5f7067;}.ds-ask:focus-within{outline:2px solid #007a3d;outline-offset:2px;}.ds-ask-send{width:36px;height:36px;border:0;border-radius:99px;background:#007a3d;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;}.ds-ask-send:hover{background:#00652f;}"
+    },
+    {
+      "name": "Tab Bar",
+      "kind": "nav",
+      "refersTo": "tab-bar",
+      "description": "Five-tab S-mobiili bar; Kori in the centre.",
+      "html": "<nav class=\"ds-tabs\"><button><span><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M3 10.5 12 3l9 7.5V21H3z\"/></svg></span><small>Home</small></button><button aria-current=\"page\"><span><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M3 10h18l-2 10H5zM8 10l3-6M16 10l-3-6\"/></svg></span><small>Kori</small></button><button><span><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M3 21h18M5 10v8M10 10v8M14 10v8M19 10v8M3 10l9-6 9 6z\"/></svg></span><small>Bank</small></button></nav>",
+      "css": ".ds-tabs{font-family:\"Figtree Variable\",system-ui,sans-serif;display:flex;width:390px;height:62px;padding:4px 0 3px;background:#fff;border-top:1px solid #e8eee9;}.ds-tabs button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:0;background:none;color:#4a5d53;cursor:pointer;}.ds-tabs button span{width:56px;height:32px;border-radius:999px;display:flex;align-items:center;justify-content:center;transition:background 200ms;}.ds-tabs button:hover span{background:#edf2ec;}.ds-tabs small{font-size:12px;line-height:16px;font-weight:500;}.ds-tabs [aria-current=page]{color:#007a3d;}.ds-tabs [aria-current=page] span{background:#e6f4ea;}.ds-tabs button:focus-visible{outline:2px solid #007a3d;outline-offset:2px;}"
+    },
+    {
+      "name": "Brand Band",
+      "kind": "custom",
+      "refersTo": "brand-band",
+      "description": "Spruce band opening every home: greeting, balance, ruled safe-to-spend row.",
+      "html": "<section class=\"ds-band\"><p class=\"ds-band-greet\">Hi Aino. 11 days to payday.</p><p class=\"ds-band-acct\">Käyttötili · FI·· 4471</p><p class=\"ds-band-bal\">€212.35</p><div class=\"ds-band-safe\"><span>Safe to spend</span><b><button class=\"ds-proof-band\">€17</button> a day</b><small>until payday, Thu 26 Nov</small></div></section>",
+      "css": ".ds-band{font-family:\"Figtree Variable\",system-ui,sans-serif;width:390px;background:#0e3b2a;color:#fff;border-radius:0 0 28px 28px;padding:2px 20px 16px;font-variant-numeric:tabular-nums lining-nums;}.ds-band p{margin:0;}.ds-band-greet{font-size:15px;line-height:1.4;color:#bfe8cc;}.ds-band-acct{padding-top:6px;font-size:14px;color:rgba(255,255,255,.72);}.ds-band-bal{font-size:38px;line-height:1.1;font-weight:750;letter-spacing:-0.02em;}.ds-band-safe{margin-top:8px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:auto 1fr;grid-template-areas:\"l v\" \"n n\";align-items:baseline;column-gap:10px;row-gap:2px;}.ds-band-safe span{grid-area:l;font-size:14px;font-weight:600;color:#bfe8cc;}.ds-band-safe b{grid-area:v;justify-self:end;font-size:20px;font-weight:700;}.ds-band-safe small{grid-area:n;font-size:13px;color:rgba(255,255,255,.7);}.ds-proof-band{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline dotted #bfe8cc 1.5px;text-underline-offset:4px;border-radius:4px;cursor:pointer;}.ds-proof-band:active{background:rgba(255,255,255,.12);}.ds-proof-band:focus-visible{outline:2px solid #bfe8cc;outline-offset:2px;}"
+    },
+    {
+      "name": "Module with Proof Line",
+      "kind": "card",
+      "refersTo": "module",
+      "description": "Borderless white module; every computed number is a proof-line button.",
+      "html": "<article class=\"ds-module\"><h2>Where October went</h2><p>Cafés took <button class=\"ds-proof\">€87</button> across 16 visits.</p></article>",
+      "css": ".ds-module{font-family:\"Figtree Variable\",system-ui,sans-serif;width:358px;background:#fff;border-radius:20px;padding:16px;box-shadow:0 1px 2px rgba(16,36,27,.06);color:#10241b;font-size:16px;line-height:24px;}.ds-module h2{margin:0 0 8px;font-size:19px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;}.ds-module p{margin:0;}.ds-proof{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline dotted #007a3d 1.5px;text-underline-offset:4px;border-radius:4px;cursor:pointer;font-variant-numeric:tabular-nums lining-nums;}.ds-proof:hover,.ds-proof:active{background:#e6f4ea;}.ds-proof:focus-visible{outline:2px solid #007a3d;outline-offset:2px;}"
+    },
+    {
+      "name": "Three Baskets",
+      "kind": "custom",
+      "refersTo": "module",
+      "description": "Segmented basket bar and keyed rows.",
+      "html": "<div class=\"ds-baskets\"><div class=\"ds-bbar\"><span style=\"flex-grow:52;background:#0e3b2a\"></span><span style=\"flex-grow:14;background:#f0a63a\"></span><span style=\"flex-grow:34;background:#36b26b\"></span></div><div class=\"ds-brow\"><i style=\"background:#0e3b2a\"></i><span>Fixed bills<small>rent, phone, insurance</small></span><b>€612</b></div><div class=\"ds-brow\"><i style=\"background:#f0a63a\"></i><span>Surprises<small>dentist, repairs</small></span><b>€160</b></div><div class=\"ds-brow\"><i style=\"background:#36b26b\"></i><span>Slips away<small>cafés, Wolt, taxis</small></span><b>€398</b></div></div>",
+      "css": ".ds-baskets{font-family:\"Figtree Variable\",system-ui,sans-serif;width:326px;color:#10241b;font-variant-numeric:tabular-nums lining-nums;}.ds-bbar{display:flex;gap:3px;height:14px;border-radius:999px;overflow:hidden;margin:6px 0 10px;}.ds-bbar span{flex-basis:0;min-width:4px;}.ds-brow{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:12px;min-height:56px;border-top:1px solid #e8eee9;}.ds-brow:first-of-type{border-top:0;}.ds-brow i{width:12px;height:12px;border-radius:4px;}.ds-brow span{display:flex;flex-direction:column;line-height:1.3;}.ds-brow small{font-size:13px;color:#4a5d53;}.ds-brow b{font-size:17px;font-weight:700;text-decoration:underline dotted #007a3d 1.5px;text-underline-offset:4px;}"
+    },
+    {
+      "name": "Landing Bar CTA and Switch",
+      "kind": "button",
+      "refersTo": "lp-bar-cta",
+      "description": "Chalk pill CTA and the dot-field view switch on spruce.",
+      "html": "<div class=\"ds-lp-on\"><a class=\"ds-lp-cta\" href=\"#\">Open Kori</a><div class=\"ds-lp-switch\" role=\"group\"><button aria-pressed=\"false\">One app</button><button aria-pressed=\"true\">Their money</button></div></div>",
+      "css": ".ds-lp-on{font-family:\"Schibsted Kori\",\"Figtree Variable\",system-ui,sans-serif;display:flex;gap:24px;align-items:center;padding:24px;background:#0c3a2b;}.ds-lp-cta{color:#0c3a2b;background:#f4f7f2;padding:9px 18px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;transition:background .2s;}.ds-lp-cta:hover{background:#fff;}.ds-lp-cta:focus-visible,.ds-lp-switch button:focus-visible{outline:2px solid #e4ef9a;outline-offset:3px;}.ds-lp-switch{display:inline-flex;padding:4px;border-radius:999px;background:rgba(244,247,242,.08);}.ds-lp-switch button{font:inherit;font-size:14px;font-weight:600;padding:7px 14px;border:0;border-radius:999px;background:none;color:#c5d6cb;cursor:pointer;transition:background .25s,color .25s;}.ds-lp-switch button:hover{color:#f4f7f2;}.ds-lp-switch button[aria-pressed=true]{background:#f4f7f2;color:#0c3a2b;}"
+    },
+    {
+      "name": "Dot Field",
+      "kind": "custom",
+      "refersTo": "lp-field",
+      "description": "Landing data mark: customers as dots coloured by money style, demo people ringed.",
+      "html": "<figure class=\"ds-field\"><p>The same 393, by how money moves</p><svg viewBox=\"0 0 300 120\" width=\"300\" height=\"120\"><g font-size=\"12\" font-weight=\"650\" fill=\"#f4f7f2\"><text x=\"0\" y=\"24\">Steady</text><text x=\"0\" y=\"54\">Saver</text><text x=\"0\" y=\"84\">Tight months</text><text x=\"0\" y=\"114\">Pay moves on</text></g><g><circle cx=\"110\" cy=\"20\" r=\"3.6\" fill=\"#8fd3a8\"/><circle cx=\"118\" cy=\"20\" r=\"3.6\" fill=\"#8fd3a8\"/><circle cx=\"126\" cy=\"20\" r=\"3.6\" fill=\"#8fd3a8\"/><circle cx=\"150\" cy=\"50\" r=\"3.6\" fill=\"#e4ef9a\"/><circle cx=\"158\" cy=\"50\" r=\"3.6\" fill=\"#e4ef9a\"/><circle cx=\"190\" cy=\"80\" r=\"3.6\" fill=\"#f4b04a\"/><circle cx=\"198\" cy=\"80\" r=\"3.6\" fill=\"#f4b04a\"/><circle cx=\"170\" cy=\"110\" r=\"3.6\" fill=\"#ff8f70\"/><circle cx=\"178\" cy=\"110\" r=\"3.6\" fill=\"#ff8f70\"/><circle cx=\"240\" cy=\"20\" r=\"3.6\" fill=\"#6f8f7f\"/></g><circle cx=\"118\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#f4f7f2\" stroke-width=\"1.6\"/></svg><figcaption>Each dot is one customer. Age across, money style down.</figcaption></figure>",
+      "css": ".ds-field{font-family:\"Schibsted Kori\",\"Figtree Variable\",system-ui,sans-serif;margin:0;width:340px;padding:24px 24px 20px;border-radius:28px;background:#0f4533;color:#f4f7f2;font-variant-numeric:tabular-nums lining-nums;}.ds-field p{margin:0 0 8px;font-size:17px;font-weight:600;}.ds-field figcaption{margin-top:10px;font-size:13.5px;line-height:1.5;color:#9cb5a6;}.ds-field circle{transition:transform 1.1s cubic-bezier(.16,1,.3,1),fill .8s ease;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Spruce Ledger",
+    "overview": "Kori is Nordic data journalism wearing a bank's calm. One deep spruce green owns the top of every surface: the full-bleed first viewport of the landing and the brand band at the top of every phone screen. Under the spruce sits a pale green-grey daylight ground with white, near-flat cards. Type is a large, tight grotesk for statements and figures, and a round, plain sans for the app's working text. The only ornament is data itself: dots, bars, a calendar grid, a dotted proof underline.\n\nThe landing (route `/`) argues like a newspaper data feature: a 72-82px sentence-case headline in chalk on spruce, a 393-dot field that re-sorts from one grey \"statement\" block into four money-style rows, then live phones and plain rule lists separated by 2px ink rules. The app (S-mobiili shell, Figtree) is an Operate surface: one spruce band carrying greeting, balance and safe-to-spend, then modules on the ground, an Ask Kori field and a five-tab bar. The shell is pixel-identical for every customer; only modules, order, tone, text size and density change.\n\nDensity is set per person through `--text-scale` presets (Roomy 1.0625, Regular 1, Compact 0.9375, Large 1.1875) that also move row height (60/56/48/64) and module gap and padding (20/16/12/20). Energy goes only into the interactive moments (a guess you can lose, a future you can drag, a month you can fix) and the landing's single dot re-sort.",
+    "keyCharacteristics": [
+      "Spruce owns the first viewport (landing) and the top band (app); everything below is daylight.",
+      "Chalk-white type on spruce, deep green ink on light; one action green.",
+      "Data marks are the only ornament; no gradients, glass, glow or illustration.",
+      "Large grotesk numerals and sentence-case statements, tabular figures for all money.",
+      "Pill controls, borderless near-flat cards, one surface per tool.",
+      "Every computed number carries a dotted proof underline that opens its receipt."
+    ],
+    "rules": [
+      {
+        "name": "The Spruce Top Rule",
+        "body": "Spruce owns the top of the surface: the landing's first viewport, the app's status bar, header and balance band. Below that line, surfaces are daylight. Spruce never becomes a card colour mid-page in the app.",
+        "section": "colors"
+      },
+      {
+        "name": "The Green Means Act Rule",
+        "body": "Action Green is for actions, current selection and state. Money leaving is Ink, never red; red is only below zero and errors. No per-customer colours.",
+        "section": "colors"
+      },
+      {
+        "name": "The Data Hue Rule",
+        "body": "Basket and money-style hues mark data (bars, dots, keys) and nothing else: never a button, a heading or a card ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The White Label Rule",
+        "body": "White text sits on Action Green (5.45:1), never on Mark Green (3.19:1).",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Leads Rule",
+        "body": "Inside an app module the largest type is a sentence, except the live guess number. Figures earn display size only in the spruce band (balance) and on the landing (headline numerals, scale grid); there they are the world's native device.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Money Rule",
+        "body": "Every amount and date uses `tabular-nums lining-nums`. The landing turns them off for prose and back on for numerals and the dot field.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "No uppercase tracked labels, no labels above headings. Headings use `text-wrap: balance`.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Surface Rule",
+        "body": "A tool inside a card or sheet is not a second card: no border, shadow, ground or padding on nested modules.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do start every app home with the spruce band and every landing with a full-bleed spruce first viewport.",
+      "Do keep the shell (band, header, Ask bar, tab bar, type, colours, radii, proof line) identical for every customer; vary only modules, order, tone and the `--text-scale` preset.",
+      "Do put a dotted proof underline on every computed number and make its receipt total equal it.",
+      "Do use data marks (dots, bars, calendar cells, rules) as the only ornament, coloured only from the basket and money-style hues.",
+      "Do set money and dates in tabular lining figures.",
+      "Do use Action Green (#007a3d family) under any white label."
+    ],
+    "donts": [
+      "Don't use gradients, glass, glow or coloured side stripes on cards.",
+      "Don't add uppercase tracked labels, eyebrows or kickers above headings.",
+      "Don't use red for ordinary spending or give a customer their own colour theme.",
+      "Don't use a serif or hairline-editorial type, or any app font other than Figtree.",
+      "Don't nest a card inside a card or sheet; the inner tool loses its surface.",
+      "Don't use sparkle, wand, robot or brain icons, emoji, or unicode glyphs as icons.",
+      "Don't let sheets or overlays escape the device frame on desktop."
+    ]
+  }
+}

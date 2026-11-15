@@ -1,5 +1,7 @@
 # Kori: exact screen spec (Fable for Claude, Sat 14 Nov 22:45; reviewed by Claude)
 
+> **Superseded in part (Sun 15 Nov).** The visual system is now recorded from the shipped build in `DESIGN.md` (tokens, type, shell) with `.impeccable/design.json`. Where this file and `DESIGN.md` disagree on look, `DESIGN.md` wins. Superseded here: the white header (3.3) and white status bar; the account line as a bordered white module (now the spruce brand band with a 38px balance and a ruled safe-to-spend row); module elevation in 2.4 (modules are now borderless, radius 20, with a 1px whisper shadow); spruce limited to the login screen in 2.3 (spruce now opens every screen). "Figtree only" (2.1, 9) and "no hero-metric tiles" (9) apply inside the app; the landing at `/` uses Schibsted Grotesk and large figures, and the app balance in the brand band is the one sanctioned large number besides the guess. This file still governs behaviour, data, copy, the three homes, Ask Kori, receipts and the Do-not list.
+
 For Codex. Build exactly this. Read `/mnt/project-files/Junction/plan/DESIGN-FLOOR.md` as the floor under it. Where this file and your habit disagree, this file wins. Where a value is missing, ask, do not invent.
 
 Mode: Operate (a task surface inside a bank app). Colour strategy: Restrained, with one Committed surface (the login screen).
@@ -140,7 +142,10 @@ No page-load choreography. No entrance animation on modules. Direct manipulation
 
 From the top: status bar 47, header 56, scrolling content, Ask Kori bar 64 (Kori tab only), tab bar 62, home-indicator zone 21. That leaves **562px** of content on the Kori tab.
 
-### 3.3 Header (56 high, `surface`, 1px `line-soft` bottom border)
+### 3.3 Header (56 high, `spruce`, no bottom border; superseded, see DESIGN.md "Navigation" and "Brand band")
+
+Shipped: the status bar and header sit on `spruce` (#0E3B2A) with white mark, white icons and a mint (#BFE8CC) avatar with spruce initials; the bell dot is #FFB547. The spruce continues into the brand band below (greeting, balance, safe to spend). Placement below is unchanged.
+
 
 - Left at x=16: the Kori mark and the word "Kori".
 - Right at x=16 from the edge: a 36 circle avatar button, `green-tint` ground, initials in `green-600` 14px 700 (AK, ML, LN). It opens the profile sheet. `aria-label="Profile and settings"`.

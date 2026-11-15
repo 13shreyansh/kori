@@ -143,15 +143,15 @@
   height: 56px;
   padding: 0 30px;
   border-radius: 999px;
-  background: var(--lp-green);
-  color: #fff !important;
+  background: #2fc874;
+  color: var(--lp-spruce) !important;
   font-size: 18px;
   font-weight: 650;
   text-decoration: none;
   transition: background 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .lp-btn:hover {
-  background: #00b85a;
+  background: #45d384;
   transform: translateY(-1px);
 }
 .lp-link {
