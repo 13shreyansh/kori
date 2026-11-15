@@ -45,3 +45,10 @@ test('signed amounts and Finnish decimal commas remain whole literals', () => {
   assert.equal(validateRoute({block:'payday-runway',params:{ticket:12.5}}, 'Can I spend 12,50 euros?').params.ticket,12.5);
   for (const question of ['-50 euros', '- 50 euros', '−€50 euros', '€-50 euros']) assert.deepEqual(validateRoute({block:'payday-runway',params:{ticket:50}}, question).params, {});
 });
+
+
+test('provider aborts return the safe built-in route without leaking an error', async () => {
+  const aborted = async () => { throw new DOMException('Timed out', 'TimeoutError'); };
+  const result = await routeRequest('POST', { question: 'Where does my money go?' }, { FEATHERLESS_API_KEY: 'test-only' }, aborted);
+  assert.deepEqual(result, { status: 200, body: { fallback: true } });
+});

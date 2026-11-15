@@ -59,7 +59,7 @@ export async function routeQuestion(question: string): Promise<Route> {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ question }),
-      signal: AbortSignal.timeout(6000),
+      signal: AbortSignal.timeout(10500),
     });
     if (!r.ok) return fallback;
     const data = await r.json();

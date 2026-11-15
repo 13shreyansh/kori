@@ -41,7 +41,7 @@ export async function routeRequest(method, body, env = {}, fetcher = fetch) {
     const response = await fetcher(endpoint, {
       method: 'POST',
       headers: featherless ? { 'content-type': 'application/json', authorization: `Bearer ${key}` } : { 'content-type': 'application/json', 'x-goog-api-key': key },
-      signal: AbortSignal.timeout(5200),
+      signal: AbortSignal.timeout(9000),
       body: JSON.stringify(featherless ? {
         model, messages: [{ role: 'system', content: instruction }, { role: 'user', content: question }],
         temperature: 0, max_tokens: 180, response_format: { type: 'json_object' },

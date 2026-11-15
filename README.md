@@ -26,7 +26,7 @@ flowchart LR
 
 React, TypeScript and Vite provide the interface. The current public demo runs on Cloudflare Pages. Local and session state hold the prototype experience. The `claude/rebuild` branch is the current source; `main` and the older Vercel deployment describe an earlier build.
 
-The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Featherless to choose an existing card. It validates the identifier and copies only numbers explicitly present in the question. Only the question enters the model request, never account balances or transaction histories. Invalid output, an unavailable provider or a request exceeding 5.2 seconds returns the built-in routing path. The older Gemini handler remains available when no Featherless key is configured; active Gemini access is not claimed.
+The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Featherless to choose an existing card. It validates the identifier and copies only numbers explicitly present in the question. Only the question enters the model request, never account balances or transaction histories. Invalid output, an unavailable provider or a request exceeding nine seconds returns the built-in routing path. The older Gemini handler remains available when no Featherless key is configured; active Gemini access is not claimed.
 
 ## Sponsor use
 
@@ -37,7 +37,7 @@ The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Feath
 | Gemma through Featherless | Implemented server-side selection of receipt, plan timeline, payday runway, upcoming bills, spending baskets or unsupported. The real six-question verification selected all six expected cards. |
 | Gemini | Handler present, but the latest live check used fallback. Active provider access is unverified. |
 
-Gemma routes a question to an existing card. It cannot calculate balances or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. A measured six-question compatibility check on 15 November selected 6/6 expected cards, with response times of 3,036–4,581 ms. This small development set is not a held-out accuracy estimate. Larger Gemma models timed out more often in the initial check, so this task uses the smaller four-billion-parameter model.
+Gemma routes a question to an existing card. It cannot calculate balances or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. A measured six-question compatibility check on 15 November selected 6/6 expected cards, with response times of 3,036–4,581 ms. The initial deployed five-second budget produced 5/6 development responses and 4/6 independent held-out responses, counting timeouts as misses. The final server budget is nine seconds, with a 10.5-second client bound. These small sets are not a population accuracy estimate. Larger Gemma models timed out more often in the initial check, so this task uses the smaller four-billion-parameter model.
 
 ## Run locally
 
