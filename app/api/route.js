@@ -6,11 +6,12 @@ const instruction = 'Choose an existing banking card. Return JSON only: {"block"
 export function validateRoute(value, question) {
   if (!value || !blocks.includes(value.block)) throw Error('Unknown card');
   const params = {};
+  const annual = /\byear(?:ly)?\b|\bannual(?:ly)?\b/i.test(question);
   const explicitCategory = categories.find(category => new RegExp(category === 'cafe' ? 'caf[eé]' : category === 'groceries' ? 'grocer' : category === 'subscriptions' ? 'subscription' : category, 'i').test(question));
   const categoryCost = explicitCategory && /spend|spent|cost|payments/i.test(question) && !/save|saving|afford|ticket|safe.*spend/i.test(question);
   if (categoryCost && (value.block !== 'receipt' || value.params?.category !== explicitCategory))
     throw Error('Category cost requires its receipt');
-  if (categoryCost && /(?:in a|per|each) year|annually/i.test(question) && value.params?.year !== true)
+  if (categoryCost && annual && value.params?.year !== true)
     throw Error('Annual category cost requires explicit annualization');
   if (categories.includes(value.params?.category)) params.category = value.params.category;
   const statedNumbers = new Set();
@@ -30,7 +31,7 @@ export function validateRoute(value, question) {
   }
   for (const field of ['monthly', 'ticket'])
     if (Number.isFinite(value.params?.[field]) && value.params[field] >= 0 && statedNumbers.has(value.params[field])) params[field] = value.params[field];
-  if (value.params?.year === true && /\byear\b/i.test(question)) params.year = true;
+  if (value.params?.year === true && annual) params.year = true;
   return { block: value.block, params };
 }
 

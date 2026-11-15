@@ -47,7 +47,7 @@ export function localRoute(q: string): Route {
                     : /taxi|cab/.test(s)
                       ? "taxi"
                       : "lunch",
-        year: /year/.test(s),
+        year: /\byear(?:ly)?\b|\bannual(?:ly)?\b/.test(s),
       },
     };
   return { block: "unsupported", params: {} };

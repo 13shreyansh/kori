@@ -58,3 +58,8 @@ test('a category-cost question cannot silently become a spending-habits card', a
   const result = await routeRequest('POST',{question:'What do my subscriptions cost in a year?'},{FEATHERLESS_API_KEY:'test-only'},wrongCard);
   assert.deepEqual(result.body,{fallback:true});
 });
+
+test('annual wording retains an explicit annual receipt flag', () => {
+  for (const wording of ['annually','yearly','per year'])
+    assert.equal(validateRoute({block:'receipt',params:{category:'subscriptions',year:true}}, `What do my subscriptions cost ${wording}?`).params.year,true);
+});

@@ -177,3 +177,8 @@ it("savings histories never rely on an overdrawn pot", () => {
         .every((t) => (t.balance ?? 0) >= 0),
     ).toBe(true);
 });
+
+it('annual subscription wording stays annual on the built-in fallback', () => {
+  for (const wording of ['annually', 'yearly', 'per year'])
+    expect(localRoute(`What do my subscriptions cost ${wording}?`)).toEqual({block:'receipt',params:{category:'subscriptions',year:true}});
+});

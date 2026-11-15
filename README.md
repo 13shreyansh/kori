@@ -33,7 +33,7 @@ The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Feath
 | Service | Status and concrete role |
 | --- | --- |
 | Codex | Used during development, debugging and verification. |
-| CRACI | Runs the application build, lint, 25 finance/date tests and eight provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
+| CRACI | Runs the application build, lint, 26 finance/date tests and nine provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
 | Gemma through Featherless | Implemented server-side selection of receipt, plan timeline, payday runway, upcoming bills, spending baskets or unsupported. The real six-question verification selected all six expected cards. |
 | Gemini | Handler present, but the latest live check used fallback. Active provider access is unverified. |
 
