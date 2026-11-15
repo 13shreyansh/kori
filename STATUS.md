@@ -1,3 +1,9 @@
+Implement the README sponsor additions without touching the Junction portal or submitted descriptions.
+Use isolated feature work and preserve the current live product until verification passes.
+Add real CRACI CI and Gemma card routing through Featherless.
+Require regression tests, real provider receipts and deployed desktop/mobile acceptance.
+Publish only after independent spec and quality review; keep secrets out of files and logs.
+
 ENTRY Kori Job 02 / 2026-11-14 23:40 EET / app commit 34fed58 / https://kori-wheat.vercel.app
 
 DONE:

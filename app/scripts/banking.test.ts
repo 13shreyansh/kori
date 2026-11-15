@@ -86,11 +86,11 @@ describe("regression and sensitivity", () => {
   });
   it("computes Laura shortfall and transfer using independent key", () => {
     const d = load("laura");
-    expect(F.shortfall(d).date).toBe("2026-11-26");
+    expect(F.shortfall(d).date).toBe(F.addDays(F.getToday(), 12));
     expect(F.shortfall(d).value).toBeCloseTo(key.laura.low, 2);
     expect(F.shortfall(d, 140).value).toBe(0);
     expect(F.everyday(d).value).toBe(34);
-    expect(F.sum(F.payments(d, "2026-11-01", F.getToday(), F.isSGroup))).toBe(
+    expect(F.sum(F.payments(d, F.refDate("2026-11-01"), F.getToday(), F.isSGroup))).toBe(
       262,
     );
   });
@@ -112,7 +112,7 @@ describe("regression and sensitivity", () => {
         F.getToday(),
         Math.ceil((900 - 60) / Math.round(2 * w.average)) * 7,
       ),
-    ).toBe("2027-05-08");
+    ).toBe(F.refDate("2027-05-08"));
   });
   it("has the requested loan evidence from settled payments", () => {
     const d = load("mikko");
