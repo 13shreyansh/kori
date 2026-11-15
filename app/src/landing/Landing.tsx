@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./landing.css";
+import Sorting from "./Sorting";
 
 type Dot = [number, string, string, number, string];
 type Style = "steady" | "saver" | "tightrope" | "pass_through";
@@ -220,6 +221,7 @@ export default function Landing() {
         </a>
         <nav>
           <a href="#people">How it adapts</a>
+          <a href="#sorting">How it sorts</a>
           <a href="#decides">How it decides</a>
           <a className="lp-bar-cta" href="/app">
             Open Kori
@@ -273,6 +275,8 @@ export default function Landing() {
           Try it yourself: <a href="/app">log in</a> as <b>aino</b>, <b>mikko</b> or <b>laura</b> with PIN <b>1234</b>.
         </p>
       </section>
+
+      <Sorting />
 
       <section className="lp-decides" id="decides">
         <h2>How Kori decides what you see</h2>

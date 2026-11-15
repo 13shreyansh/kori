@@ -593,3 +593,298 @@
     font-size: 19px;
   }
 }
+
+/* how Kori sorts */
+.lp-sort {
+  padding: 112px clamp(16px, 4vw, 56px) 0;
+}
+.lp-sort-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(24px, 4vw, 64px);
+  margin-top: 56px;
+  align-items: start;
+}
+.lp-step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--lp-line);
+}
+.lp-step:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.lp-step-n {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--lp-spruce);
+  color: var(--lp-chalk);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.lp-step h3 {
+  font-size: 22px;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+.lp-step p {
+  margin-top: 8px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--lp-ink-2);
+  max-width: 46ch;
+}
+.lp-rule-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  counter-reset: rule;
+}
+.lp-rule {
+  display: grid;
+  grid-template-columns: 14px 1fr auto;
+  gap: 14px;
+  padding: 14px 0;
+  border-top: 1px solid var(--lp-line);
+  align-items: start;
+}
+.lp-rule > i {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  margin-top: 5px;
+  box-shadow: inset 0 0 0 1px rgba(15, 36, 26, 0.18);
+}
+.lp-rule.s-steady > i { background: var(--s-steady); }
+.lp-rule.s-saver > i { background: var(--s-saver); }
+.lp-rule.s-tightrope > i { background: var(--s-tightrope); }
+.lp-rule.s-pass_through > i { background: var(--s-pass_through); }
+.lp-rule b {
+  display: block;
+  font-size: 17px;
+}
+.lp-rule span {
+  display: block;
+  font-size: 16px;
+  color: var(--lp-ink);
+  margin-top: 2px;
+}
+.lp-rule small {
+  display: block;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--lp-ink-2);
+  margin-top: 4px;
+}
+.lp-rule em {
+  font-style: normal;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 17px;
+}
+.lp-trace {
+  position: sticky;
+  top: 96px;
+  background: var(--lp-spruce);
+  color: var(--lp-chalk);
+  border-radius: 28px;
+  padding: 24px;
+}
+.lp-trace-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.lp-trace-head p {
+  font-weight: 650;
+  font-size: 17px;
+}
+.lp-chip {
+  border: 1px solid rgba(244, 247, 242, 0.3);
+  background: none;
+  color: var(--lp-chalk);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.lp-chip:hover {
+  background: rgba(244, 247, 242, 0.08);
+}
+.lp-mini {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11px, 1fr));
+  gap: 4px;
+  margin: 18px 0;
+}
+.lp-mini button {
+  aspect-ratio: 1;
+  border: 0;
+  padding: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: transform 0.15s ease;
+}
+.lp-mini button:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.lp-mini button.on {
+  outline: 2px solid var(--lp-chalk);
+  outline-offset: 2px;
+  opacity: 1;
+}
+.lp-mini .s-steady { background: var(--s-steady); }
+.lp-mini .s-saver { background: var(--s-saver); }
+.lp-mini .s-tightrope { background: var(--s-tightrope); }
+.lp-mini .s-pass_through { background: var(--s-pass_through); }
+.lp-trace-card {
+  background: var(--lp-spruce-2);
+  border-radius: 18px;
+  padding: 18px;
+}
+.lp-trace-who {
+  font-size: 15px;
+  color: var(--lp-chalk-2);
+}
+.lp-trace-card ol {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.lp-trace-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(244, 247, 242, 0.1);
+  font-size: 15.5px;
+}
+.lp-trace-card li small {
+  color: var(--lp-chalk-3);
+  text-align: right;
+  font-size: 14px;
+}
+.lp-trace-card li.miss span {
+  color: var(--lp-chalk-3);
+  text-decoration: line-through;
+  text-decoration-color: rgba(244, 247, 242, 0.35);
+}
+.lp-trace-card li.hit span {
+  font-weight: 700;
+  color: #fff;
+}
+.lp-trace-card li.hit small {
+  color: var(--lp-chalk);
+}
+.lp-trace-card li.skip {
+  opacity: 0.45;
+}
+.lp-trace-out {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.lp-sort-sub {
+  margin-top: 88px;
+  font-size: clamp(26px, 2.6vw, 38px);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.lp-sort-note,
+.lp-sort-proof {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--lp-ink-2);
+  max-width: 62ch;
+}
+.lp-compare {
+  margin-top: 32px;
+  border-top: 1px solid var(--lp-ink);
+}
+.lp-cmp-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.4fr 1.3fr 1.1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--lp-line);
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--lp-ink-2);
+}
+.lp-cmp-row > span:first-child {
+  font-weight: 650;
+  color: var(--lp-ink);
+}
+.lp-cmp-head {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: var(--lp-ink);
+}
+.lp-cmp-row.ours {
+  background: #e3efe6;
+  color: var(--lp-ink);
+  font-weight: 600;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 0 -14px;
+  border-radius: 12px;
+  border-bottom: 0;
+}
+@media (max-width: 1080px) {
+  .lp-sort-grid {
+    grid-template-columns: 1fr;
+  }
+  .lp-trace {
+    position: static;
+  }
+}
+@media (max-width: 760px) {
+  .lp-cmp-head {
+    display: none;
+  }
+  .lp-cmp-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lp-cmp-row > span:first-child {
+    grid-column: 1 / -1;
+  }
+  .lp-cmp-row > span:not(:first-child)::before {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--lp-ink-2);
+  }
+  .lp-cmp-row > span:nth-child(2)::before { content: "Reads behaviour"; }
+  .lp-cmp-row > span:nth-child(3)::before { content: "Explains itself"; }
+  .lp-cmp-row > span:nth-child(4)::before { content: "Same every time"; }
+  .lp-cmp-row > span:nth-child(5)::before { content: "Cost"; }
+}
+.lp .lp-step-n {
+  color: var(--lp-chalk);
+  margin: 0;
+}
+.lp .lp-sort-sub {
+  margin-top: 96px;
+}
+.lp .lp-sort-note,
+.lp .lp-sort-proof {
+  margin-top: 16px;
+}
+.lp .lp-sort-proof {
+  margin-top: 28px;
+}
+.lp .lp-step p:not(.lp-step-n) {
+  margin-top: 8px;
+}
+.lp-chip { white-space: nowrap; flex: none; }
