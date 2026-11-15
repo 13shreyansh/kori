@@ -41,6 +41,7 @@ import {
   type BlockProps,
 } from "./banking/blocks";
 import { explanations } from "./banking/copy";
+import Landing from "./landing/Landing";
 import { routeQuestion, type Route } from "./banking/router";
 const ids = ["aino", "mikko", "laura"];
 function loadSession(id: string): Session {
@@ -1266,17 +1267,20 @@ export default function App() {
     else if (id && ids.includes(id)) sessionStorage.removeItem("kori:" + id);
     sessionStorage.removeItem("kori:auth");
     sessionStorage.setItem("kori:logged-out", "yes");
-    location.replace("/");
+    location.replace("/app");
     return null;
   }
   if (location.pathname === "/three") return <ThreeHomes />;
+  if (location.pathname === "/" || location.pathname === "/index.html")
+    return <Landing />;
   const params = new URLSearchParams(location.search);
   const insideThree = (() => {
     try {
       return (
         window.parent !== window &&
         window.parent.location.origin === location.origin &&
-        window.parent.location.pathname === "/three"
+        (window.parent.location.pathname === "/three" ||
+          window.parent.location.pathname === "/")
       );
     } catch {
       return false;
