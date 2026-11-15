@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-11-15T07:14:36.689Z",
+  "kind": "measured development compatibility, not held-out accuracy",
+  "model": "google/gemma-3-4b-it",
+  "rows": [
+    {
+      "question": "How much did I spend on cafes?",
+      "expected": "receipt",
+      "result": {
+        "block": "receipt",
+        "params": {
+          "category": "cafe"
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 4356,
+      "pass": true
+    },
+    {
+      "question": "If I save 800 a month, when can I buy a home?",
+      "expected": "plan-timeline",
+      "result": {
+        "block": "plan-timeline",
+        "params": {
+          "monthly": 800
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 3036,
+      "pass": true
+    },
+    {
+      "question": "Can I afford a 90 euro hockey ticket?",
+      "expected": "payday-runway",
+      "result": {
+        "block": "payday-runway",
+        "params": {
+          "category": "hockey",
+          "ticket": 90
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 3424,
+      "pass": true
+    },
+    {
+      "question": "Which bills arrive before payday?",
+      "expected": "coming-up",
+      "result": {
+        "block": "coming-up",
+        "params": {},
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 4581,
+      "pass": true
+    },
+    {
+      "question": "Where does my money go?",
+      "expected": "baskets",
+      "result": {
+        "block": "baskets",
+        "params": {},
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 4271,
+      "pass": true
+    },
+    {
+      "question": "Write a poem about a dragon",
+      "expected": "unsupported",
+      "result": {
+        "block": "unsupported",
+        "params": {},
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 4426,
+      "pass": true
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

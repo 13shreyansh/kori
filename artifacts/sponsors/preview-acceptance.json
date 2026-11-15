@@ -1,0 +1,29 @@
+{
+  "url": "https://f7c68823.kori-4ol.pages.dev",
+  "applicationCommit": "f34c115a4ce8863d17e982c725efc165ec7815ba",
+  "stats": {
+    "startTime": "2026-11-15T07:29:05.164Z",
+    "duration": 75916.655,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshots": [
+    "../e2e/1440-03-three.png",
+    "../e2e/390-17-ask-answer.png",
+    "../e2e/390-12-laura-fixed.png"
+  ],
+  "baseline": "ui-baseline.json",
+  "kind": "measured deployed acceptance; dated finance fixture uses Nov14 while separate rollover checks Nov15"
+}

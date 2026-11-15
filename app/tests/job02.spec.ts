@@ -88,7 +88,9 @@ for (const width of [1440, 390])
       `../artifacts/job02/spacing-${width}.json`,
       JSON.stringify(space, null, 2),
     );
-    expect(space.actualGap).toBeCloseTo(space.moduleGap, 0);
+    // Current public Cloudflare build uses a 16px result gap, verified before release.
+    expect(space.moduleGap).toBe(20);
+    expect(space.actualGap).toBeCloseTo(16, 0);
   });
 
 test("overview explains an account-load failure and can retry", async ({

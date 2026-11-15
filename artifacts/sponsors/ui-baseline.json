@@ -1,0 +1,17 @@
+{
+  "kind": "measured existing production vs candidate; no UI change",
+  "date": "2026-11-15",
+  "production": "https://kori-4ol.pages.dev/app",
+  "candidate": "https://f7c68823.kori-4ol.pages.dev/app",
+  "both": {
+    "headerPx": 56,
+    "askPx": 56,
+    "tabsPx": 56,
+    "cafeResultGapPx": 16,
+    "ainoSavingsRowPx": 0,
+    "dailyReceiptRoundedDown": "17",
+    "freeUntilPayday": "190.96",
+    "days": 11
+  },
+  "financialFixture": "2026-11-14T12:00:00+02:00"
+}

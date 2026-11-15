@@ -33,11 +33,11 @@ The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Feath
 | Service | Status and concrete role |
 | --- | --- |
 | Codex | Used during development, debugging and verification. |
-| CRACI | Runs the application build, lint, 26 finance/date tests and nine provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
+| CRACI | Runs the application build, lint, 26 finance/date tests and nine provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43689934157). |
 | Gemma through Featherless | Implemented server-side selection of receipt, plan timeline, payday runway, upcoming bills, spending baskets or unsupported. The real six-question verification selected all six expected cards. |
 | Gemini | Handler present, but the latest live check used fallback. Active provider access is unverified. |
 
-Gemma routes a question to an existing card. It cannot calculate balances or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. A measured six-question compatibility check on 15 November selected 6/6 expected cards, with response times of 3,036–4,581 ms. The initial deployed five-second budget produced 5/6 development responses and 4/6 independent held-out responses, counting timeouts as misses. The final server budget is nine seconds, with a 10.5-second client bound. These small sets are not a population accuracy estimate. Larger Gemma models timed out more often in the initial check, so this task uses the smaller four-billion-parameter model.
+Gemma routes a question to an existing card. It cannot calculate balances or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. A measured six-question compatibility check on 15 November selected 6/6 expected cards, with response times of 3,036–4,581 ms. The initial deployed five-second budget produced 5/6 development responses and 4/6 independent held-out responses, counting timeouts as misses. The final server budget is nine seconds, with a 10.5-second client bound. The final six-question replay returned six valid provider answers in 1,458–6,625 ms. This is a replay after adjustment, not a fresh held-out score. These small sets are not a population accuracy estimate. Larger Gemma models timed out more often in the initial check, so this task uses the smaller four-billion-parameter model.
 
 ## Run locally
 
@@ -65,7 +65,7 @@ node --test scripts/gemma-router.test.mjs
 BASE_URL=https://kori-4ol.pages.dev npm run test:e2e
 ```
 
-Run these commands from `app/`. Browser acceptance should inspect both a wide screen and a phone-sized screen, wait for loaded cards and use isolated test state. A build passing does not establish that a provider call succeeded; inspect the route's fallback result explicitly.
+Run these commands from `app/`. Deployed preview acceptance passed all 17 checks, including the full 1440px and 390px customer journeys, keyboard controls, receipts and midnight rollover. Checks wait for loaded cards and use isolated browser state. A build passing does not establish that a provider call succeeded; inspect the route's fallback result explicitly.
 
 The earlier persona experiment reported 185/185 agreement. This is a measured historical result for the former persona system, not a validation of today's home selector, financial outcomes or the current Gemma router. The current six-question result is reported separately above.
 
@@ -85,3 +85,5 @@ Provider-contract tests cover failure fallback, malformed JSON, unknown cards, r
 ## Code guide
 
 `app/src/banking/finance.ts` owns finance calculations. `app/src/banking/router.ts` owns the built-in routing logic. `app/api/route.js` contains the provider handler. `eval/` retains historical experiment protocols and results. See [DECISIONS.md](DECISIONS.md) for recorded trade-offs; older scripts and walkthroughs may target the former Vercel build.
+
+Verified receipts: [real provider development check](artifacts/sponsors/gemma-real.json), [original held-out result](artifacts/sponsors/gemma-heldout-preview.json), [final replay](artifacts/sponsors/gemma-final-preview.json), [deployed browser summary](artifacts/sponsors/preview-acceptance.json).

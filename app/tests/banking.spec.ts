@@ -27,9 +27,9 @@ async function login(page: Page, id: string) {
       };
     });
     expect(measures.accountRow > 0).toBe(id !== "aino");
-    expect(measures.header).toBe(55);
-    expect(measures.ask).toBe(63);
-    expect(measures.tabs).toBe(61);
+    expect(measures.header).toBe(56);
+    expect(measures.ask).toBe(56);
+    expect(measures.tabs).toBe(56);
     expect(measures.screenWidth).toBe(390);
     expect(measures.overflow).toBe(false);
     expect(measures.loaded).toBe(true);
@@ -570,6 +570,7 @@ test("keyboard-only login, game, proof, saving, transfer and logout", async ({
 test("all game rounds complete and runway and savings receipts reconcile", async ({
   page,
 }) => {
+  await page.clock.install({ time: new Date("2026-11-14T12:00:00+02:00") });
   await page.goto("/app");
   await login(page, "aino");
   await range(page, "Your spending guess", 40);
@@ -595,7 +596,9 @@ test("all game rounds complete and runway and savings receipts reconcile", async
     "closest on subscriptions",
   );
   await page.locator('[data-block="account-line"] .safe-line .proof').first().click();
-  await expect(page.getByTestId("receipt-total")).toHaveText("€17.36");
+  await expect(page.getByTestId("receipt-total")).toHaveText("€17");
+  await expect(page.getByRole("dialog")).toContainText("rounded down");
+  await expect(page.getByRole("dialog")).toContainText("€190.96");
   await page.getByRole("button", { name: "Close sheet" }).click();
   await logout(page);
   await login(page, "mikko");

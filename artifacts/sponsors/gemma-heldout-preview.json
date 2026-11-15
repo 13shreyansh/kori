@@ -1,0 +1,105 @@
+{
+  "url": "https://f7851a1c.kori-4ol.pages.dev",
+  "source": "386e34a",
+  "checkedAt": "2026-11-15T07:15:54.436Z",
+  "fixtureSha256": "4501832ec10d6c86f109c7770e2885e85918a7010b8620d13890b47b911d93df",
+  "kind": "measured six independent held-out paraphrases, frozen before first call; timeouts count as misses",
+  "rows": [
+    {
+      "question": "What have my taxi rides cost me?",
+      "expected": "receipt",
+      "expectedParams": {
+        "category": "taxi"
+      },
+      "status": 200,
+      "result": {
+        "block": "receipt",
+        "params": {
+          "category": "taxi"
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 1876,
+      "pass": true
+    },
+    {
+      "question": "How soon could I hit my goal putting aside 275 euros every month?",
+      "expected": "plan-timeline",
+      "expectedParams": {
+        "monthly": 275
+      },
+      "status": 200,
+      "result": {
+        "block": "plan-timeline",
+        "params": {
+          "monthly": 275
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 1857,
+      "pass": true
+    },
+    {
+      "question": "Would buying a €68 concert pass leave enough to last until I’m paid?",
+      "expected": "payday-runway",
+      "expectedParams": {
+        "ticket": 68
+      },
+      "status": 200,
+      "result": {
+        "block": "payday-runway",
+        "params": {
+          "ticket": 68
+        },
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 1654,
+      "pass": true
+    },
+    {
+      "question": "Any regular payments coming out before my next salary lands?",
+      "expected": "coming-up",
+      "expectedParams": {},
+      "status": 200,
+      "result": {
+        "block": "coming-up",
+        "params": {},
+        "provider": "featherless",
+        "model": "google/gemma-3-4b-it",
+        "fallback": false
+      },
+      "ms": 4714,
+      "pass": true
+    },
+    {
+      "question": "Which spending groups take the biggest slice of my budget?",
+      "expected": "baskets",
+      "expectedParams": {},
+      "status": 200,
+      "result": {
+        "fallback": true
+      },
+      "ms": 5213,
+      "pass": false
+    },
+    {
+      "question": "Please change the PIN on my debit card.",
+      "expected": "unsupported",
+      "expectedParams": {},
+      "status": 200,
+      "result": {
+        "fallback": true
+      },
+      "ms": 5239,
+      "pass": false
+    }
+  ],
+  "passed": 4,
+  "total": 6
+}

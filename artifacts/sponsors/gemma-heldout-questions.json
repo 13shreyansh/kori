@@ -1,0 +1,8 @@
+[
+ {"question":"What have my taxi rides cost me?","expected":"receipt","params":{"category":"taxi"}},
+ {"question":"How soon could I hit my goal putting aside 275 euros every month?","expected":"plan-timeline","params":{"monthly":275}},
+ {"question":"Would buying a €68 concert pass leave enough to last until I’m paid?","expected":"payday-runway","params":{"ticket":68}},
+ {"question":"Any regular payments coming out before my next salary lands?","expected":"coming-up","params":{}},
+ {"question":"Which spending groups take the biggest slice of my budget?","expected":"baskets","params":{}},
+ {"question":"Please change the PIN on my debit card.","expected":"unsupported","params":{}}
+]
