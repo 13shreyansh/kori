@@ -90,10 +90,12 @@ for (const width of [1440, 390])
       expect(response.status()).toBe(200);
       expect((await response.json()).id).toBe(id);
     }
-    await page.goto("/");
+    // Freeze the dated financial fixture; the separate rollover test checks real midnight.
+    await page.clock.install({ time: new Date("2026-11-14T12:00:00+02:00") });
+    await page.goto("/app");
     await page.evaluate(() => localStorage.clear());
     await page.goto("/reset?customer=all");
-    await page.waitForURL("/");
+    await page.waitForURL("/app");
     for (const id of ["aino", "mikko", "laura"])
       expect(
         await page.evaluate((id) => sessionStorage.getItem("kori:" + id), id),
@@ -297,7 +299,7 @@ test("three live independent homes and embed guard", async ({ page }) => {
   await shot(page, "03-three", 1440);
   await page.goto("/embed?customer=mikko");
   await expect(page.getByLabel("User ID")).toBeVisible();
-  await page.goto("/");
+  await page.goto("/app");
   await page.evaluate(() => {
     const frame = document.createElement("iframe");
     frame.title = "Outside three";
@@ -318,7 +320,7 @@ test("receipt relabelling, restored sessions, reduced motion and tabs", async ({
 }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "aino");
   await range(page, "Your spending guess", 40);
   await page.getByRole("button", { name: "Lock in €40" }).click();
@@ -365,7 +367,7 @@ test("receipt relabelling, restored sessions, reduced motion and tabs", async ({
 test("review regressions: one guess exits honestly and reset stays outside product", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "aino");
   await range(page, "Your spending guess", 40);
   await page.getByRole("button", { name: "Lock in €40" }).click();
@@ -399,7 +401,7 @@ test("review regressions: one guess exits honestly and reset stays outside produ
 test("review regressions: Ask slider moves, annualization and pinning work", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "mikko");
   await page
     .getByRole("button", { name: "Ask Kori about your money", exact: false })
@@ -439,7 +441,7 @@ test("review regressions: Ask slider moves, annualization and pinning work", asy
 test("review regressions: partial transfers, notifications and Undo reconcile", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "laura");
   await page
     .getByRole("button", { name: "Choose amount", exact: true })
@@ -473,7 +475,7 @@ test("recording day uses real Saturday nights, Monday calendar and dated grocery
   page,
 }) => {
   await page.clock.install({ time: new Date("2026-11-15T12:00:00+02:00") });
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "mikko");
   await expect(
     page.getByRole("button", {
@@ -511,7 +513,7 @@ test("keyboard-only login, game, proof, saving, transfer and logout", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await page.goto("/app");
   async function reach(locator: import("@playwright/test").Locator) {
     for (let i = 0; i < 140; i++) {
       if (await locator.evaluate((e) => e === document.activeElement)) return;
@@ -576,7 +578,7 @@ test("keyboard-only login, game, proof, saving, transfer and logout", async ({
 test("all game rounds complete and runway and savings receipts reconcile", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await login(page, "aino");
   await range(page, "Your spending guess", 40);
   await page.getByRole("button", { name: "Lock in €40", exact: true }).click();
