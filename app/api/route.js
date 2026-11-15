@@ -35,7 +35,7 @@ export async function routeRequest(method, body, env = {}, fetcher = fetch) {
   const featherless = Boolean(env.FEATHERLESS_API_KEY);
   const key = env.FEATHERLESS_API_KEY || env.GEMINI_API_KEY;
   if (!key) return { status: 200, body: { fallback: true } };
-  const model = featherless ? (env.FEATHERLESS_MODEL || 'google/gemma-3-27b-it') : (env.GEMINI_MODEL || 'gemini-flash-latest');
+  const model = featherless ? (env.FEATHERLESS_MODEL || 'google/gemma-3-4b-it') : (env.GEMINI_MODEL || 'gemini-flash-latest');
   const endpoint = featherless ? 'https://api.featherless.ai/v1/chat/completions' : `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`;
   try {
     const response = await fetcher(endpoint, {

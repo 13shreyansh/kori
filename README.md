@@ -18,7 +18,7 @@ Receipt calculations use deterministic arithmetic. Product actions are prototype
 flowchart LR
     I[User preference and behaviour] --> R[Built-in home and card router]
     R --> H[Three React home layouts]
-    Q[User question] --> F[Built-in answer path]
+    Q[User question] --> F[Gemma card selection with built-in fallback]
     F --> H
     D[Receipt inputs] --> A[Deterministic finance arithmetic]
     A --> H
@@ -26,18 +26,18 @@ flowchart LR
 
 React, TypeScript and Vite provide the interface. The current public demo runs on Cloudflare Pages. Local and session state hold the prototype experience. The `claude/rebuild` branch is the current source; `main` and the older Vercel deployment describe an earlier build.
 
-The code includes a Gemini route handler in `app/api/route.js`. The latest live route check returned the fallback path. Kori therefore does not claim active Gemini access or enter the Gemini prize on that basis. Its built-in router still answers supported questions.
+The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Featherless to choose an existing card. It validates the identifier and copies only numbers explicitly present in the question. Only the question enters the model request, never account balances or transaction histories. Invalid output, an unavailable provider or a request exceeding 5.2 seconds returns the built-in routing path. The older Gemini handler remains available when no Featherless key is configured; active Gemini access is not claimed.
 
-## Sponsor use and planned model role
+## Sponsor use
 
 | Service | Status and concrete role |
 | --- | --- |
 | Codex | Used during development, debugging and verification. |
-| CRACI | **Planned, not implemented.** Run the existing application checks on CRACI CI. |
-| Gemma through Featherless | **Planned, not implemented.** Select the most relevant existing card for a question and return a validated card identifier. |
+| CRACI | Runs the application build, lint, 25 finance/date tests and six provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
+| Gemma through Featherless | Implemented server-side selection of receipt, plan timeline, payday runway, upcoming bills, spending baskets or unsupported. The real six-question verification selected all six expected cards. |
 | Gemini | Handler present, but the latest live check used fallback. Active provider access is unverified. |
 
-Gemma will route a question to an existing card. It will not calculate balances, invent account data or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. Draft sponsor registration records the planned Gemma work, not a successful model call.
+Gemma routes a question to an existing card. It cannot calculate balances or authorize money movement. Arithmetic and prototype-action boundaries stay in deterministic code. A measured six-question compatibility check on 15 November selected 6/6 expected cards, with response times of 3,036–4,581 ms. This small development set is not a held-out accuracy estimate. Larger Gemma models timed out more often in the initial check, so this task uses the smaller four-billion-parameter model.
 
 ## Run locally
 
@@ -51,7 +51,7 @@ npm run generate
 npm run dev
 ```
 
-The built-in paths can be inspected without a provider key. The published Cloudflare Functions adapter at `app/functions/api/route.js` wraps the provider handler. A real provider response still needs securely configured runtime secrets; Vite alone does not prove that the hosted API route works. Never put a provider key in client-side code or commit a demo account credential.
+The built-in paths can be inspected without a provider key. The published Cloudflare Functions adapter at `app/functions/api/route.js` wraps the provider handler. Configure `FEATHERLESS_API_KEY` as an encrypted Pages secret for production and preview. `FEATHERLESS_MODEL` optionally overrides the default model. Vite alone does not run the hosted API route. Never put a provider key in client-side code or commit a demo account credential.
 
 Cloudflare is the current deployment target. A Git push to this repository is not proof of a new Cloudflare release. Verify the deployed page and its route separately after any future release.
 
@@ -61,25 +61,26 @@ Cloudflare is the current deployment target. A Git push to this repository is no
 npm run build
 npm run lint
 npm test
+node --test scripts/gemma-router.test.mjs
 BASE_URL=https://kori-4ol.pages.dev npm run test:e2e
 ```
 
 Run these commands from `app/`. Browser acceptance should inspect both a wide screen and a phone-sized screen, wait for loaded cards and use isolated test state. A build passing does not establish that a provider call succeeded; inspect the route's fallback result explicitly.
 
-The earlier persona experiment reported 185/185 agreement. This is a measured historical result for the former persona system, not a validation of today's home selector, financial outcomes or the planned Gemma router. Current routing needs its own frozen evaluation.
+The earlier persona experiment reported 185/185 agreement. This is a measured historical result for the former persona system, not a validation of today's home selector, financial outcomes or the current Gemma router. The current six-question result is reported separately above.
 
-## Planned architecture and acceptance
+## Model and verification boundaries
 
 ```mermaid
 flowchart LR
-    Q[Question and allowed card identifiers] -. planned .-> G[Gemma on Featherless]
-    G -. validated card identifier .-> V[Existing card view]
-    G -. invalid or unavailable .-> B[Built-in router fallback]
+    Q[Question and allowed card identifiers] --> G[Gemma on Featherless]
+    G -- validated card identifier --> V[Existing card view]
+    G -- invalid or unavailable --> B[Built-in router fallback]
     A[Deterministic finance arithmetic] --> V
-    C[CRACI CI] -. planned .-> T[Build, lint and tests]
+    C[CRACI CI] --> T[Build, lint and tests]
 ```
 
-After implementation approval, a server-side Featherless call must run a named Gemma model, return only an allowed card identifier and fall back safely on malformed output or provider failure. Evaluate it against a frozen set of questions with expected cards, record routing accuracy and latency, and confirm it never alters receipt arithmetic. CRACI needs a real successful workflow with `runs-on: craci`. No Featherless call, Gemma score or CRACI run is claimed today.
+Provider-contract tests cover failure fallback, malformed JSON, unknown cards, request isolation and rejection of invented numeric substrings or signed amounts. Finance calculations remain covered by the existing tests. Deployment acceptance runs the existing customer flows at desktop and phone widths, plus live API requests that must explicitly report `provider: featherless` and `fallback: false`. Real provider calls and the completed CRACI job establish implementation evidence; prize eligibility remains the organizer’s decision.
 
 ## Code guide
 
