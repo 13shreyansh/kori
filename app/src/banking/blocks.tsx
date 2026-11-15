@@ -80,7 +80,7 @@ function useAmount(target: number, ms: number) {
   }, [target, ms]);
   return value;
 }
-export function AccountLine({ d, s, bank }: BlockProps) {
+export function AccountLine({ d, s, bank, open }: BlockProps) {
   const movedDisplay = useAmount(s.moved ?? 0, 600);
   const r = F.runway(d);
   const name = d.profile.name.split(" ")[0];
@@ -93,13 +93,25 @@ export function AccountLine({ d, s, bank }: BlockProps) {
         : `${name} · ${F.dateLabel(F.getToday(), { weekday: "long", day: "numeric", month: "long" })}`;
   return (
     <Module id="account-line" className="account-line">
-      <p className="small secondary greeting">{greet}</p>
-      <button className="account-row" onClick={bank}>
-        <span>
+      <p className="greeting">{greet}</p>
+      <button className="account-hero" onClick={bank}>
+        <span className="account-name">
           {d.profile.account} · FI·· {d.profile.suffix}
         </span>
-        <b>{F.money(F.currentBalance(d) + movedDisplay, 2)}</b>
+        <span className="account-balance">
+          {F.money(F.currentBalance(d) + movedDisplay, 2)}
+        </span>
       </button>
+      <div className="safe-line">
+        <span>Safe to spend</span>
+        <b>
+          <ProofNumber p={r.proof} open={open} /> a day
+        </b>
+        <small>
+          until payday,{" "}
+          {F.dateLabel(r.payday, { weekday: "short", day: "numeric", month: "short" })}
+        </small>
+      </div>
       {d.profile.age >= 25 && (
         <button className="account-row" onClick={bank}>
           <span>{d.profile.savings}</span>
@@ -137,7 +149,7 @@ export function Guess(p: BlockProps & { row?: boolean }) {
   const used = locked ? previous : guess;
   const diff = Math.round(actual) - used;
   const title =
-    category[0].toUpperCase() + category.slice(1) + " in " + F.periodLabel();
+    category[0].toUpperCase() + category.slice(1) + ", " + F.periodLabel();
   const pr = F.proof(
     title,
     tx,
@@ -149,7 +161,7 @@ export function Guess(p: BlockProps & { row?: boolean }) {
       <Module id="guess" className="quick-row">
         <button className="action-row" onClick={() => setExpanded(true)}>
           <span>
-            Guess: {category} in {F.periodLabel()}
+            Guess: {category}, {F.periodLabel()}
           </span>
           <ChevronRight />
         </button>
@@ -229,7 +241,7 @@ export function Guess(p: BlockProps & { row?: boolean }) {
           </>
         ) : (
           <>
-            What did you spend on {category} in {F.periodLabel()}?
+            What did you spend on {category} from {F.periodLabel()}?
           </>
         )}
       </h1>
@@ -707,7 +719,7 @@ export function Timeline(p: BlockProps & { initial?: number }) {
           </>
         ) : (
           <>
-            {Math.abs(diff)} months {diff >= 0 ? "sooner" : "later"} than at{" "}
+            {Math.abs(diff)} {Math.abs(diff) === 1 ? "month" : "months"} {diff >= 0 ? "sooner" : "later"} than at{" "}
             {F.money(saved)}.
           </>
         )}
@@ -1121,7 +1133,7 @@ export function Where({ d, open }: BlockProps) {
               />
             </span>
             <ProofNumber
-              p={F.proof(name + " in " + F.periodLabel(), tx)}
+              p={F.proof(name + ", " + F.periodLabel(), tx)}
               open={open}
             />
           </div>
@@ -1631,6 +1643,70 @@ export function GroceryProgress({ d, open }: BlockProps) {
     </Module>
   );
 }
+
+// The three baskets from S-Pankki's brief: fixed and regular, needed but irregular, and everyday spending
+// that slips through your fingers. Groceries are essential and counted on their own line.
+const isFood = (t: F.Proof["tx"][number]) => F.grocery(t);
+const slips = (t: F.Proof["tx"][number]) =>
+  t.type === "purchase" &&
+  !isFood(t) &&
+  /^(Restaurants|Entertainment|Shopping|Transportation)$/.test(t.category) &&
+  Math.abs(t.amount) < 80;
+export function Baskets({ d, open, verdict }: BlockProps & { verdict?: boolean }) {
+  const all = F.payments(d).filter((t) => !F.isSavings(t));
+  const regular = new Set(F.recurring(d).map((r) => r.merchant));
+  const fixed = all.filter((t) => t.type !== "purchase" && regular.has(t.merchant));
+  const surprise = all.filter(
+    (t) =>
+      !fixed.includes(t) &&
+      !slips(t) &&
+      !isFood(t) &&
+      (t.type !== "purchase" || Math.abs(t.amount) >= 80),
+  );
+  const everyday = all.filter(slips);
+  const food = all.filter(isFood);
+  const rows = [
+    { name: "Fixed", line: "Rent, bills, subscriptions", tx: fixed, tone: "fixed" },
+    { name: "Surprises", line: "Needed, but not every month", tx: surprise, tone: "surprise" },
+    { name: "Slips through your fingers", line: "Cafés, takeaway, nights out, small taps", tx: everyday, tone: "slips" },
+  ];
+  const total = rows.reduce((a, r) => a + F.sum(r.tx), 0) || 1;
+  const slipShare = F.sum(everyday) / total,
+    fixedShare = F.sum(fixed) / total;
+  const kind =
+    slipShare >= 0.35
+      ? `An everyday spender. ${Math.round(slipShare * 100)}% of your spending went on small things that slip through your fingers.`
+      : fixedShare >= 0.75
+        ? `A bills-first household. ${Math.round(fixedShare * 100)}% of your spending is fixed, so the month is about timing.`
+        : `A balanced spender. Fixed bills are ${Math.round(fixedShare * 100)}% of your spending, everyday extras ${Math.round(slipShare * 100)}%.`;
+  return (
+    <Module id="baskets" className="baskets" title={<>Where your money went, {F.periodLabel()}</>}>
+      {verdict && <p className="basket-verdict">{kind}</p>}
+      <div className="basket-bar" aria-hidden="true">
+        {rows.map((r) => (
+          <span key={r.name} className={"b-" + r.tone} style={{ flexGrow: F.sum(r.tx) / total }} />
+        ))}
+      </div>
+      {rows.map((r) => (
+        <div className="basket-row" key={r.name}>
+          <i className={"b-" + r.tone} />
+          <span>
+            <b>{r.name}</b>
+            <small className="secondary">
+              {r.tx.length ? r.line : "None this month"}
+            </small>
+          </span>
+          <ProofNumber p={F.proof(r.name + ", " + F.periodLabel(), r.tx)} open={open} />
+        </div>
+      ))}
+      <p className="small secondary basket-note">
+        Groceries,{" "}
+        <ProofNumber p={F.proof("Groceries, " + F.periodLabel(), food)} open={open} />, are
+        counted on their own.
+      </p>
+    </Module>
+  );
+}
 export const blockComponents: Record<
   string,
   (p: BlockProps) => React.ReactNode
@@ -1642,6 +1718,7 @@ export const blockComponents: Record<
   "what-if": (p) => <WhatIf {...p} />,
   "payday-runway": (p) => <Payday {...p} />,
   "where-it-went": (p) => <Where {...p} />,
+  baskets: (p) => <Baskets {...p} />,
   "plan-timeline": (p) => <Timeline {...p} />,
   "loan-readiness": (p) => <Loan {...p} />,
   "month-calendar": (p) => <Calendar {...p} />,

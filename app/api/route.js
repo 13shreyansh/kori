@@ -4,6 +4,7 @@ const allowed = [
   "plan-timeline",
   "payday-runway",
   "coming-up",
+  "baskets",
   "unsupported",
 ];
 export default async function handler(req, res) {
@@ -26,7 +27,7 @@ export default async function handler(req, res) {
           systemInstruction: {
             parts: [
               {
-                text: 'Route a banking question. Return JSON only: {"block":"receipt|plan-timeline|payday-runway|coming-up|unsupported","params":{"category":"wolt|cafe|groceries|subscriptions|hockey|saturday|lunch","monthly":number,"ticket":number,"year":boolean}}. Only copy numbers explicitly in the question. Never calculate, answer, or write prose. Save per month or goal dates means plan-timeline. Afford a ticket means payday-runway. Bills before payday means coming-up. Merchant or category spending means receipt. Otherwise unsupported. Omit unused parameters.',
+                text: 'Route a banking question. Return JSON only: {"block":"receipt|plan-timeline|payday-runway|coming-up|baskets|unsupported","params":{"category":"wolt|cafe|groceries|subscriptions|hockey|saturday|lunch|taxi","monthly":number,"ticket":number,"year":boolean}}. Only copy numbers explicitly in the question. Never calculate, answer, or write prose. Save per month or goal dates means plan-timeline. Afford a ticket means payday-runway. Bills before payday means coming-up. What kind of spender am I, or where my money goes, means baskets. Merchant or category spending means receipt. Otherwise unsupported. Omit unused parameters.',
               },
             ],
           },
@@ -56,6 +57,7 @@ export default async function handler(req, res) {
         "hockey",
         "saturday",
         "lunch",
+        "taxi",
       ].includes(out.params?.category)
     )
       params.category = out.params.category;

@@ -1,6 +1,6 @@
 export interface Route {
   block:
-    "receipt" | "plan-timeline" | "payday-runway" | "coming-up" | "unsupported";
+    "receipt" | "plan-timeline" | "payday-runway" | "coming-up" | "baskets" | "unsupported";
   params: {
     category?: string;
     monthly?: number;
@@ -22,10 +22,12 @@ export function localRoute(q: string): Route {
       block: "payday-runway",
       params: { ticket: Number(s.match(/€(\d+)/)?.[1] || 0) },
     };
+  if (/kind of spender|what type of spender|where (does|did) my money|baskets|spending habits/.test(s))
+    return { block: "baskets", params: {} };
   if (/before payday|coming|goes out|bills/.test(s))
     return { block: "coming-up", params: {} };
   if (
-    /wolt|deliver|café|cafe|grocer|subscription|hockey|saturday|lunch/.test(s)
+    /wolt|deliver|café|cafe|grocer|subscription|hockey|saturday|lunch|taxi|taxis|cab/.test(s)
   )
     return {
       block: "receipt",
@@ -42,7 +44,9 @@ export function localRoute(q: string): Route {
                   ? "hockey"
                   : /saturday/.test(s)
                     ? "saturday"
-                    : "lunch",
+                    : /taxi|cab/.test(s)
+                      ? "taxi"
+                      : "lunch",
         year: /year/.test(s),
       },
     };
@@ -65,6 +69,7 @@ export async function routeQuestion(question: string): Promise<Route> {
         "plan-timeline",
         "payday-runway",
         "coming-up",
+        "baskets",
         "unsupported",
       ].includes(data.block)
     )

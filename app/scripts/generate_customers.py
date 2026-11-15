@@ -71,7 +71,7 @@ for cid,p in people.items():
   for i,total in enumerate(totals):
    date=dt.date(2026,8,22)+dt.timedelta(days=i*7)
    n=3 if i<7 else 2
-   for j in range(n):add(date,-round(total/n,2) if j<n-1 else -round(total-round(total/n,2)*(n-1),2),'Restaurants' if j<n-1 else 'Transportation',['Bar Loose','Ravintola Kuu','Taksi Helsinki'][j],mcc='5813' if j<n-1 else '4121',time=f'{19+j:02}:30:00')
+   for j in range(n):add(date,-round(total/n,2) if j<n-1 else -round(total-round(total/n,2)*(n-1),2),'Transportation' if j==2 else 'Restaurants',['Bar Loose','Ravintola Kuu','Taksi Helsinki'][j],mcc='4121' if j==2 else '5813',time=f'{19+j:02}:30:00')
   dates=[dt.date(2026,8,24)+dt.timedelta(days=i) for i in range(82) if (dt.date(2026,8,24)+dt.timedelta(days=i)).weekday()<5][:47]
   for date in dates:add(date,-12.9,'Restaurants','Sodexo',mcc='5812',time='11:45:00')
   add('2026-11-07',-118.4,'Groceries','Prisma',mcc='5411')

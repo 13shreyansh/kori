@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { X, ShoppingBasket, ChevronRight } from "lucide-react";
-import { money, dateLabel, type Proof, type AccountData } from "./finance";
+import { money, dateLabel, sum, type Proof, type AccountData } from "./finance";
 export function Mark() {
   return (
     <span className="mark">
@@ -312,7 +312,12 @@ export function ReceiptSheet({
       </div>
       <footer className="receipt-total">
         <div className="row">
-          <b>Total{p.unit ? " · " + p.unit : ""}</b>
+          <b>
+            {p.steps?.length && Math.abs(Math.abs(sum(p.tx)) - Math.abs(p.value)) > 0.01
+              ? "Result"
+              : "Total"}
+            {p.unit ? " · " + p.unit : ""}
+          </b>
           <strong data-testid="receipt-total">
             {p.unit && p.unit !== "EUR"
               ? p.value.toLocaleString("en-GB", { maximumFractionDigits: 2 }) +

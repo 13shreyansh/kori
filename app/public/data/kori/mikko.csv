@@ -628,7 +628,7 @@ mikko,mikko-current,2026-10-09,2026-10-09T11:45:00,Restaurants,-12.9,-1187.0,pur
 mikko,mikko-current,2026-10-09,2026-10-09T12:00:00,Groceries,-7.8,-1194.8,purchase,Alepa,5411
 mikko,mikko-current,2026-10-10,2026-10-10T12:00:00,Utilities,-29.9,-1224.7,utilities_payment,Elisa,
 mikko,mikko-current,2026-10-10,2026-10-10T19:30:00,Restaurants,-45.0,-1269.7,purchase,Bar Loose,5813
-mikko,mikko-current,2026-10-10,2026-10-10T20:30:00,Transportation,-45.0,-1314.7,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-10,2026-10-10T20:30:00,Restaurants,-45.0,-1314.7,purchase,Ravintola Kuu,5813
 mikko,mikko-current,2026-10-12,2026-10-12T11:45:00,Restaurants,-12.9,-1327.6,purchase,Sodexo,5812
 mikko,mikko-current,2026-10-12,2026-10-12T12:00:00,Groceries,-7.8,-1335.4,purchase,Alepa,5411
 mikko,mikko-current,2026-10-13,2026-10-13T11:45:00,Restaurants,-12.9,-1348.3,purchase,Sodexo,5812
@@ -642,7 +642,7 @@ mikko,mikko-current,2026-10-16,2026-10-16T12:00:00,Invest Deposit,-700,1051.0,in
 mikko,mikko-current,2026-10-16,2026-10-16T12:00:00,Groceries,-48.4,1002.6,purchase,K-Citymarket,5411
 mikko,mikko-savings,2026-10-16,2026-10-16T12:00:00,Invest Withdraw,700,6400,investment_withdrawal,Käyttötili,
 mikko,mikko-current,2026-10-17,2026-10-17T19:30:00,Restaurants,-82.0,920.6,purchase,Bar Loose,5813
-mikko,mikko-current,2026-10-17,2026-10-17T20:30:00,Transportation,-82.0,838.6,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-17,2026-10-17T20:30:00,Restaurants,-82.0,838.6,purchase,Ravintola Kuu,5813
 mikko,mikko-current,2026-10-18,2026-10-18T12:00:00,Groceries,-7.8,830.8,purchase,Alepa,5411
 mikko,mikko-current,2026-10-19,2026-10-19T11:45:00,Restaurants,-12.9,817.9,purchase,Sodexo,5812
 mikko,mikko-current,2026-10-20,2026-10-20T11:45:00,Restaurants,-12.9,805.0,purchase,Sodexo,5812
@@ -655,11 +655,11 @@ mikko,mikko-current,2026-10-23,2026-10-23T11:45:00,Restaurants,-12.9,672.1,purch
 mikko,mikko-current,2026-10-23,2026-10-23T12:00:00,Restaurants,-4.2,667.9,purchase,Fazer Café,5814
 mikko,mikko-current,2026-10-24,2026-10-24T12:00:00,Groceries,-7.8,660.1,purchase,Alepa,5411
 mikko,mikko-current,2026-10-24,2026-10-24T19:30:00,Restaurants,-46.0,614.1,purchase,Bar Loose,5813
-mikko,mikko-current,2026-10-24,2026-10-24T20:30:00,Transportation,-46.0,568.1,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-24,2026-10-24T20:30:00,Restaurants,-46.0,568.1,purchase,Ravintola Kuu,5813
 mikko,mikko-current,2026-10-26,2026-10-26T11:45:00,Restaurants,-12.9,555.2,purchase,Sodexo,5812
 mikko,mikko-current,2026-10-27,2026-10-27T11:45:00,Restaurants,-12.9,542.3,purchase,Sodexo,5812
 mikko,mikko-current,2026-10-31,2026-10-31T19:30:00,Restaurants,-45.0,497.3,purchase,Bar Loose,5813
-mikko,mikko-current,2026-10-31,2026-10-31T20:30:00,Transportation,-45.0,452.3,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-10-31,2026-10-31T20:30:00,Restaurants,-45.0,452.3,purchase,Ravintola Kuu,5813
 mikko,mikko-current,2026-11-02,2026-11-02T12:00:00,Housing,-850,-397.7,utilities_payment,Lumo,
 mikko,mikko-current,2026-11-02,2026-11-02T12:00:00,Restaurants,-4.2,-401.9,purchase,Fazer Café,5814
 mikko,mikko-current,2026-11-03,2026-11-03T12:00:00,Groceries,-7.8,-409.7,purchase,Alepa,5411
@@ -667,7 +667,7 @@ mikko,mikko-current,2026-11-04,2026-11-04T12:00:00,Groceries,-48.4,-458.1,purcha
 mikko,mikko-current,2026-11-06,2026-11-06T12:00:00,Groceries,-7.8,-465.9,purchase,Alepa,5411
 mikko,mikko-current,2026-11-07,2026-11-07T12:00:00,Groceries,-118.4,-584.3,purchase,Prisma,5411
 mikko,mikko-current,2026-11-07,2026-11-07T19:30:00,Restaurants,-47.0,-631.3,purchase,Bar Loose,5813
-mikko,mikko-current,2026-11-07,2026-11-07T20:30:00,Transportation,-47.0,-678.3,purchase,Ravintola Kuu,4121
+mikko,mikko-current,2026-11-07,2026-11-07T20:30:00,Restaurants,-47.0,-678.3,purchase,Ravintola Kuu,5813
 mikko,mikko-current,2026-11-08,2026-11-08T12:00:00,Utilities,-55,-733.3,utilities_payment,Helen,
 mikko,mikko-current,2026-11-08,2026-11-08T12:00:00,Groceries,-48.4,-781.7,purchase,K-Citymarket,5411
 mikko,mikko-current,2026-11-09,2026-11-09T12:00:00,Groceries,-7.8,-789.5,purchase,Alepa,5411

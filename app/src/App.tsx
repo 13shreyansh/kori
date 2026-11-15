@@ -37,6 +37,7 @@ import {
   Payday,
   Coming,
   GroceryProgress,
+  Baskets,
   type Session,
   type BlockProps,
 } from "./banking/blocks";
@@ -387,29 +388,25 @@ function Why(p: BlockProps) {
           onChange={(v) => patch({ preset: v })}
         />
       </Module>
-      <Module title="Where AI is used, and where it is not">
-        <h3>Reading your payments</h3>
+      <Module title="How AI and Kori work together">
+        <h3>AI understands you</h3>
         <p className="small secondary">
-          This build labels merchants using category codes and explicit merchant
-          rules. You can correct any label from a receipt. A language model
-          could assist with ambiguous labels.
+          Ask in your own words. AI works out what you mean and picks the tool
+          that answers it: a receipt, a plan, a payday check or your baskets.
+          Add the answer to your Kori and it stays on your home.
         </p>
-        <h3>Ask Kori</h3>
+        <h3>Code counts every euro</h3>
         <p className="small secondary">
-          The model turns your question into a lookup and picks a building
-          block. It does no arithmetic and writes no numbers. If unavailable, a
-          local keyword router does the same.
+          Every number is counted from your own payments, the same way every
+          time, and opens its receipts. Moving money always takes your tap.
         </p>
-        <h3>Never AI</h3>
+        <h3>Rules you can see</h3>
         <p className="small secondary">
-          Choosing your layout uses the fixed rules shown above. Every number is
-          counted from your payments. Moving money takes your action.
+          Your layout comes from the plain rules above, so it costs the bank
+          nothing extra per person, and you can change it at any time.
         </p>
       </Module>
-      <p className="small secondary centered">
-        Building this home uses no AI calls. Ask Kori makes at most one per
-        question, with a local fallback. Layout rules version 1.
-      </p>
+      <p className="small secondary centered">Layout rules version 1.</p>
     </div>
   );
 }
@@ -498,7 +495,9 @@ function AskResult({
                 ? F.subscriptions
                 : cat === "hockey"
                   ? (t) => /Kiekko|hockey/i.test(t.merchant)
-                  : (t) => t.merchant === "Sodexo",
+                  : cat === "taxi"
+                    ? (t) => t.mcc === "4121" || /Taksi|Taxi|Uber|Bolt/i.test(t.merchant)
+                    : (t) => t.merchant === "Sodexo",
       );
     }
     const val =
@@ -526,6 +525,7 @@ function AskResult({
   } else if (route.block === "plan-timeline")
     content = <Timeline {...p} initial={route.params.monthly ?? p.s.monthly} />;
   else if (route.block === "coming-up") content = <Coming {...p} />;
+  else if (route.block === "baskets") content = <Baskets {...p} verdict />;
   else if (route.block === "payday-runway") {
     const r = F.runway(d),
       free = r.free - (route.params.ticket ?? 0);

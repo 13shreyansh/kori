@@ -453,7 +453,7 @@ export function assignHome(d: AccountData, override?: Layout) {
   );
   let ids =
     layout === "Play"
-      ? ["account-line", "guess", "what-if", "payday-runway", "where-it-went"]
+      ? ["account-line", "guess", "baskets", "what-if"]
       : layout === "Plan"
         ? [
             "account-line",
@@ -467,6 +467,7 @@ export function assignHome(d: AccountData, override?: Layout) {
             "account-line",
             "month-calendar",
             "balance-ahead",
+            "baskets",
             "coming-up",
             "bonus",
             "guess",
