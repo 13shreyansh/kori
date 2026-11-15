@@ -437,6 +437,7 @@ function AskResult({
   question: string;
   onPin: () => void;
 }) {
+  const [allRows, setAllRows] = useState(false);
   let content: ReactNode = null;
   const { d, open } = p;
   if (route.block === "receipt") {
@@ -511,14 +512,18 @@ function AskResult({
       );
     content = (
       <>
-        <p>
-          Your payments come to{" "}
+        <p className="answer-lead">Your payments come to</p>
+        <p className="answer-total">
           <ProofNumber p={pr} open={open}>
             {F.money(val, 2)}
           </ProofNumber>
-          .
         </p>
-        <PaymentRows tx={tx} />
+        <PaymentRows tx={tx} limit={allRows ? undefined : 5} />
+        {tx.length > 5 && !allRows && (
+          <button className="text-button" onClick={() => setAllRows(true)}>
+            See all {tx.length} payments
+          </button>
+        )}
       </>
     );
   } else if (route.block === "plan-timeline")
@@ -1036,7 +1041,7 @@ function Phone({ embed }: { embed?: string }) {
               ) : tab === "Purchases" ? (
                 <>
                   <h1>S Group purchases</h1>
-                  <Module>
+                  <Module className="merchant-list">
                     {[
                       ...new Set(
                         F.payments(
@@ -1239,6 +1244,7 @@ function Phone({ embed }: { embed?: string }) {
                 </div>
               ) : route ? (
                 <AskResult
+                  key={question}
                   route={route}
                   p={p}
                   question={question}

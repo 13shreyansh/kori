@@ -253,7 +253,9 @@ export function Guess(p: BlockProps & { row?: boolean }) {
       </h1>
       {!locked || landing ? (
         <>
-          <div className="guess-live">
+          <div
+            className={`guess-live ${!landing && !guess ? "untouched" : ""}`}
+          >
             {F.money(landing ? Math.round(live) : guess)}
           </div>
           <p className="small secondary">Drag to guess. No peeking.</p>
@@ -326,13 +328,6 @@ export function Guess(p: BlockProps & { row?: boolean }) {
             >
               Real: {F.money(actual)}
             </span>
-            <b
-              className="difference"
-              style={{ left: `${((actual + used) / 2 / max) * 100}%` }}
-            >
-              {diff >= 0 ? "+" : "−"}
-              {F.money(Math.abs(diff))}
-            </b>
           </div>
           {!landing && (
             <div className="guess-reveal">
@@ -485,7 +480,7 @@ export function WhatIf({ d, s, patch, open }: BlockProps) {
         {n > 0 && (
           <span
             className="date-funded"
-            style={{ width: `${Math.min(100, position)}%` }}
+            style={{ transform: `scaleX(${Math.min(100, position) / 100})` }}
           />
         )}
         {n > 0 && (
@@ -1084,11 +1079,13 @@ export function Where({ d, open }: BlockProps) {
           {s.nights.map((n) => (
             <button
               key={n.date}
+              className={n === biggest ? "peak" : undefined}
               aria-label={"Saturday " + F.dateLabel(n.date)}
               onClick={() =>
                 open(F.proof("Saturday " + F.dateLabel(n.date), n.tx))
               }
             >
+              {n === biggest && <b>{F.money(F.sum(n.tx))}</b>}
               <i
                 style={{
                   height: Math.max(2, (F.sum(n.tx) / F.sum(biggest.tx)) * 64),
@@ -1401,10 +1398,10 @@ export function Balance({ d, s, open }: BlockProps) {
           />
           <path
             d={path + ` L334 ${y(0)} L0 ${y(0)} Z`}
-            fill="#FCE9E7"
+            fill="rgba(179, 38, 30, 0.10)"
             clipPath={`url(#below-${d.profile.id})`}
           />
-          <path d={path} fill="none" stroke="#10241B" strokeWidth="2" />
+          <path d={path} fill="none" stroke="#0E3B2A" strokeWidth="2" />
           <path
             d={path}
             fill="none"
@@ -1428,8 +1425,10 @@ export function Balance({ d, s, open }: BlockProps) {
                     fill="#00A651"
                   />
                   <text
-                    x={Math.max(0, Math.min(264, (n / 28) * 334 - 28))}
-                    y={Math.max(9, y(values[n].value) - 7)}
+                    className="halo"
+                    textAnchor="end"
+                    x={Math.max(56, (n / 28) * 334 - 6)}
+                    y={Math.max(12, y(values[n].value) + 4)}
                   >
                     +{F.money(item.amount)}
                   </text>
@@ -1442,8 +1441,11 @@ export function Balance({ d, s, open }: BlockProps) {
               F.projection(d, movedDisplay).find((v) => v.date === low.date)!
                 .value,
             )}
-            r="4"
-            fill={low.value < 0 ? "#B3261E" : "#10241B"}
+            r="5"
+            fill={low.value < 0 ? "#B3261E" : "#0E3B2A"}
+            stroke="#fff"
+            strokeWidth="6"
+            paintOrder="stroke"
           />
           <text x="0" y="81">
             Today

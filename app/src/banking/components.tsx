@@ -1,6 +1,30 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { X, ShoppingBasket, ChevronRight } from "lucide-react";
-import { money, dateLabel, sum, type Proof, type AccountData } from "./finance";
+import {
+  X,
+  ShoppingBasket,
+  ChevronRight,
+  Coffee,
+  UtensilsCrossed,
+  Zap,
+  House,
+  Shield,
+  Bus,
+  Car,
+  Music,
+  ShoppingBag,
+  PiggyBank,
+  ArrowDownLeft,
+  Receipt,
+  type LucideIcon,
+} from "lucide-react";
+import {
+  money,
+  dateLabel,
+  sum,
+  isSGroup,
+  type Proof,
+  type AccountData,
+} from "./finance";
 export function Mark() {
   return (
     <span className="mark">
@@ -129,6 +153,43 @@ export function Module({
     </section>
   );
 }
+// One tile per payment: the category reads before the name does. S Group shops carry their own mark.
+const TILES: [RegExp, LucideIcon, string][] = [
+  [/^groceries$/, ShoppingBasket, "grocery"],
+  [/^(restaurants_cafes|food_delivery|alcohol_tobacco)$/, UtensilsCrossed, "food"],
+  [/^(utilities|telecom)$/, Zap, "bill"],
+  [/^(housing|loan_repayment)$/, House, "bill"],
+  [/^insurance$/, Shield, "bill"],
+  [/^(childcare|taxes)$/, Receipt, "bill"],
+  [/^public_transport$/, Bus, "transport"],
+  [/^(taxi|fuel|parking|vehicle_maintenance)$/, Car, "transport"],
+  [/^(entertainment|subscriptions|hobbies|sports)$/, Music, "fun"],
+  [/^(clothing|online_shopping|electronics|furniture|personal_care|household_appliances|home_improvement)$/, ShoppingBag, "shop"],
+];
+function CategoryTile({ t }: { t: Proof["tx"][number] }) {
+  if (t.amount < 0 && isSGroup(t))
+    return (
+      <span className="merchant-initial tile-s" aria-hidden="true">
+        S
+      </span>
+    );
+  const key = t.cat?.key ?? "";
+  let Icon: LucideIcon = Receipt,
+    tone = "other";
+  if (t.amount > 0 || t.cat?.kind === "income") [Icon, tone] = [ArrowDownLeft, "income"];
+  else if (t.cat?.kind === "savings") [Icon, tone] = [PiggyBank, "income"];
+  else if (t.mcc === "5814") [Icon, tone] = [Coffee, "food"];
+  else if (t.mcc === "5411") [Icon, tone] = [ShoppingBasket, "grocery"];
+  else {
+    const hit = TILES.find(([re]) => re.test(key));
+    if (hit) [, Icon, tone] = hit;
+  }
+  return (
+    <span className={`merchant-initial tile-${tone}`} aria-hidden="true">
+      <Icon size={20} strokeWidth={2} />
+    </span>
+  );
+}
 export function PaymentRows({
   tx,
   limit,
@@ -148,7 +209,7 @@ export function PaymentRows({
         .slice(0, limit)
         .map((t) => (
           <div className="payment" key={t.i}>
-            <span className="merchant-initial">{t.merchant[0]}</span>
+            <CategoryTile t={t} />
             <div className="payment-name">
               <span>{t.merchant}</span>
               <small>
@@ -265,6 +326,10 @@ export function Sheet({
     </div>
   );
 }
+// A per-day figure that the band shows rounded down reads the same here: €17, not €17.00.
+const perDayWhole = (p: Proof) =>
+  Number.isInteger(p.value) &&
+  !!p.steps?.some(([l]) => /rounded down/i.test(l));
 export function ReceiptSheet({
   p,
   onClose,
@@ -322,7 +387,7 @@ export function ReceiptSheet({
             {p.unit && p.unit !== "EUR"
               ? p.value.toLocaleString("en-GB", { maximumFractionDigits: 2 }) +
                 (p.unit === "%" ? "%" : "")
-              : money(p.value, 2)}
+              : money(p.value, perDayWhole(p) ? 0 : 2)}
           </strong>
         </div>
         {!Number.isInteger(p.value) &&
