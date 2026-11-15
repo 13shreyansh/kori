@@ -1,11 +1,17 @@
 // Only the question enters the model request. Transactions and calculations stay local.
 export const blocks = ['receipt', 'plan-timeline', 'payday-runway', 'coming-up', 'baskets', 'unsupported'];
 const categories = ['wolt', 'cafe', 'groceries', 'subscriptions', 'hockey', 'saturday', 'lunch', 'taxi'];
-const instruction = 'Choose an existing banking card. Return JSON only: {"block":"receipt|plan-timeline|payday-runway|coming-up|baskets|unsupported","params":{"category":"wolt|cafe|groceries|subscriptions|hockey|saturday|lunch|taxi","monthly":number,"ticket":number,"year":boolean}}. Copy numbers explicitly stated by the user only. Do not calculate, answer the question, or write prose. Saving each month or goal dates: plan-timeline. Affording a ticket or safe spending: payday-runway. Bills before payday: coming-up. Spending habits or where money goes: baskets. Spending on a merchant/category: receipt. Anything else: unsupported. Omit unused parameters.';
+const instruction = 'Choose an existing banking card. Return JSON only: {"block":"receipt|plan-timeline|payday-runway|coming-up|baskets|unsupported","params":{"category":"wolt|cafe|groceries|subscriptions|hockey|saturday|lunch|taxi","monthly":number,"ticket":number,"year":boolean}}. Copy numbers explicitly stated by the user only. Do not calculate, answer the question, or write prose. Saving each month or goal dates: plan-timeline. Affording a ticket or safe spending: payday-runway. Bills before payday: coming-up. Spending habits or where money goes: baskets. Spending on a merchant/category: receipt. Example: subscriptions cost in a year means receipt, category subscriptions, year true. Anything else: unsupported. Omit unused parameters.';
 
 export function validateRoute(value, question) {
   if (!value || !blocks.includes(value.block)) throw Error('Unknown card');
   const params = {};
+  const explicitCategory = categories.find(category => new RegExp(category === 'cafe' ? 'caf[eé]' : category === 'groceries' ? 'grocer' : category === 'subscriptions' ? 'subscription' : category, 'i').test(question));
+  const categoryCost = explicitCategory && /spend|spent|cost|payments/i.test(question) && !/save|saving|afford|ticket|safe.*spend/i.test(question);
+  if (categoryCost && (value.block !== 'receipt' || value.params?.category !== explicitCategory))
+    throw Error('Category cost requires its receipt');
+  if (categoryCost && /(?:in a|per|each) year|annually/i.test(question) && value.params?.year !== true)
+    throw Error('Annual category cost requires explicit annualization');
   if (categories.includes(value.params?.category)) params.category = value.params.category;
   const statedNumbers = new Set();
   for (const match of question.matchAll(/(?<![\p{L}\p{N}_.])(?:[-+−]\s*)?(?:€\s*)?\d+(?:[., \u00a0\u202f]\d+)*(?![\p{L}\p{N}_.])/gu)) {

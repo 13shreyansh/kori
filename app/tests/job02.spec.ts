@@ -64,9 +64,7 @@ for (const width of [1440, 390])
   test(`cafe result uses the module gap at ${width}`, async ({ page }) => {
     await page.setViewportSize({ width, height: width === 1440 ? 900 : 844 });
     await page.goto("/reset?customer=all");
-    await page.getByLabel("User ID", { exact: true }).fill("aino");
-    await page.getByLabel("PIN", { exact: true }).fill("1234");
-    await page.getByRole("button", { name: "Log in", exact: true }).click();
+    await page.getByRole("button", { name: /Log in as aino/i }).click();
     const slider = page.getByRole("slider", {
       name: "Your spending guess",
       exact: true,
@@ -124,9 +122,7 @@ test("an open home follows the real Helsinki day across midnight", async ({
 }) => {
   await page.clock.install({ time: new Date("2026-11-14T23:59:40+02:00") });
   await page.goto("/reset?customer=all");
-  await page.getByLabel("User ID", { exact: true }).fill("laura");
-  await page.getByLabel("PIN", { exact: true }).fill("1234");
-  await page.getByRole("button", { name: "Log in", exact: true }).click();
+  await page.getByRole("button", { name: /Log in as laura/i }).click();
   await expect(page.locator('[data-block="month-calendar"]')).toBeVisible();
   await expect(page.locator(".phone-screen")).toHaveAttribute(
     "data-current-date",
@@ -147,39 +143,11 @@ for (const width of [1440, 390])
   test(`login footer and hidden reset rules at ${width}`, async ({ page }) => {
     await page.setViewportSize({ width, height: width === 1440 ? 900 : 844 });
     await page.goto("/reset?customer=all");
-    await expect(page.locator(".login-footer")).toHaveText(
-      /Test environment\s*Demo customers: aino, mikko, laura · PIN 1234/,
-    );
-    const footer = await page.locator(".login-footer").evaluate((el) => {
-      const style = getComputedStyle(el),
-        rect = el.getBoundingClientRect(),
-        home = document.querySelector(".home-indicator") as HTMLElement;
-      return {
-        lines: (el as HTMLElement).innerText.split("\n"),
-        font: style.fontSize,
-        weight: style.fontWeight,
-        color: style.color,
-        gap:
-          (getComputedStyle(home).display === "none"
-            ? innerHeight
-            : home.getBoundingClientRect().top) - rect.bottom,
-      };
-    });
-    expect(footer.lines).toEqual([
-      "Test environment",
-      "Demo customers: aino, mikko, laura · PIN 1234",
-    ]);
-    expect(footer.font).toBe("12px");
-    expect(footer.weight).toBe("500");
-    expect(footer.color).toBe("rgb(183, 205, 191)");
-    expect(footer.gap).toBe(28);
-    writeFileSync(
-      `../artifacts/job02/footer-${width}.json`,
-      JSON.stringify(footer, null, 2),
-    );
-    await page.getByLabel("User ID", { exact: true }).fill("aino");
-    await page.getByLabel("PIN", { exact: true }).fill("1234");
-    await page.getByRole("button", { name: "Log in", exact: true }).click();
+    await expect(page.locator(".login-footer")).toHaveText("Demo only. Real customers would log in with S-mobiili as usual.");
+    for (const person of ["Aino", "Mikko", "Laura"])
+      await expect(page.getByRole("button", { name: new RegExp(`Log in as ${person}`) })).toBeVisible();
+    await expect(page.locator('input[type="password"]')).toHaveCount(0);
+    await page.getByRole("button", { name: /Log in as aino/i }).click();
     await page
       .getByRole("button", { name: "Profile and settings", exact: true })
       .click();

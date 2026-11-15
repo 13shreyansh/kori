@@ -52,3 +52,9 @@ test('provider aborts return the safe built-in route without leaking an error', 
   const result = await routeRequest('POST', { question: 'Where does my money go?' }, { FEATHERLESS_API_KEY: 'test-only' }, aborted);
   assert.deepEqual(result, { status: 200, body: { fallback: true } });
 });
+
+test('a category-cost question cannot silently become a spending-habits card', async () => {
+  const wrongCard = async () => Response.json({choices:[{message:{content:JSON.stringify({block:'baskets',params:{}})}}]});
+  const result = await routeRequest('POST',{question:'What do my subscriptions cost in a year?'},{FEATHERLESS_API_KEY:'test-only'},wrongCard);
+  assert.deepEqual(result.body,{fallback:true});
+});

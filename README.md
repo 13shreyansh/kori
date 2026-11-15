@@ -33,7 +33,7 @@ The server-side route in `app/api/route.js` asks `google/gemma-3-4b-it` on Feath
 | Service | Status and concrete role |
 | --- | --- |
 | Codex | Used during development, debugging and verification. |
-| CRACI | Runs the application build, lint, 25 finance/date tests and seven provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
+| CRACI | Runs the application build, lint, 25 finance/date tests and eight provider-contract tests on `runs-on: craci`. [Verified runner execution](https://github.com/13shreyansh/kori/actions/runs/43686120111). |
 | Gemma through Featherless | Implemented server-side selection of receipt, plan timeline, payday runway, upcoming bills, spending baskets or unsupported. The real six-question verification selected all six expected cards. |
 | Gemini | Handler present, but the latest live check used fallback. Active provider access is unverified. |
 
@@ -80,7 +80,7 @@ flowchart LR
     C[CRACI CI] --> T[Build, lint and tests]
 ```
 
-Provider-contract tests cover failure fallback, malformed JSON, unknown cards, request isolation and rejection of invented numeric substrings or signed amounts. Finance calculations remain covered by the existing tests. Deployment acceptance runs the existing customer flows at desktop and phone widths, plus live API requests that must explicitly report `provider: featherless` and `fallback: false`. Real provider calls and the completed CRACI job establish implementation evidence; prize eligibility remains the organizer’s decision.
+Provider-contract tests cover failure fallback, malformed JSON, unknown cards, request isolation and rejection of invented numeric substrings or signed amounts. Category-cost questions cannot silently become unrelated spending-habit cards; a mismatch uses the existing receipt path. Finance calculations remain covered by the existing tests. Deployment acceptance runs the existing customer flows at desktop and phone widths, plus live API requests that must explicitly report `provider: featherless` and `fallback: false`. Real provider calls and the completed CRACI job establish implementation evidence; prize eligibility remains the organizer’s decision.
 
 ## Code guide
 

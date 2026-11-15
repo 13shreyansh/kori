@@ -6,11 +6,12 @@ mkdirSync("../artifacts/e2e", { recursive: true });
 async function login(page: Page, id: string) {
   await page.getByRole("button", { name: new RegExp(`Log in as ${id}`, "i") }).click();
   await expect(page.locator('[data-block="account-line"]')).toBeVisible();
+  await page.evaluate(() => document.fonts.ready);
   const width = page.viewportSize()?.width;
   if (width === 1440 || width === 390) {
     const measures = await page.evaluate(() => {
       const dimension = (s: string) =>
-        (document.querySelector(s) as HTMLElement).clientHeight;
+        (document.querySelector(s) as HTMLElement | null)?.clientHeight ?? 0;
       const root = document.querySelector(".phone-screen") as HTMLElement;
       return {
         screenWidth: root.clientWidth,
@@ -25,6 +26,7 @@ async function login(page: Page, id: string) {
         overflow: root.scrollWidth > root.clientWidth,
       };
     });
+    expect(measures.accountRow > 0).toBe(id !== "aino");
     expect(measures.header).toBe(55);
     expect(measures.ask).toBe(63);
     expect(measures.tabs).toBe(61);
@@ -42,7 +44,7 @@ async function logout(page: Page) {
     .getByRole("button", { name: "Profile and settings", exact: true })
     .click();
   await page.getByRole("button", { name: "Log out", exact: true }).click();
-  await expect(page.getByLabel("User ID", { exact: true })).toHaveValue("");
+  await expect(page.getByRole("button", { name: /Log in as Aino/i })).toBeVisible();
 }
 async function range(page: Page, label: string, value: number) {
   const slider = page.getByRole("slider", { name: label, exact: true });
@@ -100,15 +102,9 @@ for (const width of [1440, 390])
       expect(
         await page.evaluate((id) => sessionStorage.getItem("kori:" + id), id),
       ).toBeNull();
-    await page.getByLabel("User ID", { exact: true }).fill("");
+    await expect(page.getByRole("button", { name: /Log in as Aino/i })).toBeVisible();
+    await expect(page.getByLabel("PIN", { exact: true })).toHaveCount(0);
     await shot(page, "01-login", width);
-    await page.getByLabel("User ID", { exact: true }).fill("aino");
-    await page.getByLabel("PIN", { exact: true }).fill("0000");
-    await page.getByRole("button", { name: "Log in", exact: true }).click();
-    await expect(page.getByRole("alert")).toContainText(
-      "That PIN doesn't match",
-    );
-    await shot(page, "02-login-error", width);
     await login(page, "aino");
     await range(page, "Your spending guess", 40);
     await shot(page, "04-aino-ask", width);
@@ -298,7 +294,7 @@ test("three live independent homes and embed guard", async ({ page }) => {
   );
   await shot(page, "03-three", 1440);
   await page.goto("/embed?customer=mikko");
-  await expect(page.getByLabel("User ID")).toBeVisible();
+  await expect(page.getByRole("button", { name: /Log in as Aino/i })).toBeVisible();
   await page.goto("/app");
   await page.evaluate(() => {
     const frame = document.createElement("iframe");
@@ -307,7 +303,7 @@ test("three live independent homes and embed guard", async ({ page }) => {
     document.body.append(frame);
   });
   await expect(
-    page.frameLocator('iframe[title="Outside three"]').getByLabel("User ID"),
+    page.frameLocator('iframe[title="Outside three"]').getByRole("button", { name: /Log in as Aino/i }),
   ).toBeVisible();
   await expect(
     page
@@ -388,7 +384,7 @@ test("review regressions: one guess exits honestly and reset stays outside produ
     sessionStorage.setItem("kori:mikko", JSON.stringify({ monthly: 900 })),
   );
   await page.goto("/reset?customer=aino");
-  await expect(page.getByLabel("User ID")).toBeVisible();
+  await expect(page.getByRole("button", { name: /Log in as Aino/i })).toBeVisible();
   expect(
     await page.evaluate(() => sessionStorage.getItem("kori:aino")),
   ).toBeNull();
@@ -524,11 +520,7 @@ test("keyboard-only login, game, proof, saving, transfer and logout", async ({
     );
   }
   async function enter(id: string) {
-    await expect(page.getByLabel("User ID", { exact: true })).toBeFocused();
-    await page.keyboard.type(id);
-    await page.keyboard.press("Tab");
-    await page.keyboard.type("1234");
-    await page.keyboard.press("Tab");
+    await reach(page.getByRole("button", { name: new RegExp(`Log in as ${id}`, "i") }));
     await page.keyboard.press("Enter");
     await expect(page.locator('[data-block="account-line"]')).toBeVisible();
   }
@@ -541,7 +533,7 @@ test("keyboard-only login, game, proof, saving, transfer and logout", async ({
     await page.keyboard.press("Enter");
     await reach(page.getByRole("button", { name: "Log out", exact: true }));
     await page.keyboard.press("Enter");
-    await expect(page.getByLabel("User ID", { exact: true })).toBeFocused();
+    await expect(page.getByRole("button", { name: /Log in as Aino/i })).toBeVisible();
   }
   await enter("aino");
   await reach(
@@ -602,7 +594,7 @@ test("all game rounds complete and runway and savings receipts reconcile", async
   await expect(page.locator('[data-block="guess"]')).toContainText(
     "closest on subscriptions",
   );
-  await page.locator('[data-block="payday-runway"] h2 .proof').click();
+  await page.locator('[data-block="account-line"] .safe-line .proof').first().click();
   await expect(page.getByTestId("receipt-total")).toHaveText("€17.36");
   await page.getByRole("button", { name: "Close sheet" }).click();
   await logout(page);
