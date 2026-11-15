@@ -3,7 +3,7 @@
   font-style: normal;
   font-display: block;
   font-weight: 400 900;
-  src: url("../../node_modules/@fontsource-variable/schibsted-grotesk/files/schibsted-grotesk-latin-wght-normal.woff2")
+  src: url("/fonts/schibsted-latin.woff2")
     format("woff2-variations");
 }
 .lp {
@@ -571,5 +571,25 @@
   .lp-axes .lp-row-label,
   .lp-rings text {
     font-size: 17px;
+  }
+}
+
+.lp-person .lp-gets {
+  max-width: none;
+}
+.lp-rings line {
+  stroke: var(--lp-chalk);
+  stroke-width: 1.2;
+}
+@media (max-width: 640px) {
+  .lp-axes text,
+  .lp-axes .lp-row-label,
+  .lp-rings text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 640px) {
+  .lp-axes .lp-row-label {
+    font-size: 19px;
   }
 }

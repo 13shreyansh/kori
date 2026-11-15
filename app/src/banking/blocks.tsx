@@ -113,7 +113,7 @@ export function AccountLine({ d, s, bank, open }: BlockProps) {
           {F.dateLabel(r.payday, { weekday: "short", day: "numeric", month: "short" })}
           {usual.value > r.proof.value + 1 && (
             <>
-              . Essentials usually cost <ProofNumber p={usual} open={open} /> a day
+              . You usually spend <ProofNumber p={usual} open={open} /> a day
             </>
           )}
         </small>

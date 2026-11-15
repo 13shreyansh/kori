@@ -117,7 +117,7 @@ function DotField() {
           {BANDS.map((b, i) => (
             <g key={b.label}>
               {i > 0 && <line x1={ageX(b.from)} x2={ageX(b.from)} y1={TOP} y2={TOP + 24 + ROW * 4} />}
-              <text x={(ageX(Math.max(b.from, 18)) + ageX(Math.min(b.to, 90))) / 2} y={TOP + 6} textAnchor="middle">
+              <text x={(ageX(Math.max(b.from, 18)) + ageX(Math.min(b.to, 90))) / 2} y={TOP - 10} textAnchor="middle">
                 {b.label}
               </text>
             </g>
@@ -133,21 +133,6 @@ function DotField() {
             </g>
           ))}
         </g>
-        <g className="lp-rings" aria-hidden="true">
-          {RINGS.map((r) => {
-            const row = STYLES.findIndex((x) => x.id === r.style);
-            const x = ageX(r.age),
-              y = TOP + 24 + row * ROW + ROW / 2 - 12;
-            return (
-              <g key={r.name}>
-                <circle cx={x} cy={y} r={9} />
-                <text x={x + 13} y={y - 12}>
-                  {r.name}
-                </text>
-              </g>
-            );
-          })}
-        </g>
         <g>
           {dots?.map((d, i) => {
             const p = sorted ? pos!.sorted[i] : pos!.block[i];
@@ -161,6 +146,22 @@ function DotField() {
                   transitionDelay: `${(i % 60) * 9}ms`,
                 }}
               />
+            );
+          })}
+        </g>
+        <g className="lp-rings" aria-hidden="true">
+          {RINGS.map((r) => {
+            const row = STYLES.findIndex((x) => x.id === r.style);
+            const x = ageX(r.age),
+              y = TOP + 24 + row * ROW + ROW / 2 - 12;
+            return (
+              <g key={r.name}>
+                <circle cx={x} cy={y} r={9} />
+                <line x1={x} x2={x} y1={y - 9} y2={y - 38} />
+                <text x={x + 5} y={y - 42}>
+                  {r.name}
+                </text>
+              </g>
             );
           })}
         </g>
